@@ -66,11 +66,11 @@ These are the "how history works" ideas. Short pages, linked from many others.
 | islamic-caliphates | The Islamic caliphates | islam, byzantine-empire | ✅ |
 | feudalism | Medieval Europe and feudalism | fall-of-rome | ✅ |
 | crusades | The Crusades | islamic-caliphates, feudalism | ✅ |
-| tang-song-china | Tang and Song China | qin-han-china, buddhism | ⬜ |
-| mongol-empire | The Mongol Empire | silk-roads, tang-song-china | ⬜ |
-| black-death | The Black Death | mongol-empire, feudalism | ⬜ |
-| indian-ocean-trade | Indian Ocean trade | islamic-caliphates, tang-song-china | ⬜ |
-| west-african-empires | Ghana, Mali, Songhai and trans-Saharan trade | islamic-caliphates | ⬜ |
+| tang-song-china | Tang and Song China | qin-han-china, buddhism | ✅ |
+| mongol-empire | The Mongol Empire | silk-roads, tang-song-china | ✅ |
+| black-death | The Black Death | mongol-empire, feudalism | ✅ |
+| indian-ocean-trade | Indian Ocean trade | islamic-caliphates, tang-song-china | ✅ |
+| west-african-empires | Ghana, Mali, Songhai and trans-Saharan trade | islamic-caliphates | ✅ |
 
 ## Era 5: The early modern world (about 1450 to 1750)
 

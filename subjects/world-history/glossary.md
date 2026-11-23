@@ -474,6 +474,59 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`).
 - def: A war declared holy by the pope. The best known were fought to win Jerusalem from Muslim rulers between 1095 and 1291.
 - concept: crusades
 
+### civil-service-exam
+- title: Civil service exam
+- def: A written test used in China to choose government officials. Candidates studied the Confucian classics for years. In theory anyone could pass; in practice, families who could pay for long study had an advantage.
+- concept: tang-song-china
+
+### movable-type
+- title: Movable type
+- def: Printing with separate pieces for each character, which can be rearranged and reused for new pages, instead of carving a whole page into one block of wood.
+
+### gunpowder
+- title: Gunpowder
+- def: An explosive powder made from saltpeter, charcoal and sulfur. Chinese alchemists discovered it, probably in the 800s, and it was used in weapons by the 1000s.
+
+### nomad
+- title: Nomad
+- def: A person who moves from place to place with their herds or in search of food, instead of living in one settled home.
+
+### khan
+- title: Khan
+- def: A ruler or chief among the Mongols and other peoples of Central Asia. Genghis Khan's title meant roughly "universal ruler".
+- concept: mongol-empire
+
+### khanate
+- title: Khanate
+- def: A state ruled by a khan. The Mongol Empire split into four khanates.
+
+### plague
+- title: Plague
+- def: A deadly disease caused by the bacterium Yersinia pestis, usually spread by flea bites. It still exists today, but antibiotics can cure it.
+- concept: black-death
+
+### monsoon
+- title: Monsoon
+- def: A seasonal wind that changes direction with the time of year. In South Asia it also brings the heavy summer rains.
+- concept: indian-ocean-trade
+
+### dhow
+- title: Dhow
+- def: A wooden sailing ship with large triangular sails, used by Arab, Persian, Indian and Swahili sailors in the Indian Ocean.
+
+### swahili
+- title: Swahili
+- def: The people and culture of the East African coast, and their language, which is African at its root with many words borrowed from Arabic. Swahili is still widely spoken in East Africa.
+
+### griot
+- title: Griot
+- def: A West African storyteller, singer and historian who keeps a people's history by memory and passes it on aloud.
+
+### mansa
+- title: Mansa
+- def: The title of the kings of Mali, meaning king or ruler.
+- concept: west-african-empires
+
 ---
 
 ## Footnotes
@@ -637,3 +690,27 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`).
 ### n_crusade_numbers
 - title: Note: numbering the crusades
 - def: People at the time did not number the crusades. Later historians did, and they do not all agree on how to count them. Crusades were also fought against pagans in the Baltic, Muslims in Spain, and even Christians the pope saw as heretics.
+
+### n_printing
+- title: Note: printing firsts
+- def: The oldest printed book with a date is the Diamond Sutra, a Buddhist text printed in China in 868. Bi Sheng's movable type was made of baked clay. Korea printed a book with metal movable type in 1377. Johannes Gutenberg developed his metal type press in Germany around 1450, apparently on his own.
+
+### n_mongol_deaths
+- title: Note: how many died?
+- def: Estimates of deaths from the Mongol conquests vary widely, from several million to 40 million or more. Medieval writers often exaggerated numbers, and population records are poor, so no figure is certain.
+
+### n_marco_polo
+- title: Note: did Marco Polo go to China?
+- def: Marco Polo's book describes travels from 1271 to 1295. A few scholars have doubted he reached China, since he never mentions tea or the Great Wall. Most historians think he did, because he describes many details accurately that he could hardly have known otherwise.
+
+### n_caffa
+- title: Note: the siege of Caffa
+- def: An Italian writer, Gabriele de' Mussi, said the Mongol besiegers threw plague corpses over the walls of Caffa. He was probably not there, and historians debate the story. Rats and fleas moving between the camp and the town could explain the spread on their own.
+
+### n_zheng_he
+- title: Note: how big were Zheng He's ships?
+- def: Chinese records describe "treasure ships" around 120 meters long, several times the size of Columbus's ships. Many historians think these numbers are exaggerated and that the largest ships were perhaps half that length. Either way, his fleets were far larger than any European fleet of the time.
+
+### n_mansa_musa
+- title: Note: "the richest man ever"?
+- def: Mansa Musa is often called the richest person who ever lived. That makes a good headline but cannot really be measured, since his wealth was tied to the land and trade of his empire. It is certain that his gold amazed people from Cairo to Europe, and a map made on the Spanish island of Majorca in 1375, the Catalan Atlas, shows him holding a gold nugget.
