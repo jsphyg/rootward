@@ -29,6 +29,13 @@ The most famous Byzantine emperor was Justinian, who ruled from 527 to 565.
 
 *Notice: Justinian tried to rebuild the old Roman Empire. The reconquests were costly, and a terrible plague in 541 killed a large share of the population. Much of Italy was lost to new invaders, the Lombards, within a few years of his death.*
 
+:::image
+file: Hagia_Sophia_Mars_2013.jpg
+alt: The Hagia Sophia in Istanbul, a great domed building with four tall slender towers
+caption: The Hagia Sophia, finished in 537. For nearly 1,000 years it was the largest church in the world. The four towers, called minarets, were added after the Ottomans made it a mosque in 1453.
+credit: Wikimedia Commons (author and license on the source page)
+:::
+
 ## Greek and Orthodox
 
 Over time the empire became less Roman and more Greek. Greek replaced Latin as the language of government. The emperor was seen as God's representative on earth, and ran the Church as well as the state.

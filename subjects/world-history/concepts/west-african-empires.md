@@ -34,6 +34,13 @@ Around 1235, a leader named Sundiata founded the empire of Mali. His story is st
 
 Mali's most famous ruler was Mansa Musa, who ruled from about 1312 to 1337. {{mansa|Mansa}} means king. A Muslim, he made the pilgrimage to Mecca in 1324 with a huge caravan carrying gold. In Cairo he gave away and spent so much gold that its value there fell for years. Europe and the Middle East heard of Mali's wealth.^[n_mansa_musa]
 
+:::image
+file: Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_(cropped).jpg
+alt: A painted map detail showing a crowned African king on a throne holding up a gold nugget
+caption: Mansa Musa on the Catalan Atlas, a map made in 1375. Notice the gold nugget he holds up: Europeans knew Mali above all for its gold.
+credit: Catalan Atlas, 1375, attributed to Abraham Cresques; public domain
+:::
+
 He brought scholars and an architect home and built mosques. Under Mali, the city of Timbuktu grew into a center of trade and Islamic learning, with scholars and large collections of handwritten books.
 
 ## Songhai

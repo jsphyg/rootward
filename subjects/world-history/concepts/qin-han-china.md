@@ -30,6 +30,13 @@ He built roads and canals, and joined earlier walls into a long defensive wall i
 
 He was buried with an army of life-size clay soldiers, the Terracotta Army, rediscovered by farmers digging a well in 1974.
 
+:::image
+file: Qin_Shihuang_Terracotta_Army,_Pit_1.jpg
+alt: Rows of life-size clay soldiers standing in a long excavated pit
+caption: Part of the Terracotta Army in Pit 1. Notice the rows: the soldiers stand in battle order, and no two faces are quite the same.
+credit: Wikimedia Commons (author and license on the source page)
+:::
+
 The Qin did not last. Forced labor and harsh laws made people furious. Soon after the First Emperor died in 210 BCE, revolts broke out, and the dynasty fell in 206 BCE.
 
 ## The Han dynasty

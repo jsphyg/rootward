@@ -34,6 +34,13 @@ Augustus' reign began the {{pax-romana|Pax Romana}}, about 200 years of relative
 
 Roman engineers built {{aqueduct|aqueducts}} to carry water into cities, and great buildings using concrete, such as the Colosseum (finished in 80 CE).
 
+:::image
+file: Colosseum_in_Rome,_Italy_-_April_2007.jpg
+alt: The Colosseum in Rome, a huge oval stone arena with rows of arches
+caption: The Colosseum in Rome, finished in 80 CE. It held perhaps 50,000 people watching gladiator fights. Notice the arches: Roman engineering at a huge scale.
+credit: Wikimedia Commons (author and license on the source page)
+:::
+
 ## Christianity and a new capital
 
 Christianity began in the Roman province of Judea in the first century CE and spread along Roman roads. At first Christians were sometimes persecuted. Then, from 312 CE, Emperor Constantine favored Christianity, and he was baptized before he died in 337. By the end of the century, Christianity was the empire's official religion.

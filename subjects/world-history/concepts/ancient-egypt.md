@@ -41,6 +41,13 @@ The pyramids were tombs for pharaohs. The Great Pyramid at Giza was built for th
 
 The pyramids were not built by slaves, as people once believed. Archaeologists have found the villages and tombs of the workers. They were paid laborers and farmers, organized by the state, many working in the flood season when their fields were under water.
 
+:::image
+file: Kheops-Pyramid.jpg
+alt: The Great Pyramid of Giza, a huge stone pyramid in the desert
+caption: The Great Pyramid of Khufu at Giza (about 2560 BCE). Notice its size: it was built from about 2.3 million stone blocks.
+credit: Wikimedia Commons (author and license on the source page)
+:::
+
 ## Protected by desert
 
 Deserts to the east and west and the sea to the north made Egypt hard to invade. For long stretches it was left alone to develop in its own way, unlike open Mesopotamia. Egypt was eventually conquered by Persia in 525 BCE, by Alexander the Great in 332 BCE, and by Rome in 30 BCE.

@@ -36,6 +36,13 @@ Athens' democracy began around 508 BCE. Every adult male {{citizen|citizen}} cou
 
 When Persia invaded, the Greek city-states united and won, at Marathon (490 BCE) and Salamis (480 BCE). Afterwards Athens grew rich and powerful, and in its golden age built the Parthenon temple.
 
+:::image
+file: The_Parthenon_in_Athens.jpg
+alt: The Parthenon, a ruined marble temple with rows of columns on a hilltop
+caption: The Parthenon in Athens, a temple to the goddess Athena finished in 432 BCE. Notice the columns: this style was copied for banks, museums and government buildings around the world.
+credit: Wikimedia Commons (author and license on the source page)
+:::
+
 But Athens and Sparta became rivals. Their long war, the Peloponnesian War (431 to 404 BCE), ended in Athens' defeat and left Greece weakened and divided.
 
 ## Ideas that lasted
