@@ -187,6 +187,11 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - def: The circle of radius 1 centred at the origin. The point on it at angle θ is $(\cos\theta, \sin\theta)$.
 - concept: trig-basics
 
+### exponential
+- title: Exponential function
+- def: A function with the variable in the exponent, like $2^x$ or $a \cdot b^x$. It multiplies by the same factor b at every step of 1.
+- concept: exponential-functions
+
 ### secant
 - title: Secant line
 - def: A straight line through two points on a curve.
@@ -340,6 +345,14 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 ### n_radian_why
 - title: Note: what goes wrong in degrees
 - def: In radians, the slope of $\sin x$ is $\cos x$. If x were in degrees, the slope would be $\frac{\pi}{180} \cos x$, and that factor would follow every trig derivative around. Radians make it vanish, because they measure the angle by the same kind of length as the sine itself.
+
+### n_base_positive
+- title: Note: why the base must be positive
+- def: A negative base breaks down for fraction inputs. $(-2)^{1/2}$ would be the square root of $-2$, which is not a real number. A base of 1 is allowed but dull: $1^x = 1$ for every x. So exponential functions use a positive base other than 1.
+
+### n_e
+- title: Note: where the name e comes from
+- def: Leonhard Euler used the letter e for this number in the 1700s, and the name stuck. Like $\pi$, its decimals never end or repeat: 2.718281828459…
 
 ### n_h
 - title: Note: why the letter h?
