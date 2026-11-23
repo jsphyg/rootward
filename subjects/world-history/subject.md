@@ -14,4 +14,4 @@ labels:
 
 **Welcome.** This is the first page of the World History web. Each page teaches one idea and shows what it builds on. Use the map (on the right, or at the bottom on a phone) to move around, and the orange **Return** bar to get back to where you were.
 
-Underlined words open a quick definition. Small numbered boxes are footnotes.
+Underlined words open a quick definition. Small raised numbers are footnotes.

@@ -1,7 +1,7 @@
-.fig.tl{max-width:620px;padding:14px 16px}
+.fig.tl{max-width:620px}
 .tl ol{list-style:none;margin:0;padding:0;position:relative}
 .tl ol::before{content:"";position:absolute;left:7.4em;top:6px;bottom:6px;width:1px;background:var(--line2)}
 .tl li{display:grid;grid-template-columns:7em 1fr;gap:1.2em;padding:6px 0;position:relative;font-size:.95rem}
-.tl li::before{content:"";position:absolute;left:calc(7.4em - 4px);top:.85em;width:8px;height:8px;background:var(--accent);transform:rotate(45deg)}
-.tl .when{font-family:var(--mono);font-size:.8rem;color:var(--accent);text-align:right;padding-top:.15em;letter-spacing:.03em}
+.tl li::before{content:"";position:absolute;left:calc(7.4em - 4px);top:.85em;width:8px;height:8px;background:var(--accent);border-radius:50%}
+.tl .when{font-size:.88rem;font-weight:600;color:var(--accent);text-align:right;padding-top:.05em}
 @media (max-width:480px){.tl ol::before,.tl li::before{display:none}.tl li{grid-template-columns:1fr;gap:0}.tl .when{text-align:left}}

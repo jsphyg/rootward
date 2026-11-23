@@ -1,5 +1,5 @@
-.machine{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:12px 0}
-.mbox{border:1px solid var(--line2);padding:6px 12px;background:var(--surface);text-align:center;min-width:74px;font-family:var(--mono);font-size:.9rem}
-.mbox small{display:block;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
-.mbox.fx{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+.machine{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin:12px 0}
+.mbox{padding:6px 12px;background:var(--raise);border-radius:8px;text-align:center;min-width:74px;font-size:.95rem}
+.mbox small{display:block;font-size:.75rem;color:var(--muted)}
+.mbox.fx{background:var(--accent-soft);color:var(--accent)}
 .arrow{color:var(--accent);font-size:1.1rem}
