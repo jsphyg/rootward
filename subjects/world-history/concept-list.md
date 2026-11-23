@@ -61,11 +61,11 @@ These are the "how history works" ideas. Short pages, linked from many others.
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| byzantine-empire | The Byzantine Empire | fall-of-rome, christianity | ⬜ |
-| islam | The rise of Islam | christianity | ⬜ |
-| islamic-caliphates | The Islamic caliphates | islam, byzantine-empire | ⬜ |
-| feudalism | Medieval Europe and feudalism | fall-of-rome | ⬜ |
-| crusades | The Crusades | islamic-caliphates, feudalism | ⬜ |
+| byzantine-empire | The Byzantine Empire | fall-of-rome, christianity | ✅ |
+| islam | The rise of Islam | christianity | ✅ |
+| islamic-caliphates | The Islamic caliphates | islam, byzantine-empire | ✅ |
+| feudalism | Medieval Europe and feudalism | fall-of-rome | ✅ |
+| crusades | The Crusades | islamic-caliphates, feudalism | ✅ |
 | tang-song-china | Tang and Song China | qin-han-china, buddhism | ⬜ |
 | mongol-empire | The Mongol Empire | silk-roads, tang-song-china | ⬜ |
 | black-death | The Black Death | mongol-empire, feudalism | ⬜ |

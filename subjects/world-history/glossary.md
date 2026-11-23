@@ -400,6 +400,80 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`).
 - title: Globalization
 - def: The growing connection of distant parts of the world through trade, travel and the spread of ideas.
 
+### icon
+- title: Icon
+- def: A holy picture of Jesus, Mary or a saint, painted on wood, used in prayer in Orthodox churches. In the 700s and 800s Byzantines fought bitterly over whether icons were allowed.
+
+### schism
+- title: Schism
+- def: A split in a religious community into separate groups. The Great Schism of 1054 divided Catholic and Orthodox Christians.
+
+### orthodox
+- title: Eastern Orthodox Church
+- def: The branch of Christianity that grew from the Byzantine Church. It is led by patriarchs, not the pope, and is strongest today in Greece, Russia, Ukraine and the Balkans.
+- concept: byzantine-empire
+
+### quran
+- title: Quran
+- def: The holy book of Islam. Muslims believe it contains God's words, revealed to Muhammad and written down in Arabic.
+- concept: islam
+
+### hijra
+- title: Hijra
+- def: Muhammad's move from Mecca to Medina in 622 CE. The Islamic calendar counts its years from it.
+
+### prophet
+- title: Prophet
+- def: A person believed to bring messages from God to other people.
+
+### five-pillars
+- title: Five Pillars
+- def: The five core duties of every Muslim: declaring the faith, praying five times a day, giving to the poor, fasting in Ramadan and making the pilgrimage to Mecca.
+- concept: islam
+
+### sunni-shia
+- title: Sunni and Shia
+- def: The two main branches of Islam. They split over who should lead Muslims after Muhammad. Shia Muslims believe leadership belonged to his family, through Ali. About 85 to 90 percent of Muslims today are Sunni.
+
+### caliph
+- title: Caliph
+- def: "Successor": the title of the leaders of the Muslim community after Muhammad, who ruled as both political and religious heads.
+- concept: islamic-caliphates
+
+### jizya
+- title: Jizya
+- def: A tax paid by non-Muslims, such as Christians and Jews, under Muslim rule. In return they were protected and could keep their religion.
+
+### pope
+- title: Pope
+- def: The bishop of Rome and head of the Roman Catholic Church.
+
+### knight
+- title: Knight
+- def: A warrior who fought on horseback in heavy armor. Knights usually received land in return for their service.
+
+### vassal
+- title: Vassal
+- def: A person who received land from a lord and promised loyalty and service, especially in war, in return.
+- concept: feudalism
+
+### fief
+- title: Fief
+- def: Land given by a lord to a vassal in return for loyalty and service.
+
+### serf
+- title: Serf
+- def: A peasant who was bound to a lord's land. Serfs were not slaves, since they could not be sold, but they could not leave without permission and owed the lord work and crops.
+
+### manor
+- title: Manor
+- def: A lord's estate: his house, the village, the fields, a mill and a church. Most medieval peasants lived and worked on one.
+
+### crusade
+- title: Crusade
+- def: A war declared holy by the pope. The best known were fought to win Jerusalem from Muslim rulers between 1095 and 1291.
+- concept: crusades
+
 ---
 
 ## Footnotes
@@ -543,3 +617,23 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`).
 ### n_gibbon
 - title: Note: Gibbon's famous answer
 - def: The English historian Edward Gibbon wrote The History of the Decline and Fall of the Roman Empire, starting in 1776. He blamed, among other things, the loss of old Roman civic virtue and the rise of Christianity. Modern historians find his answer too simple, but his book is still read.
+
+### n_byzantine_name
+- title: Note: who called it "Byzantine"?
+- def: The Byzantines never used the word. They called themselves Romans, and their neighbors often did too. The name "Byzantine Empire" was made popular by western European scholars, starting in the 1500s.
+
+### n_muhammad_sources
+- title: Note: sources on Muhammad's life
+- def: The Quran says little about Muhammad's life story. Most details come from Muslim biographies and traditions written down more than a century after his death, the earliest being that of Ibn Ishaq, who died around 767. Historians accept the main outline but treat some details with care.
+
+### n_paper
+- title: Note: how paper reached the Islamic world
+- def: A well-known story says Chinese papermakers were captured at the Battle of Talas in 751 and taught their craft in Samarkand. Many historians now doubt that story and think the skill spread more gradually. Either way, paper was common in Baghdad by about 800.
+
+### n_feudalism_word
+- title: Note: a debated word
+- def: No one in the Middle Ages used the word "feudalism." Lawyers and historians invented it centuries later. Some historians now avoid it, because customs varied so much from place to place that one tidy "system" is misleading. It is still a useful shorthand for land given in return for service.
+
+### n_crusade_numbers
+- title: Note: numbering the crusades
+- def: People at the time did not number the crusades. Later historians did, and they do not all agree on how to count them. Crusades were also fought against pagans in the Baltic, Muslims in Spain, and even Christians the pope saw as heretics.
