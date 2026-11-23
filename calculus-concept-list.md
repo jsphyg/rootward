@@ -32,8 +32,8 @@ These are the "you were supposed to already know this" topics. They are what mak
 |---|---|---|---|
 | limits | Limits | functions, factoring | ✅ (rewritten 2026-11-23) |
 | one-sided-limits | One-sided limits | limits | ✅ (concepts/one-sided-limits.md) |
-| limit-laws | Limit laws | limits | ⬜ |
-| continuity | Continuity | limits, graphs | ⬜ |
+| limit-laws | Limit laws | limits | ✅ (concepts/limit-laws.md) |
+| continuity | Continuity | limits, graphs | ✅ (concepts/continuity.md) |
 | limits-at-infinity | Limits at infinity | limits | ⬜ |
 | squeeze-theorem | The squeeze theorem | limit-laws | ⬜ |
 

@@ -197,6 +197,26 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - def: The exponent you need. $\log_b x$ is the power you put on b to get x, so $\log_2 8 = 3$ because $2^3 = 8$. Written $\ln x$ when the base is e.
 - concept: logarithms
 
+### limit-laws
+- title: Limit laws
+- def: Rules that let you find a limit piece by piece. The limit of a sum, difference, product or quotient is the sum, difference, product or quotient of the limits, as long as each limit exists and no bottom heads to 0.
+- concept: limit-laws
+
+### continuous
+- title: Continuous
+- def: Having no break. f is continuous at a when its limit at a equals its value at a. On a graph: you can draw through that point without lifting your pen.
+- concept: continuity
+
+### discontinuity
+- title: Discontinuity
+- def: A point where a function is not continuous: a hole, a jump, or a blow-up.
+- concept: continuity
+
+### ivt
+- title: Intermediate value theorem
+- def: If f is continuous from a to b, then f takes every value between $f(a)$ and $f(b)$ somewhere in that stretch.
+- concept: continuity
+
 ### secant
 - title: Secant line
 - def: A straight line through two points on a curve.
@@ -370,6 +390,14 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 ### n_infinity
 - title: Note: infinity is not a number here
 - def: Writing $\lim f(x) = \infty$ does not mean the limit equals a number called infinity. Strictly, the limit does not exist, because the outputs head to no number at all. The $\infty$ just says how it fails: by growing without end.
+
+### n_two_limits
+- title: Note: the reverse is not guaranteed
+- def: The laws say "if both pieces have limits, then the combination does". The reverse can fail. $\frac{1}{x}$ and $-\frac{1}{x}$ both blow up near 0, but their sum is 0 everywhere, so the sum's limit is 0. You just cannot get it by splitting.
+
+### n_ivt
+- title: Note: obvious, but hard to prove
+- def: The intermediate value theorem seems obvious from a picture. Proving it exactly needs a careful description of the real numbers, with no gaps in them. That was only done in the 1800s. Calculus 1 uses the theorem without proving it.
 
 ### n_h
 - title: Note: why the letter h?
