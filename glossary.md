@@ -367,6 +367,10 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: log scales in everyday life
 - def: The pH scale for acids, decibels for loudness, and the magnitude scale for earthquakes are all based on logarithms. On a log scale, each step up multiplies the quantity by a fixed amount, usually 10, instead of adding to it.
 
+### n_infinity
+- title: Note: infinity is not a number here
+- def: Writing $\lim f(x) = \infty$ does not mean the limit equals a number called infinity. Strictly, the limit does not exist, because the outputs head to no number at all. The $\infty$ just says how it fails: by growing without end.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.

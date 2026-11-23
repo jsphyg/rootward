@@ -31,7 +31,7 @@ These are the "you were supposed to already know this" topics. They are what mak
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
 | limits | Limits | functions, factoring | ✅ (rewritten 2026-11-23) |
-| one-sided-limits | One-sided limits | limits | ⬜ |
+| one-sided-limits | One-sided limits | limits | ✅ (concepts/one-sided-limits.md) |
 | limit-laws | Limit laws | limits | ⬜ |
 | continuity | Continuity | limits, graphs | ⬜ |
 | limits-at-infinity | Limits at infinity | limits | ⬜ |

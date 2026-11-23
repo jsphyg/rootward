@@ -8,7 +8,8 @@
 // Used on: graphs.
 LW.widget("plot", function(el, lw, args){
   const kv = {}; (args.lines||[]).forEach(l => { const i = l.indexOf(":"); if(i>0) kv[l.slice(0,i).trim()] = l.slice(i+1).trim(); });
-  const f = new Function("x", "return (" + kv.fn + ");");
+  const unesc = t => t.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&"); // data lines arrive HTML-escaped
+  const f = new Function("x", "return (" + unesc(kv.fn) + ");");
   const rng = (s, d) => s ? s.split(/\s+/).map(Number) : d;
   const pts = s => s ? s.split(";").map(p => p.split(",").map(Number)) : [];
   const [x0,x1] = rng(kv.x, [-3,3]), [y0,y1] = rng(kv.y, [-3,3]);
