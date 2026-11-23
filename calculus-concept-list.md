@@ -21,7 +21,7 @@ These are the "you were supposed to already know this" topics. They are what mak
 | slope | Slope of a line | graphs | ✅ (rewritten 2026-11-23) |
 | linear-functions | Lines and linear functions | slope | ✅ (concepts/linear-functions.md) |
 | composite-functions | Composite functions | functions | ✅ (rewritten 2026-11-23) |
-| inverse-functions | Inverse functions | composite-functions | ⬜ |
+| inverse-functions | Inverse functions | composite-functions | ✅ (concepts/inverse-functions.md) |
 | trig-basics | Sine, cosine, tangent | functions | ⬜ |
 | exponential-functions | Exponential functions | exponents, functions | ⬜ |
 | logarithms | Logarithms | exponential-functions, inverse-functions | ⬜ |

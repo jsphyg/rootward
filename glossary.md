@@ -147,6 +147,16 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - def: The height where a graph crosses the y-axis: the output when $x = 0$. For $y = mx + b$ it is b.
 - concept: linear-functions
 
+### inverse
+- title: Inverse function
+- def: The function that undoes another. If $f(a) = b$, then $f^{-1}(b) = a$. Written $f^{-1}$, read "f inverse". It does not mean $\frac{1}{f}$.
+- concept: inverse-functions
+
+### one-to-one
+- title: One-to-one
+- def: A function where every output comes from just one input. $2x + 6$ is one-to-one. $x^2$ is not, because $3^2$ and $(-3)^2$ are both 9. Only one-to-one functions have inverses.
+- concept: inverse-functions
+
 ### secant
 - title: Secant line
 - def: A straight line through two points on a curve.
@@ -280,6 +290,18 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 ### n_point_slope
 - title: Note: point-slope form
 - def: Some books skip finding b and write the line straight from one point $(x_1, y_1)$ and the slope m: $y - y_1 = m(x - x_1)$. Expanding it gives the same $y = mx + b$. Both describe the same line.
+
+### n_inverse_notation
+- title: Note: why use $-1$ for the inverse?
+- def: Because of how composing works. Doing f and then its inverse is like multiplying a number by its reciprocal: you end up back at the start. The notation borrows from $5 \cdot 5^{-1} = 1$. But for functions it is only a label. If you do mean one over f, write $\frac{1}{f(x)}$ or $(f(x))^{-1}$.
+
+### n_swap
+- title: Note: why swap the letters?
+- def: It is only a habit. Most books call the input of every function x, so they rename y to x at the end. The rule $\frac{y - 6}{2}$ and the rule $\frac{x - 6}{2}$ are the same rule, "take away 6, then halve".
+
+### n_mirror
+- title: Note: the picture of an inverse
+- def: An inverse swaps inputs and outputs, so the point $(a, b)$ on the graph of f becomes $(b, a)$ on the graph of $f^{-1}$. That swap is a mirror image across the line $y = x$. So the graph of an inverse is the graph of f, flipped over that diagonal line.
 
 ### n_h
 - title: Note: why the letter h?
