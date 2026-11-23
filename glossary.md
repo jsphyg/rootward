@@ -421,6 +421,10 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: the famous one
 - def: The limit is $\lim_{x \to 0} \frac{\sin x}{x} = 1$, with x in radians. A picture of the unit circle shows that $\cos x \leq \frac{\sin x}{x} \leq 1$ near 0. Both bounds head to 1, so the squeeze gives 1. The page on derivatives of trig functions works through it.
 
+### n_two_notations
+- title: Note: Newton and Leibniz
+- def: Calculus was invented separately by Isaac Newton and Gottfried Leibniz in the late 1600s, and each had his own notation. The dash in $f'(x)$ comes from Lagrange, a later mathematician, and Newton wrote a dot over the letter. Leibniz wrote $\frac{dy}{dx}$. Both styles are still in use.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.
