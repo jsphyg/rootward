@@ -192,6 +192,11 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - def: A function with the variable in the exponent, like $2^x$ or $a \cdot b^x$. It multiplies by the same factor b at every step of 1.
 - concept: exponential-functions
 
+### log
+- title: Logarithm
+- def: The exponent you need. $\log_b x$ is the power you put on b to get x, so $\log_2 8 = 3$ because $2^3 = 8$. Written $\ln x$ when the base is e.
+- concept: logarithms
+
 ### secant
 - title: Secant line
 - def: A straight line through two points on a curve.
@@ -353,6 +358,14 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 ### n_e
 - title: Note: where the name e comes from
 - def: Leonhard Euler used the letter e for this number in the 1700s, and the name stuck. Like $\pi$, its decimals never end or repeat: 2.718281828459…
+
+### n_change_base
+- title: Note: logs in any base from ln
+- def: Any log can be found from natural logs: $\log_b x = \dfrac{\ln x}{\ln b}$. For example, $\log_2 40 = \dfrac{\ln 40}{\ln 2} \approx 5.32$. That is how a calculator with only ln and log keys handles other bases.
+
+### n_scales
+- title: Note: log scales in everyday life
+- def: The pH scale for acids, decibels for loudness, and the magnitude scale for earthquakes are all based on logarithms. On a log scale, each step up multiplies the quantity by a fixed amount, usually 10, instead of adding to it.
 
 ### n_h
 - title: Note: why the letter h?

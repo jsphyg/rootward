@@ -3,6 +3,7 @@
 //   x: -1.5 3.5            (x range shown)   y: -2 4   (y range shown)
 //   points: -1,3; 0,0; 1,-1   (filled dots, labelled)
 //   holes: 1,2             (open circles: a missing point)
+//   labels: left           (put point labels up and to the left)
 //   label: y = x² − 2x     (curve label)    caption: what to notice
 // Used on: graphs.
 LW.widget("plot", function(el, lw, args){
@@ -22,7 +23,7 @@ LW.widget("plot", function(el, lw, args){
   for(let t=Math.ceil(x0);t<=Math.floor(x1);t++) if(t) ticks += `<path class="ax" d="M${X(t)} ${Y(0)-4} V${Y(0)+4}"/><text class="mt" x="${X(t)-5}" y="${Y(0)+18}">${num(t)}</text>`;
   for(let t=Math.ceil(y0);t<=Math.floor(y1);t++) if(t) ticks += `<path class="ax" d="M${X(0)-4} ${Y(t)} H${X(0)+4}"/><text class="mt" x="${X(0)-20}" y="${Y(t)+5}">${num(t)}</text>`;
   const P_ = pts(kv.points), lowest = Math.min(...P_.map(q => q[1]));
-  const dots = P_.map(([a,b]) => `<circle class="pt" cx="${X(a)}" cy="${Y(b)}" r="5"/><text x="${X(a)+8}" y="${b === lowest ? Y(b)+22 : Y(b)-8}">(${num(a)}, ${num(b)})</text>`).join("");
+  const dots = P_.map(([a,b]) => `<circle class="pt" cx="${X(a)}" cy="${Y(b)}" r="5"/><text x="${kv.labels === "left" ? X(a)-10 : X(a)+8}" text-anchor="${kv.labels === "left" ? "end" : "start"}" y="${kv.labels === "left" ? Y(b)-8 : b === lowest ? Y(b)+22 : Y(b)-8}">(${num(a)}, ${num(b)})</text>`).join("");
   const holes = pts(kv.holes).map(([a,b]) => `<circle cx="${X(a)}" cy="${Y(b)}" r="6" style="fill:var(--raise);stroke:var(--warn);stroke-width:2.2"/>`).join("");
   el.innerHTML = `<figure class="fig">
     <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Graph of ${kv.label || "a function"}">
