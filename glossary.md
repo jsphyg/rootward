@@ -425,6 +425,14 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: Newton and Leibniz
 - def: Calculus was invented separately by Isaac Newton and Gottfried Leibniz in the late 1600s, and each had his own notation. The dash in $f'(x)$ comes from Lagrange, a later mathematician, and Newton wrote a dot over the letter. Leibniz wrote $\frac{dy}{dx}$. Both styles are still in use.
 
+### n_three_factors
+- title: Note: three factors
+- def: With three factors, each one takes a turn: $(fgh)' = f'gh + fg'h + fgh'$. You can get this by using the two-factor rule twice.
+
+### n_quotient_proof
+- title: Note: one gap in this argument
+- def: The argument assumes the fraction q already has a derivative, and then finds what it must be. A fully careful proof shows it does have one, using the limit definition. The answer is the same.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.

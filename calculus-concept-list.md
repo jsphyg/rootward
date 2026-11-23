@@ -45,8 +45,8 @@ These are the "you were supposed to already know this" topics. They are what mak
 | derivative-function | The derivative as a function | derivative | ✅ (concepts/derivative-function.md) |
 | power-rule | The power rule | derivative, negative-fractional-exponents | ✅ (rewritten 2026-11-23) |
 | sum-constant-rules | Sum and constant-multiple rules | derivative | ✅ (concepts/sum-constant-rules.md) |
-| product-rule | The product rule | power-rule | ⬜ |
-| quotient-rule | The quotient rule | product-rule | ⬜ |
+| product-rule | The product rule | power-rule | ✅ (concepts/product-rule.md) |
+| quotient-rule | The quotient rule | product-rule | ✅ (concepts/quotient-rule.md) |
 | chain-rule | The chain rule | power-rule, composite-functions | ✅ (rewritten 2026-11-23) |
 | trig-derivatives | Derivatives of trig functions | derivative, trig-basics, squeeze-theorem | ⬜ |
 | exp-log-derivatives | Derivatives of exponentials and logs | derivative, logarithms | ⬜ |
