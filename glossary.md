@@ -217,6 +217,16 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - def: If f is continuous from a to b, then f takes every value between $f(a)$ and $f(b)$ somewhere in that stretch.
 - concept: continuity
 
+### asymptote
+- title: Horizontal asymptote
+- def: A level line $y = L$ that a graph gets closer and closer to as x grows (or falls) without end. It exists when $\lim_{x \to \infty} f(x) = L$.
+- concept: limits-at-infinity
+
+### squeeze
+- title: Squeeze theorem
+- def: If $g(x) \leq f(x) \leq h(x)$ near a, and g and h both head to L, then f heads to L too.
+- concept: squeeze-theorem
+
 ### secant
 - title: Secant line
 - def: A straight line through two points on a curve.
@@ -398,6 +408,18 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 ### n_ivt
 - title: Note: obvious, but hard to prove
 - def: The intermediate value theorem seems obvious from a picture. Proving it exactly needs a careful description of the real numbers, with no gaps in them. That was only done in the 1800s. Calculus 1 uses the theorem without proving it.
+
+### n_neg_inf
+- title: Note: heading left forever
+- def: $x \to -\infty$ means x falls without end: $-10$, $-100$, $-1000$, and so on. It works the same way. For example, $\frac{1}{x} \to 0$ as $x \to -\infty$ too, approaching 0 from below.
+
+### n_sandwich
+- title: Note: other names
+- def: Some books call it the sandwich theorem, or the pinching theorem. In some countries it is the "two police officers" theorem: if two officers walk a suspect between them to the station, the suspect ends up at the station too.
+
+### n_sinx
+- title: Note: the famous one
+- def: The limit is $\lim_{x \to 0} \frac{\sin x}{x} = 1$, with x in radians. A picture of the unit circle shows that $\cos x \leq \frac{\sin x}{x} \leq 1$ near 0. Both bounds head to 1, so the squeeze gives 1. The page on derivatives of trig functions works through it.
 
 ### n_h
 - title: Note: why the letter h?
