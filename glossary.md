@@ -137,6 +137,16 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - def: How fast one quantity changes compared with another, such as km per hour. On a graph, it is the slope.
 - concept: slope
 
+### linear
+- title: Linear function
+- def: A function whose graph is a straight line. Its rule can be written $f(x) = mx + b$: m is the slope and b is where it crosses the y-axis.
+- concept: linear-functions
+
+### intercept
+- title: y-intercept
+- def: The height where a graph crosses the y-axis: the output when $x = 0$. For $y = mx + b$ it is b.
+- concept: linear-functions
+
 ### secant
 - title: Secant line
 - def: A straight line through two points on a curve.
@@ -262,6 +272,14 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 ### n_leibniz
 - title: Note: the rule in fraction form
 - def: With $y = f(u)$ and $u = g(x)$, the chain rule can be written $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx}$. It looks like the du's cancel. They are not really fractions, but the picture is a good memory aid.
+
+### n_linear
+- title: Note: why "linear"?
+- def: The word comes from "line". In more advanced math, "linear" sometimes means only lines through the origin ($b = 0$). In Calculus 1 it means any straight line.
+
+### n_point_slope
+- title: Note: point-slope form
+- def: Some books skip finding b and write the line straight from one point $(x_1, y_1)$ and the slope m: $y - y_1 = m(x - x_1)$. Expanding it gives the same $y = mx + b$. Both describe the same line.
 
 ### n_h
 - title: Note: why the letter h?

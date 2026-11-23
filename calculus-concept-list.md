@@ -19,7 +19,7 @@ These are the "you were supposed to already know this" topics. They are what mak
 | functions | Functions | none | ✅ (concepts/functions.md, rewritten 2026-11-23) |
 | graphs | Graphs of functions | functions | ✅ (concepts/graphs.md) |
 | slope | Slope of a line | graphs | ✅ (rewritten 2026-11-23) |
-| linear-functions | Lines and linear functions | slope | ⬜ |
+| linear-functions | Lines and linear functions | slope | ✅ (concepts/linear-functions.md) |
 | composite-functions | Composite functions | functions | ✅ (rewritten 2026-11-23) |
 | inverse-functions | Inverse functions | composite-functions | ⬜ |
 | trig-basics | Sine, cosine, tangent | functions | ⬜ |
