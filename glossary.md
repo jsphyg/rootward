@@ -157,6 +157,36 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - def: A function where every output comes from just one input. $2x + 6$ is one-to-one. $x^2$ is not, because $3^2$ and $(-3)^2$ are both 9. Only one-to-one functions have inverses.
 - concept: inverse-functions
 
+### hypotenuse
+- title: Hypotenuse
+- def: The longest side of a right triangle, the one across from the right angle.
+- concept: trig-basics
+
+### sine
+- title: Sine
+- def: For an angle θ in a right triangle, opposite ÷ hypotenuse. On the unit circle, the height of the point at angle θ. Written $\sin\theta$.
+- concept: trig-basics
+
+### cosine
+- title: Cosine
+- def: For an angle θ in a right triangle, adjacent ÷ hypotenuse. On the unit circle, how far across the point at angle θ is. Written $\cos\theta$.
+- concept: trig-basics
+
+### tan-ratio
+- title: Tangent (of an angle)
+- def: For an angle θ in a right triangle, opposite ÷ adjacent. It equals $\frac{\sin\theta}{\cos\theta}$. Written $\tan\theta$. Not the same as a tangent line.
+- concept: trig-basics
+
+### radian
+- title: Radian
+- def: A unit for angles: the distance walked around the edge of a circle of radius 1. A full turn is $2\pi$ radians, so $180° = \pi$ radians.
+- concept: trig-basics
+
+### unit-circle
+- title: Unit circle
+- def: The circle of radius 1 centred at the origin. The point on it at angle θ is $(\cos\theta, \sin\theta)$.
+- concept: trig-basics
+
 ### secant
 - title: Secant line
 - def: A straight line through two points on a curve.
@@ -302,6 +332,14 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 ### n_mirror
 - title: Note: the picture of an inverse
 - def: An inverse swaps inputs and outputs, so the point $(a, b)$ on the graph of f becomes $(b, a)$ on the graph of $f^{-1}$. That swap is a mirror image across the line $y = x$. So the graph of an inverse is the graph of f, flipped over that diagonal line.
+
+### n_degrees
+- title: Note: why 360 degrees?
+- def: Nobody knows for sure. The choice probably comes from ancient Babylonian astronomy, which counted in sixties, and 360 is close to the number of days in a year. 360 also divides evenly by many numbers (2, 3, 4, 5, 6, 8, 9, 10, 12 and more), which makes it handy.
+
+### n_radian_why
+- title: Note: what goes wrong in degrees
+- def: In radians, the slope of $\sin x$ is $\cos x$. If x were in degrees, the slope would be $\frac{\pi}{180} \cos x$, and that factor would follow every trig derivative around. Radians make it vanish, because they measure the angle by the same kind of length as the sine itself.
 
 ### n_h
 - title: Note: why the letter h?
