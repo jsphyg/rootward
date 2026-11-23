@@ -433,6 +433,14 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: one gap in this argument
 - def: The argument assumes the fraction q already has a derivative, and then finds what it must be. A fully careful proof shows it does have one, using the limit definition. The answer is the same.
 
+### n_trig_proof
+- title: Note: the proof with a formula
+- def: The picture can be made exact with the addition formula $\sin(x + h) = \sin x \cos h + \cos x \sin h$. Then $\frac{\sin(x+h) - \sin x}{h} = \sin x \cdot \frac{\cos h - 1}{h} + \cos x \cdot \frac{\sin h}{h}$. As $h \to 0$, $\frac{\sin h}{h} \to 1$ and $\frac{\cos h - 1}{h} \to 0$, so the slope is $\cos x$. Cosine works the same way, using $\cos(x + h) = \cos x \cos h - \sin x \sin h$.
+
+### n_tan_proof
+- title: Note: proving the tangent rule
+- def: The quotient rule says $\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}$. With $f = \sin x$ and $g = \cos x$: $\frac{\cos x \cdot \cos x - \sin x \cdot (-\sin x)}{\cos^2 x} = \frac{\cos^2 x + \sin^2 x}{\cos^2 x} = \frac{1}{\cos^2 x}$, since $\sin^2 x + \cos^2 x = 1$.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.

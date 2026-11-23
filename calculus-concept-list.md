@@ -48,7 +48,7 @@ These are the "you were supposed to already know this" topics. They are what mak
 | product-rule | The product rule | power-rule | ✅ (concepts/product-rule.md) |
 | quotient-rule | The quotient rule | product-rule | ✅ (concepts/quotient-rule.md) |
 | chain-rule | The chain rule | power-rule, composite-functions | ✅ (rewritten 2026-11-23) |
-| trig-derivatives | Derivatives of trig functions | derivative, trig-basics, squeeze-theorem | ⬜ |
+| trig-derivatives | Derivatives of trig functions | sum-constant-rules, trig-basics, squeeze-theorem | ✅ (concepts/trig-derivatives.md) |
 | exp-log-derivatives | Derivatives of exponentials and logs | derivative, logarithms | ⬜ |
 | implicit-differentiation | Implicit differentiation | chain-rule | ⬜ |
 | higher-derivatives | Second and higher derivatives | derivative-function | ⬜ |
