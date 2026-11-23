@@ -132,6 +132,11 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - def: How steep a line is: rise divided by run.
 - concept: slope
 
+### rate
+- title: Rate of change
+- def: How fast one quantity changes compared with another, such as km per hour. On a graph, it is the slope.
+- concept: slope
+
 ### secant
 - title: Secant line
 - def: A straight line through two points on a curve.
@@ -153,14 +158,19 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Coefficient
 - def: The number multiplied onto a variable. In 3x⁴ the coefficient is 3.
 
+### composite
+- title: Composite function
+- def: Two functions joined in a chain, so the output of one becomes the input of the next. Written $f(g(x))$: do g, then f.
+- concept: composite-functions
+
 ### inner
 - title: Inner function
-- def: The function that goes first. In (3x+1)⁴ the inner function is 3x+1.
+- def: The function that goes first. In $(3x + 1)^4$ the inner function is $3x + 1$.
 - concept: composite-functions
 
 ### outer
 - title: Outer function
-- def: The function that goes last. In (3x+1)⁴ the outer function is "raise to the 4th power".
+- def: The function that goes last. In $(3x + 1)^4$ the outer function is "raise to the 4th power".
 - concept: composite-functions
 
 ### limit
@@ -228,6 +238,30 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 ### n_join
 - title: Note: is joining the dots safe?
 - def: Only if the function behaves smoothly between the points you plotted. Most functions in Calculus 1 do. Some jump or have gaps, and a few dots can hide that. Plotting more points, or knowing the rule well, is the safeguard.
+
+### n_delta
+- title: Note: the triangle symbol Δ
+- def: Many books write the slope as $\dfrac{\Delta y}{\Delta x}$. Δ is the Greek capital letter delta, and it means "change in". So $\Delta y$ is the change in y (the rise) and $\Delta x$ is the change in x (the run). The letter m is also commonly used for slope.
+
+### n_vertical
+- title: Note: why a vertical line has no slope
+- def: Every point on a vertical line has the same x, so the run between any two points is 0. Rise ÷ 0 has no meaning. People say the slope is "undefined". A vertical line is also not the graph of a function, since one input has many outputs.
+
+### n_compose
+- title: Note: the small circle
+- def: Some books write $f(g(x))$ as $(f \circ g)(x)$, read "f composed with g" or "f after g". The small circle means "do the right-hand function first". Same thing, different notation.
+
+### n_epsilon
+- title: Note: the exact definition
+- def: "As close as you like" was made exact in the 1800s, by mathematicians including Cauchy and Weierstrass. The exact version says: for any allowed error, however small, there is a distance from a such that every x within that distance (other than a) gives $f(x)$ within that error of the limit. Books write the error as ε (epsilon) and the distance as δ (delta). Calculus 1 rarely needs this version.
+
+### n_any_power
+- title: Note: why the rule holds for every power
+- def: The "why it works" argument on this page uses n brackets, so it only proves the rule for whole numbers n. Other proofs (using the chain rule, or logarithms) show the same rule holds for negative, fraction, and in fact all real powers.
+
+### n_leibniz
+- title: Note: the rule in fraction form
+- def: With $y = f(u)$ and $u = g(x)$, the chain rule can be written $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx}$. It looks like the du's cancel. They are not really fractions, but the picture is a good memory aid.
 
 ### n_h
 - title: Note: why the letter h?
