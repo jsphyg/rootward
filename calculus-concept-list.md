@@ -42,9 +42,9 @@ These are the "you were supposed to already know this" topics. They are what mak
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
 | derivative | The derivative | slope, limits | ✅ (rewritten 2026-11-23) |
-| derivative-function | The derivative as a function | derivative, graphs | ⬜ |
+| derivative-function | The derivative as a function | derivative | ✅ (concepts/derivative-function.md) |
 | power-rule | The power rule | derivative, negative-fractional-exponents | ✅ (rewritten 2026-11-23) |
-| sum-constant-rules | Sum and constant-multiple rules | derivative | ⬜ (currently inside power rule) |
+| sum-constant-rules | Sum and constant-multiple rules | derivative | ✅ (concepts/sum-constant-rules.md) |
 | product-rule | The product rule | power-rule | ⬜ |
 | quotient-rule | The quotient rule | product-rule | ⬜ |
 | chain-rule | The chain rule | power-rule, composite-functions | ✅ (rewritten 2026-11-23) |
