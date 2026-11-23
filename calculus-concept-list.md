@@ -23,7 +23,7 @@ These are the "you were supposed to already know this" topics. They are what mak
 | composite-functions | Composite functions | functions | ✅ (rewritten 2026-11-23) |
 | inverse-functions | Inverse functions | composite-functions | ✅ (concepts/inverse-functions.md) |
 | trig-basics | Sine, cosine, tangent | graphs | ✅ (concepts/trig-basics.md) |
-| exponential-functions | Exponential functions | exponents, functions | ⬜ |
+| exponential-functions | Exponential functions | negative-fractional-exponents, functions | ✅ (concepts/exponential-functions.md) |
 | logarithms | Logarithms | exponential-functions, inverse-functions | ⬜ |
 
 ## Level 1: Limits
