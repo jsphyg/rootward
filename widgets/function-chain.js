@@ -1,8 +1,8 @@
-// Interactive figure: x -> inner g(x) = 2x + 1 -> outer f(u) = u^3. Used on: composite-functions.
+// Interactive figure: x -> inner g(x) = x + 3 -> outer f(u) = u^2. Used on: composite-functions.
 LW.widget("function-chain", function(el, lw){
   el.innerHTML = `<div class="wcard"><h3>Function chain machine</h3>
     <label for="ms">Input <b>x</b> = <output></output></label>
-    <input id="ms" type="range" min="-2" max="3" step="0.5" value="1">
+    <input id="ms" type="range" min="-5" max="3" step="0.5" value="2">
     <div class="machine" aria-live="polite"></div>
     <p class="read"></p>
     <p class="cap">The middle value u is the inner output and the outer input.</p></div>`;
@@ -10,12 +10,12 @@ LW.widget("function-chain", function(el, lw){
   const num = n => String(Math.round(n*1000)/1000);
   const fmt = n => num(n).replace("-","−");
   function draw(){
-    const x = parseFloat(sl.value), u = 2*x+1, y = u*u*u;
+    const x = parseFloat(sl.value), u = x+3, y = u*u;
     out.textContent = fmt(x);
     mach.innerHTML = `<div class="mbox"><small>input</small>x = ${fmt(x)}</div><span class="arrow">→</span>
-      <div class="mbox fx"><small>inner g</small>2x + 1</div><span class="arrow">→</span>
+      <div class="mbox fx"><small>inner g</small>x + 3</div><span class="arrow">→</span>
       <div class="mbox"><small>middle value</small>u = ${fmt(u)}</div><span class="arrow">→</span>
-      <div class="mbox fx"><small>outer f</small>u³</div><span class="arrow">→</span>
+      <div class="mbox fx"><small>outer f</small>u²</div><span class="arrow">→</span>
       <div class="mbox"><small>output</small>${fmt(y)}</div>`;
     read.innerHTML = lw.tex(`f(g(${num(x)})) = f(${num(u)}) = ${num(y)}`);
   }

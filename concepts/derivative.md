@@ -2,52 +2,106 @@
 id: derivative
 title: The derivative
 prereqs: [slope, limits]
-big: The derivative is the slope of a curve at one exact point.
-recap: The {{derivative|derivative}} $f'(x)$ is the slope of the curve at x. It is the limit of the slope between two points as they slide together.
+big: The derivative is the slope of a curve at one exact point. It says how fast the output is changing right there.
+recap: The {{derivative|derivative}} $f'(a)$ is the slope of the curve at $x = a$. Take the slope between two points, then let the second point slide onto the first: $f'(a) = \displaystyle\lim_{h \to 0} \frac{f(a + h) - f(a)}{h}$.
 check:
-  q: The derivative of f at $x = a$ tells you…
-  options: ["the slope of the curve at $x = a$", "the height of the curve at $x = a$", "the area under the curve", "the average of f"]
+  q: For a function f, what does $f'(a)$ tell you?
+  options: ["The slope of the curve at $x = a$", "The height of the curve at $x = a$", "The average slope between $x = 0$ and $x = a$", "The area under the curve up to $x = a$"]
   answer: 0
-  why: $f'(a)$ is the slope of the tangent line at $x = a$: how fast f is changing right there.
+  why: $f'(a)$ is how steep the curve is at the single point $x = a$. The height there is $f(a)$, without the dash. An average slope uses two points far apart, but the derivative shrinks the gap to nothing. Area under a curve is a different tool, the integral.
 ---
 
-## The problem
+## A curve has no single slope
 
-You can find a {{slope|slope}} from two points. But a curve at one point is just one point. We need a trick.
+A straight line has one [[slope|slope]] everywhere. A curve does not. Take $f(x) = x^2$ and measure the slope between neighbouring whole numbers:
 
-## The trick
+| from → to | rise | run | slope |
+|---|---|---|---|
+| $x = 0$ to $x = 1$ | $1 - 0 = 1$ | 1 | 1 |
+| $x = 1$ to $x = 2$ | $4 - 1 = 3$ | 1 | 3 |
+| $x = 2$ to $x = 3$ | $9 - 4 = 5$ | 1 | 5 |
 
-Take a second point a small step $h$ away.^[n_h] The line through the two points is a {{secant|secant line}}. Its slope is easy to compute. Now slide the second point closer by shrinking h. The secant turns into the {{tangent|tangent line}}. That is the slope we wanted.
+*Notice: the curve gets steeper as you go right. So "the slope of $x^2$" has no single answer. It depends where you are.*
 
-$$f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}$$
+That raises a real question. How steep is the curve **exactly at** $x = 1$? Slope needs two points, and here we have only one.
 
-It is the slope formula, rise ÷ run, with a [[limits|limit]] added so that the run shrinks to zero.^[n_notation]
+## The trick: bring the second point closer
+
+Pick a second point a small step h to the right of $x = 1$.^[n_h] The straight line through the two points is a {{secant|secant line}}. Its slope is ordinary rise over run:
+
+$$\frac{\text{rise}}{\text{run}} = \frac{f(1 + h) - f(1)}{h} = \frac{(1 + h)^2 - 1}{h}$$
+
+Now shrink h and watch:
+
+| step h | 1 | 0.5 | 0.1 | 0.01 | 0.001 |
+|---|---|---|---|---|---|
+| secant slope | 3 | 2.5 | 2.1 | 2.01 | 2.001 |
+
+*Notice: as the second point slides toward the first, the slopes crowd in on 2.*
 
 :::widget derivative
 
-Drag the slider on $f(x) = x^2$ at $x = 1$. The secant slope is exactly $2 + h$. As h shrinks to 0, it heads to 2.
+We cannot set h to exactly 0. Then the run is 0 and the slope is $0 \div 0$. But this is exactly the job [[limits|limits]] do. They tell us where the slope is heading as h gets close to 0. Here it heads to 2. So the slope of $x^2$ at $x = 1$ is **2**.
+
+As h shrinks, the secant line settles into one line. It touches the curve at $x = 1$ and points the same way the curve does there. That is the {{tangent|tangent line}}. The derivative is its slope.
+
+## The definition
+
+Do the same thing at any point $x = a$, for any function f:
+
+$$f'(a) = \lim_{h \to 0} \frac{f(a + h) - f(a)}{h}$$
+
+Read it piece by piece:
+
+- $f(a + h) - f(a)$ is the **rise**: the change in height between the two points.
+- $h$ is the **run**: the step across.
+- $\lim_{h \to 0}$ slides the second point onto the first.
+
+So it is the slope formula, rise ÷ run, with a limit that shrinks the run to zero. $f'(a)$ is read "f prime of a". The result is the {{derivative|derivative}} of f at a.^[n_notation]
+
+**Why it works.** Each secant slope is an honest average slope between two points. As the points get closer, the average is taken over a smaller and smaller piece of the curve. In the limit, it stops being an average over a stretch and becomes the slope at one point.
+
+## What the number means
+
+A slope is a [[slope|rate of change]]. So the derivative is the rate of change **at one moment**.
+
+If $f(t)$ is how far a car has travelled after t hours, the slope between two times is the average speed over that stretch. The derivative $f'(t)$ is the speed at the instant t: what the speedometer shows.
+
+## The slope at every point at once
+
+Use the definition at a general x instead of at 1. For $f(x) = x^2$:
+
+$$\frac{(x + h)^2 - x^2}{h} = \frac{x^2 + 2xh + h^2 - x^2}{h} = \frac{2xh + h^2}{h} = 2x + h$$
+
+As h heads to 0, this heads to $2x$. So $f'(x) = 2x$. That is one formula for the slope at **every** point. At $x = 1$ it gives 2, matching the table. At $x = 3$ it gives 6.
+
+Working through the limit each time is slow. Later pages give shortcuts, starting with the [[power-rule|power rule]].
 
 :::example
-title: Use the definition to find the slope of $f(x) = x^2$ at $x = 1$.
+title: Use the definition to find the slope of $f(x) = x^2 + 3x$ at $x = 2$.
 
-1. Write the secant slope: $\dfrac{f(1 + h) - f(1)}{h} = \dfrac{(1 + h)^2 - 1}{h}$.
-   why: Rise over run between the points at $x = 1$ and $x = 1 + h$.
-   uses: [slope, functions]
+1. Find $f(2 + h)$ by putting $2 + h$ in for x: $(2 + h)^2 + 3(2 + h)$.
+   why: The input is the whole expression $2 + h$, so it goes in brackets everywhere x was.
+   uses: [functions]
 
-2. Expand: $(1 + h)^2 = 1 + 2h + h^2$, so the top is $2h + h^2$.
-   why: The 1 and $-1$ cancel.
+2. Expand: $(2 + h)^2 = 4 + 4h + h^2$ and $3(2 + h) = 6 + 3h$. So $f(2 + h) = 10 + 7h + h^2$.
+   why: Expanding lets the plain numbers cancel in the next step.
    uses: [expanding]
 
-3. Divide by h: $\dfrac{2h + h^2}{h} = 2 + h$.
-   why: Every term on top has an h, so it cancels.
+3. Find $f(2) = 4 + 6 = 10$. The rise is $f(2 + h) - f(2) = 7h + h^2$.
+   why: Rise is the change in height between the two points.
+   uses: [slope]
+
+4. Divide by the run h: $\dfrac{7h + h^2}{h} = 7 + h$.
+   why: Every term on top has an h, so one h cancels. This is allowed because h is never exactly 0.
    uses: []
 
-4. Let $h \to 0$: $\displaystyle\lim_{h \to 0} (2 + h) = 2$.
-   why: The slope at $x = 1$ is 2. For any x the same steps give $2x$.
+5. Let $h \to 0$: $7 + h$ heads to 7. So $f'(2) = 7$.
+   why: The limit slides the second point onto the first.
    uses: [limits]
 :::
 
 :::practice
-q: Using $f'(x) = 2x$ for $f(x) = x^2$, what is the slope of the curve at $x = 3$?
-answer: $f'(3) = 2 \cdot 3 = 6$. Check it by hand: $\dfrac{(3 + h)^2 - 9}{h} = 6 + h$, which heads to 6.
+q: Use the definition to find the slope of $f(x) = 3x^2$ at $x = 1$.
+answer: $f(1 + h) = 3(1 + h)^2 = 3 + 6h + 3h^2$, and $f(1) = 3$. Rise: $6h + 3h^2$. Divide by h: $6 + 3h$. As $h \to 0$ this heads to **6**.
 :::

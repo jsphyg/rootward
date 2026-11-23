@@ -88,9 +88,53 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Output
 - def: What the function gives back. For f(x), the output is the value of f(x).
 
+### variable
+- title: Variable
+- def: A letter that stands for a number, such as x. In $f(x) = 2x + 1$, x is the variable: it holds whatever input you choose.
+
+### evaluate
+- title: Evaluate
+- def: To work out a function's output for a given input, by putting the input in place of x. "Evaluate $f(x) = 2x + 1$ at 3" means find $f(3) = 7$.
+- concept: functions
+
+### domain
+- title: Domain
+- def: All the inputs a function accepts. $\frac{1}{x}$ accepts every number except 0, because you cannot divide by zero.
+- concept: functions
+
+### graph
+- title: Graph
+- def: The picture of a function: every point $(x, f(x))$, drawn on a grid. The height above each input is its output.
+- concept: graphs
+
+### axis
+- title: Axis
+- def: One of the two number lines that make a graph's grid. The x-axis runs across. The y-axis runs up. Plural: axes.
+- concept: graphs
+
+### origin
+- title: Origin
+- def: The point where the two axes cross, $(0, 0)$.
+- concept: graphs
+
+### coordinates
+- title: Coordinates
+- def: The two numbers that give a point's address, written $(x, y)$: first how far across, then how far up.
+- concept: graphs
+
+### parabola
+- title: Parabola
+- def: The U-shaped curve you get from graphing $x^2$, or any function like $ax^2 + bx + c$ with a not zero.
+- concept: graphs
+
 ### slope
 - title: Slope
 - def: How steep a line is: rise divided by run.
+- concept: slope
+
+### rate
+- title: Rate of change
+- def: How fast one quantity changes compared with another, such as km per hour. On a graph, it is the slope.
 - concept: slope
 
 ### secant
@@ -114,14 +158,19 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Coefficient
 - def: The number multiplied onto a variable. In 3x⁴ the coefficient is 3.
 
+### composite
+- title: Composite function
+- def: Two functions joined in a chain, so the output of one becomes the input of the next. Written $f(g(x))$: do g, then f.
+- concept: composite-functions
+
 ### inner
 - title: Inner function
-- def: The function that goes first. In (3x+1)⁴ the inner function is 3x+1.
+- def: The function that goes first. In $(3x + 1)^4$ the inner function is $3x + 1$.
 - concept: composite-functions
 
 ### outer
 - title: Outer function
-- def: The function that goes last. In (3x+1)⁴ the outer function is "raise to the 4th power".
+- def: The function that goes last. In $(3x + 1)^4$ the outer function is "raise to the 4th power".
 - concept: composite-functions
 
 ### limit
@@ -174,9 +223,45 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: why 0/0 is not an answer
 - def: Dividing by zero has no meaning, so the function is simply undefined at that point. The limit asks what it is heading toward, not what it is there.
 
-### n_vert
-- title: Note: "exactly one output"
-- def: This is why a circle is not the graph of a function. Above a single x there are two points, so one input would give two outputs. A vertical line crossing a graph more than once is the quick test.
+### n_fx
+- title: Note: other ways to write a function
+- def: The $f(x)$ way of writing was made popular by Leonhard Euler in the 1700s. You will also see $y = 2x + 1$, where y names the output, and $x \mapsto 2x + 1$, read "x goes to 2x + 1". All three describe the same rule.
+
+### n_domain
+- title: Note: the other common gap
+- def: Square roots. $\sqrt{x}$ has no ordinary (real) output when x is negative, because no real number times itself is negative. So its domain is $x \geq 0$. When a book gives a function without naming its domain, it means every input the rule works for.
+
+### n_descartes
+- title: Note: why it is called the Cartesian plane
+- def: The x-y grid is named after René Descartes, who published the idea of describing curves with pairs of numbers in 1637. Pierre de Fermat worked out the same idea at about the same time.
+
+### n_join
+- title: Note: is joining the dots safe?
+- def: Only if the function behaves smoothly between the points you plotted. Most functions in Calculus 1 do. Some jump or have gaps, and a few dots can hide that. Plotting more points, or knowing the rule well, is the safeguard.
+
+### n_delta
+- title: Note: the triangle symbol Δ
+- def: Many books write the slope as $\dfrac{\Delta y}{\Delta x}$. Δ is the Greek capital letter delta, and it means "change in". So $\Delta y$ is the change in y (the rise) and $\Delta x$ is the change in x (the run). The letter m is also commonly used for slope.
+
+### n_vertical
+- title: Note: why a vertical line has no slope
+- def: Every point on a vertical line has the same x, so the run between any two points is 0. Rise ÷ 0 has no meaning. People say the slope is "undefined". A vertical line is also not the graph of a function, since one input has many outputs.
+
+### n_compose
+- title: Note: the small circle
+- def: Some books write $f(g(x))$ as $(f \circ g)(x)$, read "f composed with g" or "f after g". The small circle means "do the right-hand function first". Same thing, different notation.
+
+### n_epsilon
+- title: Note: the exact definition
+- def: "As close as you like" was made exact in the 1800s, by mathematicians including Cauchy and Weierstrass. The exact version says: for any allowed error, however small, there is a distance from a such that every x within that distance (other than a) gives $f(x)$ within that error of the limit. Books write the error as ε (epsilon) and the distance as δ (delta). Calculus 1 rarely needs this version.
+
+### n_any_power
+- title: Note: why the rule holds for every power
+- def: The "why it works" argument on this page uses n brackets, so it only proves the rule for whole numbers n. Other proofs (using the chain rule, or logarithms) show the same rule holds for negative, fraction, and in fact all real powers.
+
+### n_leibniz
+- title: Note: the rule in fraction form
+- def: With $y = f(u)$ and $u = g(x)$, the chain rule can be written $\dfrac{dy}{dx} = \dfrac{dy}{du} \cdot \dfrac{du}{dx}$. It looks like the du's cancel. They are not really fractions, but the picture is a good memory aid.
 
 ### n_h
 - title: Note: why the letter h?
