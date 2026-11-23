@@ -34,8 +34,8 @@ These are the "you were supposed to already know this" topics. They are what mak
 | one-sided-limits | One-sided limits | limits | ✅ (concepts/one-sided-limits.md) |
 | limit-laws | Limit laws | limits | ✅ (concepts/limit-laws.md) |
 | continuity | Continuity | limits, graphs | ✅ (concepts/continuity.md) |
-| limits-at-infinity | Limits at infinity | limits | ⬜ |
-| squeeze-theorem | The squeeze theorem | limit-laws | ⬜ |
+| limits-at-infinity | Limits at infinity | limits | ✅ (concepts/limits-at-infinity.md) |
+| squeeze-theorem | The squeeze theorem | limit-laws | ✅ (concepts/squeeze-theorem.md) |
 
 ## Level 2: Derivatives
 
