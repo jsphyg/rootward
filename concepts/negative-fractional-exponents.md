@@ -126,3 +126,56 @@ title: Rewrite $\dfrac{2}{\sqrt{x}} + x^2\sqrt{x}$ using only powers of x.
 q: Write $\dfrac{x^3}{\sqrt{x}}$ as a single power of x.
 answer: Rewrite the root: $\sqrt{x} = x^{1/2}$. Divide by subtracting exponents: $x^{3 - 1/2} =$ **$x^{5/2}$**. Check with $x = 4$: $\dfrac{64}{2} = 32$, and $4^{5/2} = 2^5 = 32$.
 :::
+
+:::problems
+q: Work out $2^{-1}$.
+answer: One over $2^1$: **$\tfrac{1}{2}$**.
+
+q: Work out $5^{-2}$.
+answer: $\dfrac{1}{5^2} =$ **$\tfrac{1}{25}$**. Not $-25$: the minus means "on the bottom".
+
+q: Work out $10^{-3}$.
+answer: $\dfrac{1}{10^3} =$ **$\tfrac{1}{1000}$**, which is 0.001.
+
+q: Work out $25^{1/2}$ and $27^{1/3}$.
+answer: $25^{1/2} = \sqrt{25} =$ **5**. $27^{1/3}$ is the cube root: $3 \cdot 3 \cdot 3 = 27$, so **3**.
+
+q: Work out $8^{2/3}$.
+answer: Bottom is the root, top is the power. Cube root first: $8^{1/3} = 2$. Then square: $2^2 =$ **4**.
+
+q: Work out $16^{3/4}$.
+answer: Fourth root first: $2^4 = 16$, so $16^{1/4} = 2$. Then cube: $2^3 =$ **8**.
+
+q: Work out $4^{-1/2}$.
+answer: The minus puts it on the bottom: $\dfrac{1}{4^{1/2}} = \dfrac{1}{\sqrt{4}} =$ **$\tfrac{1}{2}$**.
+
+q: Work out $9^{-3/2}$.
+answer: $9^{3/2} = (\sqrt{9})^3 = 3^3 = 27$. The minus puts it on the bottom: **$\tfrac{1}{27}$**.
+
+q: Write $\dfrac{1}{x^5}$ as a power of x.
+answer: **$x^{-5}$**.
+
+q: Write $\dfrac{4}{x^3}$ using a power of x.
+answer: Only the power moves; the 4 stays: **$4x^{-3}$**.
+
+q: Write $\dfrac{1}{2x}$ using a power of x.
+answer: The 2 stays on the bottom: **$\tfrac{1}{2}x^{-1}$**. Not $2x^{-1}$.
+
+q: Write $\sqrt[3]{x}$ and $\dfrac{1}{\sqrt[3]{x}}$ as powers of x.
+answer: The cube root is **$x^{1/3}$**. One over it is **$x^{-1/3}$**.
+
+q: Write $\sqrt{x^3}$ as a power of x.
+answer: The square root is the power $\tfrac{1}{2}$: $(x^3)^{1/2} = x^{3/2}$. **$x^{3/2}$**.
+
+q: Write $x^3\sqrt{x}$ as a single power of x.
+answer: $x^3 \cdot x^{1/2} = x^{3 + 1/2} =$ **$x^{7/2}$**. Check with $x = 4$: $64 \cdot 2 = 128$, and $4^{7/2} = 2^7 = 128$.
+
+q: Write $\dfrac{x}{\sqrt{x}}$ as a single power of x.
+answer: $\dfrac{x^1}{x^{1/2}} = x^{1 - 1/2} =$ **$x^{1/2}$**, which is $\sqrt{x}$.
+
+q: Simplify $(x^{-2})^3 \cdot x^4$.
+answer: $(x^{-2})^3 = x^{-6}$. Then $x^{-6} \cdot x^4 = x^{-2}$, which is **$\dfrac{1}{x^2}$**.
+
+q: Rewrite $\dfrac{5}{\sqrt{x}} - \dfrac{1}{x^2}$ using only powers of x.
+answer: $\dfrac{5}{x^{1/2}} = 5x^{-1/2}$ and $\dfrac{1}{x^2} = x^{-2}$. **$5x^{-1/2} - x^{-2}$**.
+:::

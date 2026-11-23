@@ -140,3 +140,68 @@ title: Factor $2x^2 + 2x - 12$ completely.
 q: Factor $x^3 - 9x$ completely.
 answer: First pull out the common factor $x$: $x(x^2 - 9)$. The inside is a difference of two squares, $x^2 - 3^2$. So the answer is $x(x - 3)(x + 3)$. Check: $(x - 3)(x + 3) = x^2 - 9$, and $x(x^2 - 9) = x^3 - 9x$.
 :::
+
+:::problems
+q: Factor $5x + 15$.
+answer: Both terms share 5: **$5(x + 3)$**. Check: $5x + 15$.
+
+q: Factor $4x^2 - 8x$.
+answer: Both terms share $4x$: **$4x(x - 2)$**. Check: $4x^2 - 8x$.
+
+q: Factor $x^3 + 6x^2$.
+answer: Both terms share $x^2$: **$x^2(x + 6)$**.
+
+q: Factor $6x^3 - 9x^2$.
+answer: The biggest shared number is 3 and the biggest shared power is $x^2$: **$3x^2(2x - 3)$**. Check: $6x^3 - 9x^2$.
+
+q: Factor $x^2 - 36$.
+answer: $36 = 6^2$, a difference of two squares: **$(x - 6)(x + 6)$**.
+
+q: Factor $x^2 - 1$.
+answer: $1 = 1^2$: **$(x - 1)(x + 1)$**.
+
+q: Factor $9x^2 - 4$.
+answer: $9x^2 = (3x)^2$ and $4 = 2^2$: **$(3x - 2)(3x + 2)$**. Check: $9x^2 + 6x - 6x - 4$.
+
+q: Factor $x^2 + 9$, if you can.
+answer: **It does not factor** with whole numbers. It is a *sum* of squares, and the pattern needs a minus. $(x - 3)(x + 3)$ gives $x^2 - 9$, not $x^2 + 9$.
+
+q: Factor $x^2 + 7x + 12$.
+answer: Multiply to 12, add to 7: 3 and 4. **$(x + 3)(x + 4)$**.
+
+q: Factor $x^2 + 8x + 15$.
+answer: Multiply to 15, add to 8: 3 and 5. **$(x + 3)(x + 5)$**.
+
+q: Factor $x^2 - 6x + 8$.
+answer: Last number positive, middle negative, so both are negative. Multiply to 8, add to $-6$: $-2$ and $-4$. **$(x - 2)(x - 4)$**.
+
+q: Factor $x^2 - 7x + 10$.
+answer: Both negative. Multiply to 10, add to $-7$: $-2$ and $-5$. **$(x - 2)(x - 5)$**.
+
+q: Factor $x^2 + 2x - 15$.
+answer: Last number negative, so one of each sign. Multiply to $-15$, add to $+2$: $+5$ and $-3$. **$(x + 5)(x - 3)$**.
+
+q: Factor $x^2 - x - 12$.
+answer: One of each sign. Multiply to $-12$, add to $-1$: $-4$ and $+3$. **$(x - 4)(x + 3)$**.
+
+q: Factor $x^2 - 10x + 25$.
+answer: Multiply to 25, add to $-10$: $-5$ and $-5$. **$(x - 5)(x - 5)$**, which is $(x - 5)^2$.
+
+q: Factor $3x^2 - 12$ completely.
+answer: Common factor first: $3(x^2 - 4)$. Then a difference of squares: **$3(x - 2)(x + 2)$**.
+
+q: Factor $2x^2 - 10x + 12$ completely.
+answer: Common factor: $2(x^2 - 5x + 6)$. Multiply to 6, add to $-5$: $-2$ and $-3$. **$2(x - 2)(x - 3)$**.
+
+q: Factor $x^3 - x^2 - 6x$ completely.
+answer: Common factor: $x(x^2 - x - 6)$. Multiply to $-6$, add to $-1$: $-3$ and $+2$. **$x(x - 3)(x + 2)$**.
+
+q: Factor $x^4 - 16$ completely.
+answer: $x^4 = (x^2)^2$ and $16 = 4^2$, so first $(x^2 - 4)(x^2 + 4)$. The first bracket is another difference of squares. **$(x - 2)(x + 2)(x^2 + 4)$**. The sum $x^2 + 4$ does not factor.
+
+q: Solve $x^2 - 5x + 6 = 0$.
+answer: Factor: $(x - 2)(x - 3) = 0$. A product is zero only when a factor is zero, so **$x = 2$ or $x = 3$**. Check: $4 - 10 + 6 = 0$ and $9 - 15 + 6 = 0$.
+
+q: Solve $x^2 - 4x - 21 = 0$.
+answer: Multiply to $-21$, add to $-4$: $-7$ and $+3$. So $(x - 7)(x + 3) = 0$, giving **$x = 7$ or $x = -3$**. Check: $49 - 28 - 21 = 0$ and $9 + 12 - 21 = 0$.
+:::

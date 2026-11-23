@@ -174,6 +174,16 @@ ol.steps li::before{content:counter(s);position:absolute;left:0;top:8px;width:24
 details.practice{padding:0;margin:1.4em 0}
 details.practice summary,details.ans summary{cursor:pointer;font-size:.95rem;font-weight:600;color:var(--accent)}
 details.ans{margin-top:10px}
+details.pset{margin:1.2em 0 0}
+details.pset>summary{cursor:pointer;font-size:.95rem;font-weight:600;color:var(--accent)}
+details.pset>summary small{font-weight:400;color:var(--muted);margin-left:6px}
+.pset .hint{font-size:.9rem;color:var(--muted);margin:.6em 0 0}
+ol.probs{padding-left:1.6em;margin:.8em 0 0}
+ol.probs>li{margin:0 0 1.1em;padding-left:4px}
+ol.probs>li::marker{color:var(--muted);font-size:.9rem}
+ol.probs details.ans{margin-top:4px}
+ol.probs details.ans summary{font-size:.86rem;font-weight:500}
+ol.probs details.ans p{margin:.3em 0 0;color:var(--muted);font-size:.95rem}
 
 .master{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:2.6em 0 .6em}
 .mbtn{border:1.5px solid var(--good);background:transparent;color:var(--good);font-size:.95rem;font-weight:600;padding:9px 20px;border-radius:999px}
@@ -337,7 +347,11 @@ function pageHTML(id){
       <details class="ans"><summary>Show answer</summary><p>${c.practice.answer}</p></details></details>` : "";
     main = `${c.body}${ex}${practice}`;
   }
-  const mine = `<section class="checks"><h2>Do you have it?</h2>${checkHTML(id,"Check")}</section>`;
+  const ps = (!c.stub && c.problems && c.problems.length) ? c.problems : null;
+  const pset = ps ? `<details class="pset"><summary>Practice set<small>${ps.length} problems, easiest first</small></summary>
+      <p class="hint">Do as many as you need until they feel easy. Work each one out before you open its answer.</p>
+      <ol class="probs">${ps.map(p=>`<li><div>${p.q}</div><details class="ans"><summary>Answer</summary><p>${p.answer}</p></details></li>`).join("")}</ol></details>` : "";
+  const mine = `<section class="checks"><h2>Do you have it?</h2>${checkHTML(id,"Check")}${pset}</section>`;
   const master = `<div class="master"><button class="mbtn ${mastered.has(id)?'on':''}" data-act="master" data-id="${id}" aria-pressed="${mastered.has(id)}">${mastered.has(id)?"✓ Got it":"Mark as got it"}</button>
     <span class="progtxt" style="margin:0">Your map updates when you mark it.</span></div>
     ${next.length?`<div class="next"><strong>Where this leads:</strong> ${next.map(n=>`<button class="lnk" data-c="${n}">${esc(C[n].title)} →</button>`).join("")}</div>`:`<div class="next"><strong>Nothing builds on this page yet.</strong></div>`}`;

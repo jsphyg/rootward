@@ -112,3 +112,29 @@ title: Let $f(x) = 2x^2 - 3x + 1$. Find $f(-2)$.
 q: Let $f(x) = 3x^2 - x + 2$. Find $f(-1)$.
 answer: $f(-1) = 3(-1)^2 - (-1) + 2$. Square first: $(-1)^2 = 1$, so the first part is $3$. Then $-(-1) = +1$. Add: $3 + 1 + 2 =$ **6**.
 :::
+
+:::problems
+q: Let $f(x) = 3x + 2$. Find $f(4)$.
+answer: Put 4 in place of x: $f(4) = 3 \cdot 4 + 2 = 12 + 2 =$ **14**.
+
+q: Let $f(x) = x^2 + 5$. Find $f(-3)$.
+answer: $f(-3) = (-3)^2 + 5 = 9 + 5 =$ **14**. The bracket makes the square act on $-3$, and a negative times a negative is positive.
+
+q: Let $g(t) = 10 - 2t$. Find $g(-4)$.
+answer: $g(-4) = 10 - 2(-4) = 10 + 8 =$ **18**. A minus times a minus is a plus.
+
+q: Let $f(x) = x^2 - 3x$. Find $f(-2)$.
+answer: Both x's get $(-2)$: $f(-2) = (-2)^2 - 3(-2) = 4 + 6 =$ **10**.
+
+q: Let $f(x) = x^2$. Which two inputs give the output 16?
+answer: $4^2 = 16$ and $(-4)^2 = 16$, so the inputs are **4 and $-4$**. Two inputs sharing one output is allowed.
+
+q: Is this table a function? Inputs 1, 2, 3, 1 give outputs 4, 5, 6, 7.
+answer: **No.** The input 1 gives both 4 and 7. One input with two outputs is not allowed.
+
+q: Let $f(x) = \dfrac{1}{x - 2}$. Which input has no output?
+answer: **$x = 2$.** It makes the bottom $2 - 2 = 0$, and you cannot divide by zero. Every other number is in the domain.
+
+q: Let $f(x) = 2x^2 + 1$. Write $f(a)$ and $f(x + 1)$.
+answer: Replace every x with the new input, in brackets. **$f(a) = 2a^2 + 1$** and **$f(x + 1) = 2(x + 1)^2 + 1$**. The whole of $x + 1$ gets squared, not just the 1.
+:::

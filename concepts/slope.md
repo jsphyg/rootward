@@ -106,3 +106,41 @@ title: Find the slope of the line through $(-2, 7)$ and $(4, -5)$. Then say what
 q: Find the slope of the line through $(-1, -3)$ and $(3, 5)$.
 answer: Rise $= 5 - (-3) = 8$. Run $= 3 - (-1) = 4$. Slope $= 8 \div 4 =$ **2**. The line goes up 2 for every step right.
 :::
+
+:::problems
+q: Find the slope of the line through $(0, 0)$ and $(2, 6)$.
+answer: Rise $= 6 - 0 = 6$. Run $= 2 - 0 = 2$. Slope $= 6 \div 2 =$ **3**.
+
+q: Find the slope of the line through $(1, 4)$ and $(3, 10)$.
+answer: Rise $= 10 - 4 = 6$. Run $= 3 - 1 = 2$. Slope $=$ **3**.
+
+q: Find the slope of the line through $(2, 5)$ and $(6, 7)$.
+answer: Rise $= 7 - 5 = 2$. Run $= 6 - 2 = 4$. Slope $= \dfrac{2}{4} =$ **$\tfrac{1}{2}$**. The line climbs 1 for every 2 steps right.
+
+q: Find the slope of the line through $(-1, 2)$ and $(1, -4)$.
+answer: Rise $= -4 - 2 = -6$. Run $= 1 - (-1) = 2$. Slope $= -6 \div 2 =$ **$-3$**. It goes downhill.
+
+q: Find the slope of the line through $(-3, -1)$ and $(2, 9)$.
+answer: Rise $= 9 - (-1) = 10$. Run $= 2 - (-3) = 5$. Slope $=$ **2**.
+
+q: Find the slope of the line through $(-4, -7)$ and $(-1, -1)$.
+answer: Rise $= -1 - (-7) = 6$. Run $= -1 - (-4) = 3$. Slope $=$ **2**.
+
+q: Find the slope of the line through $(4, 3)$ and $(-2, 3)$.
+answer: Rise $= 3 - 3 = 0$. Run $= -2 - 4 = -6$. Slope $= 0 \div (-6) =$ **0**. The line is flat.
+
+q: Find the slope of the line through $(5, 1)$ and $(5, 8)$.
+answer: Run $= 5 - 5 = 0$. You cannot divide by zero, so there is **no slope**. The line is vertical.
+
+q: Find the slope of the line through $(-2, 3)$ and $(4, -1)$.
+answer: Rise $= -1 - 3 = -4$. Run $= 4 - (-2) = 6$. Slope $= \dfrac{-4}{6} =$ **$-\tfrac{2}{3}$**.
+
+q: Find the slope of the line through $\left(\tfrac{1}{2}, 3\right)$ and $(2, 6)$.
+answer: Rise $= 6 - 3 = 3$. Run $= 2 - \tfrac{1}{2} = \tfrac{3}{2}$. Slope $= 3 \div \tfrac{3}{2} = 3 \cdot \tfrac{2}{3} =$ **2**.
+
+q: A line has slope 4 and passes through $(1, 2)$. What is its height at $x = 3$?
+answer: From $x = 1$ to $x = 3$ is 2 steps right. Each step climbs 4, so the height goes up $2 \cdot 4 = 8$. The height is $2 + 8 =$ **10**.
+
+q: A tank holds 200 litres after 2 minutes and 80 litres after 5 minutes, draining steadily. Find the slope and say what it means.
+answer: Rise $= 80 - 200 = -120$ litres. Run $= 5 - 2 = 3$ minutes. Slope $= -120 \div 3 =$ **$-40$ litres per minute**. The tank loses 40 litres every minute.
+:::

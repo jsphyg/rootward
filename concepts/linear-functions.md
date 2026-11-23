@@ -109,3 +109,47 @@ title: Find the rule for the line through $(1, 5)$ and $(3, 11)$.
 q: Find the rule for the line through $(2, 1)$ and $(6, -7)$.
 answer: Slope: $m = \dfrac{-7 - 1}{6 - 2} = \dfrac{-8}{4} = -2$. Put in $(2, 1)$: $1 = -2 \cdot 2 + b = -4 + b$, so $b = 5$. The rule is **$y = -2x + 5$**. Check $(6, -7)$: $-12 + 5 = -7$. It fits.
 :::
+
+:::problems
+q: Give the slope and y-intercept of $y = 5x + 1$.
+answer: The number times x is the slope: **$m = 5$**. The number on its own is **$b = 1$**.
+
+q: Give the slope and y-intercept of $y = -x + 4$.
+answer: $-x$ means $-1 \cdot x$, so **$m = -1$**. And **$b = 4$**.
+
+q: Give the slope and y-intercept of $y = 7 - 2x$.
+answer: Reorder it as $y = -2x + 7$. The minus belongs to the 2, so **$m = -2$** and **$b = 7$**.
+
+q: Give the slope and y-intercept of $y = 3x$ and of $y = 6$.
+answer: $y = 3x$ is $3x + 0$: **slope 3, intercept 0**, so it passes through the origin. $y = 6$ is $0x + 6$: **slope 0, intercept 6**, a flat line.
+
+q: Let $f(x) = 4x - 3$. Find $f(2)$ and $f(0)$.
+answer: $f(2) = 8 - 3 =$ **5**. $f(0) = 0 - 3 =$ **$-3$**, which is the y-intercept.
+
+q: Write the rule for the line with slope 2 that crosses the y-axis at $-5$.
+answer: $m = 2$ and $b = -5$, so **$y = 2x - 5$**.
+
+q: Find the rule for the line through $(0, 3)$ and $(2, 11)$.
+answer: Slope: $\dfrac{11 - 3}{2 - 0} = \dfrac{8}{2} = 4$. The point $(0, 3)$ is on the y-axis, so $b = 3$. The rule is **$y = 4x + 3$**. Check: $4 \cdot 2 + 3 = 11$.
+
+q: Find the rule for the line through $(1, 2)$ and $(3, 8)$.
+answer: Slope: $\dfrac{8 - 2}{3 - 1} = 3$. Put in $(1, 2)$: $2 = 3 + b$, so $b = -1$. The rule is **$y = 3x - 1$**. Check $(3, 8)$: $9 - 1 = 8$.
+
+q: Find the rule for the line through $(-1, 7)$ and $(2, -2)$.
+answer: Slope: $\dfrac{-2 - 7}{2 - (-1)} = \dfrac{-9}{3} = -3$. Put in $(-1, 7)$: $7 = -3(-1) + b = 3 + b$, so $b = 4$. The rule is **$y = -3x + 4$**. Check $(2, -2)$: $-6 + 4 = -2$.
+
+q: Find the rule for the line through $(2, 4)$ and $(6, 6)$.
+answer: Slope: $\dfrac{6 - 4}{6 - 2} = \dfrac{2}{4} = \tfrac{1}{2}$. Put in $(2, 4)$: $4 = \tfrac{1}{2} \cdot 2 + b = 1 + b$, so $b = 3$. The rule is **$y = \tfrac{1}{2}x + 3$**. Check $(6, 6)$: $3 + 3 = 6$.
+
+q: Find the rule for the line through $(-4, -1)$ and $(2, 2)$.
+answer: Slope: $\dfrac{2 - (-1)}{2 - (-4)} = \dfrac{3}{6} = \tfrac{1}{2}$. Put in $(2, 2)$: $2 = 1 + b$, so $b = 1$. The rule is **$y = \tfrac{1}{2}x + 1$**. Check $(-4, -1)$: $-2 + 1 = -1$.
+
+q: Where does the line $y = 2x - 6$ cross the x-axis?
+answer: On the x-axis, $y = 0$. So $0 = 2x - 6$. Add 6: $2x = 6$. Halve: $x = 3$. It crosses at **$(3, 0)$**.
+
+q: A plumber charges 50 dollars to come out, plus 30 dollars per hour. Write the cost for h hours, and find the cost of a 3.5 hour job.
+answer: Start amount 50, rate 30 per hour: **$C(h) = 30h + 50$**. For 3.5 hours: $30 \cdot 3.5 + 50 = 105 + 50 =$ **155 dollars**.
+
+q: A phone plan costs 40 dollars for 100 minutes and 55 dollars for 200 minutes. It is a linear function of the minutes x. Find its rule.
+answer: Slope: $\dfrac{55 - 40}{200 - 100} = \dfrac{15}{100} = 0.15$ dollars per minute. Put in $(100, 40)$: $40 = 0.15 \cdot 100 + b = 15 + b$, so $b = 25$. The rule is **$f(x) = 0.15x + 25$**: a 25 dollar base fee plus 15 cents a minute. Check: $0.15 \cdot 200 + 25 = 55$.
+:::

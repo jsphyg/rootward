@@ -112,3 +112,38 @@ title: Find the inverse of $f(x) = x^3 + 2$, and check it at $x = 3$.
 q: Find the inverse of $f(x) = \dfrac{x + 4}{3}$. Check it with $x = 5$.
 answer: f adds 4, then divides by 3. Undo in reverse: multiply by 3, then take away 4. So **$f^{-1}(x) = 3x - 4$**. Check: $f(5) = \dfrac{9}{3} = 3$, and $f^{-1}(3) = 9 - 4 = 5$. Back to 5.
 :::
+
+:::problems
+q: $f(3) = 8$. What is $f^{-1}(8)$?
+answer: The inverse takes the output back to its input: **3**.
+
+q: Find the inverse of $f(x) = x + 5$.
+answer: f adds 5. Undo it by taking away 5: **$f^{-1}(x) = x - 5$**.
+
+q: Find the inverse of $f(x) = 4x$.
+answer: f multiplies by 4. Undo it by dividing by 4: **$f^{-1}(x) = \dfrac{x}{4}$**.
+
+q: Find the inverse of $f(x) = 3x - 2$. Then find $f^{-1}(10)$.
+answer: f multiplies by 3, then takes away 2. Undo in reverse: add 2, then divide by 3. **$f^{-1}(x) = \dfrac{x + 2}{3}$**. So $f^{-1}(10) = \dfrac{12}{3} = 4$. Check: $f(4) = 12 - 2 = 10$.
+
+q: Find the inverse of $f(x) = \dfrac{x}{2} + 1$.
+answer: f halves, then adds 1. Undo in reverse: take away 1, then double. **$f^{-1}(x) = 2(x - 1)$**, which is $2x - 2$.
+
+q: Find the inverse of $f(x) = \dfrac{x - 1}{5}$.
+answer: f takes away 1, then divides by 5. Undo: multiply by 5, then add 1. **$f^{-1}(x) = 5x + 1$**.
+
+q: Find the inverse of $f(x) = 10 - x$.
+answer: Solve $y = 10 - x$ for x: $x = 10 - y$. So **$f^{-1}(x) = 10 - x$**. This function is its own inverse. Check: $f(3) = 7$ and $f^{-1}(7) = 3$.
+
+q: Let $f(x) = x^3$. Find $f^{-1}(x)$ and $f^{-1}(-8)$.
+answer: Undo cubing with the cube root: **$f^{-1}(x) = \sqrt[3]{x}$**. $(-2)^3 = -8$, so $f^{-1}(-8) =$ **$-2$**.
+
+q: Find the inverse of $f(x) = 2x^3 - 1$. Check it with $x = 2$.
+answer: f cubes, doubles, then takes away 1. Undo in reverse: add 1, halve, then cube root. **$f^{-1}(x) = \sqrt[3]{\dfrac{x + 1}{2}}$**. Check: $f(2) = 16 - 1 = 15$, and $f^{-1}(15) = \sqrt[3]{8} = 2$.
+
+q: Show that $g(x) = \dfrac{x + 3}{2}$ is the inverse of $f(x) = 2x - 3$.
+answer: Put g into f: $f(g(x)) = 2 \cdot \dfrac{x + 3}{2} - 3 = (x + 3) - 3 = x$. It comes back to x, so **yes, g is the inverse**. (The other order works too: $g(f(x)) = \dfrac{2x - 3 + 3}{2} = x$.)
+
+q: Does $f(x) = x^2 + 1$ have an inverse, if every number is allowed as an input?
+answer: **No.** $f(2) = 5$ and $f(-2) = 5$. If the output is 5, the input could have been 2 or $-2$, so there is no single undo. It is not one-to-one.
+:::

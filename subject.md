@@ -5,6 +5,7 @@ subtitle: Calculus 1
 start: chain-rule
 storage: learning-web-calculus-v1
 plan: calculus-concept-list.md
+practice_sets: yes
 intro_page: chain-rule
 ---
 

@@ -28,9 +28,10 @@ cannot read, missing figures and script errors.
 Errors: header fields missing (id, title, prereqs, big, recap, check with q / 3-4 options / answer / why);
 id not matching the file name; links, `uses:`, prereqs or glossary `concept:` pointing to a page that does not exist;
 `{{term}}` or `^[note]` not in the glossary (or the wrong kind); missing widget file; prerequisite loops;
-unclosed `$` math or broken `[[ ]]` / `{{ }}` markup; a full page with no worked example, practice, or why on a step.
+unclosed `$` math or broken `[[ ]]` / `{{ }}` markup; a full page with no worked example, practice, or why on a step;
+a badly shaped `:::problems` set; and, when `subject.md` has `practice_sets: yes`, a full page with no `:::problems` set.
 
-Warnings: stub pages; more than 4 prereqs; an indirect prerequisite; a concept linked more than twice on a page;
+Warnings: stub pages; a practice set with fewer than 3 problems; more than 4 prereqs; an indirect prerequisite; a concept linked more than twice on a page;
 a term popped up more than once in the body; prereqs that differ from the concept list.
 
 ## Markup notes
@@ -51,6 +52,22 @@ Each subject has its own folder with the same layout. World history (pilot) live
 A widget can take data: put lines after `:::widget name` and close with `:::`. Each line reaches the widget
 as `args.lines` (a `caption:` line becomes `args.caption`). See `subjects/world-history/widgets/timeline.js`.
 KaTeX is only included when a subject uses math.
+
+## Practice sets
+
+At the end of "Do you have it?", a math page shows a practice set: a collapsed list of problems,
+easiest first, each with its own hidden answer. Write it as one block anywhere in the body:
+
+    :::problems
+    q: Factor $x^2 - 36$.
+    answer: $36 = 6^2$, a difference of two squares: **$(x - 6)(x + 6)$**.
+
+    q: Factor $x^2 + 7x + 12$.
+    answer: Multiply to 12, add to 7: 3 and 4. **$(x + 3)(x + 4)$**.
+    :::
+
+One `q:` line and one `answer:` line per problem, with a blank line between problems. Long lines may wrap
+onto indented lines. Rules for what goes in a set are in style-and-rules.md, section 5b.
 
 ## Pictures (live from Wikimedia Commons, nothing stored)
 
