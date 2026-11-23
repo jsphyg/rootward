@@ -155,3 +155,50 @@ title: Simplify $\dfrac{(2x^3)^2 \cdot x}{4x^5}$.
 q: Simplify $\dfrac{x^2 \cdot (x^3)^4}{x^6}$.
 answer: First the power of a power: $(x^3)^4 = x^{12}$. Then multiply: $x^2 \cdot x^{12} = x^{14}$. Then divide: $\dfrac{x^{14}}{x^6} = x^{14 - 6} =$ **$x^8$**. Check with $x = 2$: $4 \cdot 4096 / 64 = 256$, and $2^8 = 256$.
 :::
+
+:::problems
+q: Work out $3^4$.
+answer: $3 \cdot 3 \cdot 3 \cdot 3 = 9 \cdot 9 =$ **81**.
+
+q: Work out $2^5$ and $5^2$. Are they the same?
+answer: $2^5 = 2 \cdot 2 \cdot 2 \cdot 2 \cdot 2 = 32$. $5^2 = 5 \cdot 5 = 25$. **No**, 32 and 25. Swapping the base and exponent changes the answer.
+
+q: Simplify $x^4 \cdot x^5$.
+answer: Multiplying adds the exponents: $x^{4+5} =$ **$x^9$**.
+
+q: Simplify $x \cdot x^6$.
+answer: A plain x is $x^1$: $x^{1+6} =$ **$x^7$**.
+
+q: Simplify $\dfrac{x^9}{x^3}$.
+answer: Dividing subtracts the exponents: $x^{9-3} =$ **$x^6$**. Not $x^3$: dividing does not divide the exponents.
+
+q: Simplify $(x^4)^2$.
+answer: Power of a power multiplies: $x^{4 \cdot 2} =$ **$x^8$**.
+
+q: Work out $7^0$ and $(5x)^0$.
+answer: Anything (except 0) to the power 0 is 1. **Both are 1.**
+
+q: Simplify $(3x)^2$.
+answer: Both factors get squared: $3^2 x^2 =$ **$9x^2$**. Not $3x^2$.
+
+q: Simplify $(2x^2)^3$.
+answer: $2^3 \cdot (x^2)^3 = 8x^6$. **$8x^6$**.
+
+q: Simplify $2x^3 \cdot 5x^4$.
+answer: Multiply the numbers, then add the exponents: $10x^{3+4} =$ **$10x^7$**.
+
+q: Simplify $\dfrac{12x^8}{4x^2}$.
+answer: Divide the numbers, subtract the exponents: $3x^{8-2} =$ **$3x^6$**.
+
+q: Simplify $(2x^3y)^2$.
+answer: Every factor gets squared: $2^2 (x^3)^2 y^2 =$ **$4x^6y^2$**.
+
+q: True or false: $x^2 + x^3 = x^5$.
+answer: **False.** The add rule is for multiplying, not adding. Test with $x = 2$: $4 + 8 = 12$, but $2^5 = 32$.
+
+q: Simplify $\dfrac{(x^2)^3 \cdot x^4}{x^5}$.
+answer: $(x^2)^3 = x^6$. Then $x^6 \cdot x^4 = x^{10}$. Then $\dfrac{x^{10}}{x^5} =$ **$x^5$**. Check with $x = 2$: $64 \cdot 16 / 32 = 32 = 2^5$.
+
+q: Simplify $\dfrac{(3x^2)^2 \cdot 2x}{6x^3}$.
+answer: $(3x^2)^2 = 9x^4$. Times $2x$ gives $18x^5$. Divide by $6x^3$: $3x^{5-3} =$ **$3x^2$**. Check with $x = 2$: $144 \cdot 4 / 48 = 12$, and $3 \cdot 4 = 12$.
+:::

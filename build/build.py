@@ -183,7 +183,7 @@ BLOCK_START = re.compile(r"^(#{1,6}\s|\||:::|\$\$|[-*]\s+|\d+\.\s+)")
 def render_blocks(text, pg):
     lines = text.split("\n")
     out, i = [], 0
-    example = practice = None
+    example = practice = problems = None
     while i < len(lines):
         st = lines[i].strip()
         if not st: i += 1; continue
@@ -220,10 +220,13 @@ def render_blocks(text, pg):
             elif kind == "practice":
                 if practice: pg.rep.err(where, "more than one :::practice")
                 pg.in_body = False; practice = parse_practice(buf, pg, where)
+            elif kind == "problems":
+                if problems: pg.rep.err(where, "more than one :::problems (put the whole set in one block)")
+                pg.in_body = False; problems = parse_problems(buf, pg, where)
             elif kind == "image":
                 out.append(render_image(buf, pg, where))
             else:
-                pg.rep.err(where, f"unknown block :::{kind} (use example, practice, image or widget)")
+                pg.rep.err(where, f"unknown block :::{kind} (use example, practice, problems, image or widget)")
             pg.in_body = True
             i = j + 1; continue
         m = re.match(r"^(#{1,6})\s+(.*)$", st)
@@ -263,7 +266,7 @@ def render_blocks(text, pg):
         para = " ".join(buf)
         cls = ' class="cap"' if re.fullmatch(r"\*[^*].*[^*]\*", para) else ""
         out.append(f"<p{cls}>{pg.inline(para, where)}</p>")
-    return "\n".join(out), example, practice
+    return "\n".join(out), example, practice, problems
 
 COMMONS = "https://commons.wikimedia.org/wiki/"
 
@@ -348,6 +351,28 @@ def parse_practice(buf, pg, where):
     if not f.get("answer"): pg.rep.err(where, "practice has no answer:")
     return {"q": pg.inline(f.get("q", ""), where), "answer": pg.inline(f.get("answer", ""), where)}
 
+def parse_problems(buf, pg, where):
+    """A practice set: q:/answer: pairs, separated by blank lines, easiest first."""
+    groups, cur = [], []
+    for raw in buf:
+        if raw.strip(): cur.append(raw)
+        elif cur: groups.append(cur); cur = []
+    if cur: groups.append(cur)
+    res = []
+    for n, g in enumerate(groups, 1):
+        f = parse_fields(g, ["q", "answer"])
+        keys = [k for k, _ in f]
+        w = f"{where} problem {n}"
+        if None in keys or keys.count("q") != 1 or keys.count("answer") != 1 or keys[0] != "q":
+            pg.rep.err(w, "each problem is one q: line then one answer: line, with a blank line before the next problem")
+            continue
+        d = dict(f)
+        if not d["q"].strip(): pg.rep.err(w, "problem has an empty q:")
+        if not d["answer"].strip(): pg.rep.err(w, "problem has an empty answer:")
+        res.append({"q": pg.inline(d["q"], w), "answer": pg.inline(d["answer"], w)})
+    if not res: pg.rep.err(where, ":::problems has no problems")
+    return res
+
 # ---------------------------------------------------------------- glossary
 
 def load_glossary(path, rep):
@@ -407,7 +432,7 @@ def load_concept(path, rep):
     recap = pg.inline(str(hdr.get("recap", "")), where + " recap")
     big = pg.inline(str(hdr.get("big", "")), where + " big")
     pg.in_body = True
-    body_html, example, practice = render_blocks(body, pg)
+    body_html, example, practice, problems = render_blocks(body, pg)
     if stub:
         rep.warn(where, "is a stub (header only). It shows as 'Not written yet'.")
     else:
@@ -415,7 +440,7 @@ def load_concept(path, rep):
         if not example: rep.err(where, "has no :::example worked example")
         if not practice: rep.err(where, "has no :::practice problem")
     return {"id": cid, "title": str(hdr.get("title", cid)), "prereqs": prereqs, "big": big, "recap": recap,
-            "check": check, "body": body_html, "example": example, "practice": practice, "stub": stub, "_page": pg, "_where": where}
+            "check": check, "body": body_html, "example": example, "practice": practice, "problems": problems, "stub": stub, "_page": pg, "_where": where}
 
 def load_plan(path):
     """Read concept ids and prereqs from the concept-list tables: | id | Concept | Prerequisites | Status |"""
@@ -544,6 +569,11 @@ def main():
     plan_path = root / subj_hdr["plan"] if subj_hdr.get("plan") else None
     plan = load_plan(plan_path)
     run_checks(concepts, glossary, widgets, plan, rep)
+    # practice_sets: yes in subject.md means every written page needs a :::problems set.
+    if str(subj_hdr.get("practice_sets", "")).lower() in ("yes", "true", "required"):
+        for c in concepts:
+            if not c["stub"] and not c["problems"]: rep.err(c["_where"], "has no :::problems practice set (subject.md asks for one on every page)")
+            elif c["problems"] and len(c["problems"]) < 3: rep.warn(c["_where"], f"practice set has only {len(c['problems'])} problems")
 
     # order: concept-list order first, then any others by id
     rank = {cid: i for i, cid in enumerate(plan)}
@@ -553,7 +583,7 @@ def main():
     start = subj_hdr.get("start")
     if start and start not in ids: rep.err("subject.md", f"start page '{start}' has no concept file")
     ipg = Page(None, "subject.md intro", rep)
-    intro_html, _, _ = render_blocks(intro_md, ipg)
+    intro_html, _, _, _ = render_blocks(intro_md, ipg)
 
     n_stub = sum(c["stub"] for c in concepts)
     print(f"Learning Web build: {len(concepts)} concepts ({n_stub} stub), {sum(g['kind']=='term' for g in glossary.values())} terms, "

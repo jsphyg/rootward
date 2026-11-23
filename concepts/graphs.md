@@ -124,3 +124,26 @@ caption: Five plotted points, joined smoothly. The lowest point, (1, −1), sits
 q: Which of these points are on the graph of $f(x) = x^2 - 1$? $(2, 3)$, $(-2, 3)$, $(3, 9)$.
 answer: Plug in each input and compare with the height. $f(2) = 4 - 1 = 3$, so $(2, 3)$ **is** on it. $f(-2) = 4 - 1 = 3$, so $(-2, 3)$ **is** on it. $f(3) = 9 - 1 = 8$, not 9, so $(3, 9)$ is **not** on it.
 :::
+
+:::problems
+q: Describe how to reach the point $(-3, 2)$ from the origin.
+answer: **3 left, then 2 up.** The first number is across (negative means left). The second is up.
+
+q: The graph of $f(x) = 2x - 1$ has a point above $x = 3$. What is that point?
+answer: The height is $f(3) = 2 \cdot 3 - 1 = 5$, so the point is **$(3, 5)$**.
+
+q: Is $(-1, 4)$ on the graph of $f(x) = x^2 + 3$?
+answer: $f(-1) = (-1)^2 + 3 = 1 + 3 = 4$. That matches the height 4, so **yes**.
+
+q: Is $(2, 6)$ on the graph of $f(x) = x^2 - 2x$?
+answer: $f(2) = 4 - 4 = 0$, not 6. So **no**. The point on the graph above 2 is $(2, 0)$.
+
+q: A picture has the points $(1, 3)$ and $(1, 5)$ both on it. Can it be the graph of a function?
+answer: **No.** Both points sit above the same input, $x = 1$. A vertical line at $x = 1$ crosses the picture twice, so one input would have two outputs.
+
+q: Where does the graph of $f(x) = x^2 - 4$ cross the x-axis? Try small whole numbers.
+answer: On the x-axis the height is 0, so look for $f(x) = 0$. $f(2) = 4 - 4 = 0$ and $f(-2) = 4 - 4 = 0$. It crosses at **$x = -2$ and $x = 2$**, the points $(-2, 0)$ and $(2, 0)$.
+
+q: $f(x) = \dfrac{x^2 - 4}{x - 2}$. Where is the hole in its graph?
+answer: At $x = 2$ the rule gives $0 \div 0$, so there is no point there. Everywhere else it gives the same as $x + 2$. Try $x = 3$: $\dfrac{9 - 4}{1} = 5$, and $3 + 2 = 5$. So the graph is the line $y = x + 2$ with a hole at **$(2, 4)$**.
+:::

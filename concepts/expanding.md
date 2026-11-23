@@ -109,3 +109,59 @@ title: Expand $(x - 4)(x + 5)$.
 q: Expand $(2x - 1)(x + 3)$.
 answer: Every term times every term. $2x \cdot x = 2x^2$, $2x \cdot 3 = 6x$, $-1 \cdot x = -x$, $-1 \cdot 3 = -3$. Add them: $2x^2 + 6x - x - 3$. Combine like terms: **$2x^2 + 5x - 3$**. Check with $x = 1$: $(2 - 1)(1 + 3) = 4$, and $2 + 5 - 3 = 4$.
 :::
+
+:::problems
+q: Expand $4(x + 3)$.
+answer: The 4 multiplies each term: **$4x + 12$**.
+
+q: Expand $5(2x - 1)$.
+answer: $5 \cdot 2x = 10x$ and $5 \cdot (-1) = -5$: **$10x - 5$**.
+
+q: Expand $-3(x - 4)$.
+answer: $-3 \cdot x = -3x$ and $(-3)(-4) = +12$: **$-3x + 12$**.
+
+q: Expand $x(x + 7)$.
+answer: $x \cdot x = x^2$ and $x \cdot 7 = 7x$: **$x^2 + 7x$**.
+
+q: Expand $2x(3x - 5)$.
+answer: $2x \cdot 3x = 6x^2$ and $2x \cdot (-5) = -10x$: **$6x^2 - 10x$**.
+
+q: Expand $x^2(x - 3)$.
+answer: $x^2 \cdot x = x^3$ and $x^2 \cdot (-3) = -3x^2$: **$x^3 - 3x^2$**.
+
+q: Expand $(x + 1)(x + 4)$.
+answer: $x^2 + 4x + x + 4$. Combine like terms: **$x^2 + 5x + 4$**. Check with $x = 1$: $2 \cdot 5 = 10$ and $1 + 5 + 4 = 10$.
+
+q: Expand $(x + 5)(x - 2)$.
+answer: $x^2 - 2x + 5x - 10$. Combine: **$x^2 + 3x - 10$**. Check with $x = 1$: $6 \cdot (-1) = -6$ and $1 + 3 - 10 = -6$.
+
+q: Expand $(x - 3)(x - 6)$.
+answer: $x^2 - 6x - 3x + 18$. The last term is $(-3)(-6) = +18$. Combine: **$x^2 - 9x + 18$**.
+
+q: Expand $(x - 7)(x + 7)$.
+answer: $x^2 + 7x - 7x - 49$. The middle terms cancel: **$x^2 - 49$**.
+
+q: Expand $(x + 4)^2$.
+answer: $(x + 4)(x + 4) = x^2 + 4x + 4x + 16 =$ **$x^2 + 8x + 16$**. Not $x^2 + 16$.
+
+q: Expand $(x - 5)^2$.
+answer: $(x - 5)(x - 5) = x^2 - 5x - 5x + 25 =$ **$x^2 - 10x + 25$**. The last term is $(-5)(-5) = +25$.
+
+q: Expand $(3x + 2)(x - 4)$.
+answer: $3x \cdot x = 3x^2$, $3x \cdot (-4) = -12x$, $2 \cdot x = 2x$, $2 \cdot (-4) = -8$. Add and combine: **$3x^2 - 10x - 8$**. Check with $x = 1$: $5 \cdot (-3) = -15$ and $3 - 10 - 8 = -15$.
+
+q: Expand $(2x - 3)(2x + 3)$.
+answer: $4x^2 + 6x - 6x - 9$. The middle terms cancel: **$4x^2 - 9$**.
+
+q: Expand $(2x + 1)^2$.
+answer: $(2x + 1)(2x + 1) = 4x^2 + 2x + 2x + 1 =$ **$4x^2 + 4x + 1$**.
+
+q: Expand $2(x + 3)(x - 1)$.
+answer: Do the two brackets first: $x^2 - x + 3x - 3 = x^2 + 2x - 3$. Then double every term: **$2x^2 + 4x - 6$**.
+
+q: Expand $(x + 1)(x^2 - x + 1)$.
+answer: Every term times every term gives six pieces. $x$ times the second bracket: $x^3 - x^2 + x$. Then 1 times it: $x^2 - x + 1$. Add: $x^3 - x^2 + x + x^2 - x + 1$. Everything cancels but **$x^3 + 1$**.
+
+q: Expand and simplify $(x + h)^2 - x^2$. (You will meet this on the derivative page.)
+answer: $(x + h)^2 = x^2 + 2xh + h^2$. Take away $x^2$: **$2xh + h^2$**.
+:::

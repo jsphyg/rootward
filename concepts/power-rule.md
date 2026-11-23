@@ -107,3 +107,56 @@ title: Find the derivative of $f(x) = 4x^3 - \dfrac{2}{x} + 5$.
 q: Find the derivative of $x^4 + 6\sqrt{x}$.
 answer: Rewrite: $x^4 + 6x^{1/2}$. Then $4x^3 + 6 \cdot \tfrac{1}{2} x^{-1/2} = 4x^3 + 3x^{-1/2}$, which is **$4x^3 + \dfrac{3}{\sqrt{x}}$**.
 :::
+
+:::problems
+q: Find the derivative of $x^5$.
+answer: **$5x^4$**.
+
+q: Find the derivative of $x^9$.
+answer: **$9x^8$**.
+
+q: Find the derivatives of $x$ and of $12$.
+answer: $x = x^1$ gives $1 \cdot x^0 =$ **1**. A plain number gives **0**.
+
+q: Find the derivative of $4x^3$.
+answer: The 4 rides along: $4 \cdot 3x^2 =$ **$12x^2$**.
+
+q: Find the derivative of $-2x^5$.
+answer: $-2 \cdot 5x^4 =$ **$-10x^4$**.
+
+q: Find the derivative of $x^3 + x^2 + x$.
+answer: Term by term: **$3x^2 + 2x + 1$**.
+
+q: Find the derivative of $3x^4 - 5x^2 + 7$.
+answer: $12x^3 - 10x + 0$: **$12x^3 - 10x$**.
+
+q: Find the derivative of $\dfrac{1}{x^2}$.
+answer: Rewrite: $x^{-2}$. Then $-2x^{-3}$, which is **$-\dfrac{2}{x^3}$**.
+
+q: Find the derivative of $\dfrac{6}{x}$.
+answer: Rewrite: $6x^{-1}$. Then $6 \cdot (-1)x^{-2}$, which is **$-\dfrac{6}{x^2}$**.
+
+q: Find the derivative of $\sqrt{x}$.
+answer: Rewrite: $x^{1/2}$. Then $\tfrac{1}{2}x^{-1/2}$, which is **$\dfrac{1}{2\sqrt{x}}$**.
+
+q: Find the derivative of $x^{2/3}$.
+answer: Bring down $\tfrac{2}{3}$, lower the power by 1: $\tfrac{2}{3} - 1 = -\tfrac{1}{3}$. **$\tfrac{2}{3}x^{-1/3}$**.
+
+q: Find the derivative of $\dfrac{4}{\sqrt{x}}$.
+answer: Rewrite: $4x^{-1/2}$. Then $4 \cdot \left(-\tfrac{1}{2}\right)x^{-3/2} =$ **$-2x^{-3/2}$**.
+
+q: Find the derivative of $x^2\sqrt{x}$.
+answer: Rewrite: $x^2 \cdot x^{1/2} = x^{5/2}$. Then **$\tfrac{5}{2}x^{3/2}$**.
+
+q: Find the derivative of $(x + 1)^2$ by expanding first.
+answer: The power rule needs a bare x, so expand: $x^2 + 2x + 1$. Then **$2x + 2$**.
+
+q: Find the derivative of $\dfrac{x^3 + 4}{x}$.
+answer: Split the fraction: $\dfrac{x^3}{x} + \dfrac{4}{x} = x^2 + 4x^{-1}$. Then $2x - 4x^{-2}$, which is **$2x - \dfrac{4}{x^2}$**.
+
+q: Find the slope of $y = x^3 - 3x$ at $x = 2$.
+answer: $y' = 3x^2 - 3$. At $x = 2$: $12 - 3 =$ **9**.
+
+q: Where is the slope of $y = x^2 - 6x$ equal to zero?
+answer: $y' = 2x - 6$. Set it to 0: $2x = 6$, so **$x = 3$**. That is the bottom of the U.
+:::

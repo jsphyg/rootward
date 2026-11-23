@@ -103,3 +103,47 @@ title: Find $\displaystyle\lim_{x \to -3} \frac{x^2 + x - 6}{x + 3}$.
 q: Find $\displaystyle\lim_{x \to 1} \frac{x^2 + 2x - 3}{x - 1}$.
 answer: Plugging in gives $0 \div 0$. Factor: $x^2 + 2x - 3 = (x + 3)(x - 1)$. Cancel $(x - 1)$ to leave $x + 3$. At $x = 1$ that is **4**.
 :::
+
+:::problems
+q: Find $\displaystyle\lim_{x \to 3} (2x + 1)$.
+answer: No division by zero, so plug in: $2 \cdot 3 + 1 =$ **7**.
+
+q: Find $\displaystyle\lim_{x \to -1} (x^2 + 4x)$.
+answer: Plug in: $(-1)^2 + 4(-1) = 1 - 4 =$ **$-3$**.
+
+q: Find $\displaystyle\lim_{x \to 2} \frac{x^2 - 4}{x - 2}$.
+answer: Plugging in gives $0 \div 0$. Factor: $\dfrac{(x - 2)(x + 2)}{x - 2} = x + 2$. Plug in: **4**.
+
+q: Find $\displaystyle\lim_{x \to 5} \frac{x^2 - 25}{x - 5}$.
+answer: $0 \div 0$. Factor: $(x - 5)(x + 5)$ on top. Cancel to leave $x + 5$. **10**.
+
+q: Find $\displaystyle\lim_{x \to -4} \frac{x^2 - 16}{x + 4}$.
+answer: $0 \div 0$. Factor: $(x - 4)(x + 4)$. Cancel $(x + 4)$ to leave $x - 4$. At $-4$: **$-8$**.
+
+q: Find $\displaystyle\lim_{x \to 0} \frac{x^2 + 3x}{x}$.
+answer: $0 \div 0$. Pull out x on top: $\dfrac{x(x + 3)}{x} = x + 3$. At 0: **3**.
+
+q: Find $\displaystyle\lim_{x \to 2} \frac{x^2 + x - 6}{x - 2}$.
+answer: $4 + 2 - 6 = 0$ on top, 0 on the bottom. Factor: $(x + 3)(x - 2)$. Cancel to leave $x + 3$. **5**.
+
+q: Find $\displaystyle\lim_{x \to 3} \frac{x^2 - 5x + 6}{x - 3}$.
+answer: $9 - 15 + 6 = 0$, so $0 \div 0$. Factor: $(x - 2)(x - 3)$. Cancel to leave $x - 2$. **1**.
+
+q: Find $\displaystyle\lim_{x \to -2} \frac{x^2 - x - 6}{x + 2}$.
+answer: $4 + 2 - 6 = 0$, so $0 \div 0$. Factor: $(x - 3)(x + 2)$. Cancel to leave $x - 3$. At $-2$: **$-5$**.
+
+q: Find $\displaystyle\lim_{x \to 0} \frac{x^3 - 2x^2}{x^2}$.
+answer: $0 \div 0$. Pull out $x^2$ on top: $\dfrac{x^2(x - 2)}{x^2} = x - 2$. At 0: **$-2$**.
+
+q: Let $f(x) = x + 1$ for every x except 2, and $f(2) = 10$. Find $\displaystyle\lim_{x \to 2} f(x)$.
+answer: The limit ignores the point itself. Near 2, $f(x) = x + 1$, which heads to **3**. The value 10 at $x = 2$ does not matter.
+
+q: Find $\displaystyle\lim_{x \to 4} \frac{x + 4}{x - 4}$.
+answer: Plugging in gives $8 \div 0$: a number over zero, not $0 \div 0$. Near 4 the outputs blow up (at $x = 4.001$ it is about 8000). **There is no limit.**
+
+q: Find $\displaystyle\lim_{x \to 1} \frac{x^2 - 1}{x^2 + x - 2}$.
+answer: $0 \div 0$. Factor both: $\dfrac{(x - 1)(x + 1)}{(x + 2)(x - 1)} = \dfrac{x + 1}{x + 2}$. At 1: **$\tfrac{2}{3}$**.
+
+q: Find $\displaystyle\lim_{h \to 0} \frac{(3 + h)^2 - 9}{h}$.
+answer: $0 \div 0$. Expand the top: $9 + 6h + h^2 - 9 = 6h + h^2 = h(6 + h)$. Cancel h to leave $6 + h$. At $h = 0$: **6**. This is the slope of $x^2$ at $x = 3$, as the derivative page will show.
+:::

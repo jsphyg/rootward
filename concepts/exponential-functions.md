@@ -112,3 +112,35 @@ title: A colony of 500 bacteria doubles every 3 hours. Write a formula, then fin
 q: A car worth 20,000 dollars loses 15% of its value every year. Write a formula for its value, and find the value after 2 years.
 answer: Losing 15% leaves 85%, so the factor is 0.85: $V(t) = 20000 \cdot 0.85^t$. After 2 years: $0.85^2 = 0.7225$, and $20000 \cdot 0.7225 =$ **14,450 dollars**.
 :::
+
+:::problems
+q: Let $f(x) = 2^x$. Find $f(0)$, $f(3)$ and $f(-1)$.
+answer: **$f(0) = 1$**, **$f(3) = 8$**, **$f(-1) = \tfrac{1}{2}$**.
+
+q: Let $f(x) = 5 \cdot 3^x$. Find $f(2)$.
+answer: Power first: $3^2 = 9$. Then $5 \cdot 9 =$ **45**.
+
+q: Let $f(x) = 100 \cdot \left(\tfrac{1}{2}\right)^x$. Find $f(3)$.
+answer: $\left(\tfrac{1}{2}\right)^3 = \tfrac{1}{8}$, and $100 \cdot \tfrac{1}{8} =$ **12.5**.
+
+q: Growth or decay? $4 \cdot 0.9^x$ and $0.5 \cdot 1.2^x$.
+answer: **$4 \cdot 0.9^x$ decays**, because $0.9$ is between 0 and 1. **$0.5 \cdot 1.2^x$ grows**, because 1.2 is bigger than 1. The number in front only sets the start.
+
+q: Write the growth factor for: growing 10% a step; shrinking 25% a step.
+answer: Growing 10% keeps 100% and adds 10%: **1.1**. Shrinking 25% leaves 75%: **0.75**.
+
+q: Let $f(x) = 4^x$. Find $f\!\left(\tfrac{1}{2}\right)$ and $f(-2)$.
+answer: $4^{1/2} = \sqrt{4} =$ **2**. $4^{-2} = \dfrac{1}{16}$, so **$\tfrac{1}{16}$**.
+
+q: An exponential $f(x) = a \cdot b^x$ has $f(0) = 3$ and $f(1) = 6$. Find a, b and $f(4)$.
+answer: $f(0) = a$, so $a = 3$. One step multiplies by b, and $6 \div 3 = 2$, so $b = 2$. Then $f(4) = 3 \cdot 2^4 = 3 \cdot 16 =$ **48**.
+
+q: 2000 dollars grows 3% a year. Write a formula, and find the amount after 2 years.
+answer: Factor 1.03: **$A(t) = 2000 \cdot 1.03^t$**. $1.03^2 = 1.0609$, so $A(2) = 2000 \cdot 1.0609 =$ **2121.80 dollars**.
+
+q: 200 bacteria triple every 4 hours. Write a formula, and find the number after 8 hours.
+answer: In t hours there are $\dfrac{t}{4}$ triplings: **$P(t) = 200 \cdot 3^{t/4}$**. At $t = 8$: $3^{8/4} = 3^2 = 9$, so $200 \cdot 9 =$ **1800**.
+
+q: 160 g of a substance halves every 5 years. How much is left after 15 years?
+answer: In t years there are $\dfrac{t}{5}$ halvings: $160 \cdot \left(\tfrac{1}{2}\right)^{t/5}$. At $t = 15$ that is 3 halvings: $160 \cdot \tfrac{1}{8} =$ **20 g**.
+:::

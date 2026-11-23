@@ -133,3 +133,44 @@ title: A 5 m ladder leans against a wall, making a 60° angle with the ground. H
 q: Where on the unit circle is the angle $\dfrac{\pi}{2}$? Use that to find $\cos\dfrac{\pi}{2}$ and $\sin\dfrac{\pi}{2}$.
 answer: $\dfrac{\pi}{2}$ is a quarter turn, which lands at the top of the circle: the point $(0, 1)$. Across is 0 and up is 1, so **$\cos\dfrac{\pi}{2} = 0$** and **$\sin\dfrac{\pi}{2} = 1$**. That matches the 90° column of the table.
 :::
+
+:::problems
+q: A right triangle has sides 5, 12 and 13. The angle θ is opposite the side of length 5. Find $\sin\theta$, $\cos\theta$ and $\tan\theta$.
+answer: Hypotenuse 13 (the longest), opposite 5, adjacent 12. **$\sin\theta = \tfrac{5}{13}$, $\cos\theta = \tfrac{12}{13}$, $\tan\theta = \tfrac{5}{12}$**.
+
+q: A right triangle has sides 8, 15 and 17. The angle θ is opposite the side of length 8. Find $\cos\theta$.
+answer: Cosine is adjacent over hypotenuse. The adjacent side is 15: **$\cos\theta = \tfrac{15}{17}$**.
+
+q: Use the table: what are $\sin 30°$ and $\cos 60°$?
+answer: **Both are $\tfrac{1}{2}$.** Sine and cosine swap places between 30° and 60°.
+
+q: Show that $\tan 45° = 1$ using sine and cosine.
+answer: $\tan 45° = \dfrac{\sin 45°}{\cos 45°} = \dfrac{\sqrt{2}/2}{\sqrt{2}/2} =$ **1**. At 45° the opposite and adjacent sides are equal.
+
+q: Turn 90° and 45° into radians.
+answer: Multiply by $\dfrac{\pi}{180}$. $90 \cdot \dfrac{\pi}{180} =$ **$\dfrac{\pi}{2}$**. $45 \cdot \dfrac{\pi}{180} =$ **$\dfrac{\pi}{4}$**.
+
+q: Turn 180°, 30° and 120° into radians.
+answer: **$\pi$**, **$\dfrac{\pi}{6}$** and **$\dfrac{2\pi}{3}$**. For 120°: $120 \cdot \dfrac{\pi}{180} = \dfrac{120\pi}{180} = \dfrac{2\pi}{3}$.
+
+q: Turn $\dfrac{\pi}{3}$ radians into degrees.
+answer: Going the other way, multiply by $\dfrac{180}{\pi}$: $\dfrac{\pi}{3} \cdot \dfrac{180}{\pi} = \dfrac{180}{3} =$ **60°**.
+
+q: Where on the unit circle is the angle $\pi$? Find $\cos\pi$ and $\sin\pi$.
+answer: $\pi$ is a half turn, landing on the left at $(-1, 0)$. So **$\cos\pi = -1$** and **$\sin\pi = 0$**.
+
+q: Where on the unit circle is the angle $\dfrac{3\pi}{2}$? Find its cosine and sine.
+answer: Three quarter turns lands at the bottom, $(0, -1)$. So **$\cos\dfrac{3\pi}{2} = 0$** and **$\sin\dfrac{3\pi}{2} = -1$**.
+
+q: θ is between 0° and 90°, and $\sin\theta = \tfrac{3}{5}$. Find $\cos\theta$ and $\tan\theta$.
+answer: Use $\sin^2\theta + \cos^2\theta = 1$: $\cos^2\theta = 1 - \tfrac{9}{25} = \tfrac{16}{25}$, so $\cos\theta = \tfrac{4}{5}$ (positive, since the angle is under 90°). Then $\tan\theta = \dfrac{3/5}{4/5} = \tfrac{3}{4}$. **$\cos\theta = \tfrac{4}{5}$, $\tan\theta = \tfrac{3}{4}$**.
+
+q: A ramp is 10 m long and rises at 30° to the ground. How high does it climb?
+answer: The ramp is the hypotenuse; the height is opposite the 30°. Height $= 10 \sin 30° = 10 \cdot \tfrac{1}{2} =$ **5 m**.
+
+q: You stand 20 m from a tree. The angle up to its top, from the ground, is 45°. How tall is the tree?
+answer: The height is opposite the angle and the 20 m is adjacent, so use tangent. Height $= 20 \tan 45° = 20 \cdot 1 =$ **20 m**.
+
+q: A 6 m ladder has its foot 3 m from a wall. What angle does it make with the ground?
+answer: The 3 m is adjacent to the ground angle, and the ladder is the hypotenuse. $\cos\theta = \tfrac{3}{6} = \tfrac{1}{2}$. From the table, $\cos 60° = \tfrac{1}{2}$, so **θ = 60°**.
+:::

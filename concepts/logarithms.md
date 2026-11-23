@@ -113,3 +113,53 @@ title: Money grows 5% a year. How long until it doubles?
 q: Solve $2^x = 40$. First say which two whole numbers x lies between.
 answer: $2^5 = 32$ and $2^6 = 64$, so x is between 5 and 6. Take ln of both sides: $x \ln 2 = \ln 40$, so $x = \dfrac{\ln 40}{\ln 2} \approx \dfrac{3.689}{0.6931} \approx$ **5.32**. That is between 5 and 6, as expected.
 :::
+
+:::problems
+q: Work out $\log_2 16$.
+answer: 2 to what power is 16? $2^4 = 16$, so **4**.
+
+q: Work out $\log_{10} 100000$.
+answer: $10^5 = 100000$, so **5**. It counts the zeros.
+
+q: Work out $\log_3 9$ and $\log_5 1$.
+answer: $3^2 = 9$, so $\log_3 9 =$ **2**. $5^0 = 1$, so $\log_5 1 =$ **0**.
+
+q: Work out $\log_2 \tfrac{1}{4}$.
+answer: $2^{-2} = \tfrac{1}{4}$, so **$-2$**.
+
+q: Work out $\log_4 2$.
+answer: 4 to what power is 2? $4^{1/2} = \sqrt{4} = 2$, so **$\tfrac{1}{2}$**.
+
+q: Rewrite $\log_7 49 = 2$ as a power statement, and $10^{-2} = 0.01$ as a log statement.
+answer: **$7^2 = 49$**. **$\log_{10} 0.01 = -2$**.
+
+q: Work out $\ln e^4$ and $e^{\ln 5}$.
+answer: A log and its exponential undo each other: **$\ln e^4 = 4$** and **$e^{\ln 5} = 5$**.
+
+q: Work out $\log_2 8 + \log_2 4$ as a single log, then find its value.
+answer: Adding logs multiplies inside: $\log_2(8 \cdot 4) = \log_2 32 =$ **5**. Check: $3 + 2 = 5$.
+
+q: Work out $\log_3 54 - \log_3 2$.
+answer: Subtracting logs divides inside: $\log_3 \dfrac{54}{2} = \log_3 27 =$ **3**.
+
+q: Work out $\log_2 \left(8^5\right)$.
+answer: Bring the power down: $5 \log_2 8 = 5 \cdot 3 =$ **15**. Check: $8^5 = (2^3)^5 = 2^{15}$.
+
+q: Work out $\log_9 27$.
+answer: Write both as powers of 3: $9 = 3^2$ and $27 = 3^3$. You need $9^y = 27$, which is $3^{2y} = 3^3$. So $2y = 3$, and $y =$ **$\tfrac{3}{2}$**.
+
+q: Solve $\log_{10} x = 3$.
+answer: Rewrite as a power: $x = 10^3 =$ **1000**.
+
+q: Solve $3^x = 81$.
+answer: $81 = 3^4$, so **$x = 4$**.
+
+q: Solve $e^x = 10$.
+answer: Take ln of both sides: **$x = \ln 10 \approx 2.303$**.
+
+q: Solve $5^x = 30$. First say which two whole numbers x lies between.
+answer: $5^2 = 25$ and $5^3 = 125$, so x is between 2 and 3. Take ln: $x \ln 5 = \ln 30$, so $x = \dfrac{\ln 30}{\ln 5} \approx \dfrac{3.401}{1.609} \approx$ **2.11**.
+
+q: Money grows 10% a year. How long until it doubles?
+answer: Solve $1.1^t = 2$. Take ln: $t \ln 1.1 = \ln 2$, so $t = \dfrac{\ln 2}{\ln 1.1} \approx \dfrac{0.6931}{0.09531} \approx$ **7.27 years**. Check: $1.1^7 \approx 1.95$ and $1.1^8 \approx 2.14$.
+:::
