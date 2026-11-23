@@ -16,8 +16,8 @@ These are the "you were supposed to already know this" topics. They are what mak
 | negative-fractional-exponents | Negative and fractional exponents | exponents | ✅ (concepts/negative-fractional-exponents.md) |
 | expanding | Expanding brackets | exponents | ✅ (concepts/expanding.md) |
 | factoring | Factoring | expanding | ✅ (concepts/factoring.md) |
-| functions | Functions | none | ✅ |
-| graphs | Graphs of functions | functions | ⬜ |
+| functions | Functions | none | ✅ (concepts/functions.md, rewritten 2026-11-23) |
+| graphs | Graphs of functions | functions | ✅ (concepts/graphs.md) |
 | slope | Slope of a line | functions | ✅ |
 | linear-functions | Lines and linear functions | slope | ⬜ |
 | composite-functions | Composite functions | functions | ✅ |
