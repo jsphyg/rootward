@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rootward</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600&family=Literata:opsz,wght@7..72,400&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#241811;--surface:#2e2017;--ink:#f4e7b8;--muted:#c9b68c;--line2:#5a4231;--accent:#86c9bd}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Literata,Georgia,serif;font-size:17px;line-height:1.65}
+main{max-width:720px;margin:0 auto;padding:56px 16px}
+.label{font-family:"IBM Plex Mono",monospace;font-size:.76rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+h1{font-family:Fraunces,Georgia,serif;font-size:2.6rem;margin:.2em 0 .3em}
+p{color:var(--muted);margin:0 0 32px}
+a.card{display:block;border:1px solid var(--line2);background:var(--surface);padding:20px 22px;margin-bottom:14px;color:var(--ink);text-decoration:none}
+a.card:hover{border-color:var(--accent)}
+a.card h2{font-family:Fraunces,Georgia,serif;margin:4px 0;font-size:1.5rem;color:var(--accent)}
+a.card span{color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<div class="label">The Learning Web</div>
+<h1>Rootward</h1>
+<p>Pick a subject. Start at any page. Each page tells you what you need to know first, so you can work back to the roots of anything you don't understand.</p>
+<a class="card" href="calculus/"><div class="label">Subject</div><h2>Calculus</h2><span>From functions and slope to the chain rule.</span></a>
+<a class="card" href="world-history/"><div class="label">Subject</div><h2>World History</h2><span>From the first humans to the modern world.</span></a>
+</main>
+</body>
+</html>
