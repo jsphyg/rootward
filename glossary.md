@@ -465,6 +465,10 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: dx and dy
 - def: Some books write this as $dy = f'(x)\,dx$, and call dx and dy "differentials". dx is a small change in x, and dy is the matching change along the tangent line. It is the same idea as here, in shorter symbols.
 
+### n_fermat
+- title: Note: Fermat's idea
+- def: Pierre de Fermat used this idea in the 1630s, before calculus had its modern form, to find the largest and smallest values of curves. It is still called Fermat's theorem: if a smooth function has a local peak or valley at a point, its derivative there is 0.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.

@@ -59,7 +59,7 @@ These are the "you were supposed to already know this" topics. They are what mak
 |---|---|---|---|
 | related-rates | Related rates | implicit-differentiation | ✅ (concepts/related-rates.md) |
 | linear-approximation | Linear approximation | linear-functions, power-rule | ✅ (concepts/linear-approximation.md) |
-| critical-points | Critical points | derivative-function | ⬜ |
+| critical-points | Critical points | derivative-function, power-rule, sum-constant-rules | ✅ (concepts/critical-points.md) |
 | increasing-decreasing | Increasing and decreasing | critical-points | ⬜ |
 | concavity | Concavity and inflection points | higher-derivatives, increasing-decreasing | ⬜ |
 | optimization | Optimization | increasing-decreasing | ⬜ |
