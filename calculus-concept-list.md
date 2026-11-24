@@ -57,7 +57,7 @@ These are the "you were supposed to already know this" topics. They are what mak
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| related-rates | Related rates | implicit-differentiation | ⬜ |
+| related-rates | Related rates | implicit-differentiation | ✅ (concepts/related-rates.md) |
 | linear-approximation | Linear approximation | derivative, linear-functions | ⬜ |
 | critical-points | Critical points | derivative-function | ⬜ |
 | increasing-decreasing | Increasing and decreasing | critical-points | ⬜ |

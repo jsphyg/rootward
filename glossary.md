@@ -457,6 +457,10 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: why 5 and 10
 - def: Near the ground, gravity speeds a falling object up by about 9.8 metres per second, every second. Rounding to 10 keeps the numbers simple. The height formula $20t - 5t^2$ uses half of 10, which is 5. That half is exactly what makes its second derivative come out to $-10$.
 
+### n_ladder
+- title: Note: an impossible speed
+- def: The formula says the top falls at $\frac{x}{y}$ metres per second. As the top nears the floor, y heads to 0, and that speed grows without limit. A real ladder does not do this: well before the end, its top loses touch with the wall and the ladder just falls. The maths is right about the triangle. The triangle just stops describing the ladder.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.
