@@ -721,6 +721,96 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 - def: The apparent shift of a nearby object against a distant background when seen from two places. For stars, measured from opposite sides of the Earth's orbit.
 - concept: parallax
 
+### luminosity
+- title: Luminosity
+- def: The total power a star gives out, in watts. The Sun's is $3.85 \times 10^{26}$ W.
+- concept: brightness-distance
+
+### binary-star
+- title: Binary star
+- def: Two stars orbiting their shared centre of mass. Timing their orbit gives their masses.
+- concept: binary-stars
+
+### hr-diagram
+- title: Hertzsprung–Russell diagram
+- def: A chart of stars by temperature (hot on the left) and luminosity (bright at the top). Most stars fall on the main sequence.
+- concept: hr-diagram
+
+### main-sequence
+- title: Main sequence
+- def: The band on the H–R diagram where stars spend most of their lives, fusing hydrogen in their cores. Heavier stars sit higher and further left.
+- concept: hr-diagram
+
+### hydrostatic-equilibrium
+- title: Hydrostatic equilibrium
+- def: The balance inside a star between gravity pulling in and gas pressure pushing out.
+- concept: the-sun
+
+### protostar
+- title: Protostar
+- def: A young star still shrinking and heating up, shining from its collapse before fusion starts.
+- concept: star-formation
+
+### brown-dwarf
+- title: Brown dwarf
+- def: A ball of gas under about 0.08 solar masses, too light for its core to start hydrogen fusion. A failed star.
+- concept: star-formation
+
+### red-giant
+- title: Red giant
+- def: A star that has used up the hydrogen in its core and swollen to a huge size, with a cool, red surface.
+- concept: stellar-evolution
+
+### planetary-nebula
+- title: Planetary nebula
+- def: The glowing shell of gas a Sun-like star puffs off at the end of its life, leaving a white dwarf. Nothing to do with planets.
+- concept: stellar-evolution
+
+### white-dwarf
+- title: White dwarf
+- def: The hot, dense leftover core of a Sun-like star: about a Sun's mass in a ball the size of the Earth.
+- concept: stellar-remnants
+
+### chandrasekhar-limit
+- title: Chandrasekhar limit
+- def: About 1.4 solar masses: the heaviest a white dwarf can be. A heavier core collapses further.
+- concept: stellar-remnants
+
+### supernova
+- title: Supernova
+- def: The explosion of a star, either a massive star whose core collapses or a white dwarf pushed over 1.4 solar masses. Briefly as bright as a galaxy.
+- concept: stellar-remnants
+
+### neutron-star
+- title: Neutron star
+- def: The collapsed core left by a supernova: about 1.4 solar masses of neutrons in a ball about 20 km across.
+- concept: stellar-remnants
+
+### schwarzschild-radius
+- title: Schwarzschild radius
+- def: The radius a mass must be squeezed inside to become a black hole: $R_s = \frac{2GM}{c^2}$, about 3 km per solar mass.
+- concept: black-holes
+
+### event-horizon
+- title: Event horizon
+- def: The edge of a black hole. Nothing that crosses it, not even light, can get back out.
+- concept: black-holes
+
+### exoplanet
+- title: Exoplanet
+- def: A planet orbiting a star other than the Sun.
+- concept: exoplanets
+
+### radial-velocity
+- title: Radial velocity method
+- def: Finding a planet by the back-and-forth Doppler shift of its star's spectral lines as the planet tugs it.
+- concept: exoplanets
+
+### habitable-zone
+- title: Habitable zone
+- def: The range of distances from a star where a planet's surface could be the right temperature for liquid water.
+- concept: exoplanets
+
 ---
 
 ## Footnotes

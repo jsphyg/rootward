@@ -180,18 +180,18 @@ Reused from Calculus: exponents, negative and fractional exponents, factoring, f
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| brightness-distance | Brightness and the inverse-square law | proportional-reasoning, astronomical-distances | ⬜ |
-| magnitudes | The magnitude scale | brightness-distance, calculus:logarithms | ⬜ |
-| stellar-spectra | What starlight tells us (temperature and makeup) | spectra, blackbody-radiation | ⬜ |
-| redshift | Redshift and blueshift | doppler-effect, spectra | ⬜ |
-| binary-stars | Weighing stars with binary orbits | keplers-laws, redshift | ⬜ |
-| hr-diagram | The Hertzsprung–Russell diagram | magnitudes, stellar-spectra | ⬜ |
-| the-sun | The Sun: how a star shines | fusion-fission, blackbody-radiation | ⬜ |
-| star-formation | How stars form | hr-diagram, the-sun | ⬜ |
-| stellar-evolution | The life of a star | star-formation | ⬜ |
-| stellar-remnants | White dwarfs, neutron stars and supernovae | stellar-evolution, escape-velocity | ⬜ |
-| black-holes | Black holes | stellar-remnants, general-relativity | ⬜ |
-| exoplanets | Planets around other stars | redshift, planets | ⬜ |
+| brightness-distance | Brightness and the inverse-square law | proportional-reasoning, astronomical-distances | ✅ |
+| magnitudes | The magnitude scale | brightness-distance, calculus:logarithms | ✅ |
+| stellar-spectra | What starlight tells us (temperature and makeup) | spectra, blackbody-radiation | ✅ |
+| redshift | Redshift and blueshift | doppler-effect, spectra | ✅ |
+| binary-stars | Weighing stars with binary orbits | keplers-laws, redshift | ✅ |
+| hr-diagram | The Hertzsprung–Russell diagram | magnitudes, stellar-spectra | ✅ |
+| the-sun | The Sun: how a star shines | fusion-fission, blackbody-radiation | ✅ |
+| star-formation | How stars form | hr-diagram, the-sun | ✅ |
+| stellar-evolution | The life of a star | star-formation | ✅ |
+| stellar-remnants | White dwarfs, neutron stars and supernovae | stellar-evolution, escape-velocity | ✅ |
+| black-holes | Black holes | stellar-remnants, general-relativity | ✅ |
+| exoplanets | Planets around other stars | redshift, planets | ✅ |
 
 ### Level 12: Galaxies and the universe
 
