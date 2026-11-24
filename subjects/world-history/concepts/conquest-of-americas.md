@@ -17,7 +17,7 @@ In 1519 Hernán Cortés landed in Mexico with about 500 Spanish soldiers. He mar
 
 | Year | Event |
 |---|---|
-| 1519 | Cortés arrives. Many peoples who paid tribute to the Aztecs, such as the Tlaxcalans, join him |
+| 1519 | Cortés arrives. Peoples who paid tribute to the Aztecs, and the Tlaxcalans, old enemies the Aztecs had never conquered, join him |
 | 1520 | Moctezuma dies while a prisoner. Smallpox sweeps through Tenochtitlan |
 | 1521 | After a long siege, Tenochtitlan falls. Mexico City is later built on its ruins |
 
@@ -30,7 +30,7 @@ The Inca Empire had just fought a civil war between two brothers. Francisco Piza
 | Reason | Why it mattered |
 |---|---|
 | Disease | {{smallpox|Smallpox}} and other diseases killed many native people, including leaders, and spread chaos |
-| Native allies | Thousands of native warriors who hated Aztec or Inca rule fought alongside the Spanish |
+| Native allies | Thousands of native warriors, who resented Aztec or Inca rule or, like the Tlaxcalans, were long-time enemies, fought alongside the Spanish |
 | Weapons | Steel swords and armor, horses and guns gave an edge in battle |
 | Timing | The Inca had just been weakened by civil war |
 
@@ -54,7 +54,7 @@ Portugal, meanwhile, claimed Brazil in 1500.
 title: Explain how Cortés's few hundred soldiers defeated the Aztec Empire.
 
 1. The Aztecs had conquered many neighboring peoples and made them pay tribute.
-   why: Those peoples resented Aztec rule, so many joined Cortés.
+   why: Those peoples resented Aztec rule, and independent enemies such as the Tlaxcalans wanted the Aztecs beaten, so many joined Cortés.
    uses: [americas-before-1492]
 
 2. Tens of thousands of native allies fought with the Spanish.
