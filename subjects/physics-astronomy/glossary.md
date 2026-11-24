@@ -586,6 +586,91 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 - def: A wave of linked electric and magnetic fields that travels through empty space at the speed of light. Light, radio and X-rays are all examples.
 - concept: em-waves
 
+### normal
+- title: Normal
+- def: An imaginary line at right angles to a surface, where a ray hits it. Angles of reflection and refraction are measured from it.
+- concept: reflection
+
+### focal-point
+- title: Focal point
+- def: The point where rays arriving parallel meet after a curved mirror or converging lens. Its distance from the mirror or lens is the focal length.
+- concept: lenses
+
+### refraction
+- title: Refraction
+- def: The bending of light (or any wave) as it crosses into a material where it travels at a different speed.
+- concept: refraction
+
+### refractive-index
+- title: Refractive index
+- def: How many times slower light travels in a material than in a vacuum, $n = \frac{c}{v}$. Water is 1.33; glass about 1.5.
+- concept: refraction
+
+### total-internal-reflection
+- title: Total internal reflection
+- def: When light inside a slower material hits the surface beyond the critical angle, none escapes; it all reflects back inside. Optical fibres use it.
+- concept: refraction
+
+### diffraction
+- title: Diffraction
+- def: The spreading of waves through a gap or round an edge, strongest when the gap is about the same size as the wavelength.
+- concept: diffraction
+
+### photon
+- title: Photon
+- def: A single packet of light energy, $E = hf$. Light travels as a wave but gives up its energy one photon at a time.
+- concept: photons
+
+### energy-level
+- title: Energy level
+- def: One of the fixed energies an electron in an atom is allowed to have, like a rung on a ladder.
+- concept: energy-levels
+
+### spectrum
+- title: Spectrum
+- def: Light spread out into its separate wavelengths, like a rainbow. Its pattern of bright or dark lines reveals which elements are present.
+- concept: spectra
+
+### blackbody
+- title: Blackbody
+- def: An ideal object that absorbs all light falling on it, so it glows only because of its temperature. Stars are close to blackbodies.
+- concept: blackbody-radiation
+
+### time-dilation
+- title: Time dilation
+- def: The slowing of a moving clock, as seen by someone it moves past. It only becomes noticeable near the speed of light.
+- concept: special-relativity
+
+### isotope
+- title: Isotope
+- def: A version of an element with a particular number of neutrons. Carbon-12 and carbon-14 are isotopes of carbon.
+- concept: nuclear-physics
+
+### binding-energy
+- title: Binding energy
+- def: The energy holding a nucleus together: the energy released when it formed, equal to its mass defect times $c^2$.
+- concept: nuclear-physics
+
+### radioactivity
+- title: Radioactive decay
+- def: An unstable nucleus breaking down by itself, giving out alpha, beta or gamma radiation.
+- concept: radioactive-decay
+
+### half-life
+- title: Half-life
+- def: The time for half the nuclei in a radioactive sample to decay. It is fixed for each isotope.
+- concept: radioactive-decay
+
+### fission
+- title: Fission
+- def: Splitting a heavy nucleus, such as uranium, into two smaller ones, releasing energy.
+- concept: fusion-fission
+
+### fusion
+- title: Fusion
+- def: Joining light nuclei, such as hydrogen, into a heavier one, releasing energy. It powers the Sun.
+- concept: fusion-fission
+
 ---
 
 ## Footnotes
@@ -761,3 +846,27 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 ### n_maxwell
 - title: Maxwell's equations
 - def: In 1865, Maxwell summed up all of electricity and magnetism in a few equations, now called Maxwell's equations. The prediction of electromagnetic waves came straight out of them. Heinrich Hertz made and detected radio waves in a lab in 1887, proving him right.
+
+### n_fermat
+- title: The quickest path
+- def: Light crossing from air to water bends so that it takes the quickest route between two points, like a lifeguard who runs further along the beach before swimming, because running is faster. This is Fermat's principle, and Snell's law follows from it.
+
+### n_bohr
+- title: Beyond Bohr's model
+- def: Bohr pictured electrons circling the nucleus like tiny planets. The modern picture, quantum mechanics, replaces orbits with clouds of probability, but it keeps Bohr's key idea of fixed energy levels and gives the same hydrogen energies.
+
+### n_planck
+- title: Planck's reluctant idea
+- def: Planck saw his energy packets as a mathematical trick, and did not believe light was really made of particles. It was Einstein, five years later, who took the packets seriously to explain the photoelectric effect.
+
+### n_light_clock
+- title: Where γ comes from
+- def: In the light clock, let the mirrors be a distance L apart. At rest, a tick takes $t_0 = \frac{L}{c}$. Moving sideways at v, the light travels a slanted path: in time t, it goes $ct$ while the mirror moves $vt$, so by Pythagoras $(ct)^2 = L^2 + (vt)^2$. Solving gives $t = \frac{t_0}{\sqrt{1 - v^2/c^2}} = \gamma t_0$.
+
+### n_einstein_field
+- title: Einstein's equations
+- def: General relativity is summed up in Einstein's field equations, which say how mass and energy curve spacetime. They are ten linked equations, hard to solve except in special cases, such as a single round star or black hole.
+
+### n_decay_rate
+- title: Why decay is exponential
+- def: Each nucleus has the same small chance λ of decaying each second, so the number decaying per second is λN. A rate of change proportional to the amount present, $\frac{dN}{dt} = -\lambda N$, always gives an exponential curve.

@@ -138,25 +138,25 @@ Reused from Calculus: exponents, negative and fractional exponents, factoring, f
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| reflection | Reflection and mirrors | em-waves | ⬜ |
-| refraction | Refraction | reflection | ⬜ |
-| lenses | Lenses and images | refraction | ⬜ |
-| diffraction | Diffraction and gratings | interference, em-waves | ⬜ |
+| reflection | Reflection and mirrors | em-waves | ✅ |
+| refraction | Refraction | reflection | ✅ |
+| lenses | Lenses and images | refraction | ✅ |
+| diffraction | Diffraction and gratings | interference, em-waves | ✅ |
 
 ### Level 9: Modern physics
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| photons | Light as particles (photons) | em-spectrum | ⬜ |
-| energy-levels | Atoms and energy levels | photons | ⬜ |
-| spectra | Emission and absorption spectra | energy-levels, diffraction | ⬜ |
-| blackbody-radiation | Glowing hot things (blackbody radiation) | photons, temperature | ⬜ |
-| special-relativity | Special relativity | relative-motion, em-waves | ⬜ |
-| mass-energy | E = mc² | special-relativity, conservation-of-energy | ⬜ |
-| general-relativity | Gravity as curved spacetime | special-relativity, gravitation | ⬜ |
-| nuclear-physics | The atomic nucleus | energy-levels, mass-energy | ⬜ |
-| radioactive-decay | Radioactive decay and half-life | nuclear-physics, calculus:exponential-functions | ⬜ |
-| fusion-fission | Fusion and fission | nuclear-physics | ⬜ |
+| photons | Light as particles (photons) | em-spectrum | ✅ |
+| energy-levels | Atoms and energy levels | photons | ✅ |
+| spectra | Emission and absorption spectra | energy-levels, diffraction | ✅ |
+| blackbody-radiation | Glowing hot things (blackbody radiation) | photons, temperature | ✅ |
+| special-relativity | Special relativity | relative-motion, em-waves | ✅ |
+| mass-energy | E = mc² | special-relativity, conservation-of-energy | ✅ |
+| general-relativity | Gravity as curved spacetime | special-relativity, gravitation | ✅ |
+| nuclear-physics | The atomic nucleus | energy-levels, mass-energy | ✅ |
+| radioactive-decay | Radioactive decay and half-life | nuclear-physics, calculus:exponential-functions | ✅ |
+| fusion-fission | Fusion and fission | nuclear-physics | ✅ |
 
 ## Part C: Astronomy
 
