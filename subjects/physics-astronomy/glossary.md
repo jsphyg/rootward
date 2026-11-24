@@ -250,6 +250,70 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 - title: Elastic limit
 - def: The furthest a spring or material can be stretched and still return to its original shape when let go.
 
+### joule
+- title: Joule (J)
+- def: The unit of work and energy. One joule is the work done by a 1 N force moving something 1 m. Lifting a small apple 1 m takes about 1 J.
+- concept: work
+
+### kinetic-energy
+- title: Kinetic energy
+- def: The energy an object has because it is moving, $\tfrac{1}{2}mv^2$.
+- concept: kinetic-energy
+
+### potential-energy
+- title: Potential energy
+- def: Stored energy, waiting to be used. Gravitational potential energy, $mgh$, is stored by lifting something.
+- concept: potential-energy
+
+### conservation-energy
+- title: Conservation of energy
+- def: The law that energy is never made or destroyed, only changed from one form to another, so the total stays the same.
+- concept: conservation-of-energy
+
+### thermal-energy
+- title: Thermal energy
+- def: The energy of the jiggling of atoms and molecules, which we feel as heat. Friction turns motion into thermal energy.
+
+### elastic-pe
+- title: Elastic potential energy
+- def: Energy stored in something stretched, squashed or bent, like a spring or a drawn bow. For a spring, $\tfrac{1}{2}kx^2$.
+- concept: spring-energy
+
+### watt
+- title: Watt (W)
+- def: The unit of power: one joule every second. A 60 W lamp uses 60 J each second.
+- concept: power
+
+### kwh
+- title: Kilowatt-hour (kWh)
+- def: A unit of energy used on electricity bills: 1000 W for one hour, which is 3.6 million joules.
+- concept: power
+
+### momentum
+- title: Momentum
+- def: Mass times velocity, $p = mv$. It measures how hard a moving thing is to stop, and points the way it moves.
+- concept: momentum
+
+### impulse
+- title: Impulse
+- def: A force times the time it acts, $F\Delta t$. It equals the change in momentum it causes.
+- concept: impulse
+
+### conservation-momentum
+- title: Conservation of momentum
+- def: The law that the total momentum of a group of objects stays the same when no outside force acts on them.
+- concept: conservation-of-momentum
+
+### elastic-collision
+- title: Elastic collision
+- def: A collision in which the total kinetic energy is the same before and after. The objects bounce apart.
+- concept: collisions
+
+### inelastic-collision
+- title: Inelastic collision
+- def: A collision in which some kinetic energy turns into heat, sound or bending. If the objects stick together, it is perfectly inelastic.
+- concept: collisions
+
 ---
 
 ## Footnotes
@@ -329,3 +393,19 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 ### n_hooke_sign
 - title: The minus sign in Hooke's law
 - def: $F = kx$ gives the size of the force. Writing $F = -kx$ also gives its direction: if x is a stretch to the right (positive), the spring pulls to the left (negative).
+
+### n_conservative
+- title: Forces where the path does not matter
+- def: Gravity and springs are called conservative forces: the work they do depends only on where you start and finish, not the route. Friction is not like this. A longer route means more friction and more work against it.
+
+### n_joule_heat
+- title: Heat is energy
+- def: In the 1840s James Joule let a falling weight turn a paddle in water and measured the water warming. The same amount of work always gave the same warming. That showed heat is a form of energy, and the unit of energy is named after him.
+
+### n_newton_momentum
+- title: Newton's own version
+- def: Newton wrote his second law as "the change of motion is proportional to the force", where by "motion" he meant mass times velocity. $F = \frac{\Delta p}{\Delta t}$ also works when the mass changes, as for a rocket burning fuel; $F = ma$ assumes a fixed mass.
+
+### n_elastic_solve
+- title: Solving the elastic collision
+- def: Momentum: $m_1u = m_1v_1 + m_2v_2$. Energy: $\tfrac{1}{2}m_1u^2 = \tfrac{1}{2}m_1v_1^2 + \tfrac{1}{2}m_2v_2^2$. Rearranging and dividing one by the other gives $u + v_1 = v_2$, a simple straight-line equation. Putting that into the momentum equation gives the two formulas.

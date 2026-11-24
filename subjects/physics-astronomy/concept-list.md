@@ -67,17 +67,17 @@ Reused from Calculus: exponents, negative and fractional exponents, factoring, f
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| work | Work | force, position-displacement | ⬜ |
-| kinetic-energy | Kinetic energy | work, constant-acceleration | ⬜ |
-| potential-energy | Gravitational potential energy | work, weight | ⬜ |
-| conservation-of-energy | Conservation of energy | kinetic-energy, potential-energy | ⬜ |
-| spring-energy | Energy stored in a spring | potential-energy, hookes-law | ⬜ |
-| power | Power | work | ⬜ |
-| work-integral | (calc) Work done by a changing force | work, calculus:definite-integral | ⬜ |
-| momentum | Momentum | newtons-second-law | ⬜ |
-| impulse | Impulse | momentum | ⬜ |
-| conservation-of-momentum | Conservation of momentum | momentum, newtons-third-law | ⬜ |
-| collisions | Elastic and inelastic collisions | conservation-of-momentum, kinetic-energy, systems-of-equations | ⬜ |
+| work | Work | force, position-displacement | ✅ |
+| kinetic-energy | Kinetic energy | work, constant-acceleration | ✅ |
+| potential-energy | Gravitational potential energy | work, weight | ✅ |
+| conservation-of-energy | Conservation of energy | kinetic-energy, potential-energy | ✅ |
+| spring-energy | Energy stored in a spring | potential-energy, hookes-law | ✅ |
+| power | Power | work | ✅ |
+| work-integral | (calc) Work done by a changing force | work, calculus:definite-integral | ✅ |
+| momentum | Momentum | newtons-second-law | ✅ |
+| impulse | Impulse | momentum | ✅ |
+| conservation-of-momentum | Conservation of momentum | momentum, newtons-third-law | ✅ |
+| collisions | Elastic and inelastic collisions | conservation-of-momentum, kinetic-energy, systems-of-equations | ✅ |
 
 ### Level 4: Rotation and gravity
 
