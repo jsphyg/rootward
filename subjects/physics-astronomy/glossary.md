@@ -273,6 +273,7 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 ### thermal-energy
 - title: Thermal energy
 - def: The energy of the jiggling of atoms and molecules, which we feel as heat. Friction turns motion into thermal energy.
+- concept: temperature
 
 ### elastic-pe
 - title: Elastic potential energy
@@ -441,6 +442,77 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 - def: Waves adding up where they meet: in step they make a bigger wave (constructive); crest on trough they cancel (destructive).
 - concept: interference
 
+### density
+- title: Density
+- def: How much mass is packed into each bit of space: mass divided by volume, $\rho = \frac{m}{V}$. Water is 1000 kg/m³.
+- concept: density
+
+### pressure
+- title: Pressure
+- def: Force spread over an area, $P = \frac{F}{A}$. A small area makes a big pressure.
+- concept: pressure
+
+### pascal
+- title: Pascal (Pa)
+- def: The unit of pressure: one newton on each square metre. Air pressure is about 101,000 Pa.
+- concept: pressure
+
+### buoyancy
+- title: Buoyant force (upthrust)
+- def: The upward push a fluid gives anything in it, equal to the weight of the fluid pushed aside.
+- concept: buoyancy
+
+### archimedes
+- title: Archimedes' principle
+- def: The upthrust on an object in a fluid equals the weight of the fluid it displaces (pushes out of the way).
+- concept: buoyancy
+
+### absolute-zero
+- title: Absolute zero
+- def: The coldest possible temperature, −273°C or 0 K, where particles have the least energy they can.
+
+### kelvin
+- title: Kelvin (K)
+- def: The temperature scale that starts at absolute zero. Its degrees are the same size as Celsius ones: K = °C + 273.
+- concept: temperature
+
+### specific-heat
+- title: Specific heat capacity
+- def: The energy needed to warm 1 kg of a material by 1°C. For water, about 4200 J.
+- concept: specific-heat
+
+### latent-heat
+- title: Latent heat
+- def: The energy needed to melt or boil 1 kg of a material without changing its temperature.
+
+### conduction
+- title: Conduction
+- def: Heat passing through a material as jiggling particles bump their neighbours. Metals conduct well; still air conducts badly.
+- concept: heat-transfer
+
+### convection
+- title: Convection
+- def: Heat carried by a moving fluid: warm fluid rises, cool fluid sinks, setting up a current.
+- concept: heat-transfer
+
+### radiation-heat
+- title: Thermal radiation
+- def: Heat carried by electromagnetic waves, mostly infrared. It needs no material, so it crosses space.
+- concept: heat-transfer
+
+### mole
+- title: Mole
+- def: A counting unit for particles: one mole is $6.02 \times 10^{23}$ of them.
+
+### thermodynamics
+- title: Thermodynamics
+- def: The study of heat, work and energy, summed up in four laws. The best known: energy is kept, and heat flows by itself only from hot to cold.
+- concept: thermodynamics
+
+### entropy
+- title: Entropy
+- def: A measure of how spread out energy is. Left alone, energy spreads out, and entropy goes up.
+
 ---
 
 ## Footnotes
@@ -572,3 +644,19 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 ### n_sound_temp
 - title: Sound and temperature
 - def: Sound is faster in warm air, because the molecules move faster and pass the push along sooner. A handy rule: about 331 m/s at 0°C, plus 0.6 m/s for every degree warmer.
+
+### n_archimedes_crown
+- title: Archimedes and the crown
+- def: The story goes that a king asked Archimedes whether a crown was pure gold, without damaging it. Stepping into a bath, he saw the water rise and realised he could measure the crown's volume that way, then compare its density with gold's. He is said to have run home shouting "Eureka!" ("I have found it!").
+
+### n_temp_ke
+- title: Temperature and energy exactly
+- def: For a simple gas, the average kinetic energy of each molecule is $\tfrac{3}{2}kT$, where T is in kelvin and $k = 1.38 \times 10^{-23}$ J/K is Boltzmann's constant. So doubling the kelvin temperature doubles the average kinetic energy.
+
+### n_conduction_rate
+- title: The conduction formula
+- def: The rate heat flows through a slab is $\frac{kA\Delta T}{d}$, where A is the area, ΔT the temperature difference across it, d the thickness, and k the material's thermal conductivity. Copper's k is about 400; still air's is about 0.025, 16,000 times smaller.
+
+### n_entropy
+- title: Why entropy goes up
+- def: There are vastly more ways for energy to be spread out among many particles than bunched up in a few. Random jostling therefore almost always spreads it out. Going the other way is not forbidden, just so unlikely that it never happens for anything big enough to see.
