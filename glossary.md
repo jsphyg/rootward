@@ -477,6 +477,14 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: a best value is guaranteed
 - def: If f is continuous on a closed interval, it is sure to have a highest and a lowest value there. This is called the extreme value theorem. Both parts matter. On an open stretch like $0 < x < 1$, the function x keeps getting closer to 1 but never reaches it, so it has no largest value. A function with a jump can skip over its would-be best value.
 
+### n_average_speed
+- title: Note: real average-speed cameras
+- def: Some countries really do this. Point-to-point cameras time a car between two spots and fine it if the average speed is over the limit. A judge does not need the mean value theorem, since the average itself is the offence. But the theorem shows the car really did go that fast at some moment.
+
+### n_rolle
+- title: Note: Rolle
+- def: Michel Rolle, a French mathematician, published the level-ends case in 1691. Oddly, he was a well-known critic of the new calculus at the time. The result was only named after him much later.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.
