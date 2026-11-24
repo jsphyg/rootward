@@ -527,6 +527,93 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`).
 - def: The title of the kings of Mali, meaning king or ruler.
 - concept: west-african-empires
 
+### humanism
+- title: Humanism
+- def: A Renaissance movement that studied ancient Greek and Roman writings and stressed the value and abilities of human beings.
+- concept: renaissance
+
+### perspective
+- title: Perspective
+- def: A drawing technique that makes a flat picture look deep, by making things smaller as they get farther away and lines meet at a point on the horizon.
+
+### sultan
+- title: Sultan
+- def: The title of a Muslim ruler, used by the Ottoman emperors and many others.
+- concept: ottoman-empire
+
+### janissary
+- title: Janissary
+- def: A member of the Ottoman sultan's elite infantry. Janissaries were taken as boys from Christian families, converted to Islam and trained to serve only the sultan.
+
+### indulgence
+- title: Indulgence
+- def: A pardon from the Catholic Church that was said to reduce the punishment for sins after death. Selling them for money angered Martin Luther.
+
+### excommunicate
+- title: Excommunicate
+- def: To expel someone from the Church, cutting them off from its sacraments.
+
+### protestant
+- title: Protestant
+- def: A member of one of the Christian churches that broke away from the Catholic Church in the Reformation, such as Lutherans and Calvinists.
+- concept: reformation
+
+### caravel
+- title: Caravel
+- def: A small, fast Portuguese sailing ship with triangular sails, used by early explorers.
+
+### astrolabe
+- title: Astrolabe
+- def: An instrument for measuring the height of the sun or a star above the horizon, which tells sailors how far north or south they are.
+
+### smallpox
+- title: Smallpox
+- def: A deadly, highly contagious disease that causes fever and skin sores. People in the Americas had never met it before 1492. It was wiped out worldwide in 1980.
+
+### conquistador
+- title: Conquistador
+- def: Spanish for "conqueror": the Spanish soldiers who conquered much of the Americas in the 1500s.
+- concept: conquest-of-americas
+
+### encomienda
+- title: Encomienda
+- def: A Spanish colonial grant giving a settler the right to native people's labor and tribute. It often led to cruel treatment close to slavery.
+
+### middle-passage
+- title: Middle Passage
+- def: The voyage of enslaved Africans across the Atlantic to the Americas, the middle leg of the triangular trade.
+- concept: atlantic-slave-trade
+
+### chattel-slavery
+- title: Chattel slavery
+- def: Slavery in which enslaved people are legally owned as property, can be bought and sold, and pass their status on to their children.
+
+### sikhism
+- title: Sikhism
+- def: A religion founded by Guru Nanak in the Punjab region of northern India around 1500. It teaches devotion to one God, honest work and the equality of all people.
+
+### queue
+- title: Queue
+- def: A hairstyle with the front of the head shaved and the rest in a long braid. The Qing forced Chinese men to wear it as a sign of loyalty.
+
+### geocentric
+- title: Geocentric
+- def: Earth-centered: the old belief that the Earth sits still at the center of the universe and everything circles it.
+
+### heliocentric
+- title: Heliocentric
+- def: Sun-centered: the idea that the Earth and the other planets move around the sun.
+- concept: scientific-revolution
+
+### scientific-method
+- title: Scientific method
+- def: A way of finding knowledge by observing, forming an idea, testing it with experiments, and changing the idea if the evidence disagrees.
+- concept: scientific-revolution
+
+### hypothesis
+- title: Hypothesis
+- def: A possible explanation that can be tested by experiment or observation.
+
 ---
 
 ## Footnotes
@@ -714,3 +801,35 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`).
 ### n_mansa_musa
 - title: Note: "the richest man ever"?
 - def: Mansa Musa is often called the richest person who ever lived. That makes a good headline but cannot really be measured, since his wealth was tied to the land and trade of his empire. It is certain that his gold amazed people from Cairo to Europe, and a map made on the Spanish island of Majorca in 1375, the Catalan Atlas, shows him holding a gold nugget.
+
+### n_renaissance_word
+- title: Note: naming the Renaissance
+- def: Italians of the time spoke of a rebirth of the arts, but the name "the Renaissance" for a whole period became common only in the 1800s, through historians such as Jules Michelet and Jacob Burckhardt. Historians today point out that medieval Europe was not as "dark" as Renaissance writers claimed.
+
+### n_istanbul
+- title: Note: Constantinople or Istanbul?
+- def: The name Istanbul comes from a Greek phrase meaning "to the city". Turks used it for centuries, but the Ottoman government often kept the name Kostantiniyye in official writing. The name Istanbul became official in 1930.
+
+### n_luther_door
+- title: Note: did Luther nail them to a door?
+- def: A famous story says Luther nailed his 95 Theses to the door of the Castle Church in Wittenberg on 31 October 1517. The story first appears after his death, and historians debate whether it happened. Church doors were used like notice boards, so it is possible.
+
+### n_columbus
+- title: Note: Columbus and the shape of the Earth
+- def: Columbus did not prove the Earth was round. Educated Europeans had known that since ancient Greek times. The argument was about its size: Columbus thought Japan lay about 4,000 km west of the Canary Islands, when it is really nearly 20,000 km away. Had the Americas not been in the way, his crew would have starved.
+
+### n_native_deaths
+- title: Note: how many died?
+- def: No one knows how many people lived in the Americas in 1492. Estimates range from under 10 million to over 100 million, and many historians now suggest 40 to 60 million. Most agree that the native population fell by something like 80 to 90 percent within about 150 years.
+
+### n_crosby
+- title: Note: who named it?
+- def: The historian Alfred Crosby coined the term "Columbian Exchange" in his 1972 book of that name.
+
+### n_slave_numbers
+- title: Note: where the numbers come from
+- def: The figures of about 12.5 million embarked and 10.7 million arrived come from the Trans-Atlantic Slave Trade Database, built by historians from records of over 36,000 voyages. They count only the ocean crossing; many more people died during capture and the march to the coast.
+
+### n_mughal_wealth
+- title: Note: how rich was Mughal India?
+- def: Economic historians estimate that around 1600 to 1700, India produced roughly a quarter of the world's goods, about as much as China. These are rough estimates built from scattered evidence, but all agree India was one of the two largest economies on earth.

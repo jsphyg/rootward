@@ -1,7 +1,7 @@
 ---
 id: balkan-tensions
 title: Tensions in the Balkans
-prereqs: [nationalism]
+prereqs: [nationalism, ottoman-empire]
 big: Before 1914 the Balkans were where the Ottoman Empire was shrinking, Serbia was growing, and Austria-Hungary and Russia competed for control.
 recap: As the Ottoman Empire lost its Balkan lands, Serbia grew stronger and Austria-Hungary feared that its own South Slavs would want to join Serbia. Austria-Hungary took over Bosnia in 1908, which angered Serbia and Russia.
 check:
