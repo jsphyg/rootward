@@ -811,6 +811,46 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 - def: The range of distances from a star where a planet's surface could be the right temperature for liquid water.
 - concept: exoplanets
 
+### galactic-year
+- title: Galactic year
+- def: The time the Sun takes to orbit the centre of the Milky Way once, about 220 million years.
+- concept: milky-way
+
+### rotation-curve
+- title: Rotation curve
+- def: A graph of how fast stars and gas orbit a galaxy at each distance from its centre. Flat curves reveal dark matter.
+- concept: dark-matter
+
+### dark-matter
+- title: Dark matter
+- def: Unseen mass that gives out no light but pulls by gravity. About five times as much as ordinary matter.
+- concept: dark-matter
+
+### galaxy
+- title: Galaxy
+- def: A huge system of millions to trillions of stars, with gas, dust and dark matter, held together by gravity.
+- concept: galaxies
+
+### hubble-constant
+- title: Hubble constant ($H_0$)
+- def: The rate of the universe's expansion today: about 70 km/s of recession speed for every megaparsec of distance.
+- concept: hubble-law
+
+### observable-universe
+- title: Observable universe
+- def: The part of the universe from which light has had time to reach us. Its edge is now about 46 billion light-years away.
+- concept: big-bang
+
+### cmb
+- title: Cosmic microwave background (CMB)
+- def: The leftover glow of the hot early universe, released 380,000 years after the Big Bang and now cooled to 2.7 K.
+- concept: cmb
+
+### dark-energy
+- title: Dark energy
+- def: The unknown cause of the speeding up of the universe's expansion. About 68% of the universe's total energy.
+- concept: dark-energy
+
 ---
 
 ## Footnotes

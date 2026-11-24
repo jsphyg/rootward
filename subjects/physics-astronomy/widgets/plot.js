@@ -23,7 +23,7 @@ LW.widget("plot", function(el, lw, args){
     if(!isFinite(y) || y < y0-1 || y > y1+1){ pen = false; continue; }
     cv += (pen?"L":"M")+X(x).toFixed(1)+" "+Y(y).toFixed(1); pen = true; }
   let ticks = "";
-  const step = r => [1,2,5,10,20,50,100].find(k => r/k <= 10) || 200; // keep about 10 ticks or fewer
+  const step = r => { const p = Math.pow(10, Math.floor(Math.log10(Math.max(r,10)/10))); return [1,2,5,10].map(k => k*p).find(k => r/k <= 10); }; // 1, 2 or 5 times a power of ten, at least 1, keeping 10 ticks or fewer
   const sx = step(x1-x0), sy = step(y1-y0);
   for(let t=Math.ceil(x0/sx)*sx;t<=x1;t+=sx) if(t) ticks += `<path class="ax" d="M${X(t)} ${Y(0)-4} V${Y(0)+4}"/><text class="mt" x="${X(t)-5}" y="${Y(0)+18}">${num(t)}</text>`;
   for(let t=Math.ceil(y0/sy)*sy;t<=y1;t+=sy) if(t) ticks += `<path class="ax" d="M${X(0)-4} ${Y(t)} H${X(0)+4}"/><text class="mt" text-anchor="end" x="${X(0)-8}" y="${Y(t)+5}">${num(t)}</text>`;
