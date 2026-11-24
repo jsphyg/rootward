@@ -493,6 +493,14 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: the infinity version
 - def: The straight-line picture explains the $\frac{0}{0}$ case. The $\frac{\infty}{\infty}$ case is also true, but its proof is harder. It uses a stronger form of the mean value theorem, called Cauchy's mean value theorem. For using the rule, the two cases work the same way.
 
+### n_integral_sign
+- title: Note: why a long S?
+- def: Leibniz chose $\int$ in the 1670s. It is a stretched letter S, for "summa", Latin for sum. That is a clue to what comes next: the same symbol turns out to add up the area under a curve, built from many thin strips.
+
+### n_abs_log
+- title: Note: why ln of |x|?
+- def: $\ln x$ only exists for positive x. For negative x, $\ln(-x)$ does exist, and its derivative is also $\frac{1}{x}$ (by the chain rule, two minus signs cancel). Writing $\ln|x|$ covers both sides at once.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.
