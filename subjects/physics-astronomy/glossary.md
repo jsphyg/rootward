@@ -63,6 +63,73 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 - def: A fraction worth exactly 1 that changes units, like $\frac{1000\ \text{m}}{1\ \text{km}}$. The top and bottom are the same amount written in different units.
 - concept: unit-conversion
 
+### proportional
+- title: Directly proportional
+- def: Two quantities are directly proportional when one is always the same number times the other, $y = kx$. Double one and the other doubles.
+- concept: proportional-reasoning
+
+### constant-k
+- title: Constant of proportionality
+- def: The fixed number k in a proportion like $y = kx$ or $y = \frac{k}{x}$. It stays the same while x and y change.
+
+### quadratic
+- title: Quadratic equation
+- def: An equation whose highest power of x is $x^2$, like $2x^2 - 3x - 4 = 0$.
+- concept: quadratic-formula
+
+### discriminant
+- title: Discriminant
+- def: The part $b^2 - 4ac$ under the square root in the quadratic formula. Its sign tells you whether there are two, one or no solutions.
+
+### completing-square
+- title: Completing the square
+- def: Adding the right number to both sides so that one side becomes a perfect square, like $(x + 3)^2$, which can then be undone with a square root.
+
+### system
+- title: System of equations
+- def: Two or more equations about the same unknowns, which must all be true at once.
+- concept: systems-of-equations
+
+### substitute
+- title: Substitute
+- def: Replace a letter with something equal to it, such as a number or another expression.
+
+### right-angle
+- title: Right angle
+- def: A square corner, exactly 90°. It is a quarter of a full turn.
+
+### hypotenuse
+- title: Hypotenuse
+- def: The longest side of a right triangle, across from the right angle.
+
+### pythagoras
+- title: Pythagorean theorem
+- def: In a right triangle, $a^2 + b^2 = c^2$, where c is the hypotenuse. Named after the Greek thinker Pythagoras, though others knew it earlier.
+- concept: pythagorean-theorem
+
+### vector
+- title: Vector
+- def: A quantity with a size and a direction, like 5 m/s north or 10 N downward. Drawn as an arrow.
+- concept: vectors
+
+### scalar
+- title: Scalar
+- def: A quantity with a size only and no direction, like a mass of 3 kg or a time of 20 s.
+
+### magnitude
+- title: Magnitude
+- def: The size of a vector, ignoring its direction. Always zero or positive. The magnitude of (3, 4) is 5.
+
+### component
+- title: Component
+- def: The part of a vector that points along one direction, such as across or up. A vector at an angle has an across component and an up component.
+- concept: vector-components
+
+### resultant
+- title: Resultant
+- def: The single vector you get by adding two or more vectors. It has the same effect as all of them together.
+- concept: vector-addition
+
 ---
 
 ## Footnotes
@@ -86,3 +153,23 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 ### n_mars_orbiter
 - title: The lost Mars probe
 - def: NASA's Mars Climate Orbiter, 1999. Software from one team reported thruster pushes in pound-force seconds; the navigation team expected newton-seconds. The probe flew too close to Mars and was lost.
+
+### n_complex
+- title: Numbers beyond the real ones
+- def: Mathematicians invented "imaginary" numbers, with $i^2 = -1$, so that every quadratic has answers. They matter in electronics and quantum physics, but no measured length or time is imaginary, so this web does not need them.
+
+### n_no_solution
+- title: Parallel lines
+- def: Each equation in two unknowns is a straight line on a graph, and the solution is where the lines cross. Parallel lines never cross, so there is no solution. If the two equations are really the same line, every point on it works.
+
+### n_3d_pythagoras
+- title: Three directions
+- def: In space, add a third direction: the distance is $\sqrt{x^2 + y^2 + z^2}$. It comes from using the theorem twice.
+
+### n_arc_names
+- title: Why "arc"
+- def: On a circle of radius 1, an angle in radians equals the length of the arc it cuts off. So arcsin(0.5) means "the arc whose sine is 0.5".
+
+### n_inverse_range
+- title: Which angle the calculator gives
+- def: Many angles share a sine: $\sin 30° = \sin 150° = 0.5$. So $\sin^{-1}$ always gives the one between −90° and 90°, $\cos^{-1}$ the one between 0° and 180°, and $\tan^{-1}$ the one between −90° and 90°. In a right triangle the angle is always between 0° and 90°, so the calculator's answer is the one you want.
