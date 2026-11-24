@@ -76,16 +76,16 @@ These are the "how history works" ideas. Short pages, linked from many others.
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| renaissance | The Renaissance | black-death, byzantine-empire | ⬜ |
-| ottoman-empire | The Ottoman Empire | islamic-caliphates | ⬜ |
-| reformation | The Reformation | renaissance | ⬜ |
-| age-of-exploration | The age of exploration | renaissance, ottoman-empire, indian-ocean-trade | ⬜ |
-| conquest-of-americas | The conquest of the Americas | age-of-exploration, americas-before-1492 | ⬜ |
-| columbian-exchange | The Columbian Exchange | conquest-of-americas | ⬜ |
-| atlantic-slave-trade | The Atlantic slave trade | conquest-of-americas, west-african-empires | ⬜ |
-| mughal-empire | The Mughal Empire | islamic-caliphates, mongol-empire | ⬜ |
-| ming-qing-china | Ming and Qing China | mongol-empire | ⬜ |
-| scientific-revolution | The Scientific Revolution | renaissance | ⬜ |
+| renaissance | The Renaissance | black-death, byzantine-empire | ✅ |
+| ottoman-empire | The Ottoman Empire | islamic-caliphates | ✅ |
+| reformation | The Reformation | renaissance | ✅ |
+| age-of-exploration | The age of exploration | renaissance, ottoman-empire, indian-ocean-trade | ✅ |
+| conquest-of-americas | The conquest of the Americas | age-of-exploration, americas-before-1492 | ✅ |
+| columbian-exchange | The Columbian Exchange | conquest-of-americas | ✅ |
+| atlantic-slave-trade | The Atlantic slave trade | conquest-of-americas, west-african-empires | ✅ |
+| mughal-empire | The Mughal Empire | islamic-caliphates, mongol-empire | ✅ |
+| ming-qing-china | Ming and Qing China | mongol-empire | ✅ |
+| scientific-revolution | The Scientific Revolution | renaissance | ✅ |
 
 ## Era 6: Revolutions and empires (about 1750 to 1914)
 
