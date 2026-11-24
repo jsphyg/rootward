@@ -120,19 +120,19 @@ Reused from Calculus: exponents, negative and fractional exponents, factoring, f
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| electric-charge | Electric charge | force | ⬜ |
-| coulombs-law | Coulomb's law | electric-charge, proportional-reasoning | ⬜ |
-| electric-field | Electric fields | coulombs-law | ⬜ |
-| voltage | Electric potential (voltage) | electric-field, potential-energy | ⬜ |
-| current | Electric current | electric-charge | ⬜ |
-| ohms-law | Resistance and Ohm's law | current, voltage | ⬜ |
-| circuits | Series and parallel circuits | ohms-law, systems-of-equations | ⬜ |
-| electric-power | Electric power | ohms-law, power | ⬜ |
-| magnetic-fields | Magnets and magnetic fields | current | ⬜ |
-| magnetic-force | Magnetic force on moving charges | magnetic-fields, circular-motion | ⬜ |
-| induction | Electromagnetic induction | magnetic-fields, voltage | ⬜ |
-| em-waves | Light as an electromagnetic wave | induction, waves | ⬜ |
-| em-spectrum | The electromagnetic spectrum | em-waves | ⬜ |
+| electric-charge | Electric charge | force | ✅ |
+| coulombs-law | Coulomb's law | electric-charge, proportional-reasoning | ✅ |
+| electric-field | Electric fields | coulombs-law | ✅ |
+| voltage | Electric potential (voltage) | electric-field, potential-energy | ✅ |
+| current | Electric current | electric-charge | ✅ |
+| ohms-law | Resistance and Ohm's law | current, voltage | ✅ |
+| circuits | Series and parallel circuits | ohms-law, systems-of-equations | ✅ |
+| electric-power | Electric power | ohms-law, power | ✅ |
+| magnetic-fields | Magnets and magnetic fields | current | ✅ |
+| magnetic-force | Magnetic force on moving charges | magnetic-fields, circular-motion | ✅ |
+| induction | Electromagnetic induction | magnetic-fields, voltage | ✅ |
+| em-waves | Light as an electromagnetic wave | induction, waves | ✅ |
+| em-spectrum | The electromagnetic spectrum | em-waves | ✅ |
 
 ### Level 8: Light and optics
 
