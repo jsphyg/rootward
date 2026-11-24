@@ -445,6 +445,10 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: why this is the same e
 - def: The exponential functions page met e through interest: $\left(1 + \frac{1}{n}\right)^n$ heads to e as n grows. Take the n-th root: $1 + \frac{1}{n}$ is about $e^{1/n}$. Call $h = \frac{1}{n}$. Then $e^h$ is about $1 + h$, so $\frac{e^h - 1}{h}$ is about 1, and gets closer as h shrinks. The base that makes the slope number 1 is the same e.
 
+### n_implicit
+- title: Note: does a hidden function always exist?
+- def: Not always, but near most points it does. A result called the implicit function theorem says that if the curve is not vertical at a point, then near that point it really is the graph of some function y of x. That is what makes the method safe. Where the tangent is vertical, as at $(5, 0)$ on the circle, the method gives a division by 0, which is the warning sign.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.
