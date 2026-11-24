@@ -48,7 +48,7 @@ By the third law, the spring pulls back on whatever stretches it, with the same 
 - Stretched: it pulls back in.
 - Squashed: it pushes back out.
 
-That is why it is often written with a minus sign, $F = -kx$, meaning "the spring's force points opposite to the stretch".^[n_hooke_sign] This restoring force is what makes springs bounce, and the page on oscillation builds on it.
+That is why it is often written with a minus sign, $F = -kx$, meaning "the spring's force points opposite to the stretch".^[n_hooke_sign] This restoring force is what makes springs bounce, and the page on [[simple-harmonic-motion|oscillation]] builds on it.
 
 ## The elastic limit
 

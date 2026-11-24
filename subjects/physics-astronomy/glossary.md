@@ -390,6 +390,57 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 - def: The launch speed needed to get away from a planet or star for good, with no further push: $\sqrt{2GM/R}$. About 11.2 km/s for the Earth.
 - concept: escape-velocity
 
+### shm
+- title: Simple harmonic motion
+- def: A steady back-and-forth swing caused by a force that always pulls toward the middle, in proportion to the distance from it. Springs and pendulums move this way.
+- concept: simple-harmonic-motion
+
+### amplitude
+- title: Amplitude
+- def: The biggest distance from the middle in an oscillation or wave: how big the swing, or how tall the crest, is.
+
+### frequency
+- title: Frequency
+- def: How many swings, or wave crests, happen each second. Measured in hertz (Hz): 1 Hz is once per second. $f = \frac{1}{T}$.
+- concept: simple-harmonic-motion
+
+### wave
+- title: Wave
+- def: A travelling pattern of oscillation that carries energy from place to place, while the material it moves through stays where it is.
+- concept: waves
+
+### transverse
+- title: Transverse wave
+- def: A wave in which the material moves at right angles to the direction the wave travels, like ripples on water or a shaken rope.
+
+### longitudinal
+- title: Longitudinal wave
+- def: A wave in which the material moves back and forth along the direction the wave travels, like sound.
+
+### wavelength
+- title: Wavelength
+- def: The distance from one crest of a wave to the next. Written λ (lambda).
+- concept: waves
+
+### sound
+- title: Sound
+- def: A longitudinal wave of squeezed and stretched air (or another material). About 343 m/s in air.
+- concept: sound
+
+### doppler
+- title: Doppler effect
+- def: The change in frequency of a wave when its source moves toward you (higher) or away from you (lower).
+- concept: doppler-effect
+
+### superposition
+- title: Superposition
+- def: The rule that where waves overlap, they add up: the total is the sum of each wave on its own.
+
+### interference
+- title: Interference
+- def: Waves adding up where they meet: in step they make a bigger wave (constructive); crest on trough they cancel (destructive).
+- concept: interference
+
 ---
 
 ## Footnotes
@@ -513,3 +564,11 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 ### n_pe_far
 - title: Where −GMm/r comes from
 - def: The work done lifting a mass from r out to infinity is the integral of the force, $\int_r^\infty \frac{GMm}{x^2}\,dx = \frac{GMm}{r}$. Taking zero at infinity, the PE at r is minus that amount. Close to the ground, this gives back $mgh$ for small heights.
+
+### n_pendulum_wide
+- title: Wide swings
+- def: The formula uses the fact that $\sin\theta \approx \theta$ for small angles in radians. At 15° the true period is only about 0.4% longer than the formula gives. At 60° it is about 7% longer.
+
+### n_sound_temp
+- title: Sound and temperature
+- def: Sound is faster in warm air, because the molecules move faster and pass the push along sooner. A handy rule: about 331 m/s at 0°C, plus 0.6 m/s for every degree warmer.
