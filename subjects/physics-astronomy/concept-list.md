@@ -83,14 +83,14 @@ Reused from Calculus: exponents, negative and fractional exponents, factoring, f
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| torque | Torque (turning force) | force | ⬜ |
-| equilibrium | Balance and static equilibrium | torque, newtons-first-law | ⬜ |
-| rotational-motion | Angular speed and angular acceleration | circular-motion | ⬜ |
-| angular-momentum | Angular momentum | rotational-motion, momentum, torque | ⬜ |
-| gravitation | Newton's law of gravitation | weight, proportional-reasoning | ⬜ |
-| orbits | Circular orbits | gravitation, circular-motion | ⬜ |
-| keplers-laws | Kepler's laws of planetary motion | orbits | ⬜ |
-| escape-velocity | Escape velocity | orbits, conservation-of-energy | ⬜ |
+| torque | Torque (turning force) | force | ✅ |
+| equilibrium | Balance and static equilibrium | torque, newtons-first-law | ✅ |
+| rotational-motion | Angular speed and angular acceleration | circular-motion | ✅ |
+| angular-momentum | Angular momentum | rotational-motion, momentum, torque | ✅ |
+| gravitation | Newton's law of gravitation | weight, proportional-reasoning | ✅ |
+| orbits | Circular orbits | gravitation, circular-motion | ✅ |
+| keplers-laws | Kepler's laws of planetary motion | orbits | ✅ |
+| escape-velocity | Escape velocity | orbits, conservation-of-energy | ✅ |
 
 ### Level 5: Oscillations and waves
 

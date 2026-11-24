@@ -314,6 +314,82 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 - def: A collision in which some kinetic energy turns into heat, sound or bending. If the objects stick together, it is perfectly inelastic.
 - concept: collisions
 
+### torque
+- title: Torque
+- def: The turning effect of a force: the force times its distance from the pivot, when it acts at right angles. Measured in N·m.
+- concept: torque
+
+### pivot
+- title: Pivot
+- def: The fixed point something turns around, like a door's hinge or the middle of a seesaw.
+
+### equilibrium
+- title: Static equilibrium
+- def: Staying perfectly still, because the forces cancel and the turning effects (torques) cancel too.
+- concept: equilibrium
+
+### centre-of-gravity
+- title: Centre of gravity
+- def: The point where an object's whole weight can be treated as acting. For a uniform plank or ball, it is the middle.
+
+### radian
+- title: Radian
+- def: A way to measure angles: arc length divided by radius. A full turn is $2\pi$ radians, and one radian is about 57°.
+- concept: rotational-motion
+
+### angular-velocity
+- title: Angular speed
+- def: How fast something spins: the angle it turns through each second, in radians per second (rad/s). Written ω.
+- concept: rotational-motion
+
+### angular-acceleration
+- title: Angular acceleration
+- def: How fast the spin rate changes, in rad/s². Written α.
+
+### moment-of-inertia
+- title: Moment of inertia
+- def: How hard something is to spin up or slow down. It depends on the mass and how far it is from the axis: $mr^2$ for a small mass.
+- concept: angular-momentum
+
+### angular-momentum
+- title: Angular momentum
+- def: The spinning version of momentum, $L = I\omega$. With no outside twist, it stays the same.
+- concept: angular-momentum
+
+### gravitational-constant
+- title: Gravitational constant (G)
+- def: The number in Newton's law of gravitation, $6.67 \times 10^{-11}$ N·m²/kg². Its tiny size is why gravity between everyday objects is too weak to notice.
+- concept: gravitation
+
+### inverse-square
+- title: Inverse-square law
+- def: A rule where something gets weaker with the square of the distance: twice as far, a quarter as strong. Gravity, light and sound all spread out this way.
+- concept: gravitation
+
+### orbit
+- title: Orbit
+- def: The path of one object around another, held by gravity. A satellite in orbit is falling all the time, but moving sideways fast enough to keep missing the planet.
+- concept: orbits
+
+### weightlessness
+- title: Weightlessness
+- def: The floating feeling in free fall. Gravity still pulls, but you and everything around you fall together, so nothing pushes on you.
+
+### ellipse
+- title: Ellipse
+- def: A stretched circle, the shape of a planet's orbit. It has two special points inside, the foci; the Sun sits at one of them.
+- concept: keplers-laws
+
+### astronomical-unit
+- title: Astronomical unit (AU)
+- def: The Earth's average distance from the Sun, about $1.5 \times 10^{11}$ m (150 million km). Used to measure distances in the solar system.
+- concept: keplers-laws
+
+### escape-velocity
+- title: Escape velocity
+- def: The launch speed needed to get away from a planet or star for good, with no further push: $\sqrt{2GM/R}$. About 11.2 km/s for the Earth.
+- concept: escape-velocity
+
 ---
 
 ## Footnotes
@@ -409,3 +485,31 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 ### n_elastic_solve
 - title: Solving the elastic collision
 - def: Momentum: $m_1u = m_1v_1 + m_2v_2$. Energy: $\tfrac{1}{2}m_1u^2 = \tfrac{1}{2}m_1v_1^2 + \tfrac{1}{2}m_2v_2^2$. Rearranging and dividing one by the other gives $u + v_1 = v_2$, a simple straight-line equation. Putting that into the momentum equation gives the two formulas.
+
+### n_torque_unit
+- title: N·m is not joules here
+- def: Torque and work are both a force times a distance, so both come out in N·m. For work, the force is along the distance; for torque, it is at right angles. To avoid mixing them up, torque is always written N·m, never J.
+
+### n_moon_test
+- title: Newton's Moon test
+- def: Newton worked out the Moon's acceleration from its distance and its 27.3-day orbit, and found about 0.0027 m/s². That is 9.8 divided by about 3600, just as an inverse-square law predicts at 60 Earth radii. The match convinced him that the same gravity reaches the Moon.
+
+### n_cavendish
+- title: Measuring G
+- def: Henry Cavendish first measured the pull between lead balls in a lab in 1798, using a very fine twisting wire. Once G was known, $g = \frac{GM}{R^2}$ gave the Earth's mass. He was said to have "weighed the Earth".
+
+### n_disc_inertia
+- title: Where ½MR² comes from
+- def: Cut a disc into thin rings. Each ring has all its mass at its own radius, so contributes mass × radius². Adding up all the rings, with an integral, gives $\tfrac{1}{2}MR^2$. The inner rings count for little, which is why it is less than a ring's $MR^2$.
+
+### n_kepler_history
+- title: Kepler and Brahe
+- def: Tycho Brahe made the most accurate naked-eye measurements of the planets ever taken, before telescopes. Kepler spent about eight years fitting circles to Mars's path before trying an ellipse, which fitted at once. He published the first two laws in 1609 and the third in 1619.
+
+### n_equal_areas
+- title: Why equal areas
+- def: The Sun's pull always points straight at the Sun, so it gives no torque about the Sun. The planet's angular momentum is therefore constant, and equal areas in equal times is exactly what constant angular momentum looks like.
+
+### n_pe_far
+- title: Where −GMm/r comes from
+- def: The work done lifting a mass from r out to infinity is the integral of the force, $\int_r^\infty \frac{GMm}{x^2}\,dx = \frac{GMm}{r}$. Taking zero at infinity, the PE at r is minus that amount. Close to the ground, this gives back $mgh$ for small heights.
