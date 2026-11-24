@@ -505,6 +505,10 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: sigma notation
 - def: Books often write a Riemann sum with a capital Greek sigma, $\Sigma$, meaning "add up". For example, $\sum_{i=1}^{n} f(x_i)\,w$ means: for i = 1, 2, … up to n, take the height $f(x_i)$ times the width w, and add them all. It is shorthand for exactly the adding done on this page.
 
+### n_integrable
+- title: Note: does the limit always exist?
+- def: For every function on this site it does: any function that is continuous on the stretch from a to b, or that has only a few jumps, has a definite integral there. Some very strange functions, which jump around at every point, have Riemann sums that never settle. Riemann's definition says exactly when the limit exists.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.

@@ -72,7 +72,7 @@ These are the "you were supposed to already know this" topics. They are what mak
 |---|---|---|---|
 | antiderivatives | Antiderivatives | mean-value-theorem, trig-derivatives, exp-log-derivatives | ✅ (concepts/antiderivatives.md) |
 | riemann-sums | Area and Riemann sums | graphs | ✅ (concepts/riemann-sums.md) |
-| definite-integral | The definite integral | riemann-sums, limits | ⬜ |
+| definite-integral | The definite integral | riemann-sums, limits | ✅ (concepts/definite-integral.md) |
 | ftc | The fundamental theorem of calculus | definite-integral, antiderivatives | ⬜ |
 | u-substitution | Substitution (u-sub) | ftc, chain-rule | ⬜ |
 | area-between-curves | Area between curves | definite-integral | ⬜ |
