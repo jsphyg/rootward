@@ -473,6 +473,10 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: why the sign cannot jump
 - def: This is the same idea as the intermediate value theorem: a value cannot get from positive to negative without passing through 0 in between. For the functions on this site, $f'$ is continuous wherever it exists, so the theorem applies directly. (In fact, every derivative has this no-jumping property, even an unusual one. That is a result called Darboux's theorem.)
 
+### n_evt
+- title: Note: a best value is guaranteed
+- def: If f is continuous on a closed interval, it is sure to have a highest and a lowest value there. This is called the extreme value theorem. Both parts matter. On an open stretch like $0 < x < 1$, the function x keeps getting closer to 1 but never reaches it, so it has no largest value. A function with a jump can skip over its would-be best value.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.

@@ -62,7 +62,7 @@ These are the "you were supposed to already know this" topics. They are what mak
 | critical-points | Critical points | derivative-function, power-rule, sum-constant-rules | ✅ (concepts/critical-points.md) |
 | increasing-decreasing | Increasing and decreasing | critical-points | ✅ (concepts/increasing-decreasing.md) |
 | concavity | Concavity and inflection points | higher-derivatives, increasing-decreasing | ✅ (concepts/concavity.md) |
-| optimization | Optimization | increasing-decreasing | ⬜ |
+| optimization | Optimization | increasing-decreasing | ✅ (concepts/optimization.md) |
 | mean-value-theorem | The mean value theorem | derivative, continuity | ⬜ |
 | lhopital | L'Hôpital's rule | derivative | ⬜ |
 
