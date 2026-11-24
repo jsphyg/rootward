@@ -51,17 +51,17 @@ Reused from Calculus: exponents, negative and fractional exponents, factoring, f
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| force | Forces and free-body diagrams | vector-addition | ⬜ |
-| newtons-first-law | Newton's first law (inertia) | force | ⬜ |
-| newtons-second-law | Newton's second law, F = ma | newtons-first-law, acceleration | ⬜ |
-| newtons-third-law | Newton's third law | force | ⬜ |
-| weight | Mass and weight | newtons-second-law, free-fall | ⬜ |
-| contact-forces | Normal force and tension | newtons-third-law, weight | ⬜ |
-| friction | Friction | contact-forces | ⬜ |
-| inclined-planes | Slopes and inclined planes | friction | ⬜ |
-| connected-objects | Connected objects and pulleys | contact-forces, systems-of-equations | ⬜ |
-| circular-motion | Circular motion and centripetal force | newtons-second-law | ⬜ |
-| hookes-law | Springs and Hooke's law | force, proportional-reasoning | ⬜ |
+| force | Forces and free-body diagrams | vector-addition | ✅ |
+| newtons-first-law | Newton's first law (inertia) | force | ✅ |
+| newtons-second-law | Newton's second law, F = ma | newtons-first-law, acceleration | ✅ |
+| newtons-third-law | Newton's third law | force | ✅ |
+| weight | Mass and weight | newtons-second-law, free-fall | ✅ |
+| contact-forces | Normal force and tension | newtons-third-law, weight | ✅ |
+| friction | Friction | contact-forces | ✅ |
+| inclined-planes | Slopes and inclined planes | friction | ✅ |
+| connected-objects | Connected objects and pulleys | contact-forces, systems-of-equations | ✅ |
+| circular-motion | Circular motion and centripetal force | newtons-second-law | ✅ |
+| hookes-law | Springs and Hooke's law | force, proportional-reasoning | ✅ |
 
 ### Level 3: Energy and momentum
 

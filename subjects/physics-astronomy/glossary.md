@@ -168,6 +168,88 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 - def: Anything thrown, kicked or fired that then moves under gravity alone, like a ball in flight.
 - concept: projectile-motion
 
+### force
+- title: Force
+- def: A push or a pull. It has a size, measured in newtons (N), and a direction, so it is a vector.
+- concept: force
+
+### newton
+- title: Newton (N)
+- def: The SI unit of force. One newton gives a 1 kg mass an acceleration of 1 m/s². A small apple weighs about 1 N.
+
+### free-body
+- title: Free-body diagram
+- def: A sketch of one object on its own, with an arrow for every force acting on it, showing each force's direction and size.
+
+### net-force
+- title: Net force
+- def: The total of all the forces on an object, added as vectors. It decides how the object's motion changes.
+
+### inertia
+- title: Inertia
+- def: An object's tendency to keep doing what it is doing: stay still, or keep moving at the same velocity. More mass means more inertia.
+- concept: newtons-first-law
+
+### mass
+- title: Mass
+- def: How much matter an object has, in kilograms. It measures inertia and does not change from place to place.
+- concept: weight
+
+### force-pair
+- title: Third-law pair
+- def: Two forces, equal in size and opposite in direction, that two objects exert on each other. They act on different objects, so they never cancel.
+- concept: newtons-third-law
+
+### weight
+- title: Weight
+- def: The force of gravity on an object, $W = mg$, in newtons, pointing toward the centre of the planet.
+- concept: weight
+
+### field-strength
+- title: Gravitational field strength
+- def: The pull of gravity on each kilogram, in N/kg. On Earth it is about 9.8 N/kg, the same number as g in m/s².
+
+### normal-force
+- title: Normal force
+- def: The push a surface gives on an object pressing on it, at right angles to the surface.
+- concept: contact-forces
+
+### tension
+- title: Tension
+- def: The pull of a rope, string or cable, along its length. A rope can pull but not push.
+- concept: contact-forces
+
+### friction
+- title: Friction
+- def: The force between two surfaces that resists them sliding over each other. It acts along the surfaces.
+- concept: friction
+
+### coefficient-friction
+- title: Coefficient of friction
+- def: A number, written μ, that says how grippy two surfaces are together. Friction is μ times the normal force. It has no units.
+
+### static-friction
+- title: Static friction
+- def: Friction between surfaces that are not sliding. It matches the force trying to slide them, up to a maximum of $\mu_s N$.
+
+### centripetal
+- title: Centripetal
+- def: Pointing toward the centre of a circle. Centripetal acceleration is $\frac{v^2}{r}$; the centripetal force is the net inward force that causes it.
+- concept: circular-motion
+
+### period
+- title: Period
+- def: The time for one complete lap, swing or cycle, in seconds.
+
+### spring-constant
+- title: Spring constant
+- def: The number k in Hooke's law, $F = kx$, in N/m. It says how stiff a spring is: the force needed per metre of stretch.
+- concept: hookes-law
+
+### elastic-limit
+- title: Elastic limit
+- def: The furthest a spring or material can be stretched and still return to its original shape when let go.
+
 ---
 
 ## Footnotes
@@ -231,3 +313,19 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 ### n_air_resistance
 - title: Real balls and air
 - def: Air pushes back on a moving ball, so real throws fall short of these numbers, and the best angle is usually a bit below 45°. For a heavy, slow object over a short distance, the effect is small.
+
+### n_galileo_newton
+- title: Who worked it out
+- def: For nearly 2000 years people followed Aristotle, who taught that moving things need a constant push. Galileo, in the early 1600s, rolled balls on ramps and argued that motion continues unless something stops it. Isaac Newton made it his first law in 1687.
+
+### n_scales
+- title: What bathroom scales measure
+- def: A bathroom scale measures how hard you press on it, a force, then divides by 9.8 to show kilograms. Take it to the Moon and it would show about a sixth of your mass, which is wrong. A balance that compares you against known masses would still be right.
+
+### n_centripetal_proof
+- title: Where v²/r comes from
+- def: In a short time t, the object goes a distance $vt$ around the circle, so its direction turns through an angle $\frac{vt}{r}$ in radians. The velocity arrow, length v, turns by that angle, so it changes by about $v \times \frac{vt}{r}$. Divide by t to get the acceleration: $\frac{v^2}{r}$.
+
+### n_hooke_sign
+- title: The minus sign in Hooke's law
+- def: $F = kx$ gives the size of the force. Writing $F = -kx$ also gives its direction: if x is a stretch to the right (positive), the spring pulls to the left (negative).
