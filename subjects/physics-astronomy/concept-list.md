@@ -37,15 +37,15 @@ Reused from Calculus: exponents, negative and fractional exponents, factoring, f
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| position-displacement | Position, distance and displacement | vectors, units | ⬜ |
-| velocity | Speed and velocity | position-displacement, calculus:slope | ⬜ |
-| acceleration | Acceleration | velocity | ⬜ |
-| motion-graphs | Reading motion graphs | acceleration | ⬜ |
-| constant-acceleration | The constant-acceleration equations | motion-graphs, quadratic-formula | ⬜ |
-| free-fall | Free fall | constant-acceleration | ⬜ |
-| relative-motion | Relative motion | velocity, vector-addition | ⬜ |
-| projectile-motion | Projectile motion | free-fall, vector-components | ⬜ |
-| motion-calculus | (calc) Velocity and acceleration as derivatives | acceleration, calculus:higher-derivatives, calculus:antiderivatives | ⬜ |
+| position-displacement | Position, distance and displacement | vectors, units | ✅ |
+| velocity | Speed and velocity | position-displacement, calculus:slope | ✅ |
+| acceleration | Acceleration | velocity | ✅ |
+| motion-graphs | Reading motion graphs | acceleration | ✅ |
+| constant-acceleration | The constant-acceleration equations | motion-graphs, quadratic-formula | ✅ |
+| free-fall | Free fall | constant-acceleration | ✅ |
+| relative-motion | Relative motion | velocity, vector-addition | ✅ |
+| projectile-motion | Projectile motion | free-fall, vector-components | ✅ |
+| motion-calculus | (calc) Velocity and acceleration as derivatives | acceleration, calculus:higher-derivatives, calculus:antiderivatives | ✅ |
 
 ### Level 2: Forces
 

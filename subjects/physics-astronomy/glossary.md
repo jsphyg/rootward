@@ -130,6 +130,44 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 - def: The single vector you get by adding two or more vectors. It has the same effect as all of them together.
 - concept: vector-addition
 
+### origin
+- title: Origin
+- def: The zero point you choose to measure positions from. Positions on one side are positive, on the other side negative.
+
+### displacement
+- title: Displacement
+- def: The change in position, end minus start. A vector: it has a size and a direction, and it ignores the path taken.
+- concept: position-displacement
+
+### velocity
+- title: Velocity
+- def: How fast position changes, and in which direction: displacement divided by time, in m/s. A vector.
+- concept: velocity
+
+### speed
+- title: Speed
+- def: How fast something moves, with no direction. The size of the velocity. Average speed is total distance divided by time.
+
+### acceleration
+- title: Acceleration
+- def: How fast velocity changes: change in velocity divided by time, in m/s². Speeding up, slowing down and turning are all acceleration.
+- concept: acceleration
+
+### free-fall
+- title: Free fall
+- def: Motion where gravity is the only influence. Near the Earth, everything in free fall accelerates downward at about 9.8 m/s².
+- concept: free-fall
+
+### frame
+- title: Frame of reference
+- def: The point of view you measure motion from, such as the ground, a moving train or a plane. Velocities depend on the frame.
+- concept: relative-motion
+
+### projectile
+- title: Projectile
+- def: Anything thrown, kicked or fired that then moves under gravity alone, like a ball in flight.
+- concept: projectile-motion
+
 ---
 
 ## Footnotes
@@ -173,3 +211,23 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 ### n_inverse_range
 - title: Which angle the calculator gives
 - def: Many angles share a sine: $\sin 30° = \sin 150° = 0.5$. So $\sin^{-1}$ always gives the one between −90° and 90°, $\cos^{-1}$ the one between 0° and 180°, and $\tan^{-1}$ the one between −90° and 90°. In a right triangle the angle is always between 0° and 90°, so the calculator's answer is the one you want.
+
+### n_area_integral
+- title: Area and integrals
+- def: Adding up thinner and thinner strips is exactly what an integral does. In calculus terms, displacement is the integral of velocity over time. The Calculus web explains this on its definite integral page.
+
+### n_suvat
+- title: "suvat"
+- def: Many textbooks call these the "suvat" equations, after the five letters s, u, v, a and t. Some books write $v_0$ or $v_i$ for the start velocity and $\Delta x$ or d for the displacement.
+
+### n_g_varies
+- title: g is not quite the same everywhere
+- def: g is about 9.78 m/s² at the equator and 9.83 m/s² at the poles, and a little smaller on high mountains. 9.8 m/s² is a good average. On the Moon it is about 1.6 m/s².
+
+### n_galilean
+- title: When adding velocities fails
+- def: Adding velocities works for everything in daily life. Near the speed of light it breaks down: light moves at the same speed for every observer. The page on special relativity explains what replaces it.
+
+### n_air_resistance
+- title: Real balls and air
+- def: Air pushes back on a moving ball, so real throws fall short of these numbers, and the best angle is usually a bit below 45°. For a heavy, slow object over a short distance, the effect is small.
