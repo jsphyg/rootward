@@ -461,6 +461,10 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: an impossible speed
 - def: The formula says the top falls at $\frac{x}{y}$ metres per second. As the top nears the floor, y heads to 0, and that speed grows without limit. A real ladder does not do this: well before the end, its top loses touch with the wall and the ladder just falls. The maths is right about the triangle. The triangle just stops describing the ladder.
 
+### n_differential
+- title: Note: dx and dy
+- def: Some books write this as $dy = f'(x)\,dx$, and call dx and dy "differentials". dx is a small change in x, and dy is the matching change along the tangent line. It is the same idea as here, in shorter symbols.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.
