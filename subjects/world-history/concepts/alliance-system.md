@@ -1,7 +1,7 @@
 ---
 id: alliance-system
 title: The alliance system
-prereqs: []
+prereqs: [imperialism]
 big: By 1914 Europe's strongest countries had split into two camps, so a quarrel between two countries could drag in all of them.
 recap: Germany and Austria-Hungary were allies, with Italy also tied to them on paper (the Triple Alliance). France and Russia were allies, and Britain had friendly understandings with both (the Triple Entente). A war involving one member could pull in its partners.
 check:
@@ -13,7 +13,7 @@ check:
 
 ## Two camps
 
-Before 1914, Europe's {{great-powers|great powers}} signed a series of agreements. Step by step, these sorted them into two camps.
+Before 1914, Europe's {{great-powers|great powers}} signed a series of agreements. Step by step, these sorted them into two camps. Many of the quarrels they settled, or sharpened, were about colonies: Britain and France had nearly fought over Africa in 1898, and Britain and Russia had long competed in Central Asia.
 
 :::widget timeline
 1879 | Germany and Austria-Hungary form the Dual Alliance.

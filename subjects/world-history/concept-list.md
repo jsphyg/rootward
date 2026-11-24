@@ -91,18 +91,18 @@ These are the "how history works" ideas. Short pages, linked from many others.
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| enlightenment | The Enlightenment | scientific-revolution, reformation | ⬜ |
-| american-revolution | The American Revolution | enlightenment, conquest-of-americas | ⬜ |
-| french-revolution | The French Revolution | enlightenment | ⬜ |
-| haitian-revolution | The Haitian Revolution | french-revolution, atlantic-slave-trade | ⬜ |
-| latin-american-independence | Latin American independence | french-revolution, conquest-of-americas | ⬜ |
-| industrial-revolution | The Industrial Revolution | scientific-revolution | ⬜ |
+| enlightenment | The Enlightenment | scientific-revolution, reformation | ✅ |
+| american-revolution | The American Revolution | enlightenment, conquest-of-americas | ✅ |
+| french-revolution | The French Revolution | enlightenment | ✅ |
+| haitian-revolution | The Haitian Revolution | french-revolution, atlantic-slave-trade | ✅ |
+| latin-american-independence | Latin American independence | french-revolution, conquest-of-americas | ✅ |
+| industrial-revolution | The Industrial Revolution | scientific-revolution | ✅ |
 | nationalism | Nationalism | french-revolution | ✅ |
-| socialism | Capitalism and socialism | industrial-revolution | ⬜ |
-| imperialism | The new imperialism | industrial-revolution, nationalism | ⬜ |
-| scramble-for-africa | The scramble for Africa | imperialism | ⬜ |
-| opium-wars | The Opium Wars | imperialism, ming-qing-china | ⬜ |
-| meiji-japan | Meiji Japan | imperialism | ⬜ |
+| socialism | Capitalism and socialism | industrial-revolution | ✅ |
+| imperialism | The new imperialism | industrial-revolution, nationalism | ✅ |
+| scramble-for-africa | The scramble for Africa | imperialism | ✅ |
+| opium-wars | The Opium Wars | imperialism, ming-qing-china | ✅ |
+| meiji-japan | Meiji Japan | imperialism | ✅ |
 
 ## Era 7: The world wars and after (1914 to today)
 

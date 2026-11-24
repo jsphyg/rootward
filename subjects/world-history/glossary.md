@@ -614,6 +614,71 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`).
 - title: Hypothesis
 - def: A possible explanation that can be tested by experiment or observation.
 
+### natural-rights
+- title: Natural rights
+- def: Rights that every person is born with, such as life and liberty, which no government gives and no government may take away.
+- concept: enlightenment
+
+### consent-of-the-governed
+- title: Consent of the governed
+- def: The idea that a government's right to rule comes from the agreement of the people it rules.
+
+### separation-of-powers
+- title: Separation of powers
+- def: Dividing government into separate branches, usually lawmakers, an executive and courts, so each can check the others and none becomes too strong.
+
+### estates
+- title: Estates
+- def: The three legal classes of old-regime France: clergy, nobles, and everyone else.
+- concept: french-revolution
+
+### creole
+- title: Creole
+- def: In Spanish America, a person of European, usually Spanish, descent born in the Americas.
+- concept: latin-american-independence
+
+### factory
+- title: Factory
+- def: A building where many workers make goods with machines, under one owner and set hours.
+- concept: industrial-revolution
+
+### capitalism
+- title: Capitalism
+- def: An economic system in which private people and companies own businesses and run them for profit, and markets set prices.
+- concept: socialism
+
+### socialist
+- title: Socialist
+- def: A person who believes that factories, land and other means of production should be owned by the public or by the workers, and wealth shared more equally.
+- concept: socialism
+
+### communism
+- title: Communism
+- def: In Marx's theory, a future classless society in which all property is shared. Later, the name of the one-party states that claimed to be building it, such as the Soviet Union.
+
+### imperialism
+- title: Imperialism
+- def: A powerful country taking control of other lands and peoples, by conquest or by economic and political pressure.
+- concept: imperialism
+
+### raj
+- title: Raj
+- def: Hindi for "rule": the period of direct British rule over India, from 1858 to 1947.
+
+### unequal-treaties
+- title: Unequal treaties
+- def: Treaties forced on China, Japan and other countries in the 1800s that gave foreign powers trade rights, land and legal privileges without anything equal in return.
+- concept: opium-wars
+
+### shogun
+- title: Shogun
+- def: A military ruler of Japan who held real power while the emperor was a figurehead. Shoguns ruled Japan from 1192 until 1867.
+
+### restoration
+- title: Restoration
+- def: Bringing back a former ruler or form of government. In Japan, the "Meiji Restoration" of 1868 returned power, in name, to the emperor.
+- concept: meiji-japan
+
 ---
 
 ## Footnotes
@@ -833,3 +898,31 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`).
 ### n_mughal_wealth
 - title: Note: how rich was Mughal India?
 - def: Economic historians estimate that around 1600 to 1700, India produced roughly a quarter of the world's goods, about as much as China. These are rough estimates built from scattered evidence, but all agree India was one of the two largest economies on earth.
+
+### n_enlightenment_limits
+- title: Note: rights for whom?
+- def: Locke helped write a constitution for the Carolina colony that allowed slavery, and invested in a slave-trading company. Rousseau argued that women should be educated only to please and serve men. Historians debate how far such views were simply of their time and how far they contradicted the thinkers' own principles.
+
+### n_jefferson
+- title: Note: Jefferson and slavery
+- def: Thomas Jefferson, who wrote that "all men are created equal," enslaved more than 600 people over his lifetime. He called slavery a moral evil but freed only a handful of the people he held.
+
+### n_terror
+- title: Note: counting the Terror
+- def: About 17,000 people were sentenced to death by revolutionary courts. Counting those who died in prison or were killed without trial, especially in the civil war in the Vendée region of western France, total deaths may have been well over 100,000.
+
+### n_haiti_debt
+- title: Note: Haiti's "independence debt"
+- def: In 1825 France, backed by warships, demanded 150 million francs from Haiti as compensation for former colonists, later reduced to 90 million. Haiti borrowed to pay it, and payments on the debt and the loans continued until about 1947. Historians see it as one cause of Haiti's long poverty.
+
+### n_industrial_name
+- title: Note: was it a revolution?
+- def: The name was made popular by the historian Arnold Toynbee in the 1880s. Some historians point out that change was gradual at first, and that most British workers still did not work in factories in 1850. But over a century it transformed daily life as deeply as any political revolution.
+
+### n_empire_share
+- title: Note: how much of the world?
+- def: A figure often quoted says that by 1914 Europeans controlled about 84 percent of the world's land. That number includes the Americas and Russia's Asian lands, where Europeans or their descendants ruled. Either way, almost all of Africa and much of Asia were under foreign rule.
+
+### n_congo
+- title: Note: how many died in the Congo?
+- def: No census was taken, so the death toll is uncertain. Estimates of the population loss under Leopold's rule range from about 1 million to 10 million or more, and historians still debate the figure. Contemporary campaigners, such as Edmund Morel and Roger Casement, exposed the abuses.
