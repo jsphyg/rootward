@@ -164,17 +164,17 @@ Reused from Calculus: exponents, negative and fractional exponents, factoring, f
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| angular-size | Angles in the sky (angular size) | calculus:trig-basics | ⬜ |
-| sky-motions | Day, year and the turning sky | angular-size | ⬜ |
-| seasons | The seasons | sky-motions | ⬜ |
-| moon-phases | Phases of the Moon | sky-motions | ⬜ |
-| eclipses | Eclipses | moon-phases | ⬜ |
-| tides | Tides | gravitation, moon-phases | ⬜ |
-| planets | The planets and the solar system | keplers-laws | ⬜ |
-| solar-system-formation | How the solar system formed | planets, angular-momentum | ⬜ |
-| telescopes | Telescopes | lenses, em-spectrum | ⬜ |
-| astronomical-distances | Distances in space (AU, light-year, parsec) | unit-conversion, velocity | ⬜ |
-| parallax | Measuring distance by parallax | angular-size, astronomical-distances | ⬜ |
+| angular-size | Angles in the sky (angular size) | calculus:trig-basics | ✅ |
+| sky-motions | Day, year and the turning sky | angular-size | ✅ |
+| seasons | The seasons | sky-motions | ✅ |
+| moon-phases | Phases of the Moon | sky-motions | ✅ |
+| eclipses | Eclipses | moon-phases | ✅ |
+| tides | Tides | gravitation, moon-phases | ✅ |
+| planets | The planets and the solar system | keplers-laws | ✅ |
+| solar-system-formation | How the solar system formed | planets, angular-momentum | ✅ |
+| telescopes | Telescopes | lenses, em-spectrum | ✅ |
+| astronomical-distances | Distances in space (AU, light-year, parsec) | unit-conversion, velocity | ✅ |
+| parallax | Measuring distance by parallax | angular-size, astronomical-distances | ✅ |
 
 ### Level 11: Stars
 
