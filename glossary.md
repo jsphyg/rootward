@@ -441,6 +441,10 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: proving the tangent rule
 - def: The quotient rule says $\left(\frac{f}{g}\right)' = \frac{f'g - fg'}{g^2}$. With $f = \sin x$ and $g = \cos x$: $\frac{\cos x \cdot \cos x - \sin x \cdot (-\sin x)}{\cos^2 x} = \frac{\cos^2 x + \sin^2 x}{\cos^2 x} = \frac{1}{\cos^2 x}$, since $\sin^2 x + \cos^2 x = 1$.
 
+### n_e_slope
+- title: Note: why this is the same e
+- def: The exponential functions page met e through interest: $\left(1 + \frac{1}{n}\right)^n$ heads to e as n grows. Take the n-th root: $1 + \frac{1}{n}$ is about $e^{1/n}$. Call $h = \frac{1}{n}$. Then $e^h$ is about $1 + h$, so $\frac{e^h - 1}{h}$ is about 1, and gets closer as h shrinks. The base that makes the slope number 1 is the same e.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.
