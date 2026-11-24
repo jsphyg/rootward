@@ -513,6 +513,79 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 - title: Entropy
 - def: A measure of how spread out energy is. Left alone, energy spreads out, and entropy goes up.
 
+### charge
+- title: Electric charge
+- def: A property of matter that makes it push or pull on other charges. It comes as positive (protons) or negative (electrons); likes repel, opposites attract.
+- concept: electric-charge
+
+### coulomb
+- title: Coulomb (C)
+- def: The unit of charge. One coulomb is the charge of about $6.25 \times 10^{18}$ electrons.
+- concept: electric-charge
+
+### conductor
+- title: Conductor
+- def: A material that lets charge flow through it easily, like a metal. One that does not, like plastic, is an insulator.
+
+### electric-field
+- title: Electric field
+- def: The space around a charge where other charges feel a force. Its strength E is the force per coulomb, in N/C.
+- concept: electric-field
+
+### voltage
+- title: Voltage (potential difference)
+- def: The energy given to or taken from each coulomb of charge moving between two points. Measured in volts.
+- concept: voltage
+
+### volt
+- title: Volt (V)
+- def: The unit of voltage: one joule per coulomb.
+- concept: voltage
+
+### current
+- title: Electric current
+- def: The flow of charge, measured as coulombs passing a point each second.
+- concept: current
+
+### ampere
+- title: Ampere (A)
+- def: The unit of current, often called an amp: one coulomb per second.
+- concept: current
+
+### circuit
+- title: Circuit
+- def: A complete loop that charge can flow round, from one side of a power supply back to the other.
+- concept: circuits
+
+### resistance
+- title: Resistance
+- def: How much a component opposes the flow of current: the voltage needed per amp, $R = \frac{V}{I}$.
+- concept: ohms-law
+
+### ohm
+- title: Ohm (Ω)
+- def: The unit of resistance: one volt per amp.
+- concept: ohms-law
+
+### magnetic-field
+- title: Magnetic field
+- def: The space around a magnet or a current where magnetic forces act. Its strength B is measured in teslas.
+- concept: magnetic-fields
+
+### tesla
+- title: Tesla (T)
+- def: The unit of magnetic field strength. The Earth's field is about 0.00005 T; a strong lab magnet is about 1 T.
+
+### induction
+- title: Electromagnetic induction
+- def: Making a voltage in a wire by changing the magnetic field through it.
+- concept: induction
+
+### em-wave
+- title: Electromagnetic wave
+- def: A wave of linked electric and magnetic fields that travels through empty space at the speed of light. Light, radio and X-rays are all examples.
+- concept: em-waves
+
 ---
 
 ## Footnotes
@@ -660,3 +733,31 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 ### n_entropy
 - title: Why entropy goes up
 - def: There are vastly more ways for energy to be spread out among many particles than bunched up in a few. Random jostling therefore almost always spreads it out. Going the other way is not forbidden, just so unlikely that it never happens for anything big enough to see.
+
+### n_neutral
+- title: How neutral is matter?
+- def: Extremely. If your body had just 1% more electrons than protons, the push between you and a person standing next to you would be strong enough to lift the whole Earth.
+
+### n_drift
+- title: How slow is the drift?
+- def: In a copper wire 1 mm across carrying 1 A, the electrons drift at only about 0.1 mm per second. At that rate, an electron takes about a quarter of an hour to move 10 cm. In AC mains, they just jiggle back and forth and get nowhere at all.
+
+### n_resistivity
+- title: Resistivity values
+- def: Resistivity is in ohm-metres (Ω·m). Copper is about $1.7 \times 10^{-8}$, nichrome about $1.1 \times 10^{-6}$ (about 65 times copper's), and glass about $10^{12}$, an insulator.
+
+### n_earth_field
+- title: The Earth's moving poles
+- def: The Earth's field comes from currents of molten iron in its outer core. The magnetic poles drift slowly, by tens of kilometres a year, and every few hundred thousand years the whole field flips. Rocks record these flips, which helped prove that the sea floor spreads.
+
+### n_flemings
+- title: Fleming's left-hand rule
+- def: Many school courses give the direction with Fleming's left-hand rule instead: hold your thumb, first finger and second finger at right angles. First finger points along the Field, second finger along the Current, and the thuMb gives the Motion (force). It gives the same answer.
+
+### n_lenz
+- title: Lenz's law as energy conservation
+- def: If induced currents helped the change instead of fighting it, a magnet nudged toward a coil would be pulled in faster and faster, making ever more current from nothing. Lenz's law is what stops that: it is conservation of energy applied to induction.
+
+### n_maxwell
+- title: Maxwell's equations
+- def: In 1865, Maxwell summed up all of electricity and magnetism in a few equations, now called Maxwell's equations. The prediction of electromagnetic waves came straight out of them. Heinrich Hertz made and detected radio waves in a lab in 1887, proving him right.
