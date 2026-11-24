@@ -3,7 +3,7 @@ id: opium-wars
 title: The Opium Wars
 prereqs: [imperialism, ming-qing-china]
 big: In the mid-1800s Britain used war to force China to accept opium imports and open its ports, beginning a century China calls its "century of humiliation."
-recap: Britain bought huge amounts of Chinese tea but had little China wanted, so British merchants smuggled in opium grown in British India, and millions of Chinese became addicted. When China destroyed British opium in 1839, Britain went to war and won. The Treaty of Nanjing in 1842 gave Hong Kong to Britain, opened ports to foreign trade and let foreigners live under their own laws. A second war followed in 1856 to 1860. Weakened by these defeats and by huge rebellions such as the Taiping, the Qing dynasty fell in 1912.
+recap: Britain bought huge amounts of Chinese tea but had little China wanted, so British merchants smuggled in opium grown in British India, and millions of Chinese became addicted. When China destroyed British opium in 1839, Britain went to war and won. The Treaty of Nanjing in 1842 gave Hong Kong to Britain and opened ports to foreign trade, and a follow-up treaty in 1843 let British subjects in China live under their own laws. A second war followed in 1856 to 1860. Weakened by these defeats and by huge rebellions such as the Taiping, the Qing dynasty fell in 1912.
 check:
   q: Why did British merchants sell opium to China?
   options: ["To pay for Chinese tea, since China wanted few British goods.", "Because the Chinese government asked them to.", "To cure a disease spreading in China.", "Because opium was legal and popular in Britain's colonies in Africa."]
@@ -26,14 +26,14 @@ British merchants found something Chinese buyers would pay for: opium, an addict
 
 In 1839 the emperor sent an official, Lin Zexu, to stop the trade. He seized and destroyed more than 20,000 chests of British opium. Britain sent warships.
 
-China's armies and old ships were no match for British steamships and guns. In 1842 China signed the Treaty of Nanjing.
+China's armies and old ships were no match for British steamships and guns. In 1842 China signed the Treaty of Nanjing, and in 1843 a follow-up treaty, the Treaty of the Bogue, added more terms.
 
 | What China gave up | Why it mattered |
 |---|---|
 | Hong Kong | Became a British colony until 1997 |
 | Five ports opened to British trade | Foreign merchants could trade freely |
 | A large payment | For the destroyed opium and the cost of the war |
-| Legal control over foreigners | British subjects in China were tried in their own courts, not Chinese ones |
+| Legal control over foreigners (1843 treaty) | British subjects in China were tried in their own courts, not Chinese ones |
 
 China called these {{unequal-treaties|unequal treaties}}, because they were forced on it by war and gave rights to foreigners without anything in return. Other powers, such as France and the United States, soon demanded the same rights.
 
