@@ -96,12 +96,12 @@ Reused from Calculus: exponents, negative and fractional exponents, factoring, f
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| simple-harmonic-motion | Oscillation (simple harmonic motion) | hookes-law, newtons-second-law | ⬜ |
-| pendulum | The pendulum | simple-harmonic-motion, weight | ⬜ |
-| waves | Waves: wavelength, frequency, speed | simple-harmonic-motion | ⬜ |
-| sound | Sound | waves | ⬜ |
-| doppler-effect | The Doppler effect | sound | ⬜ |
-| interference | Superposition and interference | waves | ⬜ |
+| simple-harmonic-motion | Oscillation (simple harmonic motion) | hookes-law, newtons-second-law | ✅ |
+| pendulum | The pendulum | simple-harmonic-motion, weight | ✅ |
+| waves | Waves: wavelength, frequency, speed | simple-harmonic-motion | ✅ |
+| sound | Sound | waves | ✅ |
+| doppler-effect | The Doppler effect | sound | ✅ |
+| interference | Superposition and interference | waves | ✅ |
 
 ### Level 6: Matter and heat
 
