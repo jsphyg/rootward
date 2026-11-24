@@ -671,6 +671,56 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 - def: Joining light nuclei, such as hydrogen, into a heavier one, releasing energy. It powers the Sun.
 - concept: fusion-fission
 
+### angular-size
+- title: Angular size
+- def: How big something looks: the angle it spans from where you stand. For small angles, size divided by distance, in radians.
+- concept: angular-size
+
+### arcsecond
+- title: Arcsecond (″)
+- def: A tiny angle: 1/3600 of a degree. An arcminute (′) is 1/60 of a degree.
+- concept: angular-size
+
+### ecliptic
+- title: Ecliptic
+- def: The Sun's yearly path against the background stars, as seen from Earth.
+- concept: sky-motions
+
+### solstice
+- title: Solstice
+- def: The day in June or December when the Sun reaches its highest or lowest noon position of the year, giving the longest or shortest day.
+- concept: seasons
+
+### spring-tide
+- title: Spring and neap tides
+- def: Spring tides, the biggest, come at new and full moon, when Sun and Moon pull in line. Neap tides, the smallest, come at quarter moons.
+- concept: tides
+
+### frost-line
+- title: Frost line
+- def: The distance from a young star beyond which water and other ices can freeze; about 3 AU in the early solar system.
+- concept: solar-system-formation
+
+### aperture
+- title: Aperture
+- def: The width of a telescope's main lens or mirror. A bigger aperture collects more light and sees finer detail.
+- concept: telescopes
+
+### light-year
+- title: Light-year (ly)
+- def: The distance light travels in one year, about $9.46 \times 10^{15}$ m. A distance, not a time.
+- concept: astronomical-distances
+
+### parsec
+- title: Parsec (pc)
+- def: A distance used for stars: 3.26 light-years. A star 1 parsec away would have a parallax of 1 arcsecond.
+- concept: parallax
+
+### parallax
+- title: Parallax
+- def: The apparent shift of a nearby object against a distant background when seen from two places. For stars, measured from opposite sides of the Earth's orbit.
+- concept: parallax
+
 ---
 
 ## Footnotes
@@ -870,3 +920,7 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`). Each entry has a title, a
 ### n_decay_rate
 - title: Why decay is exponential
 - def: Each nucleus has the same small chance λ of decaying each second, so the number decaying per second is λN. A rate of change proportional to the amount present, $\frac{dN}{dt} = -\lambda N$, always gives an exponential curve.
+
+### n_tidal_cube
+- title: Why the cube
+- def: Gravity goes as $\frac{1}{d^2}$. The tide comes from how much it changes across the Earth's width, which, like a slope, goes one power faster: as $\frac{1}{d^3}$. The tidal stretching is about $\frac{2GMR}{d^3}$ for a planet of radius R.
