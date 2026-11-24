@@ -237,6 +237,9 @@ const LW_DATA = /*__LW_DATA__*/null;
 const SUBJ = LW_DATA.subject;
 const LBL = SUBJ.labels || {example:"Worked example", practice:"Try it yourself", level:"Level"};
 const C = {}; LW_DATA.concepts.forEach(c=>{ C[c.id]=c; });
+/* Pages from another subject (like calculus:exponents): recap and check show here; the page opens in that subject, in a new tab. */
+(LW_DATA.external||[]).forEach(e=>{ C[e.id] = Object.assign({prereqs:[]}, e); });
+const isExt = id => !!(C[id] && C[id].ext);
 const ORDER = LW_DATA.concepts.map(c=>c.id);
 const G = LW_DATA.glossary;
 const $ = id => document.getElementById(id);
@@ -268,7 +271,7 @@ const LEVEL = {};
 function level(id, seen){
   if(LEVEL[id]) return LEVEL[id];
   seen = seen || new Set(); if(seen.has(id)) return 1; seen.add(id);
-  const p = (C[id].prereqs||[]).filter(x=>C[x]);
+  const p = (C[id].prereqs||[]).filter(x=>C[x] && !isExt(x));
   return LEVEL[id] = p.length ? 1 + Math.max(...p.map(x=>level(x, seen))) : 1;
 }
 
@@ -328,7 +331,7 @@ function pageHTML(id){
     <section class="prereq"><h2>What you need for this</h2><ul>
       ${prereqs.map(p=>`<li><div class="pr-head"><i class="dot ${status(p)}"></i><strong>${esc(C[p].title)}</strong>
         <button class="lnk" data-act="recap" data-id="${p}">Remind me</button>
-        <button class="lnk" data-c="${p}">Open page</button></div>
+        <button class="lnk" data-c="${p}">${isExt(p) ? `Open in ${esc(C[p].from)} ↗` : "Open page"}</button></div>
         <div class="recap" id="recap-${p}" hidden>${C[p].recap}</div></li>`).join("")}
     </ul></section>
     <section class="checks"><h2>Check yourself first</h2>
@@ -406,6 +409,7 @@ function render(id){
 
 function go(id){
   if(!C[id] || id===cur) return;
+  if(isExt(id)){ window.open(C[id].ext, "_blank", "noopener"); return; }
   stack.push({id:cur, y:window.scrollY});
   if(stack.length>30) stack.shift();
   render(id);
@@ -431,7 +435,7 @@ function applyAnswer(id, i, quiet){
     if(!quiet){ mastered.add(id); visited.add(id); save(); renderChrome(); refreshDots(); }
   }else{
     btn.classList.add("no");
-    fb.className="fb no"; fb.innerHTML = `Not quite. ${k.why}` + (id!==cur ? ` <button class="lnk" data-c="${id}">Review ${esc(C[id].title)}</button>` : ` Re-read the sections above, then try again.`);
+    fb.className="fb no"; fb.innerHTML = `Not quite. ${k.why}` + (id!==cur ? ` <button class="lnk" data-c="${id}">Review ${esc(C[id].title)}${isExt(id) ? ` in ${esc(C[id].from)} ↗` : ""}</button>` : ` Re-read the sections above, then try again.`);
   }
   typeset(fb);
 }
@@ -478,11 +482,11 @@ document.addEventListener("click", e=>{
 });
 document.addEventListener("keydown", e=>{ if(e.key==="Escape") closePop(); });
 window.addEventListener("scroll", closePop, {passive:true});
-window.addEventListener("hashchange", ()=>{ const h=location.hash.slice(1); if(C[h] && h!==cur) go(h); });
+window.addEventListener("hashchange", ()=>{ const h=location.hash.slice(1); if(C[h] && !isExt(h) && h!==cur) go(h); });
 
 (function start(){
   $("sitesub").textContent = `${SUBJ.subtitle ? SUBJ.subtitle+" · " : ""}${ORDER.length} linked concepts`;
   const h = location.hash.slice(1);
-  render(C[h] ? h : (C[SUBJ.start] ? SUBJ.start : ORDER[0]));
+  render(C[h] && !isExt(h) ? h : (C[SUBJ.start] ? SUBJ.start : ORDER[0]));
 })();
 </script>

@@ -454,12 +454,76 @@ def load_plan(path):
         plan[cells[0]] = pr
     return plan
 
+# ---------------------------------------------------------------- pages from other subjects
+
+def plain_refs(s, titles):
+    """Turn links, pop-ups and footnotes into plain text (for a recap borrowed from another subject)."""
+    s = re.sub(r"\[\[([^\]|]+)\|([^\]]+)\]\]", r"\2", s)
+    s = re.sub(r"\[\[([^\]|]+)\]\]", lambda m: titles.get(m.group(1).strip(), m.group(1).strip()), s)
+    s = re.sub(r"\{\{([^}|]+)\|([^}]+)\}\}", r"\2", s)
+    s = re.sub(r"\{\{([^}|]+)\}\}", r"\1", s)
+    return re.sub(r"\^\[[^\]]+\]", "", s)
+
+def load_external(subj_hdr, root, wanted, rep):
+    """Pages from another subject, named like calculus:exponents.
+    subject.md lists each other subject as   external:  /  calculus: <folder> <web address>
+    The build reads that page's header (title, recap, check, prereqs). The page itself
+    opens in the other subject's site, in a new tab."""
+    conf = subj_hdr.get("external") if isinstance(subj_hdr.get("external"), dict) else {}
+    ext = {}
+    for key in sorted({w.split(":", 1)[0] for w in wanted}):
+        if key not in conf:
+            rep.err("subject.md", f"pages like '{key}:...' are used, but external: has no '{key}:' line"); continue
+        parts = str(conf[key]).split()
+        if len(parts) != 2: rep.err("subject.md", f"external: {key}: needs a folder and a web address"); continue
+        folder, url = (root / parts[0]).resolve(), parts[1]
+        sh, _ = split_header((folder / "subject.md").read_text(encoding="utf-8"), f"{key} subject.md", rep)
+        titles = {}
+        for f in (folder / "concepts").glob("*.md"):
+            h, _ = split_header(f.read_text(encoding="utf-8"), f"{key}:{f.name}", Report())
+            titles[f.stem] = str(h.get("title", f.stem))
+        for w in sorted(x for x in wanted if x.split(":", 1)[0] == key):
+            cid = w.split(":", 1)[1]
+            f = folder / "concepts" / f"{cid}.md"
+            if not f.exists(): continue   # reported as a missing page by run_checks
+            h, _ = split_header(f.read_text(encoding="utf-8"), w, rep)
+            where = f"{w} (in {parts[0]})"
+            if str(h.get("status", "")).lower() == "stub": rep.warn(where, "is a stub in its own subject")
+            chk = h.get("check")
+            pg = Page(None, where, rep, allow_refs=False)
+            check = None
+            if isinstance(chk, dict) and isinstance(chk.get("options"), list):
+                check = {"q": pg.inline(plain_refs(str(chk.get("q", "")), titles)),
+                         "options": [pg.inline(plain_refs(str(o), titles)) for o in chk["options"]],
+                         "answer": chk.get("answer", 0) if isinstance(chk.get("answer"), int) else 0,
+                         "why": pg.inline(plain_refs(str(chk.get("why", "")), titles))}
+            pr = h.get("prereqs", [])
+            if isinstance(pr, str): pr = [x.strip() for x in pr.split(",") if x.strip() and x.strip() != "none"]
+            ext[w] = {"id": w, "title": titles.get(cid, cid), "recap": pg.inline(plain_refs(str(h.get("recap", "")), titles)),
+                      "check": check, "prereqs": [p if ":" in p else f"{key}:{p}" for p in pr],
+                      "ext": url.rstrip("/") + "/#" + cid, "from": str(sh.get("name", key))}
+    # also read what those pages build on, so "direct prerequisites only" can be checked across subjects
+    todo = [p for e in ext.values() for p in e["prereqs"] if p not in ext]
+    while todo:
+        w = todo.pop(); key, cid = w.split(":", 1)
+        if w in ext or key not in conf: continue
+        f = (root / str(conf[key]).split()[0]).resolve() / "concepts" / f"{cid}.md"
+        if not f.exists(): continue
+        h, _ = split_header(f.read_text(encoding="utf-8"), w, Report())
+        pr = h.get("prereqs", [])
+        if isinstance(pr, str): pr = [x.strip() for x in pr.split(",") if x.strip() and x.strip() != "none"]
+        ext[w] = {"id": w, "prereqs": [p if ":" in p else f"{key}:{p}" for p in pr], "_hidden": True}
+        todo += [p for p in ext[w]["prereqs"] if p not in ext]
+    return ext
+
 # ---------------------------------------------------------------- checks
 
-def run_checks(concepts, glossary, widgets, plan, rep):
-    ids = {c["id"] for c in concepts}
+def run_checks(concepts, glossary, widgets, plan, rep, ext=None):
+    ext = ext or {}
     by = {c["id"]: c for c in concepts}
-    if len(ids) != len(concepts): rep.err("concepts", "two files share the same id")
+    if len(by) != len(concepts): rep.err("concepts", "two files share the same id")
+    ids = set(by) | {k for k, e in ext.items() if not e.get("_hidden")}
+    graph = {**{k: e["prereqs"] for k, e in ext.items()}, **{k: c["prereqs"] for k, c in by.items()}}
 
     # 1. every link points to a concept that exists
     for c in concepts:
@@ -513,14 +577,15 @@ def run_checks(concepts, glossary, widgets, plan, rep):
     # 4. every prerequisite has a recap and a check question
     for c in concepts:
         for p in c["prereqs"]:
-            if p in by and (not by[p]["recap"] or not by[p]["check"]):
+            src = by.get(p) or ext.get(p)
+            if src and (not src.get("recap") or not src.get("check")):
                 rep.err(c["_where"], f"prerequisite '{p}' has no recap or check question")
 
     # style rules: 1 to 4 prereqs, direct prereqs only
     def reach(n, seen=None):
         seen = set() if seen is None else seen
-        for p in by.get(n, {}).get("prereqs", []):
-            if p in by and p not in seen: seen.add(p); reach(p, seen)
+        for p in graph.get(n, []):
+            if p in graph and p not in seen: seen.add(p); reach(p, seen)
         return seen
     for c in concepts:
         if len(c["prereqs"]) > 4: rep.warn(c["_where"], f"has {len(c['prereqs'])} prerequisites (rule: 1 to 4)")
@@ -568,7 +633,11 @@ def main():
     widgets = {p.stem: p for p in wdir.glob("*.js")} if wdir.exists() else {}
     plan_path = root / subj_hdr["plan"] if subj_hdr.get("plan") else None
     plan = load_plan(plan_path)
-    run_checks(concepts, glossary, widgets, plan, rep)
+    wanted = {p for c in concepts for p in c["prereqs"] if ":" in p}
+    wanted |= {cid for c in concepts for cid, _ in c["_page"].links if ":" in cid}
+    wanted |= {g["concept"] for g in glossary.values() if g["concept"] and ":" in g["concept"]}
+    ext = load_external(subj_hdr, root, wanted, rep) if wanted else {}
+    run_checks(concepts, glossary, widgets, plan, rep, ext)
     # practice_sets: yes in subject.md means every written page needs a :::problems set.
     if str(subj_hdr.get("practice_sets", "")).lower() in ("yes", "true", "required"):
         for c in concepts:
@@ -599,9 +668,11 @@ def main():
                     "labels": {"example": "Worked example", "practice": "Try it yourself", "level": "Level",
                                **(subj_hdr.get("labels") if isinstance(subj_hdr.get("labels"), dict) else {})}},
         "concepts": [{k: v for k, v in c.items() if not k.startswith("_")} for c in concepts],
+        "external": [{k: v for k, v in e.items() if k != "prereqs"} for e in ext.values() if not e.get("_hidden")],
         "glossary": {gid: {"title": g["title"], "def": g["def"], "concept": g["concept"]} for gid, g in glossary.items()},
     }
     titles = {c["id"]: c["title"] for c in concepts}
+    titles.update({k: e["title"] for k, e in ext.items() if not e.get("_hidden")})
     js_data = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
     js_data = re.sub(r"\\u0002([^\\]+?)\\u0002", lambda m: html.escape(titles.get(m.group(1), m.group(1))), js_data)
     wjs = "\n".join(f"/* widgets/{n}.js */\n" + widgets[n].read_text(encoding="utf-8") for n in used_w)
