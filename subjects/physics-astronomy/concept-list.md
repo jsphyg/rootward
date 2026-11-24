@@ -107,14 +107,14 @@ Reused from Calculus: exponents, negative and fractional exponents, factoring, f
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| density | Density | units | ⬜ |
-| pressure | Pressure | force, density | ⬜ |
-| buoyancy | Buoyancy (why things float) | pressure, weight | ⬜ |
-| temperature | Temperature and thermal energy | kinetic-energy | ⬜ |
-| specific-heat | Heating things up (specific heat) | temperature | ⬜ |
-| heat-transfer | Conduction, convection and radiation | temperature | ⬜ |
-| ideal-gas-law | The ideal gas law | temperature, pressure | ⬜ |
-| thermodynamics | The laws of thermodynamics | specific-heat, conservation-of-energy, ideal-gas-law | ⬜ |
+| density | Density | units | ✅ |
+| pressure | Pressure | force, density | ✅ |
+| buoyancy | Buoyancy (why things float) | pressure, weight | ✅ |
+| temperature | Temperature and thermal energy | kinetic-energy | ✅ |
+| specific-heat | Heating things up (specific heat) | temperature | ✅ |
+| heat-transfer | Conduction, convection and radiation | temperature | ✅ |
+| ideal-gas-law | The ideal gas law | temperature, pressure | ✅ |
+| thermodynamics | The laws of thermodynamics | specific-heat, conservation-of-energy, ideal-gas-law | ✅ |
 
 ### Level 7: Electricity and magnetism
 
