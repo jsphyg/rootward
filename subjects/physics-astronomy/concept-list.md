@@ -1,6 +1,6 @@
 # Physics and Astronomy: Concept List
 
-Approved by Joe on 2026-11-24 (all 124 pages). Writing starts at the beginning, Part A first.
+Approved by Joe on 2026-11-24 (all 123 pages; first counted as 124 by mistake). Writing starts at the beginning, Part A first.
 
 The planned concept web for an introductory physics and astronomy course, with the math it needs. Each concept lists its **direct** prerequisites only. No loops.
 
@@ -197,13 +197,13 @@ Reused from Calculus: exponents, negative and fractional exponents, factoring, f
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| milky-way | The Milky Way | stellar-evolution, orbits | ⬜ |
-| dark-matter | Dark matter | milky-way | ⬜ |
-| galaxies | Other galaxies | milky-way | ⬜ |
-| hubble-law | The expanding universe (Hubble's law) | galaxies, redshift | ⬜ |
-| big-bang | The Big Bang | hubble-law | ⬜ |
-| cmb | The cosmic microwave background | big-bang | ⬜ |
-| dark-energy | Dark energy | big-bang | ⬜ |
+| milky-way | The Milky Way | stellar-evolution, orbits | ✅ |
+| dark-matter | Dark matter | milky-way | ✅ |
+| galaxies | Other galaxies | milky-way | ✅ |
+| hubble-law | The expanding universe (Hubble's law) | galaxies, redshift | ✅ |
+| big-bang | The Big Bang | hubble-law | ✅ |
+| cmb | The cosmic microwave background | big-bang | ✅ |
+| dark-energy | Dark energy | big-bang | ✅ |
 
 ---
 
