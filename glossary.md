@@ -485,6 +485,14 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: Rolle
 - def: Michel Rolle, a French mathematician, published the level-ends case in 1691. Oddly, he was a well-known critic of the new calculus at the time. The result was only named after him much later.
 
+### n_lhopital_name
+- title: Note: whose rule?
+- def: The Marquis de L'Hôpital put this rule in the first calculus textbook, in 1696. But he had learned it from his paid tutor, Johann Bernoulli, who had agreed to share his discoveries in return for the money. The name stuck to the one who published it.
+
+### n_lhopital_inf
+- title: Note: the infinity version
+- def: The straight-line picture explains the $\frac{0}{0}$ case. The $\frac{\infty}{\infty}$ case is also true, but its proof is harder. It uses a stronger form of the mean value theorem, called Cauchy's mean value theorem. For using the rule, the two cases work the same way.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.
