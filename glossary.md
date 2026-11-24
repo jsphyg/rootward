@@ -449,6 +449,14 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: does a hidden function always exist?
 - def: Not always, but near most points it does. A result called the implicit function theorem says that if the curve is not vertical at a point, then near that point it really is the graph of some function y of x. That is what makes the method safe. Where the tangent is vertical, as at $(5, 0)$ on the circle, the method gives a division by 0, which is the warning sign.
 
+### n_d2
+- title: Note: why the 2s sit where they do
+- def: The second derivative is $\frac{d}{dx}\left(\frac{dy}{dx}\right)$: apply "$\frac{d}{dx}$" twice. Leibniz squeezed that into $\frac{d^2y}{dx^2}$. The d on top is applied twice, and the bottom stands for dx twice, so the 2s land in different places.
+
+### n_gravity
+- title: Note: why 5 and 10
+- def: Near the ground, gravity speeds a falling object up by about 9.8 metres per second, every second. Rounding to 10 keeps the numbers simple. The height formula $20t - 5t^2$ uses half of 10, which is 5. That half is exactly what makes its second derivative come out to $-10$.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.
