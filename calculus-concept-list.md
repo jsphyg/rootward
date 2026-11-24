@@ -51,7 +51,7 @@ These are the "you were supposed to already know this" topics. They are what mak
 | trig-derivatives | Derivatives of trig functions | sum-constant-rules, trig-basics, squeeze-theorem | ✅ (concepts/trig-derivatives.md) |
 | exp-log-derivatives | Derivatives of exponentials and logs | sum-constant-rules, logarithms | ✅ (concepts/exp-log-derivatives.md) |
 | implicit-differentiation | Implicit differentiation | chain-rule, product-rule, sum-constant-rules | ✅ (concepts/implicit-differentiation.md) |
-| higher-derivatives | Second and higher derivatives | derivative-function | ⬜ |
+| higher-derivatives | Second and higher derivatives | derivative-function, power-rule, sum-constant-rules | ✅ (concepts/higher-derivatives.md) |
 
 ## Level 3: Using derivatives
 
