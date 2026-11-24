@@ -509,6 +509,10 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: does the limit always exist?
 - def: For every function on this site it does: any function that is continuous on the stretch from a to b, or that has only a few jumps, has a definite integral there. Some very strange functions, which jump around at every point, have Riemann sums that never settle. Riemann's definition says exactly when the limit exists.
 
+### n_ftc_history
+- title: Note: who found it
+- def: Isaac Barrow, Newton's teacher, saw a version of this link in geometry. Newton and Leibniz, separately, in the 1660s and 1670s, turned it into a working method. That is why they are called the inventors of calculus: not for slopes or areas alone, but for joining them.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.
