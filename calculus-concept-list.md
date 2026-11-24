@@ -64,7 +64,7 @@ These are the "you were supposed to already know this" topics. They are what mak
 | concavity | Concavity and inflection points | higher-derivatives, increasing-decreasing | ✅ (concepts/concavity.md) |
 | optimization | Optimization | increasing-decreasing | ✅ (concepts/optimization.md) |
 | mean-value-theorem | The mean value theorem | continuity, power-rule, sum-constant-rules | ✅ (concepts/mean-value-theorem.md) |
-| lhopital | L'Hôpital's rule | derivative | ⬜ |
+| lhopital | L'Hôpital's rule | power-rule, trig-derivatives, exp-log-derivatives | ✅ (concepts/lhopital.md) |
 
 ## Level 4: Integrals
 
