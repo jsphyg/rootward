@@ -1,0 +1,41 @@
+// Data-driven figure: plots y = fn(x) with marked points. Data lines (all optional except fn):
+//   fn: x*x - 2*x          (JavaScript expression in x)
+//   x: -1.5 3.5            (x range shown)   y: -2 4   (y range shown)
+//   points: -1,3; 0,0; 1,-1   (filled dots, labelled)
+//   holes: 1,2             (open circles: a missing point)
+//   labels: left           (put point labels up and to the left; "side" does this only for points left of the y-axis)
+//   label: y = x² − 2x     (curve label)    labelat: topleft (move it from bottom right)
+//   xname: t (s)   yname: x (m)  (axis names, shown at the ends of the axes)
+//   caption: what to notice
+// Physics and Astronomy copy of the Calculus plot widget, plus axis names.
+LW.widget("plot", function(el, lw, args){
+  const kv = {}; (args.lines||[]).forEach(l => { const i = l.indexOf(":"); if(i>0) kv[l.slice(0,i).trim()] = l.slice(i+1).trim(); });
+  const unesc = t => t.replace(/&lt;/g,"<").replace(/&gt;/g,">").replace(/&amp;/g,"&"); // data lines arrive HTML-escaped
+  const f = new Function("x", "return (" + unesc(kv.fn) + ");");
+  const rng = (s, d) => s ? s.split(/\s+/).map(Number) : d;
+  const pts = s => s ? s.split(";").map(p => p.split(",").map(Number)) : [];
+  const [x0,x1] = rng(kv.x, [-3,3]), [y0,y1] = rng(kv.y, [-3,3]);
+  const W=440,H=300,P=30;
+  const X = x => P + (x-x0)/(x1-x0)*(W-2*P), Y = y => H-P - (y-y0)/(y1-y0)*(H-2*P);
+  const num = n => String(n).replace("-","−");
+  let cv = "", pen = false;
+  for(let i=0;i<=400;i++){ const x = x0 + (x1-x0)*i/400, y = f(x);
+    if(!isFinite(y) || y < y0-1 || y > y1+1){ pen = false; continue; }
+    cv += (pen?"L":"M")+X(x).toFixed(1)+" "+Y(y).toFixed(1); pen = true; }
+  let ticks = "";
+  const step = r => [1,2,5,10,20,50,100].find(k => r/k <= 10) || 200; // keep about 10 ticks or fewer
+  const sx = step(x1-x0), sy = step(y1-y0);
+  for(let t=Math.ceil(x0/sx)*sx;t<=x1;t+=sx) if(t) ticks += `<path class="ax" d="M${X(t)} ${Y(0)-4} V${Y(0)+4}"/><text class="mt" x="${X(t)-5}" y="${Y(0)+18}">${num(t)}</text>`;
+  for(let t=Math.ceil(y0/sy)*sy;t<=y1;t+=sy) if(t) ticks += `<path class="ax" d="M${X(0)-4} ${Y(t)} H${X(0)+4}"/><text class="mt" text-anchor="end" x="${X(0)-8}" y="${Y(t)+5}">${num(t)}</text>`;
+  const P_ = pts(kv.points), lowest = Math.min(...P_.map(q => q[1]));
+  const left = a => kv.labels === "left" || (kv.labels === "side" && a < 0);  // "side": labels of points left of the y-axis go to the left
+  const dots = P_.map(([a,b]) => `<circle class="pt" cx="${X(a)}" cy="${Y(b)}" r="5"/><text x="${left(a) ? X(a)-10 : X(a)+8}" text-anchor="${left(a) ? "end" : "start"}" y="${left(a) ? Y(b)-8 : b === lowest ? Y(b)+22 : Y(b)-8}">(${num(a)}, ${num(b)})</text>`).join("");
+  const holes = pts(kv.holes).map(([a,b]) => `<circle cx="${X(a)}" cy="${Y(b)}" r="6" style="fill:var(--raise);stroke:var(--warn);stroke-width:2.2"/>`).join("");
+  el.innerHTML = `<figure class="fig">
+    <svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Graph of ${kv.label || "a function"}">
+      <path class="ax" d="M${X(x0)} ${Y(0)} H${X(x1)}"/><path class="ax" d="M${X(0)} ${Y(y0)} V${Y(y1)}"/>${ticks}
+      ${kv.xname ? `<text class="mt" text-anchor="end" x="${W-6}" y="${Y(0)-8}">${kv.xname}</text>` : ""}${kv.yname ? `<text class="mt" x="${X(0)+8}" y="${P-8}">${kv.yname}</text>` : ""}
+      <path class="cv" d="${cv}"/>${dots}${holes}
+      ${kv.label ? (kv.labelat === "topleft" ? `<text class="mt" x="${Math.max(P+6, X(0) + (kv.yname ? 80 : 12))}" y="${P+4}">${kv.label}</text>` : `<text class="mt" text-anchor="end" x="${W-8}" y="${H-P-8}">${kv.label}</text>`) : ""}
+    </svg>${args.caption ? `<figcaption>${args.caption}</figcaption>` : ""}</figure>`;
+});
