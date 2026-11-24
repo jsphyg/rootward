@@ -74,8 +74,8 @@ These are the "you were supposed to already know this" topics. They are what mak
 | riemann-sums | Area and Riemann sums | graphs | ✅ (concepts/riemann-sums.md) |
 | definite-integral | The definite integral | riemann-sums, limits | ✅ (concepts/definite-integral.md) |
 | ftc | The fundamental theorem of calculus | definite-integral, antiderivatives | ✅ (concepts/ftc.md) |
-| u-substitution | Substitution (u-sub) | ftc, chain-rule | ⬜ |
-| area-between-curves | Area between curves | definite-integral | ⬜ |
+| u-substitution | Substitution (u-sub) | ftc, chain-rule | ✅ (concepts/u-substitution.md) |
+| area-between-curves | Area between curves | ftc | ✅ (concepts/area-between-curves.md) |
 
 ---
 

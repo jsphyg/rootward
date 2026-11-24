@@ -513,6 +513,14 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: who found it
 - def: Isaac Barrow, Newton's teacher, saw a version of this link in geometry. Newton and Leibniz, separately, in the 1660s and 1670s, turned it into a working method. That is why they are called the inventors of calculus: not for slopes or areas alone, but for joining them.
 
+### n_du
+- title: Note: is du = 2x dx allowed?
+- def: $\frac{du}{dx}$ is a single symbol, not a real fraction, so "multiplying both sides by dx" is not strictly legal. But Leibniz chose the notation so that this kind of step always gives the right answer. It is a reliable shorthand for the chain rule, and the check by differentiating confirms it every time.
+
+### n_no_formula
+- title: Note: integrals with no formula
+- def: $\int e^{x^2}\,dx$ has an antiderivative (the fundamental theorem guarantees one), but it cannot be written using powers, roots, exponentials, logs or trig functions in any combination. This was proved in the 1800s. Its values are found numerically, and a close relative is so useful in statistics that it has its own name, the error function.
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.
