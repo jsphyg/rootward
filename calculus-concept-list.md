@@ -70,7 +70,7 @@ These are the "you were supposed to already know this" topics. They are what mak
 
 | id | Concept | Prerequisites | Status |
 |---|---|---|---|
-| antiderivatives | Antiderivatives | power-rule | ⬜ |
+| antiderivatives | Antiderivatives | mean-value-theorem, trig-derivatives, exp-log-derivatives | ✅ (concepts/antiderivatives.md) |
 | riemann-sums | Area and Riemann sums | graphs | ⬜ |
 | definite-integral | The definite integral | riemann-sums, limits | ⬜ |
 | ftc | The fundamental theorem of calculus | definite-integral, antiderivatives | ⬜ |
