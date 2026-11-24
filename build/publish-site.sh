@@ -4,9 +4,11 @@
 set -e
 python3 build/build.py --subject .
 python3 build/build.py --subject subjects/world-history
-mkdir -p docs/calculus docs/world-history
+python3 build/build.py --subject subjects/physics-astronomy
+mkdir -p docs/calculus docs/world-history docs/physics-astronomy
 cp dist/calculus.html docs/calculus/index.html
 cp subjects/world-history/dist/world-history.html docs/world-history/index.html
+cp subjects/physics-astronomy/dist/physics-and-astronomy.html docs/physics-astronomy/index.html
 cp build/site-index.html docs/index.html
 touch docs/.nojekyll
 echo "docs/ updated. Commit and push to publish."

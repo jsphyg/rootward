@@ -80,3 +80,16 @@ onto indented lines. Rules for what goes in a set are in style-and-rules.md, sec
 
 The page loads the picture from Wikimedia Commons when someone opens it. Where outside pictures
 are blocked (a claude.ai artifact blocks them), it shows a captioned link to the picture instead.
+
+## Pages from another subject
+
+A subject can use another subject's pages as prerequisites, links or `uses:` chips, written `calculus:exponents`.
+List each other subject in `subject.md` with its folder and its web address:
+
+    external:
+      calculus: ../.. https://jsphyg.github.io/rootward/calculus/
+
+The build reads that page's header, so its title, "Remind me" recap and check question show on this subject's page
+(links and pop-ups in the borrowed text become plain words). "Open in Calculus" opens the page in a new tab.
+The checker tests that the page exists and follows the other subject's prerequisites, so "direct prerequisites only"
+works across subjects. Physics and Astronomy (`subjects/physics-astronomy/`) uses this.
