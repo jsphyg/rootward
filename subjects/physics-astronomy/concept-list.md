@@ -22,14 +22,14 @@ Reused from Calculus: exponents, negative and fractional exponents, factoring, f
 | significant-figures | Significant figures and precision | scientific-notation | ✅ |
 | units | Units and the SI system (metres, kilograms, seconds, prefixes) | scientific-notation | ✅ |
 | unit-conversion | Converting units | units, rearranging-formulas | ✅ |
-| proportional-reasoning | Proportion and scaling (direct, inverse, inverse-square) | rearranging-formulas, calculus:exponents | ⬜ |
-| quadratic-formula | The quadratic formula | rearranging-formulas, calculus:factoring | ⬜ |
-| systems-of-equations | Two equations, two unknowns | rearranging-formulas | ⬜ |
-| pythagorean-theorem | The Pythagorean theorem | none | ⬜ |
-| inverse-trig | Finding an angle (inverse sine, cosine, tangent) | calculus:trig-basics, calculus:inverse-functions | ⬜ |
-| vectors | Vectors: size and direction | pythagorean-theorem | ⬜ |
-| vector-components | Breaking a vector into components | vectors, inverse-trig | ⬜ |
-| vector-addition | Adding vectors | vector-components | ⬜ |
+| proportional-reasoning | Proportion and scaling (direct, inverse, inverse-square) | rearranging-formulas, calculus:exponents | ✅ |
+| quadratic-formula | The quadratic formula | rearranging-formulas, calculus:factoring | ✅ |
+| systems-of-equations | Two equations, two unknowns | rearranging-formulas | ✅ |
+| pythagorean-theorem | The Pythagorean theorem | none | ✅ |
+| inverse-trig | Finding an angle (inverse sine, cosine, tangent) | calculus:trig-basics, calculus:inverse-functions | ✅ |
+| vectors | Vectors: size and direction | pythagorean-theorem | ✅ |
+| vector-components | Breaking a vector into components | vectors, inverse-trig | ✅ |
+| vector-addition | Adding vectors | vector-components | ✅ |
 
 ## Part B: Physics
 
