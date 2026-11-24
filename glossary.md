@@ -469,6 +469,10 @@ These entries already exist in `engine-prototype.html`. They are copied here so 
 - title: Note: Fermat's idea
 - def: Pierre de Fermat used this idea in the 1630s, before calculus had its modern form, to find the largest and smallest values of curves. It is still called Fermat's theorem: if a smooth function has a local peak or valley at a point, its derivative there is 0.
 
+### n_sign_change
+- title: Note: why the sign cannot jump
+- def: This is the same idea as the intermediate value theorem: a value cannot get from positive to negative without passing through 0 in between. For the functions on this site, $f'$ is continuous wherever it exists, so the theorem applies directly. (In fact, every derivative has this no-jumping property, even an unusual one. That is a result called Darboux's theorem.)
+
 ### n_h
 - title: Note: why the letter h?
 - def: It is just a name for "a small step". Some books write Δx (read "delta x") instead. Same idea.
