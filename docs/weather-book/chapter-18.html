@@ -29,6 +29,13 @@ th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);verti
 th{color:var(--muted);font-weight:600}
 .pic{background:var(--pic);border-radius:6px;padding:14px 16px;color:var(--muted);font-size:.95rem}
 .pic em{font-style:normal}
+.book-figure{margin:1.3em 0 2em}
+.book-figure.spread{width:min(1000px,calc(100vw - 32px));position:relative;left:50%;transform:translateX(-50%)}
+.book-figure img{display:block;width:100%;height:auto;background:#ede0bd}
+.book-figure figcaption{color:var(--ink);font-size:.94rem;line-height:1.5;margin-top:.65em}
+.figure-notes{color:var(--muted);font-size:.88rem;line-height:1.5;margin:.6em 0 0;padding-left:1.25em}
+.figure-notes li{margin:.35em 0}
+.book-figure.spread figcaption,.book-figure.spread .figure-notes{max-width:700px;margin-left:auto;margin-right:auto}
 .part{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:3em 0 0}
 .toc a{display:block;padding:12px 0;text-decoration:none;color:var(--ink)}
 .toc a + a{border-top:1px solid var(--line)}

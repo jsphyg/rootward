@@ -13,8 +13,10 @@ The book folder needs:
 """
 import argparse
 import html
+import json
 import os
 import re
+import shutil
 import sys
 
 STYLE = """
@@ -41,6 +43,13 @@ th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);verti
 th{color:var(--muted);font-weight:600}
 .pic{background:var(--pic);border-radius:6px;padding:14px 16px;color:var(--muted);font-size:.95rem}
 .pic em{font-style:normal}
+.book-figure{margin:1.3em 0 2em}
+.book-figure.spread{width:min(1000px,calc(100vw - 32px));position:relative;left:50%;transform:translateX(-50%)}
+.book-figure img{display:block;width:100%;height:auto;background:#ede0bd}
+.book-figure figcaption{color:var(--ink);font-size:.94rem;line-height:1.5;margin-top:.65em}
+.figure-notes{color:var(--muted);font-size:.88rem;line-height:1.5;margin:.6em 0 0;padding-left:1.25em}
+.figure-notes li{margin:.35em 0}
+.book-figure.spread figcaption,.book-figure.spread .figure-notes{max-width:700px;margin-left:auto;margin-right:auto}
 .part{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:3em 0 0}
 .toc a{display:block;padding:12px 0;text-decoration:none;color:var(--ink)}
 .toc a + a{border-top:1px solid var(--line)}
@@ -72,11 +81,12 @@ def is_picture(par):
     return s.startswith("*") and s.endswith("*") and not s.startswith("**")
 
 
-def to_html(md):
+def to_html(md, illustrations=None):
     """A small Markdown reader: enough for the book's chapters."""
     lines = md.replace("\r\n", "\n").split("\n")
     out, i, n = [], 0, len(lines)
     in_picture = False  # after an "Illustration" or "Visual Spread" heading
+    illustrations = illustrations or {}
     while i < n:
         line = lines[i]
         s = line.strip()
@@ -90,6 +100,22 @@ def to_html(md):
             in_picture = level == 3 and re.match(r"(Illustration|Visual Spread)", text) is not None
             out.append(f"<h{level}>{inline(text)}</h{level}>")
             i += 1
+            if in_picture and text in illustrations:
+                item = illustrations[text]
+                cls = "book-figure spread" if text.startswith("Visual Spread") else "book-figure"
+                src = "images/" + os.path.basename(item["image"])
+                out.append(f'<figure class="{cls}"><img src="{html.escape(src, quote=True)}" '
+                           f'alt="{html.escape(item["alt"], quote=True)}" loading="lazy" decoding="async">'
+                           f'<figcaption>{html.escape(item["caption"])}</figcaption>')
+                if item.get("notes"):
+                    tag = 'ol' if item.get('ordered') else 'ul'
+                    out.append(f'<{tag} class="figure-notes">' + ''.join(
+                        f'<li>{html.escape(note)}</li>' for note in item["notes"]) + f'</{tag}>')
+                out.append('</figure>')
+                # Keep the source illustration brief, but hide it after the finished image.
+                while i < n and not re.match(r"^-{3,}$", lines[i].strip()):
+                    i += 1
+                in_picture = False
             continue
         if re.match(r"^(-{3,}|\*{3,})$", s):
             in_picture = False
@@ -173,12 +199,23 @@ def main():
     args = ap.parse_args()
 
     meta, intro = read_header(os.path.join(args.book, "book.md"))
+    manifest_path = os.path.join(args.book, "illustrations.json")
+    illustrations = {}
+    if os.path.exists(manifest_path):
+        with open(manifest_path, encoding="utf-8") as fh:
+            illustrations = json.load(fh)
     title = meta.get("title", "Book")
     chdir = os.path.join(args.book, "chapters")
     files = sorted(f for f in os.listdir(chdir) if f.endswith(".md"))
     if not files:
         sys.exit("No chapters found in " + chdir)
     os.makedirs(args.out, exist_ok=True)
+    for chapter_images in illustrations.values():
+        for item in chapter_images.values():
+            source = os.path.join(args.book, "images", os.path.basename(item["image"]))
+            target_dir = os.path.join(args.out, "images")
+            os.makedirs(target_dir, exist_ok=True)
+            shutil.copy2(source, os.path.join(target_dir, os.path.basename(source)))
 
     chapters = []
     for f in files:
@@ -196,7 +233,7 @@ def main():
         nav = f'<nav class="top">{site_home}<a href="./">{html.escape(title)}: contents</a></nav>'
         prev_l = f'<a href="{chapters[k-1]["slug"]}.html">&larr; {html.escape(chapters[k-1]["label"])}</a>' if k else "<span></span>"
         next_l = f'<a href="{chapters[k+1]["slug"]}.html">{html.escape(chapters[k+1]["label"])} &rarr;</a>' if k + 1 < len(chapters) else "<span></span>"
-        body = to_html(ch["md"]) + f'\n<div class="pager">{prev_l}{next_l}</div>'
+        body = to_html(ch["md"], illustrations.get(ch["slug"])) + f'\n<div class="pager">{prev_l}{next_l}</div>'
         with open(os.path.join(args.out, ch["slug"] + ".html"), "w", encoding="utf-8") as fh:
             fh.write(page(f'{ch["label"]}: {ch["name"]} | {title}', body, nav))
 
