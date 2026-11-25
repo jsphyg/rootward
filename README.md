@@ -11,6 +11,7 @@ Live site (GitHub Pages): https://jsphyg.github.io/rootward/
 - Repository root: the Calculus subject (`subject.md`, `concepts/`, `glossary.md`, `widgets/`).
 - `subjects/world-history/`: the World History subject (75 pages).
 - `subjects/physics-astronomy/`: the Physics and Astronomy subject (123 pages).
+- `subjects/weather-book/`: The Weather Book, 20 chapters shown as a plain reader (not concept pages yet). Pick-up notes: `project/notes/weather-book.md`.
 - `calculus-concept-list.md`: the Calculus plan (44 pages). Each other subject keeps its plan in its own folder.
 - `style-and-rules.md`: the writing rulebook every page follows (current version).
 - `practice-sets/`: Calculus practice problem sets.

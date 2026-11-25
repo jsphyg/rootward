@@ -26,3 +26,7 @@
 - World history plan: /mnt/project-files/subjects/world-history/concept-list-draft.md, 75 concepts. Joe approved scope; themes later; start writing at the beginning (tools of history, then Era 1).
 - Physics and Astronomy (2026-11-24): plan APPROVED (123 pages; first miscounted as 124), subjects/physics-astronomy/concept-list.md. COMPLETE 2026-11-24: all 123 live (PRs #31-43). Physics has its own widgets/plot.js copy (subject folder). Calculus pages reused as calculus:<id>. See physics-astronomy-plan.md.
 - Look: Joe wants a dark brown background, light yellow text, a simple font, and a minimal design with very few boxes (pages felt too busy and boxy). This overrides style-and-rules.md section 7.
+
+## Weather Book (added 2026-11-25)
+- A separate project (the "Weather Book" Claude project), now kept in this repo too: `subjects/weather-book/`. Read `project/notes/weather-book.md` first; it has status, file map, style rules, build steps, and what's left.
+- Status: all 20 chapters revised (2026-11-25). Live as a plain reader at https://jsphyg.github.io/rootward/weather-book/ (draft edition, built by `build/build_book.py`). It does not yet work like the other subjects; Joe said that's fine for now.
