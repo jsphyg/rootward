@@ -399,6 +399,7 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`).
 ### globalization
 - title: Globalization
 - def: The growing connection of distant parts of the world through trade, travel and the spread of ideas.
+- concept: globalization
 
 ### icon
 - title: Icon
@@ -679,6 +680,120 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`).
 - def: Bringing back a former ruler or form of government. In Japan, the "Meiji Restoration" of 1868 returned power, in name, to the emperor.
 - concept: meiji-japan
 
+### trench
+- title: Trench
+- def: A long, deep ditch dug to protect soldiers from enemy fire. On the Western Front, trench lines faced each other for four years.
+
+### total-war
+- title: Total war
+- def: A war in which a country uses all its people, industry and resources, and in which civilians as well as soldiers become targets.
+- concept: world-war-1
+
+### soviet
+- title: Soviet
+- def: Russian for "council": the councils of workers and soldiers formed in 1917. The Soviet Union took its name from them.
+
+### bolshevik
+- title: Bolshevik
+- def: A member of Lenin's Marxist party, which seized power in Russia in October 1917 and later called itself the Communist Party.
+- concept: russian-revolution
+
+### gulag
+- title: Gulag
+- def: The Soviet system of forced labor camps, where millions of prisoners worked, often in terrible conditions, and many died.
+
+### self-determination
+- title: Self-determination
+- def: The right of a people to choose their own government and decide whether to form their own state.
+
+### reparations
+- title: Reparations
+- def: Payments a defeated country is made to pay for the damage a war caused.
+- concept: treaty-of-versailles
+
+### mandate
+- title: Mandate
+- def: A territory taken from a defeated empire after World War I and given by the League of Nations to Britain or France to govern, supposedly until it was ready for independence.
+
+### tariff
+- title: Tariff
+- def: A tax on goods imported from other countries.
+
+### fascism
+- title: Fascism
+- def: A political movement of extreme nationalism that rejects democracy, glorifies a single leader and uses violence against opponents.
+- concept: fascism
+
+### totalitarianism
+- title: Totalitarianism
+- def: A system in which a single party or leader tries to control every part of people's lives, including what they read, say and believe.
+
+### appeasement
+- title: Appeasement
+- def: Giving in to an aggressive country's demands in the hope of avoiding war, as Britain and France did with Hitler in the 1930s.
+
+### axis
+- title: Axis
+- def: The alliance of Germany, Italy and Japan in World War II.
+- concept: world-war-2
+
+### antisemitism
+- title: Antisemitism
+- def: Hatred of, or prejudice against, Jews.
+
+### ghetto
+- title: Ghetto
+- def: In the Holocaust, a closed-off part of a city where the Nazis forced Jews to live in crowded, starving conditions.
+
+### genocide
+- title: Genocide
+- def: The deliberate destruction, in whole or in part, of a national, ethnic, racial or religious group.
+- concept: holocaust
+
+### containment
+- title: Containment
+- def: The US policy during the Cold War of stopping communism from spreading to new countries.
+- concept: cold-war
+
+### mutually-assured-destruction
+- title: Mutually assured destruction
+- def: The idea that neither superpower would start a nuclear war, because the other could strike back and destroy it too.
+
+### proxy-war
+- title: Proxy war
+- def: A war in which rival powers support opposite sides instead of fighting each other directly.
+
+### cultural-revolution
+- title: Cultural Revolution
+- def: Mao Zedong's campaign from 1966 to 1976 to purge "old ideas" and his rivals, which brought violence, persecution and chaos to China.
+- concept: chinese-revolution
+
+### nonviolence
+- title: Nonviolence
+- def: Resisting injustice through peaceful methods, such as marches, boycotts and refusing to obey unjust laws, without using force.
+
+### partition
+- title: Partition
+- def: The division of British India in 1947 into two independent countries, India and Pakistan.
+- concept: decolonization
+
+### apartheid
+- title: Apartheid
+- def: Afrikaans for "separateness": South Africa's system of strict racial separation and white minority rule, from 1948 to the early 1990s.
+
+### glasnost
+- title: Glasnost
+- def: Russian for "openness": Gorbachev's policy of allowing more free speech and honest discussion in the Soviet Union.
+- concept: end-of-cold-war
+
+### perestroika
+- title: Perestroika
+- def: Russian for "restructuring": Gorbachev's policy of reforming the Soviet economy.
+
+### shipping-container
+- title: Shipping container
+- def: A standard-sized steel box that can be moved directly between ships, trains and trucks. First used in 1956, it made shipping goods worldwide far cheaper.
+
 ---
 
 ## Footnotes
@@ -926,3 +1041,35 @@ Terms (`{{id|text}}` pop-ups) and footnotes (`^[id]`).
 ### n_congo
 - title: Note: how many died in the Congo?
 - def: No census was taken, so the death toll is uncertain. Estimates of the population loss under Leopold's rule range from about 1 million to 10 million or more, and historians still debate the figure. Contemporary campaigners, such as Edmund Morel and Roger Casement, exposed the abuses.
+
+### n_ww1_deaths
+- title: Note: counting the dead
+- def: Estimates of military deaths range from about 9 to 11 million, with perhaps 6 to 8 million civilian deaths from fighting, hunger and disease. Soon after, the 1918 flu pandemic killed even more people worldwide, perhaps 25 to 50 million.
+
+### n_russian_calendar
+- title: Note: why "February" and "October"?
+- def: Russia still used the old Julian calendar, which in 1917 was 13 days behind the calendar used in the West. So the "February" revolution was in March by Western dates, and the "October" revolution was on 7 November. The Bolsheviks switched Russia to the Western calendar in 1918.
+
+### n_soviet_famine
+- title: Note: the famine of 1932 to 1933
+- def: Estimates of deaths across the Soviet Union range from about 5 to 8 million, including perhaps 3.5 to 5 million in Ukraine. Ukrainians call it the Holodomor, "death by hunger", and many countries recognize it as a genocide. Historians debate how far Stalin intended to target Ukrainians in particular.
+
+### n_versailles_debate
+- title: Note: was the treaty too harsh?
+- def: Historians still argue. Some follow Keynes and say the treaty was too harsh and caused resentment that Hitler used. Others say it was not harsher than the treaty Germany forced on Russia in 1918, that Germany paid only part of the reparations, and that the real failure was the Allies' unwillingness to enforce it.
+
+### n_ww2_deaths
+- title: Note: counting the dead
+- def: Totals range from about 70 to 85 million, including deaths from famine and disease caused by the war. Figures for the Soviet Union and China are especially uncertain.
+
+### n_holocaust_evidence
+- title: Note: how we know
+- def: The evidence includes German government records, train and camp documents, photographs and film taken by the Nazis and by liberating armies, the confessions of perpetrators at trials, and tens of thousands of recorded testimonies by survivors. Denying the Holocaust means ignoring all of this evidence.
+
+### n_great_leap
+- title: Note: how many died?
+- def: Estimates of deaths from the famine of 1959 to 1961 range from about 15 million to 45 million, and many historians accept a figure around 30 million. It was probably the deadliest famine in history.
+
+### n_partition
+- title: Note: Partition's toll
+- def: Estimates of deaths range from about 200,000 to 2 million, and some 10 to 20 million people were forced from their homes, one of the largest migrations in history.

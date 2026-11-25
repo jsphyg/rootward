@@ -112,18 +112,18 @@ These are the "how history works" ideas. Short pages, linked from many others.
 | balkan-tensions | Tensions in the Balkans | nationalism, ottoman-empire | ✅ |
 | sarajevo-assassination | The assassination in Sarajevo | balkan-tensions | ✅ |
 | july-crisis | The July Crisis | sarajevo-assassination, alliance-system | ✅ |
-| world-war-1 | World War I | july-crisis | ⬜ |
-| russian-revolution | The Russian Revolution | world-war-1, socialism | ⬜ |
-| treaty-of-versailles | The Treaty of Versailles | world-war-1 | ⬜ |
-| great-depression | The Great Depression | treaty-of-versailles | ⬜ |
-| fascism | Fascism and Nazism | treaty-of-versailles, russian-revolution | ⬜ |
-| world-war-2 | World War II | fascism, great-depression | ⬜ |
-| holocaust | The Holocaust | world-war-2 | ⬜ |
-| cold-war | The Cold War | world-war-2 | ⬜ |
-| chinese-revolution | The Chinese Revolution | opium-wars, russian-revolution | ⬜ |
-| decolonization | Decolonization | cold-war, scramble-for-africa | ⬜ |
-| end-of-cold-war | The end of the Cold War | cold-war | ⬜ |
-| globalization | Globalization | end-of-cold-war, decolonization | ⬜ |
+| world-war-1 | World War I | july-crisis | ✅ |
+| russian-revolution | The Russian Revolution | world-war-1, socialism | ✅ |
+| treaty-of-versailles | The Treaty of Versailles | world-war-1 | ✅ |
+| great-depression | The Great Depression | treaty-of-versailles | ✅ |
+| fascism | Fascism and Nazism | treaty-of-versailles, russian-revolution | ✅ |
+| world-war-2 | World War II | fascism, great-depression | ✅ |
+| holocaust | The Holocaust | world-war-2 | ✅ |
+| cold-war | The Cold War | world-war-2 | ✅ |
+| chinese-revolution | The Chinese Revolution | opium-wars, russian-revolution | ✅ |
+| decolonization | Decolonization | cold-war, scramble-for-africa | ✅ |
+| end-of-cold-war | The end of the Cold War | cold-war | ✅ |
+| globalization | Globalization | end-of-cold-war, decolonization | ✅ |
 
 ---
 
@@ -141,5 +141,5 @@ These are the "how history works" ideas. Short pages, linked from many others.
 - 75 concepts. At 1 to 2 pages per working session, a first full pass is a few months of steady work.
 - This is a **survey**: each page is one big idea or event. Any page can later be split into finer pages (for example, World War II into its theatres) without breaking links.
 - Prerequisites follow cause and effect, but history has many causes. Only the ones a reader truly needs first are listed. The rest go in the page text as links.
-- **Pilot pages still to update:** nationalism gains `french-revolution`, alliance-system gains `imperialism`, balkan-tensions gains `ottoman-empire`. Each is updated when that new page is written, so it never links to a page that does not exist. Until then the checker shows a warning for each.
+- **Pilot pages updated (2026-11-24):** nationalism now lists `french-revolution`, alliance-system `imperialism`, balkan-tensions `ottoman-empire`. All 75 concepts written by 2026-11-25.
 - Later (Joe, 2026-11-23): themes such as women's history and environmental history, and regions not yet covered (Southeast Asia, Korea, Africa beyond West Africa, Oceania).
