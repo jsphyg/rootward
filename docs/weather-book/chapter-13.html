@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chapter 13: Making Your Own Forecast | The Weather Book</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#241811;--ink:#f4e7b8;--muted:#bfae86;--line:#3a2a1e;--accent:#86c9bd;--pic:#2e2017}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;font-size:18px;line-height:1.7}
+main{max-width:700px;margin:0 auto;padding:40px 16px 80px}
+a{color:var(--accent)}
+nav.top{font-size:.9rem;color:var(--muted);margin-bottom:28px;display:flex;gap:16px;flex-wrap:wrap}
+nav.top a{text-decoration:none}
+nav.top a:hover{text-decoration:underline}
+h1{font-size:2.3rem;line-height:1.2;font-weight:700;letter-spacing:-.02em;margin:.2em 0 .2em}
+h2{font-size:1.5rem;line-height:1.3;font-weight:650;margin:2.2em 0 .5em}
+h3{font-size:1.1rem;font-weight:650;margin:1.8em 0 .4em;color:var(--muted)}
+h1 + h2{margin-top:.2em;color:var(--muted);font-weight:500}
+p{margin:0 0 1.1em}
+hr{border:0;border-top:1px solid var(--line);margin:2.6em 0}
+blockquote{margin:0 0 1.1em;padding-left:18px;border-left:3px solid var(--line);color:var(--muted)}
+ul,ol{padding-left:1.4em;margin:0 0 1.1em}
+li{margin:.25em 0}
+table{border-collapse:collapse;width:100%;margin:0 0 1.3em;font-size:.92rem;display:block;overflow-x:auto}
+th,td{text-align:left;padding:6px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{color:var(--muted);font-weight:600}
+.pic{background:var(--pic);border-radius:6px;padding:14px 16px;color:var(--muted);font-size:.95rem}
+.pic em{font-style:normal}
+.part{font-size:.85rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:3em 0 0}
+.toc a{display:block;padding:12px 0;text-decoration:none;color:var(--ink)}
+.toc a + a{border-top:1px solid var(--line)}
+.toc b{color:var(--accent);font-weight:600}
+.toc span{display:block;color:var(--muted);font-size:.95rem}
+.pager{display:flex;justify-content:space-between;gap:16px;margin-top:3em;font-size:.95rem}
+.lede{color:var(--muted)}
+</style>
+</head>
+<body>
+<main>
+<nav class="top"><a href="../">Rootward</a><a href="./">The Weather Book: contents</a></nav>
+<h1>Chapter 13</h1>
+<h2>Making Your Own Forecast</h2>
+<p>On the evening of October 15, 1987, the BBC weatherman Michael Fish smiled into the camera. "Earlier on today, apparently, a woman rang the BBC and said she heard there was a hurricane on the way," he said. "Well, if you're watching, don't worry, there isn't."</p>
+<p>He was talking about a different storm, far out over the Atlantic. Years later he admitted that the caller may never have existed. But that night, a storm the computer models had badly underestimated swept across southern England. Gusts reached 185 km/h (115 mph) on the English coast and stronger still in Normandy. About 15 million trees came down. Eighteen people died in England.</p>
+<p>Fish was right that it wasn't a hurricane. It didn't help. The Met Office went on to add ocean observations from ships, aircraft, buoys, and satellites, and to sharpen its models, so that a storm like that wouldn't slip past again.</p>
+<p>The story holds the whole lesson of this chapter. A forecast is not one confident sentence. It is a picture of the ocean of air now, a guess about where its currents are carrying it, and an honest answer to the question "what could change?"</p>
+<p>Chapter 12 showed where forecasts come from: the stations, balloons, radar, satellites, and models. This chapter shows how to use them. It follows one routine, in six steps, that you can run in about ten minutes a day. You won't beat the professionals. But you will understand their forecasts, know when to trust them most, and notice early when the sky has other plans.</p>
+<hr>
+<h2>13.1 Ask the Right Question</h2>
+<p>On November 14, 1969, Apollo 12 lifted off from Florida into a gray, rainy sky. There was no thunderstorm nearby, and the launch rules said that was enough.</p>
+<p>Thirty-six seconds into the flight, lightning struck the rocket. Sixteen seconds later, it struck again. Warning lights lit up across the cabin, and the spacecraft's power supply dropped offline. A young flight controller, John Aaron, remembered an obscure switch, and the call "SCE to Aux" saved the mission.</p>
+<p>The rocket itself had made the lightning. A tall metal tube trailing a plume of hot exhaust, rising through charged clouds, gave the charge a path. NASA rewrote its weather rules. The question was never "is there a thunderstorm?" It was "could lightning strike this rocket?"</p>
+<p>Every good forecast starts the same way: with a specific question. "Will the weather be bad?" can't be answered. Bad for what? A breezy, cool day is miserable for a picnic, perfect for a run, and dangerous for a small boat.</p>
+<p>Better questions come from what you plan to do. Will it rain before 3 p.m.? Will the roads freeze tonight? Could storms this afternoon bring lightning while we're on the lake? Will fog clear before the morning drive?</p>
+<p>Notice that the best questions are about <b>hazards</b>, the parts of the weather that hurt people or change plans. "Will it rain?" becomes how hard, for how long, and with lightning or not. "Will it snow?" becomes when the pavement freezes and whether sleet mixes in.</p>
+<p>A forecast earns its keep when it helps someone decide what to do.</p>
+<hr>
+<h2>13.2 Step 1: Start With the Sky</h2>
+<p>On July 4, 1776, in Philadelphia, Thomas Jefferson had a busy day. He also found time to buy a thermometer from a merchant named John Sparhawk, for three pounds fifteen shillings, and to write down the temperature. In the early afternoon it was 76°F, about 24°C. He kept weather records for most of the next fifty years.</p>
+<p>Every forecast begins where Jefferson did: with what is happening now. Before opening a single forecast map, step outside.</p>
+<p>Look at the clouds and which way they are moving. Feel the wind. Check how far you can see. Is the ground wet or dry? Has anything changed in the past hour? The sky might already show a front arriving early, fog lifting, high clouds thickening, or cumulus towers growing fast. Weather models start from a picture of the present, and sometimes that picture is wrong. If a model shows clear skies and you are standing under thick cloud, believe the cloud.</p>
+<p>Then take a few numbers, from your own station or the nearest airport report (Chapter 12, 12.1): temperature, dew point, pressure, wind direction, and wind speed.</p>
+<p>The most useful pair is temperature and dew point. The gap between them is the <b>dew-point spread</b>. A small gap, a couple of degrees, means the air is nearly saturated. Cool it a little tonight, and you'll get dew, fog, or low cloud. A big gap, say 20°C (36°F), means dry air. Clouds will form high, if at all, and storms will struggle unless moisture arrives. The same gap gives the height of the cloud base (Chapter 3, 3.7).</p>
+<p>The dew point also tells you how much fuel the air holds for storms, how warm the night will stay, and how muggy the day will feel. A forecast that ignores the dew point is working with one eye closed.</p>
+<hr>
+<h2>13.3 Reading the Change</h2>
+<p>The morning of January 12, 1888, was mild across the northern Great Plains. After a bitter cold spell, children walked to school in Nebraska and the Dakota Territory without heavy coats.</p>
+<p>That afternoon, an Arctic cold front swept across the prairie. The wind swung around to the north and roared. Snow so fine it was almost powder filled the air, and the temperature plunged. Many teachers and children were caught between school and home. An estimated 235 people died, many of them children. It became known as the Schoolhouse Blizzard.</p>
+<p>The warm morning wasn't a promise. It was a sign that something was about to change. Two numbers would have hinted at it, and both are about <b>trends</b>, not values.</p>
+<p>The first is pressure. A barometer reading means little on its own. A reading that has fallen steadily for three hours tells a story: a low or a front is coming closer. A sharp rise after a front means colder, drier air is pouring in behind it, often with gusty wind and clearing skies. The faster the change, the bigger the weather change that comes with it. Chapter 5 explains why.</p>
+<p>The second is wind direction, because the wind shows where the air is coming from. Is it blowing from the sea or the land? From warm, humid country or cold, dry country? A sudden shift often marks a boundary: a front, a sea breeze, or a dryline. On a hot afternoon, a cool gust from a new direction often means a thunderstorm's outflow is coming, even before the rain (Chapter 6, 6.11).</p>
+<p>The simplest forecast of all is that tomorrow will be like today. It's called a <b>persistence forecast</b>, and in a settled pattern, it's hard to beat. Near a front, it fails badly. A warm morning with falling pressure and a shifting wind is the time to stop assuming.</p>
+<hr>
+<h2>13.4 Step 2: Find the Pattern</h2>
+<p>In June 2001, Tropical Storm Allison drifted ashore in Texas. It never became a hurricane, and its winds were modest. But it stalled, looped back, and kept pulling in moisture from the Gulf of Mexico. Parts of Houston received close to a meter of rain (more than 35 inches). Forty-one people died. Allison became the first tropical storm to have its name retired without ever reaching hurricane strength.</p>
+<p>A weak system in very moist air can be far more dangerous than a strong one in dry air. That is the point of step 2: zoom out, find the big pattern, and check where the moisture is coming from.</p>
+<p>Start with a surface map (Chapter 12, 12.3). Find the nearest high, the nearest low, and the fronts. Is the low coming toward you or leaving? Are you in the warm, humid air ahead of the cold front, or the cool, dry air behind it? Are the isobars bunching up, which means stronger wind?</p>
+<p>Then look higher, at the 500-hectopascal map (Chapter 12, 12.4). An approaching trough brings rising air and cooler air aloft: unsettled weather and storms. A building ridge brings sinking air, warmth, and dry skies, and if it parks for a week, a heat wave (Chapter 5, Visual Spread 5.11).</p>
+<p>The upper air sets up the opportunity. The lower air decides whether to use it. A trough crossing dry country may bring only wind and clouds. A ridge over humid ground can still pop afternoon storms.</p>
+<p>So the last question in step 2 is where the moisture is. Watch for rising dew points, a wind from the Gulf or the ocean, a low-level jet carrying humid air north at night, or a ribbon of moisture on the satellite's water-vapor image. Forecasters measure the total with <b>precipitable water</b>: how deep a layer of rain you would get if every bit of vapor overhead fell out at once. High values don't guarantee heavy rain, but with slow-moving storms, they deserve attention.</p>
+<p>The lift starts the rain. The moisture sets the budget.</p>
+<h3>Visual Spread 13.4: Reading the Pattern in Two Maps</h3>
+<p class="pic"><em>Two maps of North America, stacked on a single page, showing the same moment. The top map is the 500-hectopascal map: a deep trough dips over the Rockies, with a ridge over the East. The bottom map is the surface map: a low over Kansas with a warm front curving east and a cold front trailing south. Green arrows show humid air streaming north from the Gulf of Mexico. A small house marks "you are here" in Missouri, just east of the cold front.</em></p>
+<p class="pic"><em>Callouts:</em></p>
+<ul class="pic"><li><b><em>The trough.</b> "Rising air ahead of it. Storms are more likely on its east side."</em></li><li><b><em>The ridge.</b> "Sinking air. Fair, warm weather, for now."</em></li><li><b><em>The low.</b> "Where the trough's lift reaches the ground."</em></li><li><b><em>The warm sector.</b> "Warm, humid air between the fronts. You are here."</em></li><li><b><em>The moisture.</b> "Dew points rising from the Gulf. This is the fuel."</em></li><li><b><em>Behind the front.</b> "Cooler, drier air, a wind shift, and rising pressure."</em></li></ul>
+<hr>
+<h2>13.5 Look Upstream</h2>
+<p>In the fall of 1743, Benjamin Franklin hoped to watch an eclipse of the Moon from Philadelphia. A northeast storm rolled in and hid it. Because the wind blew from the northeast, Franklin assumed the storm had come from that direction, out of New England.</p>
+<p>Then letters arrived from Boston. There, the sky had been clear for the eclipse, and the storm came hours later. The storm had traveled toward the northeast, against the wind at the ground. Franklin realized that storms move as whole systems, and that you can see them coming if you know where to look.</p>
+<p>Weather comes from somewhere. In much of North America, the systems and the storms move generally from west to east, steered by the winds aloft. The best short-term forecast you can make is often to look at what's happening upstream, a few hundred kilometers along the storm's path, and ask whether it's on its way.</p>
+<p>Upstream, are the dew points rising? Has the cold air behind the front turned out deeper than forecast? Have storms started forming? Is the cloud clearing? Tomorrow's weather may already be bothering someone two states away.</p>
+<p>Radar and satellite loops are the quickest way to look upstream. Always watch a <b>loop</b>, never a single picture, and check the time stamp.</p>
+<p>Radar answers "where is the rain, and how fast is it moving?" A loop shows whether storms are growing or fading, and where new ones are popping up.</p>
+<p>Satellite answers "what is developing?" The visible picture shows clearing skies and cumulus bubbling up along a boundary, often before the radar sees any rain. The infrared picture shows cloud tops getting colder, which means a storm is growing taller, even at night. The water-vapor picture shows dry slots and troughs high in the atmosphere (Chapter 12, 12.10).</p>
+<hr>
+<h2>13.6 Step 3: Forecast by Ingredients</h2>
+<p>In 1996, three American meteorologists, Charles Doswell, Harold Brooks, and Robert Maddox, published a paper about flash floods with a simple idea. Don't try to memorize every past storm and hope tomorrow matches one of them. Instead, ask what any heavy rain needs, and check whether each ingredient is there.</p>
+<p>The idea had been around for years. They put it in plain form, and it spread. Forecasters now call it <b>ingredients-based forecasting</b>, and it is the heart of step 3.</p>
+<p>Thunderstorms are the classic recipe. Chapter 7 explains each ingredient. Here, they become four questions.</p>
+<p>Is there moisture? In much of the central and eastern United States, surface dew points near 18°C (the mid-60s °F) or higher usually mean enough fuel for strong summer storms.</p>
+<p>Is the air unstable? Look for high CAPE, warm humid air near the ground, and cold air aloft (Chapter 7, 7.2). Morning clouds can hold back the heating. But they can also clear by noon, and then the instability builds fast.</p>
+<p>Is there something to lift the air? A cold front, a dryline, a sea breeze, an outflow boundary, a mountain slope, or an upper-level disturbance. A day can have plenty of fuel and no storms at all, because nothing breaks the cap.</p>
+<p>Is there wind shear? With weak shear, storms pop up, rain, and collapse within an hour. With strong shear, they organize into lines and supercells, and the hazards grow (Chapter 7, 7.4).</p>
+<p>Timing comes from the same ingredients. Pulse storms peak in the late afternoon, at the end of the day's heating. Frontal storms come when the front does, at any hour. In the Plains, storms often strengthen after dark, fed by the low-level jet.</p>
+<p>Then watch the sky. Cumulus with crisp, cauliflower edges and towers that keep growing in the same place mean the atmosphere is succeeding. Flat tops and ragged, fading edges mean the cap is winning, for now.</p>
+<hr>
+<h2>13.7 Recipes for Fog, Heat, Wind, and Flood</h2>
+<p>On the morning of December 11, 1990, a thick bank of fog settled over Interstate 75 near Calhoun, Tennessee, in a low stretch near a river. Drivers came over a rise from clear air into almost nothing. In a few minutes, 99 vehicles piled into one another. Twelve people died.</p>
+<p>Fog like that is no surprise to a forecaster. It is one of the easiest hazards to see coming the evening before, if you check the recipe. Every hazard has one. The ingredients are explained in other chapters. Here they are as a checklist.</p>
+<p><b>Fog.</b> Moist air, a small dew-point spread at sunset, a clear sky, a light wind, and wet ground. Valleys and low ground are first to fill. Too much wind stirs the air and stops the fog from forming. A cloudy sky keeps the ground warm (Chapter 3 explains the fog types). Fog is easier to forecast forming than clearing. It lingers under an inversion or a cloud deck.</p>
+<p><b>Heat.</b> A strong ridge, clear skies, dry soil, and a weak wind. Watch the overnight low as closely as the high. A humid night that stays warm gives the body no chance to recover (Chapter 11, 11.8). Dry soil makes hotter days, because less of the Sun's energy goes into evaporating water. Wet soil makes the days slightly cooler but stickier.</p>
+<p><b>Wind.</b> Tightly packed isobars, strong wind a kilometer or two up, and sunshine to stir the air. On a windy day, the gusts often peak in the afternoon, when the Sun's heating mixes the fast wind aloft down to the ground. Showers behind a cold front can drag down sudden, sharp gusts, too.</p>
+<p><b>Flood.</b> A lot of moisture, slow storms, cells training over one spot, and ground that is already soaked, steep, paved, or burned (Chapter 11, 11.2 and 11.3). The question isn't only how much rain, but how much and how fast.</p>
+<h3>Visual Spread 13.7: Five Recipes</h3>
+<p class="pic"><em>Five recipe cards laid out across two pages, like cards on a kitchen counter. Each card has a small picture at the top and a short list of ingredients with checkboxes. At the bottom of each card is a red line labeled "What could stop it."</em></p>
+<p class="pic"><em>Callouts:</em></p>
+<ul class="pic"><li><b><em>Thunderstorms.</b> Moisture, instability, lift, and shear for organized storms. "Stop: the cap holds, clouds block the Sun, moisture never arrives."</em></li><li><b><em>Fog.</b> Small dew-point spread, clear sky, light wind, wet ground. "Stop: wind stays up, clouds roll in, drier air arrives."</em></li><li><b><em>Heat.</b> Ridge, clear sky, dry soil, warm nights. "Stop: storms, clouds, a sea breeze."</em></li><li><b><em>Wind.</b> Tight isobars, fast wind aloft, mixing. "Stop: an inversion that keeps the fast wind above you."</em></li><li><b><em>Flood.</b> High moisture, slow or training storms, wet or paved ground. "Stop: storms that keep moving."</em></li><li><b><em>A sixth card, blank.</b> "Snow has its own recipe. See 13.8."</em></li></ul>
+<hr>
+<h2>13.8 The Snow Forecast</h2>
+<p>On January 26, 2015, New York City braced for what forecasters called a historic blizzard. The forecast for the city called for 50 to 75 cm (20 to 30 inches). The governor closed the roads, and for the first time, the subway was shut down for snow.</p>
+<p>Central Park got 25 cm (9.8 inches). The storm tracked a little farther east than expected, and eastern Long Island and much of Massachusetts got the two feet instead. A forecaster at the National Weather Service office in New Jersey, Gary Szatkowski, apologized in public: "You made a lot of tough decisions expecting us to get it right, and we didn't."</p>
+<p>For New England, it was a good forecast. For New York, a small shift in the storm's track turned a historic storm into an ordinary snowy day. Snow forecasts are hard because small changes in a few ingredients add up.</p>
+<p>Start with the whole column of air, not the thermometer by the door. Is it cold enough for snow all the way down? Or is there a warm nose aloft that will turn the snow to sleet or freezing rain (Chapter 10, 10.1)? A reading of 1°C (34°F) doesn't rule out snow, and −1°C (30°F) doesn't promise it.</p>
+<p>Next, ask how much the air can cool once precipitation starts. If the air is dry, falling snow evaporates and chills it toward the wet-bulb temperature, and rain can turn to snow in an hour (Chapter 10, 10.3).</p>
+<p>Then check the ground. A sunny road may melt the first flakes, and a shaded bridge may freeze at once. Heavy snow eventually overwhelms a warm road.</p>
+<p>Finally, read the forecast the way it's meant to be read. A range such as "10 to 20 cm" is not a promise of the top number or a failure at the bottom one. It tells you the most likely amount lies in between. Many forecast offices now publish the chance of at least 2.5, 15, or 30 cm (1, 6, or 12 inches). A 30 percent chance of 30 cm means a foot of snow is a real possibility. It does not mean a foot of snow on 30 percent of your driveway.</p>
+<p>A narrow snow band can drop twice as much as the towns on either side. Bust scenarios cut both ways. A storm that tracks farther away, a warm layer that arrives early, or dry air can mean less. A band that stalls, colder air, or fluffier snow can mean more.</p>
+<hr>
+<h2>13.9 Step 4: Compare the Guidance</h2>
+<p>In late October 2012, the forecast models disagreed about Hurricane Sandy. About a week ahead, the European model showed a strange left hook: the storm would turn west and slam into New Jersey. For several days, the main American model kept sending it harmlessly out to sea. On October 29, Sandy came ashore near Atlantic City, almost exactly where the European model had said.</p>
+<p>Two years later, the same European model led forecasters astray in the New York blizzard (13.8). The lesson isn't "trust one model." It's that no single model is the forecast.</p>
+<p>Step 4 is where you compare the forecasts that already exist. Start with the official forecast from your national weather service. It already combines the observations, many models, local knowledge, and a trained person's judgment. Use it as your baseline, then use everything else to understand why, when, and how sure.</p>
+<p>Next, read the <b>forecast discussion</b>, the forecaster's written notes behind the forecast. In the United States, every National Weather Service office publishes one several times a day. It is the closest thing to listening in on a forecaster thinking. A few phrases carry a lot. "High confidence" means the models and observations agree. "Conditional" means a hazard happens only if one ingredient comes together, such as storms breaking the cap. "Bust potential" means the event could fall well short. "High-end scenario" means a less likely but much worse outcome. These phrases aren't hedging. They are the forecast being honest.</p>
+<p>Then look at the range. An ensemble's spread shows the confidence (Chapter 12, 12.12). A tight bundle means confidence. A wide fan means wait and watch. Ensemble charts often show the 10th, 50th, and 90th percentiles. Read them as a reasonable low, the middle, and a reasonable high.</p>
+<p>Four habits keep you honest with model maps. One run is one scenario, so see whether the next runs agree. Several models agreeing isn't several independent witnesses, because they share the same observations. A model that holds steady from run to run is more believable than one that jumps 300 kilometers between runs. And an exact number ten days out, "7.3 inches of snow," is precise but not accurate.</p>
+<p>Above all, don't go <b>model-shopping</b>, picking whichever model shows what you hope for. The snow lover finds the snowiest model. The bride finds the driest one. That's not forecasting. It's wishful thinking with a map.</p>
+<hr>
+<h2>13.10 Step 5: Ask What Could Change</h2>
+<p>On August 13, 2004, Hurricane Charley was heading for Tampa Bay, Florida. That was where the forecast track pointed, and that was where people's attention went.</p>
+<p>In the last hours, Charley strengthened from a Category 2 to a Category 4 and turned right. It came ashore near Punta Gorda, about 130 kilometers (80 miles) south of Tampa Bay, with winds near 240 km/h (150 mph). Punta Gorda was inside the warning and inside the forecast cone. Many people there had watched the line, not the cone (Chapter 9, 9.9).</p>
+<p>Every forecast has a most likely outcome and a set of others. Step 5 is to name them. Write down the one that's most likely. Then write down the reasonable worst case, not the wildest thing imaginable, but the bad outcome that has a real chance. And then the way the forecast could fall flat.</p>
+<p>For an afternoon of storms, it might look like this. Most likely: scattered storms with brief heavy rain. Reasonable worst case: a few storms bring damaging wind and street flooding. Could fall flat: morning clouds hang on, and storms barely form.</p>
+<p>The cards in Visual Spread 13.7 each have a "what could stop it" line for this reason. Forecasting is asking why something will happen, and then asking what could stop it.</p>
+<p>Then keep watching, because the forecast only gets better as the event comes closer. Are the dew points rising on schedule? Is the cold air arriving faster than forecast? Are storms forming farther west? Each new observation is a vote. When reality starts voting against your forecast, change it. Changing a forecast isn't failing. Refusing to change it is.</p>
+<p>A small shift can matter a lot. A storm track that moves 50 kilometers (30 miles) can turn heavy snow to sleet, or a hurricane's eyewall into a near miss. The big system can be forecast well while the line between "hit" and "miss" runs right through your town.</p>
+<hr>
+<h2>13.11 Step 6: Write It Down</h2>
+<p>On September 1, 1869, an astronomer named Cleveland Abbe, director of the Cincinnati Observatory, began issuing daily weather forecasts built from telegraphed reports. He didn't call them forecasts. He called them "probabilities." The name stuck to him, too. People called him "Old Probabilities." Within a few years, he was working for the new national weather service.</p>
+<p>Abbe understood that a forecast is an honest statement of what is likely, not a promise. The last step of the routine is to write yours down, in a way someone else could act on.</p>
+<p>The simplest form is three sentences: what is happening, what will happen, and what could change.</p>
+<blockquote><p>High pressure is moving offshore, and humid air is coming back from the south. Clouds will thicken tonight, with showers possible by sunrise. The main question is whether the rain arrives before the morning commute.</p></blockquote>
+<p>That beats "High 22. 40 percent chance of rain." Chapter 12 explains what that 40 percent means (12.12). It doesn't tell you whether you'll get a brief shower or a soaking, or when.</p>
+<p>For a plan, add <b>decision windows</b>: when it's safe, when it's risky, and when it gets better. "Outdoor work is safest before 1 p.m. Storms are possible from 2 to 7 p.m. Improving after 8 p.m."</p>
+<p>Use ranges when they're honest: a high of 28 to 30°C, 10 to 20 mm of rain, a front arriving between 4 and 7 p.m. A range should show real uncertainty. "Zero to 30 centimeters of snow" includes everything and tells you nothing.</p>
+<h3>Visual Spread 13.11: The Ten-Minute Forecast</h3>
+<p class="pic"><em>A clock face across two pages, divided into colored wedges like a pie, one for each part of the routine. Inside each wedge is a small picture and one line. In the center, a notebook lies open, with three handwritten sentences.</em></p>
+<p class="pic"><em>Callouts:</em></p>
+<ul class="pic"><li><b><em>Minutes 1 to 2: Start with the sky.</b> A person on a porch looking up. "Clouds, wind, and the change since an hour ago. Temperature, dew point, pressure trend."</em></li><li><b><em>Minutes 3 to 4: Find the pattern.</b> A small surface map. "Highs, lows, fronts. Trough or ridge aloft. Where's the moisture?"</em></li><li><b><em>Minute 5: Look upstream.</b> A radar loop with an arrow. "What's coming, what's growing, what's fading?"</em></li><li><b><em>Minute 6: Check the ingredients.</b> The recipe cards from 13.7. "What does today's hazard need? Is it all there?"</em></li><li><b><em>Minutes 7 to 8: Compare the guidance.</b> A forecast page and a fan of ensemble lines. "Official forecast, forecast discussion, and the range."</em></li><li><b><em>Minute 9: What could change.</b> A fork in the road. "Most likely, reasonable worst case, could fall flat."</em></li><li><b><em>Minute 10: Write it down.</b> The notebook. "What's happening, what will happen, what could change."</em></li></ul>
+<hr>
+<h2>13.12 Keep Score</h2>
+<p>In 1884, John Park Finley, an officer in the US Army Signal Corps, made the first experimental tornado forecasts, twice a day, for regions of the central and eastern United States. When he checked his results, he announced they were 96.6 percent correct.</p>
+<p>Then another scientist, Grove Karl Gilbert, pointed out something awkward. Tornadoes are rare. Had Finley simply forecast "no tornado" every time, he would have been 98.2 percent correct. Finley's real skill was in the few times he forecast a tornado and was right, and those were much less impressive. Scientists still argue over how best to score forecasts, and it started there.</p>
+<p>The last part of forecasting happens after the weather. Compare what you said with what happened. And don't stop at "right" or "wrong." Ask why. Did the front come early? Did the cap hold? Did the fog lift late? Did the snow band set up 40 kilometers away?</p>
+<p>A <b>forecast journal</b> makes this easy. Each day, write the date, the forecast, the main reason, your confidence, what happened, and one lesson. After a few months, patterns appear. You might find you forecast storms too early, or miss fog, or trust models too much when shallow cold air is in place. Knowing your own biases is almost as useful as knowing a model's.</p>
+<p>If you use percentages, check one more thing: <b>calibration</b>. Over many forecasts, your 70 percent chances should come true about seven times in ten. A single miss proves nothing. A 20 percent event will happen one time in five. A 90 percent event will fail one time in ten.</p>
+<p>The routine works best as a daily habit with three short check-ins. In the morning, note the overnight low, dew, fog, and the day's forecast. In the afternoon, watch the cumulus, the wind, and the day's peak heat. In the evening, write down the high, the rain total, and the pressure trend, and score the morning's forecast. Chapter 18 shows how to set up a home station to collect the numbers. Chapter 20 turns the journal into a longer project.</p>
+<p>You won't predict every cloud. But after a season of keeping score, you will know your own sky better than any app does.</p>
+<hr>
+<h1>Weather Safety</h1>
+<h2>Know Where Your Forecast Ends</h2>
+<ul><li><b>Your forecast is for understanding and planning. It is never a substitute for an official warning.</b> That goes for tornadoes, severe thunderstorms, flash floods, hurricanes and storm surge, blizzards, extreme heat, and wildfire evacuations.</li><li><b>When a warning is issued, act on it at once.</b> Don't wait for your own forecast to agree, and don't overrule trained forecasters from one radar image.</li><li><b>Never stay outside to see a warned storm for yourself.</b></li><li><b>Use your forecast to prepare early,</b> so that when a warning comes, you already know where you'll go.</li></ul>
+<p class="pic"><em>For what watches and warnings mean, see Chapter 20. For each hazard's own safety advice, see Chapters 7, 8, 9, 10, and 11.</em></p>
+<hr>
+<h1>Field Observation</h1>
+<h2>Forecast Tomorrow Morning</h2>
+<p>Before bed, write down your forecast for sunrise: the low temperature, fog or no fog, cloud cover, and wind. Base it on the dew-point spread, the sky, the wind, and whether the ground is wet.</p>
+<p>Check it when you wake up. Overnight cooling shows the links between temperature, dew point, cloud, and wind more clearly than any other time of day. It's also a good way to be wrong before breakfast.</p>
+<hr>
+<h1>Try It</h1>
+<h2>Score Your Forecast</h2>
+<p>For one week, write a three-sentence forecast each evening for the next day. Save a screenshot of a model map for the same day, too. The next evening, score each one from 0 to 5.</p>
+<table><thead><tr><th>Score</th><th>What happened</th></tr></thead><tbody><tr><td>5</td><td>Timing, type, and impact almost exactly right</td></tr><tr><td>4</td><td>Right overall, with small errors in timing or amount</td></tr><tr><td>3</td><td>The main event right, the details off</td></tr><tr><td>2</td><td>Partly right</td></tr><tr><td>1</td><td>Mostly wrong</td></tr><tr><td>0</td><td>The atmosphere had other plans</td></tr></tbody></table>
+<p>Then write one sentence on the biggest error and why it happened. The sentence matters more than the score.</p>
+<hr>
+<h1>Chapter Summary</h1>
+<p>A useful forecast starts with a specific question about a decision or a hazard.</p>
+<p>Step 1 is the sky. Observations come before models. The dew-point spread, the pressure trend, and the wind direction show what's coming next.</p>
+<p>Step 2 is the pattern: highs, lows, and fronts at the ground, troughs and ridges aloft, and where the moisture comes from. Looking upstream on radar and satellite loops shows what's on the way.</p>
+<p>Step 3 is the ingredients. Thunderstorms, fog, heat, wind, floods, and snow each have a recipe, and each recipe has something that could stop it.</p>
+<p>Step 4 is the guidance. The official forecast is the baseline. The forecast discussion explains it, and ensembles show the range. One model run is a scenario, not a forecast.</p>
+<p>Step 5 asks what could change: the most likely outcome, the reasonable worst case, and the way the forecast could fall flat. Keep watching, and change the forecast when the observations do.</p>
+<p>Step 6 is to write it down in three sentences, with decision windows and honest ranges, and then keep score.</p>
+<p>At the bottom of the ocean of air, no one can see every current. But anyone who looks carefully, every day, can learn which way the tide is turning.</p>
+<hr>
+<h2>Weather-Watcher's Vocabulary</h2>
+<p><b>Hazard:</b> The part of the weather that can hurt people or change plans. <b>Dew-point spread:</b> The difference between the temperature and the dew point. <b>Pressure tendency:</b> How the air pressure has changed over the past few hours. <b>Persistence forecast:</b> A forecast that tomorrow will be like today. <b>Precipitable water:</b> The depth of rain you would get if all the water vapor overhead fell out at once. <b>Upstream:</b> The direction the weather is coming from. <b>Loop:</b> A series of radar or satellite images played in order to show motion. <b>Ingredients-based forecasting:</b> Forecasting by checking whether everything a type of weather needs is present. <b>Snowfall probability:</b> The chance of at least a certain amount of snow. <b>Bust:</b> A forecast that goes badly wrong. <b>Forecast discussion:</b> A forecaster's written explanation of the reasoning behind a forecast. <b>Percentile:</b> A point in a range of forecasts; the 90th percentile is a reasonable high-end outcome. <b>Model-shopping:</b> Choosing the model that shows the result you want. <b>Reasonable worst case:</b> A bad outcome that has a real chance of happening. <b>Decision window:</b> A stretch of time when conditions are expected to be safer or more dangerous. <b>Verification:</b> Comparing a forecast with what actually happened. <b>Forecast journal:</b> A written record of your forecasts, reasons, and results. <b>Calibration:</b> How well stated chances match how often things actually happen.</p>
+<p><b>Next: Chapter 14, Climate Patterns: El Niño, La Niña, the Jet Stream, and Why Seasons Differ</b></p>
+<div class="pager"><a href="chapter-12.html">&larr; Chapter 12</a><a href="chapter-14.html">Chapter 14 &rarr;</a></div>
+</main>
+</body>
+</html>

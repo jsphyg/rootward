@@ -9,6 +9,7 @@ mkdir -p docs/calculus docs/world-history docs/physics-astronomy
 cp dist/calculus.html docs/calculus/index.html
 cp subjects/world-history/dist/world-history.html docs/world-history/index.html
 cp subjects/physics-astronomy/dist/physics-and-astronomy.html docs/physics-astronomy/index.html
+python3 build/build_book.py --book subjects/weather-book --out docs/weather-book
 cp build/site-index.html docs/index.html
 touch docs/.nojekyll
 echo "docs/ updated. Commit and push to publish."

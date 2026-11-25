@@ -1,0 +1,493 @@
+# Chapter 11
+## Floods, Droughts, Heat Waves, and Wildfire Weather
+
+Not every weather disaster arrives with a roar.
+
+Some build quietly. A river rises overnight under a clear sky. Soil dries for months, and nobody notices until the wells go low. A city stays hot long after sunset, and the people in its upstairs apartments never get a cool night. A grass fire catches a gust of wind and crosses a highway before anyone understands what is happening.
+
+Floods, droughts, heat waves, and wildfires look like four different hazards. They are really one story told four ways, about water and heat at the bottom of the ocean of air.
+
+The basic weather machine of Chapter 1 runs on the Sun's energy, carried around the world by air and water. Most of the time, the water comes and goes in a rhythm the land can handle. Rain falls, soaks in, runs off, and evaporates again. Disaster comes when the rhythm breaks. Too much water arrives too fast. Or too little arrives for too long, and the heat that would have gone into evaporating it goes into baking the ground instead.
+
+The same place can suffer all four in a single year. A drought dries the hills. A heat wave dries them further. A fire burns them bare. Then the first heavy rain of autumn pours off the burned slopes and buries the town below in mud.
+
+This chapter follows the water down the hillside, and then follows it as it disappears.
+
+---
+
+## 11.1 Where the Rain Goes
+
+Every drop of rain that reaches the ground has three choices.
+
+It can soak in. It can run off across the surface. Or it can sit in a puddle until it evaporates. A flood is simply what happens when too much of the rain takes the second choice at once.
+
+Soaking in is called **infiltration**, and the ground is better at it than you might think. Loose, sandy soil drinks water fast. Forest soil, full of roots and old leaves, works like a sponge. Clay soaks it up slowly. Pavement, roofs, and rock don't soak it up at all, and neither does frozen ground.
+
+Every soil has a limit. Once the tiny spaces between its grains are full, the soil is **saturated**, and any more rain becomes **runoff**. That is why a flood depends not only on today's rain but on last week's. The same storm that soaks harmlessly into dry fields can flood them if it has rained every day for a week.
+
+How fast the rain falls matters as much as how much. Five centimeters (2 inches) of rain spread over two days may soak in gently. The same five centimeters in twenty minutes will mostly run off. Same water, very different arrival.
+
+Once it runs off, the water heads downhill, and every stream gathers it from a patch of land called its **watershed**. Ridges and high ground form the edges. A raindrop falling on one side of a ridge may end up in a different river from one falling a meter away on the other side. Small streams join into larger ones, and their watersheds join too. So a river can flood from rain that fell a long way off, on land you have never seen.
+
+### Visual Spread 11.1: Where the Rain Goes
+
+*A single rainstorm falling across two pages on a landscape that changes from left to right: a forest, a farm field, a suburb, and a downtown street. Blue arrows show each raindrop's path. In the forest, most arrows point down into the soil. In the field, some soak in and some run off. In the suburb, more run off. Downtown, almost every arrow skids across the pavement into a storm drain.*
+
+*Callouts:*
+
+- ***The forest.** "Leaves slow the rain. Roots and loose soil drink it."*
+- ***The field.** "Soaks up a lot until the soil is full."*
+- ***The parking lot.** "Nothing soaks in. Every drop becomes runoff."*
+- ***The storm drain.** A drain grate half-blocked with leaves. "Built for ordinary storms. Easily overwhelmed or clogged."*
+- ***Rate vs. total.** Two rain gauges side by side, each with 5 centimeters of water. One is labeled "over two days," the other "in twenty minutes." "Same rain. One soaks in. One floods."*
+
+*Inset, a watershed seen from above: a ridgeline drawn as a dashed line, with creeks on both sides draining into two different rivers. "Rain on this side ends up here. Rain on that side ends up there."*
+
+---
+
+## 11.2 The Flash Flood
+
+On the evening of July 31, 1976, thousands of people were camping and driving in Colorado's Big Thompson Canyon for the state's 100th birthday weekend. The sky over the lower canyon wasn't threatening. But a few kilometers upstream, a thunderstorm had stalled over the mountains. Winds aloft were too weak to push it along, and moist air kept feeding it from the east.
+
+In about four hours, the storm dropped around 30 centimeters (12 inches) of rain on the steep, rocky slopes above the river. Almost none of it could soak in. It poured into the narrow canyon, and a wall of water about 6 meters (20 feet) high came roaring down toward the campgrounds. It swept away cars, houses, and a section of highway. 144 people died.
+
+That is a **flash flood**: a flood that rises within minutes or a few hours of heavy rain. Big Thompson had almost every ingredient: intense rain, steep rocky ground, and a narrow canyon to squeeze the water. And the storm was upstream, so many victims never saw the rain that killed them. A dry creek bed or desert wash can turn into a torrent under a blue sky.
+
+Cities make their own flash floods. Pavement and roofs shed water almost instantly, storm drains fill or clog, and water pools in the low spots: underpasses, dips in the road, basements, and subway stairs. Flooding from rain that overwhelms local drainage, far from any river, is sometimes called **pluvial flooding**. It is the reason a house outside a mapped river floodplain can still flood. The map shows where rivers overflow, not where rain collects.
+
+When a **flash flood warning** is issued, it means move to higher ground now. Chapter 20 explains watches and warnings in full, including the rare **flash flood emergency**, used only when lives are in immediate danger.
+
+### Visual Spread 11.2: The Flood You Can't See Coming
+
+*A long view up a mountain canyon across two pages. At the top left, a dark thunderstorm sits over the peaks, pouring rain. Water streams off bare rock into gullies. In the middle, the gullies join a single foaming river squeezed between cliffs. At the bottom right, sunlight falls on a campground beside a calm stream, with a family by their tent. A brown wall of water is just coming around the bend.*
+
+*Callouts:*
+
+- ***The storm upstream.** "The rain can be many kilometers away."*
+- ***Steep, rocky slopes.** "Water runs off fast and soaks in slowly."*
+- ***The narrow canyon.** "Walls squeeze the water higher and faster."*
+- ***Sunshine downstream.** "No rain here. The flood arrives anyway."*
+- ***The escape.** An arrow pointing up a side slope, not along the road. "Climb. Don't try to outrun it down the canyon."*
+
+*Inset, Big Thompson Canyon, Colorado, July 31, 1976. "About 30 centimeters (12 inches) of rain in about four hours. A wall of water about 6 meters (20 feet) high. 144 deaths."*
+
+*Inset, a flooded city underpass with a car stalled in it. "Cities flash flood too. Pavement sheds rain almost instantly."*
+
+---
+
+## 11.3 Rain That Won't Move On
+
+Most heavy rain floods because it stays in one place.
+
+A single thunderstorm drops its rain and moves on. But sometimes storms form one after another over the same spot, like the cars of a train passing a crossing, as Chapters 6 and 7 described. This **training** can pile up enormous totals even when no single storm is strong. Chapter 12 explains how radar measures the rain.
+
+A storm that stalls does the same thing on a larger scale. Chapter 9 told how Hurricane Harvey sat near Houston for four days in 2017, dropping more than 1.5 meters (60 inches) of rain in places. Harvey was not the strongest hurricane. It was the one that wouldn't leave.
+
+Some of the biggest floods come from a stream of moisture flowing through the air itself. An **atmospheric river** is a long, narrow band of very humid air, often thousands of kilometers long but only a few hundred wide, carrying water vapor from the tropics toward the poles. An average one carries about as much water, as vapor, as the Mississippi River pours into the sea. The strongest carry many times more. The name is a picture, not a literal river. There are no banks, just a current of wet air.
+
+When an atmospheric river runs into mountains, the air is forced up, cools, and wrings out its water, as Chapter 5 described. The one that reaches California from near Hawaii is nicknamed the **Pineapple Express**. Atmospheric rivers bring the West Coast up to half of its yearly rain and snow, so most of them are welcome. A strong one that stalls brings floods and landslides.
+
+The worst case is warm rain falling on deep snow. The rain adds its own water, and its warmth melts the snow. Frozen ground below lets none of it soak in. Rivers in the mountains can rise fast.
+
+### Illustration 1: A river in the sky
+
+*A satellite-style view of the Pacific Ocean, with a long, narrow ribbon of bright moisture stretching from near Hawaii to the California coast. Where the ribbon meets the mountains, rain and snow are drawn falling heavily on the windward slopes. Caption: "A current of water vapor, thousands of kilometers long. When it hits the mountains, it lets go."*
+
+---
+
+## 11.4 When the River Rises
+
+A big river floods slowly, and it can keep rising long after the rain ends.
+
+The water that fell across a river's whole watershed takes time to drain toward it. Rain on nearby hillsides arrives in hours. Rain from far upstream may take days, or even weeks on the largest rivers. So the river keeps climbing under clear skies. Its highest point, called the **crest**, can arrive days after the last storm. A sunny morning is not a sign that the flood is over.
+
+In 1993, it rained across the upper Mississippi and Missouri valleys for much of the spring and summer. The ground was already soaked from the year before. River after river spilled over its banks, and the water stayed high for weeks. Hundreds of levees failed. Whole towns went underwater, and some later moved to higher ground rather than rebuild.
+
+Rivers are watched by **stream gauges**, which measure the water level many times a day. Forecasters compare it with **flood stage**, the height where the water begins to cause trouble at that spot. Every gauge has its own, because the same height that is a normal spring on one river covers Main Street on another. A river forecast gives the expected crest and when it will arrive. That is the number to watch.
+
+Small creeks, the ones most likely to flash flood, often have no gauge at all.
+
+Rivers have other ways to flood. In late winter, broken ice can jam at a bend or bridge and dam the water, then let go all at once. A failing dam or levee can flood places that never flood in ordinary years.
+
+And on low coasts, the sea comes in. Chapter 9 explained storm surge. Some coastal towns now flood on calm, sunny days during the highest tides of the month. This **high-tide flooding** is becoming more common as sea level rises.
+
+### Visual Spread 11.4: Reading a River
+
+*A river gauge on a bridge pier, drawn tall on the left page, with the water level marked against a painted ruler. Bands of color climb the pier: green, yellow, orange, red, and purple. On the right page, a graph shows the river level over two weeks: a few days of rain marked by cloud icons, then the line climbing for days after the rain stops before peaking and slowly falling.*
+
+*Callouts on the gauge:*
+
+- ***Action stage.** Yellow. "Time to get ready."*
+- ***Minor flooding.** Orange. "Low roads and fields go under."*
+- ***Moderate flooding.** Red. "Some homes and roads flood. Evacuations may begin."*
+- ***Major flooding.** Purple. "Widespread flooding of homes and towns."*
+- ***Every gauge is different.** "Read the local impacts, not just the number."*
+
+*Callouts on the graph:*
+
+- ***The rain stops here.** "The river keeps rising."*
+- ***The crest.** The peak, three days after the last rain. "Water from upstream is still arriving."*
+
+*Inset, an ice jam: broken slabs of river ice piled against a bridge, with water spreading over the banks upstream. "Ice dams the river. When it breaks, the flood moves downstream."*
+
+*Inset, high-tide flooding: a coastal street with seawater bubbling up from a storm drain under a clear sky. "No storm needed. Just a very high tide."*
+
+---
+
+## 11.5 Turn Around
+
+More than half of the people who drown in floods in the United States are in vehicles.
+
+Most of them drove into water that looked shallow. A flooded road looks like a big, flat puddle. The driver can't see how deep it is, how fast it is moving, or whether the road beneath is already gone.
+
+Moving water is far stronger than it looks. Just 15 centimeters (6 inches) of fast-moving water can knock an adult off their feet. About 30 centimeters (1 foot) can float most cars. About 60 centimeters (2 feet) can carry away pickup trucks and SUVs. A car's tires and sealed body make it buoyant, like a boat, and once it floats, the driver has no control. It goes where the water goes. Four-wheel drive doesn't help.
+
+The National Weather Service's slogan for this is four words long: **Turn Around, Don't Drown**. It is never safe to drive or walk into floodwater. Find another route, or wait.
+
+Floodwater is dangerous on foot too. Even still water can hide open manholes, sharp metal, downed power lines, sewage, and chemicals. Children should never play in it.
+
+In a home, the danger comes from being trapped. Move to a higher floor if water rises, but never climb into a closed attic. Rising water can trap you there. If you must go up, go to the roof.
+
+### Illustration 2: What's under the water
+
+*A road disappearing into brown floodwater, seen from a car's headlights at dusk. The top half of the picture shows the smooth, harmless-looking surface. The bottom half is cut away to show what is underneath: the pavement has collapsed into a deep gully, and the current is pulling hard to one side. A row of three small figures stands at the edge for scale. A rising water line marks "15 cm: can knock you down," "30 cm: can float a car," and "60 cm: can sweep away a truck." Caption: "You can't see the depth, the current, or the road. Turn around."*
+
+---
+
+## 11.6 The Slow Disaster
+
+A flood arrives in hours. A drought can take a year to arrive, and many people don't notice until it is already deep.
+
+A **drought** is a long stretch of unusually dry weather that leaves too little water for what a place needs. It isn't one hot week or a dry month. It usually means a season or more of rain and snow well below normal.
+
+"Normal" is the key word. Twenty-five centimeters (10 inches) of rain a year is ordinary in a desert and a disaster in a rainforest. Drought is measured against what a place usually gets and what its people, farms, and forests are used to.
+
+It usually starts with the weather pattern. As Chapter 5 described, a ridge of high pressure can settle in and steer storms around a region for weeks or months. Under it, air sinks, skies stay clear, and the rain goes elsewhere.
+
+Drought then spreads through the landscape in stages, from the sky down into the ground. Experts give each stage its own name. First, the rain falls short. That is **meteorological drought**. Then the soil dries out and crops and pastures suffer, called **agricultural drought**. Later, streams shrink, lakes and reservoirs drop, and wells go low. That is **hydrological drought**. When people run short, of drinking water, power from dams, or jobs on farms, some call it socioeconomic drought.
+
+The deeper the water, the slower it responds. A rainy week can turn the lawns green without raising the reservoir at all. Water deep underground may take years to recover. A drought can look finished on the surface while it is still going on below.
+
+In the United States, a weekly map called the **U.S. Drought Monitor** combines many of these measurements and the judgment of experts into five shades, from "abnormally dry" to "exceptional drought."
+
+### Visual Spread 11.6: How Drought Sinks In
+
+*A cutaway of a landscape across two pages, from a sky with a few thin clouds at the top, down through grass and crops, a stream and a reservoir, and finally to a deep layer of groundwater with a well reaching into it. A timeline runs along the bottom, from "weeks" on the left to "years" on the right. Each layer shows its stage of drought, falling behind the one above it.*
+
+*Callouts:*
+
+- ***The sky.** "Meteorological drought. Rain and snow fall short. Weeks to months."*
+- ***The soil and crops.** Wilted corn and cracked ground. "Agricultural drought. Too little water for plants."*
+- ***Streams and reservoirs.** A boat dock sitting on dry mud. "Hydrological drought. Months to years."*
+- ***Groundwater.** A well pump reaching a sinking water table. "The last to dry and the last to recover."*
+
+*Inset, the Drought Monitor's five shades:*
+
+| Category | Meaning |
+|---|---|
+| D0 | Abnormally dry (not yet drought) |
+| D1 | Moderate drought |
+| D2 | Severe drought |
+| D3 | Extreme drought |
+| D4 | Exceptional drought |
+
+*Caption: "Drought starts in the sky and ends in the ground."*
+
+---
+
+## 11.7 Dry Soil, Hot Air
+
+Drought and heat feed each other.
+
+Wet soil stays cool on a sunny day, for the same reason a swimmer shivers coming out of a lake. Evaporation uses up energy, as Chapter 1 explained. Much of the Sun's heat goes into turning the soil's water into vapor, not into warming the ground.
+
+Dry soil has nothing to evaporate. So all that sunshine goes into heating the ground instead, and the hot ground heats the air above it. Hotter air dries the soil and the plants even faster. Less water, more heat, and less water again. A drought can make its own heat wave, and a heat wave can deepen a drought.
+
+When heat, sunshine, wind, and dry air all arrive together, the loop can spin fast. A **flash drought** develops in weeks instead of months. In the summer of 2012, one swept across the middle of the United States. Fields that were green in May were brown by July. By late summer, close to two-thirds of the lower 48 states were in drought, and it became one of the costliest weather disasters in the country's history.
+
+In the mountains of the West, drought can hide in the snow. Much of the summer water supply is stored as winter snowpack, as Chapter 10 explained. A warm winter that brings rain instead of snow, or melts the snow early, can leave a **snow drought**. The valley may have had a wet winter, and still face a dry summer.
+
+Ending a drought is slow too. One big storm mostly runs off ground that has been baked hard. The best cure is months of steady, ordinary rain and snow, soaking in a little at a time.
+
+A drought doesn't arrive in an afternoon, and it rarely leaves in one.
+
+### Illustration 3: The drying loop
+
+*A circle of four pictures connected by curved arrows. Top: cracked, dry soil under a bright sun. Right: a thermometer climbing, with heat shimmering off the ground. Bottom: wilted plants losing water into the air. Left: an empty sky with no rain clouds. Labels on the arrows: "less evaporation," "more heating," "faster drying," "drier still." Caption: "Dry ground makes hot air. Hot air makes dry ground."*
+
+---
+
+## 11.8 The Heat Wave
+
+In the middle of July 1995, a dome of hot, humid air settled over Chicago.
+
+The temperature reached 41°C (106°F). The air was thick with moisture, so it felt even hotter. But the deadliest part came after dark. In the city's brick apartment buildings, the heat soaked into the walls by day and poured back out all night. Many older people lived alone on upper floors, with no air conditioning, windows shut for safety. The nights never cooled enough to give them relief. Over about five days, more than 700 more people died than usual. Many were found days later.
+
+A **heat wave** is a stretch of unusually hot weather that lasts several days or more. Like drought, it is measured against what is normal for the place. A day of 35°C (95°F) is ordinary summer in Phoenix and a dangerous heat wave in Seattle, where many homes have no air conditioning.
+
+Most heat waves sit under a big ridge of high pressure, often a blocking high like those in Chapter 5. The air beneath it sinks and warms, as Chapter 2 described, and the sinking keeps clouds away, so the Sun bakes the ground day after day. Forecasters often call this pattern a **heat dome**. When the soil is already dry, the drying loop of 11.7 makes it hotter still.
+
+Heat waves kill quietly, mostly indoors, and mostly people who are old, sick, or alone. Warm nights matter most. The body needs the night to recover. When it can't, the strain builds day after day. Cities make it worse, because pavement and brick give back their stored heat after dark, the heat island of Chapter 2.
+
+In the United States, heat kills more people in an average year than any other kind of weather.
+
+### Visual Spread 11.8: Under the Heat Dome
+
+*A cross-section of the atmosphere across two pages, with a huge dome of high pressure drawn as a glowing orange arch over a city and the surrounding farmland. Arrows inside the dome point downward, showing sinking air. Storm clouds and the jet stream curve up and over the top of the dome, steering around it. Beneath it, the sky is clear and the Sun beats down.*
+
+*Callouts:*
+
+- ***Sinking air.** "Air sinking under the high warms as it is squeezed."*
+- ***Clear skies.** "No clouds to block the Sun."*
+- ***The storm track.** Clouds and the jet stream bending far to the north. "Storms and cooler air steered around it."*
+- ***Dry ground.** "No water to evaporate, so the ground heats faster."*
+- ***The city at night.** A row of brick apartment buildings glowing red after sunset, beside cooler blue fields. "Brick and pavement give the day's heat back all night."*
+
+*Inset, a 24-hour temperature graph for a city and for the countryside nearby during a heat wave. The country line drops at night. The city line barely dips. "The danger is in the gap: nights that never cool."*
+
+*Inset, Chicago, July 1995. "41°C (106°F). More than 700 deaths, many of them older people alone in hot apartments."*
+
+---
+
+## 11.9 Heat and the Body
+
+Your body is a heat engine. Even at rest, it makes heat, and it has to get rid of it.
+
+Mostly it does that by sweating. As Chapter 2 explained, evaporating sweat carries heat away from your skin. In humid air, sweat evaporates slowly, so the cooling slows down. That is what the **heat index** measures: how hot it feels once humidity is counted.
+
+The heat index has a catch. It assumes shade and a light breeze. In full sun, the real stress can be up to 8°C (15°F) higher. For people working or exercising outdoors, a fuller measure, the **wet-bulb globe temperature**, also counts sunshine and wind.
+
+Heat illness comes in stages. **Heat cramps** are painful muscle spasms during hard work or exercise. They are an early warning.
+
+**Heat exhaustion** is the body struggling to keep up. The person sweats heavily, feels weak, dizzy, or sick, and has cool, clammy skin. Move them somewhere cool, cool them with wet cloths, and give them water. If it doesn't improve quickly, get help.
+
+**Heat stroke** is the body losing the fight. Its temperature climbs to 40°C (104°F) or more, and the brain starts to overheat. The key sign is confusion: odd behavior, slurred speech, fainting, or seizures. The person may still be sweating, or not. Heat stroke is a medical emergency. Call for help, and start cooling them right away with cold water, ice, and wet cloths.
+
+Older adults, young children, pregnant people, outdoor workers, and people with health problems or on certain medicines are most at risk. The body adapts to heat over a week or two, which is why the first hot spell of summer often hits hardest.
+
+A parked car is an oven. On a warm day, the inside can heat up about 10°C (19°F) in ten minutes, even with the windows cracked. Never leave a child or pet in a car.
+
+### Visual Spread 11.9: When Heat Hurts
+
+*Two figures side by side across two pages, drawn large. On the left, a person sitting on a park bench in the shade, sweating, pale, with a hand on their forehead. On the right, a person on the ground in the sun, red-faced, confused, with a worried friend calling on a phone. Between them, a tall thermometer.*
+
+*Callouts, heat exhaustion (left):*
+
+- ***Heavy sweating, cool clammy skin.***
+- ***Weak, dizzy, headache, or sick to the stomach.***
+- ***What to do.** "Move to a cool place. Loosen clothes. Cool wet cloths. Sips of water. Get help if it doesn't improve."*
+
+*Callouts, heat stroke (right):*
+
+- ***Confusion, slurred speech, fainting, or seizures.** "This is the sign that matters."*
+- ***Body temperature 40°C (104°F) or more.***
+- ***What to do.** "Call for help. Cool them fast with water, ice, and wet cloths."*
+
+*Inset, the shade and the sun: two thermometers, one under a tree and one in direct sunlight. "The heat index assumes shade. Full sun can add up to 8°C (15°F)."*
+
+*Inset, a car in a sunny parking lot, with a thermometer inside rising minute by minute. "About 10°C (19°F) hotter in ten minutes. Cracking the windows barely helps."*
+
+*Inset, HeatRisk. A row of five colored squares from green to magenta, numbered 0 to 4. "The National Weather Service's heat scale counts how unusual the heat is for your area, and how warm the nights will be."*
+
+---
+
+## 11.10 Fire Weather
+
+On August 8, 2023, a strong high-pressure system sat north of Hawaii, and Hurricane Dora passed far to the south. Between them, the pressure difference was steep, and, as Chapter 5 explained, steep pressure differences make strong wind. On Maui, the wind came rushing down the slopes of the West Maui Mountains, warming and drying as it sank. Gusts topped 100 kilometers an hour (60 mph). The grass on the hills above the town of Lahaina was dry after weeks with little rain.
+
+A fire that crews thought was out flared up again that afternoon. The wind drove it through the town in hours. It killed 102 people. It was the deadliest wildfire in the United States in more than a century.
+
+Weather doesn't start most wildfires. People do, with power lines, sparks, campfires, and arson, and lightning starts the rest. But weather decides how a fire behaves. Firefighters think of three things working together: fuel, weather, and the shape of the land.
+
+**Fuel** is anything that burns: grass, brush, trees, and houses. Dry grass dries out within an hour of the humidity dropping. Big logs take weeks. A long drought dries out even living trees.
+
+**Weather** sets how dry the fuel is. Low humidity pulls water out of it, so midafternoon is the most dangerous time of day. Usually humidity rises at night and the fire calms down. A night without that recovery starts the next day dry.
+
+Wind is the biggest danger. It tilts the flames toward fresh fuel, feeds them oxygen, and carries burning embers far ahead, starting new fires across roads and rivers. This is **spotting**, and embers, not the wall of flame, ignite most homes lost to wildfire. The worst winds are the warm downslope winds of Chapter 5, such as the Santa Ana, and the sudden wind shifts of dry cold fronts (Chapter 6) and thunderstorm gusts (Chapter 7).
+
+**Terrain** matters because fire races uphill, heating the fuel above before the flames arrive. Canyons can funnel it upward like a chimney.
+
+Lightning from **dry thunderstorms**, whose rain evaporates before it lands, is the natural spark. A struck tree can smolder for days before the fire breaks out.
+
+When fuel, humidity, and wind line up, the National Weather Service issues a **Red Flag Warning**. It doesn't mean a fire is burning. It means any fire that starts may spread too fast to stop.
+
+### Visual Spread 11.10: What Makes a Fire Run
+
+*A hillside across two pages on a hot, windy afternoon, with a fire burning at the bottom of the slope and spreading uphill toward a row of houses at the top. Wind arrows sweep from left to right. Glowing embers fly far ahead of the flames.*
+
+*Callouts:*
+
+- ***Fuel.** Dry grass, brush, and pine trees. "The drier and more connected it is, the faster it burns."*
+- ***Humidity.** A small graph of humidity through one day: high at dawn, lowest in midafternoon. "Fuel dries as the air dries. Afternoon is the worst."*
+- ***Wind.** "Leans the flames forward, feeds them oxygen, and throws embers."*
+- ***Spotting.** Embers landing across a road and starting small new fires. "A road is no barrier to embers."*
+- ***Uphill run.** "Fire climbs slopes fast, heating the fuel above it."*
+- ***The house.** Embers landing in a gutter full of dry leaves. "Most homes catch from embers, not flames."*
+
+*Inset, a fire-weather triangle: fuel, weather, and terrain at the three corners. "Change any one, and the fire changes."*
+
+*Inset, Lahaina, Maui, August 8, 2023: a map of the island with a high to the north, Hurricane Dora far to the south, and wind arrows racing down the mountains toward the town. "A steep pressure difference, dry grass, and downslope wind. 102 deaths."*
+
+---
+
+## 11.11 Fire Makes Its Own Weather
+
+A big enough fire stops following the weather and starts making its own.
+
+The fire heats the air above it, and the hot air rises in a tall column of smoke and ash. Air rushes in along the ground to replace it, feeding the fire and pushing it in unexpected directions.
+
+As the column rises, it cools, like all rising air. Fires give off water vapor along with smoke, and at some height the vapor condenses. A white cloud tower grows out of the top of the smoke. This is **pyrocumulus**, a cumulus cloud made by fire.
+
+If the air is unstable, as Chapter 2 described, the tower keeps climbing until it becomes a full thunderstorm, a **pyrocumulonimbus**. It can throw lightning that starts new fires many kilometers away. Its downdrafts, like those of Chapter 7, can hit the ground and send the fire racing in a new direction. The strongest ones punch smoke high into the stratosphere, where it can drift around the world.
+
+Fires can spin too. A **fire whirl** is a rotating column of flame and smoke, usually small and brief. On July 26, 2018, during the Carr Fire near Redding, California, a huge fire whirl spun up with winds estimated at about 230 km/h (143 mph), as strong as an EF3 tornado. It uprooted trees and tore roofs off houses.
+
+The smoke itself is a hazard, and it travels far beyond the fire. Smoke is full of tiny particles, small enough to slip deep into the lungs. They are called **PM2.5**, because they are less than 2.5 thousandths of a millimeter across. On June 7, 2023, smoke from fires in Quebec turned the sky over New York City orange and gave it some of the worst air on Earth that day, more than 500 kilometers (300 miles) from the flames.
+
+A plume on a satellite picture may be flowing far overhead. Under a temperature inversion, the lid of Chapter 2, smoke is trapped near the ground instead, especially in valleys and at night. Local air-quality readings are the best guide.
+
+### Illustration 4: A fire builds a storm
+
+*A tall picture showing a wildfire on a forested ridge at the bottom. Above it, a dark column of brown smoke rises and leans with the wind. Partway up, the smoke turns into a bright white cauliflower cloud, labeled "pyrocumulus." Higher still, it spreads into the flat anvil of a thunderstorm, labeled "pyrocumulonimbus," with a lightning bolt striking a distant hill. Arrows near the ground show air rushing in toward the fire from both sides. Small spinning arrows mark a fire whirl at the fire's edge. Caption: "Hot air rises, cools, and condenses. A big fire can grow its own thunderstorm."*
+
+---
+
+## 11.12 After the Fire, the Flood
+
+In December 2017, the Thomas Fire burned the steep mountains above Montecito, California. At the time, it was the largest wildfire in the state's modern history.
+
+A month later, on January 9, 2018, a strong burst of rain crossed the burned slopes before dawn. In just five minutes, about 13 millimeters (half an inch) of rain fell. On healthy slopes, that would have been a heavy shower. On the burned mountains, it became a disaster. The water picked up ash, mud, and boulders the size of cars and came roaring down the creeks into the town. It destroyed more than a hundred homes and killed 23 people.
+
+That is a **debris flow**: a fast-moving river of mud, rock, and broken trees, as thick as wet concrete. It isn't dirty floodwater. It is a moving mass heavy enough to crush houses, and it can move faster than a person can run.
+
+Fire makes these floods possible. It burns away the plants that slowed the rain and the roots that held the soil, and it can leave a waxy layer that sheds water like a raincoat. Ash and loose rock collect in the gullies. So a burst of rain that once soaked in now runs straight off. The danger lasts for years, until plants grow back.
+
+Montecito is the whole chapter in one story. A drought dried the hills. Heat and wind fed the fire. The fire stripped the slopes, and the rain brought them down.
+
+These hazards aren't opposites, taking turns. Drought doesn't protect a place from floods. Hard, dry ground sheds rain, so a long dry spell can still end in a flash flood. Too much water and too little often follow each other through the same landscape.
+
+The weather supplies the hazard. How painful it becomes depends a great deal on where we build, how we use the land, and who is left alone in the heat. Chapter 14 looks at how a warming climate is changing the odds.
+
+### Visual Spread 11.12: One Hillside, Four Hazards
+
+*The same hillside above a small town, drawn four times in a row across two pages, like frames of a film. A small sun or cloud icon at the top of each frame marks the season.*
+
+*Callouts:*
+
+- ***Drought.** Spring. Brown grass, thin trees, a dry creek. "Months with too little rain."*
+- ***Heat.** Summer. Shimmering air, wilted brush, a thermometer in the red. "Heat dries the hillside further."*
+- ***Fire.** Late summer. Flames climbing the slope, embers drifting toward the town. "Wind drives the fire uphill."*
+- ***Flood.** Winter. The bare, blackened slope under heavy rain, with a brown debris flow pouring down the creek into the town. "Nothing left to hold the soil."*
+
+*Inset, before and after: two small cutaways of the same slope. Before the fire, rain soaks into the soil among roots and leaves. After it, rain skids off bare, sealed ground. "The fire is out. The danger isn't."*
+
+*Inset, Montecito, California, January 9, 2018: "About 13 millimeters (½ inch) of rain in five minutes, on slopes burned a month earlier. 23 deaths."*
+
+---
+
+# Weather Safety
+## Floods, Heat, and Fire
+
+**Floods**
+
+- **Turn around, don't drown.** Never drive or walk into floodwater, even if it looks shallow. Find another way, or wait.
+- **When a flash flood warning is issued, climb.** Get to higher ground now. In a canyon, climb the side rather than outrun the water. Don't camp in a dry creek bed or wash.
+- **At home, go up, but not into a closed attic.** Rising water can trap you there. Go to the roof if you must, and call for help.
+- **If you live below a burn scar,** leave when heavy rain is forecast. Don't wait to see the debris flow.
+
+**Heat**
+
+- **Get to air conditioning** during dangerous heat, at home or a cooling center. In extreme heat, a fan alone won't keep you safe.
+- **Drink water regularly,** rest in the shade, and do hard work early or late.
+- **Check on older neighbors and relatives,** especially those who live alone.
+- **Never leave a child or pet in a parked car,** even for a minute. Look in the back seat before you lock it.
+- **Treat confusion in the heat as an emergency.** Call for help and cool the person fast.
+
+**Fire and smoke**
+
+- **During a Red Flag Warning,** don't burn anything outdoors, and avoid anything that throws sparks near dry grass, like mowers and dragging trailer chains.
+- **Keep embers out.** Clear dry leaves from gutters and roofs, and move anything that burns away from the house.
+- **Have two ways out,** keep your car fueled or charged, and leave early. If you're told to go, go.
+- **When smoke is heavy,** stay inside with windows shut and an air cleaner running. Cloth masks don't stop smoke. A well-fitted N95 does far better.
+
+*For flood, heat, and fire-weather watches and warnings and the one-page quick reference, see Chapter 20. For lightning, see Chapter 7. For storm surge, see Chapter 9.*
+
+---
+
+# Field Observation
+## Map Water After Rain
+
+After a moderate rain, once it has stopped, walk around your home or block. Where does water collect? Which drains flow, and which are clogged? Where does water pour off a roof, a driveway, or a slope? Which stretch of road dips and holds water?
+
+Sketch a simple map. You are finding the water's favorite paths before the next big storm finds them for you. Stay out of drainage channels and moving water.
+
+---
+
+# Try It
+## Measure Infiltration
+
+Find a metal can and cut out both ends. Press it a few centimeters into the ground. Pour in water to a depth of about 2 centimeters, and time how long it takes to soak in.
+
+Try it on a lawn, on bare soil, on a hard-packed path, and in a mulched garden bed. Some spots will drink the water in a minute. Others will hold it for an hour. The same rain falls on all of them, but only some of it soaks in.
+
+---
+
+# Chapter Summary
+
+Floods, droughts, heat waves, and wildfires are all about water and heat arriving in the wrong amounts.
+
+Floods come when too much rain runs off, from intense rain, soaked or paved ground, or storms that stay in one place. Flash floods can rise in minutes from rain far upstream. Rivers can keep rising for days after the rain ends.
+
+Most flood deaths in the United States happen in vehicles. Never drive or walk into floodwater.
+
+Drought is a long shortage of water for what a place normally gets. It spreads slowly from the sky to the soil to rivers and groundwater, and it is slow to end. Dry soil heats the air, and hot air dries the soil.
+
+Heat waves are most dangerous when nights stay hot. Heat kills more Americans than any other kind of weather. Confusion in the heat means heat stroke, a medical emergency.
+
+Dry fuel, low humidity, and strong wind make fires run. Big fires can make their own clouds, thunderstorms, and whirlwinds, and their smoke travels far.
+
+After a fire, even a short burst of rain can bring floods and debris flows.
+
+At the bottom of the ocean of air, the same hillside can be too dry one season and buried in water the next.
+
+---
+
+## Weather-Watcher's Vocabulary
+
+**Infiltration:** Water soaking into the ground.
+**Saturated soil:** Soil whose spaces are full of water, so it can't take in more.
+**Runoff:** Water flowing over the surface instead of soaking in.
+**Watershed:** All the land that drains into the same stream or river.
+**Flash flood:** A flood that rises within minutes or a few hours of heavy rain.
+**Pluvial flooding:** Flooding from rain overwhelming local drainage, away from rivers.
+**Training:** Storms passing over the same place one after another.
+**Atmospheric river:** A long, narrow current of very humid air.
+**Pineapple Express:** An atmospheric river reaching the US West Coast from near Hawaii.
+**Crest:** The highest level a river reaches in a flood.
+**Stream gauge:** An instrument that measures a river's level.
+**Flood stage:** The river level where flooding begins to cause trouble at a given spot.
+**High-tide flooding:** Coastal flooding during very high tides, without a storm.
+**Drought:** A long period of unusually dry weather that leaves too little water.
+**Meteorological drought:** Rain and snow well below normal.
+**Agricultural drought:** Too little soil moisture for crops and plants.
+**Hydrological drought:** Low streams, lakes, reservoirs, and groundwater.
+**Flash drought:** A drought that develops in weeks.
+**Snow drought:** Too little mountain snowpack for the coming summer.
+**U.S. Drought Monitor:** A weekly US drought map with five categories, D0 to D4.
+**Heat wave:** Several days or more of unusually hot weather for the place.
+**Heat dome:** A strong, slow-moving high that traps hot air beneath it.
+**Heat index:** How hot it feels once humidity is counted, in the shade.
+**Wet-bulb globe temperature:** A heat-stress measure that also counts sun and wind.
+**Heat exhaustion:** Heat illness with heavy sweating, weakness, and dizziness.
+**Heat stroke:** Life-threatening overheating with confusion or fainting.
+**Fuel:** Anything that can burn in a wildfire.
+**Spotting:** New fires started by wind-blown embers.
+**Dry thunderstorm:** A thunderstorm whose rain evaporates before reaching the ground.
+**Red Flag Warning:** An alert that weather and dry fuels could make fires spread rapidly.
+**Pyrocumulus:** A cumulus cloud made by a fire's heat.
+**Pyrocumulonimbus:** A thunderstorm made by a fire.
+**Fire whirl:** A spinning column of flame and smoke.
+**PM2.5:** Smoke and dust particles small enough to reach deep into the lungs.
+**Debris flow:** A fast-moving flow of mud, rock, and debris.
+
+**Next: Chapter 12, Weather Maps, Radar, Satellites, and Forecast Models**
