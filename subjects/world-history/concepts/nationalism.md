@@ -1,7 +1,7 @@
 ---
 id: nationalism
 title: Nationalism
-prereqs: []
+prereqs: [french-revolution]
 big: Nationalism is the belief that a people who share a language, culture and history should rule themselves in their own country.
 recap: {{nationalism|Nationalism}} is the idea that each nation, a people sharing a language, culture and history, should have its own country and rule itself. It can join small states into one, or break a many-peoples empire apart.
 check:
@@ -16,6 +16,8 @@ check:
 A {{nation|nation}} is a group of people who feel they belong together. Usually they share a language, a culture and a history. A {{state|state}} is a country with its own government and borders.
 
 Nationalism says the two should match. Each nation should have its own state, and should rule itself instead of being ruled by outsiders.
+
+The idea grew strong after the French Revolution, which taught that power belongs to the nation, the people, not to a king. Napoleon's armies spread that idea across Europe, and the peoples he conquered turned it against French rule.
 
 ## Joining together
 
