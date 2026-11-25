@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Calculus Learning Web</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,400;1,400;1,500&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* Layout idea: content column on the left leads; a narrow instrument-panel map sits on the right. Sharp edges, thin rules, mono labels. */
+:root{
+  --bg:#0a0e14; --surface:#0f151d; --raise:#141c27; --ink:#e3ebf2; --muted:#8798a9; --line:#1f2c3a; --line2:#2e4256;
+  --accent:#3fd3f2; --accent-soft:rgba(63,211,242,.09); --good:#7be3b4; --good-soft:rgba(123,227,180,.10);
+  --warn:#ffb547; --warn-soft:rgba(255,181,71,.10); --bad:#ff7a7a;
+  --display:"Chakra Petch","IBM Plex Sans",system-ui,sans-serif; --body:"IBM Plex Sans",system-ui,sans-serif;
+  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace; --math:"IBM Plex Serif",Georgia,serif;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;border-radius:0}
+html,body{margin:0}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:17.5px;line-height:1.6;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);
+  background-size:48px 48px;background-attachment:fixed;background-position:-1px -1px}
+body::before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 30% 0%,transparent 0%,var(--bg) 70%);pointer-events:none;z-index:-1}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+
+.bar{position:sticky;top:0;z-index:20}
+header.top{background:rgba(10,14,20,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line2);
+  display:flex;align-items:center;gap:16px;padding:10px 24px;flex-wrap:wrap}
+header.top h1{font-family:var(--display);font-weight:600;font-size:1.1rem;letter-spacing:.06em;text-transform:uppercase;margin:0;flex:1 1 auto}
+header.top h1 small{display:block;font-family:var(--mono);font-weight:400;font-size:.7rem;letter-spacing:.08em;color:var(--muted)}
+header.top h1 small::before{content:"● ";color:var(--good)}
+.backbtn{border:1px solid var(--accent);background:transparent;color:var(--accent);font-family:var(--mono);font-size:.78rem;
+  letter-spacing:.08em;text-transform:uppercase;padding:9px 14px}
+.backbtn:hover:not([disabled]){background:var(--accent);color:var(--bg)}
+.backbtn[disabled]{opacity:.35;cursor:default;border-color:var(--line2);color:var(--muted)}
+
+.return{background:var(--warn-soft);backdrop-filter:blur(8px);color:var(--warn);border-bottom:1px solid var(--warn);
+  padding:8px 24px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-size:.9rem}
+.return[hidden]{display:none}
+.return .trail{flex:1 1 220px;font-family:var(--mono);font-size:.74rem;opacity:.85}
+.return button{border:1px solid var(--warn);background:var(--warn);color:var(--bg);font-family:var(--mono);font-size:.76rem;
+  font-weight:700;letter-spacing:.06em;text-transform:uppercase;padding:7px 12px}
+
+.shell{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;max-width:1240px;margin:0 auto;padding:28px 24px 96px}
+@media (max-width:880px){.shell{grid-template-columns:1fr;gap:20px;padding:20px 16px 80px}}
+main{min-width:0}
+
+nav.map{align-self:start;position:sticky;top:130px;max-height:calc(100vh - 150px);overflow:auto;
+  background:var(--surface);border:1px solid var(--line2);border-top:2px solid var(--accent);padding:16px}
+@media (max-width:880px){nav.map{position:static;max-height:none}}
+nav.map h2{font-family:var(--mono);font-weight:500;font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
+nav.map h2::before{content:"// "}
+.prog{height:6px;background:var(--line);margin:6px 0 6px;position:relative}
+.prog i{display:block;height:100%;background:var(--good);box-shadow:0 0 10px var(--good);width:0;transition:width .3s}
+.progtxt{font-family:var(--mono);font-size:.72rem;color:var(--muted);margin-bottom:8px;letter-spacing:.03em}
+.lvl{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);
+  margin:14px 0 4px;padding-top:8px;border-top:1px solid var(--line)}
+.mi{display:flex;align-items:center;gap:10px;width:100%;text-align:left;border:0;border-left:2px solid transparent;
+  background:transparent;padding:6px 8px;font-size:.93rem}
+.mi:hover{background:var(--accent-soft);border-left-color:var(--line2)}
+.mi.on{background:var(--accent-soft);border-left-color:var(--accent);color:var(--accent);font-weight:600}
+.dot{flex:none;width:9px;height:9px;border:1.5px solid var(--muted);display:inline-block;transform:rotate(45deg);margin:0 2px}
+.dot.v{border-color:var(--accent);background:linear-gradient(135deg,var(--accent) 50%,transparent 50%)}
+.dot.m{border-color:var(--good);background:var(--good);box-shadow:0 0 8px var(--good)}
+.legend{display:flex;gap:12px;flex-wrap:wrap;font-family:var(--mono);font-size:.68rem;color:var(--muted);margin-top:14px;padding-top:10px;border-top:1px solid var(--line)}
+.legend span{display:inline-flex;gap:6px;align-items:center}
+
+.intro{background:var(--accent-soft);border:1px solid var(--accent);border-left-width:3px;padding:12px 44px 12px 16px;margin-bottom:20px;font-size:.93rem;position:relative}
+.intro p{margin:.2em 0}
+.intro button{position:absolute;top:6px;right:8px;border:1px solid var(--line2);background:transparent;width:28px;height:28px;color:var(--muted);line-height:1}
+
+article{position:relative;background:var(--surface);border:1px solid var(--line2);padding:32px clamp(18px,4vw,48px) 40px}
+article::before,article::after{content:"";position:absolute;width:18px;height:18px;border:2px solid var(--accent);pointer-events:none}
+article::before{top:-1px;left:-1px;border-right:0;border-bottom:0}
+article::after{bottom:-1px;right:-1px;border-left:0;border-top:0}
+.eyebrow{font-family:var(--mono);font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.eyebrow::before{content:"// "}
+h1.title{font-family:var(--display);font-weight:600;font-size:clamp(2rem,4.4vw,3rem);line-height:1.08;letter-spacing:.01em;margin:.2em 0 .3em;text-wrap:balance}
+.big{font-size:1.2rem;color:var(--muted);margin:0 0 1.4em;max-width:60ch;padding-left:14px;border-left:2px solid var(--line2)}
+article h2{font-family:var(--display);font-weight:600;font-size:1.35rem;letter-spacing:.02em;margin:2em 0 .5em;text-wrap:balance;display:flex;align-items:center;gap:10px}
+article h2::after{content:"";flex:1;height:1px;background:var(--line2)}
+article h3{font-size:1.05rem;margin:1.2em 0 .4em}
+article p,article li{max-width:68ch}
+.m{font-family:var(--math);font-style:italic;white-space:nowrap}
+.m sup,.m sub{font-size:.7em;line-height:0}
+.frac{display:inline-flex;flex-direction:column;text-align:center;vertical-align:middle;margin:0 .15em;font-size:.95em}
+.frac>span:first-child{border-bottom:1.5px solid currentColor;padding:0 .3em .05em}
+.frac>span:last-child{padding:.05em .3em 0}
+.eq{background:var(--raise);border:1px solid var(--line2);border-left:3px solid var(--accent);padding:14px 18px;margin:1.1em 0;font-size:1.25rem;overflow-x:auto}
+
+button.term{border:0;background:transparent;padding:0;border-bottom:1px solid var(--accent);color:var(--ink);font-weight:500}
+button.term:hover{background:var(--accent-soft);color:var(--accent)}
+button.fn{border:1px solid var(--accent);background:transparent;color:var(--accent);font-family:var(--mono);font-size:.62rem;font-weight:700;
+  min-width:1.45em;height:1.45em;vertical-align:super;line-height:1;margin-left:3px;padding:0 .25em}
+button.fn:hover{background:var(--accent);color:var(--bg)}
+button.clink{border:0;background:transparent;padding:0;color:var(--accent);font-weight:600;text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:1px}
+button.clink::after{content:" ↗";font-size:.8em}
+
+#pop{position:fixed;z-index:50;max-width:min(340px,calc(100vw - 24px));background:var(--raise);color:var(--ink);border:1px solid var(--accent);
+  box-shadow:0 0 0 1px rgba(63,211,242,.15),0 16px 40px rgba(0,0,0,.6);padding:12px 14px;font-size:.92rem}
+#pop[hidden]{display:none}
+#pop b{display:block;margin-bottom:4px;font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+#pop .lnk{margin-top:10px}
+
+.lnk{border:1px solid var(--line2);background:transparent;color:var(--accent);padding:5px 10px;font-family:var(--mono);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase}
+.lnk:hover{border-color:var(--accent);background:var(--accent-soft)}
+.chip{border:1px solid var(--line2);background:var(--raise);color:var(--accent);padding:2px 8px;font-family:var(--mono);font-size:.7rem;letter-spacing:.04em;margin-right:6px}
+.chip:hover{border-color:var(--accent)}
+
+.prereq{background:var(--raise);border:1px solid var(--line2);border-left:3px solid var(--accent);padding:4px 20px 16px;margin:1.6em 0}
+.prereq h2{margin:.9em 0 .6em;font-size:1rem;font-family:var(--mono);font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.prereq h2::after{display:none}
+.prereq ul{list-style:none;padding:0;margin:0;display:grid;gap:0}
+.prereq li{padding:10px 0;border-top:1px solid var(--line)}
+.pr-head{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.pr-head strong{flex:1 1 auto;font-weight:600}
+.recap{margin:8px 0 0 22px;padding:8px 12px;background:var(--surface);border-left:2px solid var(--accent);font-size:.93rem}
+.recap[hidden]{display:none}
+
+.checks{margin:1.6em 0}
+.q{border:1px solid var(--line2);padding:14px 18px;margin:10px 0;background:var(--raise)}
+.q .tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.q .qt{margin:.3em 0 .7em}
+.opts{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}
+.opt{border:1px solid var(--line2);background:var(--surface);padding:8px 12px;text-align:left;position:relative}
+.opt:hover{border-color:var(--accent);background:var(--accent-soft)}
+.opt.ok{border-color:var(--good);background:var(--good-soft);color:var(--good);font-weight:600}
+.opt.no{border-color:var(--warn);background:var(--warn-soft);color:var(--warn)}
+.fb{margin-top:10px;font-size:.93rem}
+.fb.ok{color:var(--good)} .fb.no{color:var(--warn)}
+.fb .lnk{margin-left:8px;color:var(--warn);border-color:var(--warn)}
+
+.fig{margin:1.3em 0;background:var(--raise);border:1px solid var(--line2);padding:12px;max-width:540px}
+.fig svg{display:block;width:100%;height:auto}
+.fig figcaption,.fig .cap{font-family:var(--mono);font-size:.74rem;color:var(--muted);margin:8px 4px 2px;letter-spacing:.02em}
+svg .ax{stroke:var(--muted);stroke-width:1.2}
+svg .cv{stroke:var(--accent);stroke-width:2.6;fill:none;filter:drop-shadow(0 0 4px rgba(63,211,242,.5))}
+svg .ln{stroke:var(--ink);stroke-width:2;fill:none}
+svg .sec{stroke:var(--warn);stroke-width:2.2;fill:none}
+svg .tan{stroke:var(--good);stroke-width:1.8;fill:none;stroke-dasharray:6 5}
+svg .pt{fill:var(--ink)}
+svg .ptw{fill:var(--warn)}
+svg text{fill:var(--ink);font-family:var(--mono);font-size:12px}
+svg .mt{fill:var(--muted)}
+svg .box{fill:var(--surface);stroke:var(--accent);stroke-width:1.5}
+
+.wcard{background:var(--raise);border:1px solid var(--line2);border-top:2px solid var(--accent);padding:16px;margin:1.3em 0;max-width:580px}
+.wcard h3{margin:0 0 .6em;font-family:var(--mono);font-weight:500;font-size:.78rem;letter-spacing:.1em;text-transform:uppercase;color:var(--accent)}
+.wcard label{font-family:var(--mono);font-size:.82rem}
+.wcard input[type=range]{width:100%;accent-color:var(--accent)}
+.read{margin:.6em 0 0;font-size:.98rem}
+.machine{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:12px 0}
+.mbox{border:1px solid var(--line2);padding:6px 12px;background:var(--surface);text-align:center;min-width:74px;font-family:var(--mono);font-size:.9rem}
+.mbox small{display:block;font-size:.62rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.mbox.fx{border-color:var(--accent);background:var(--accent-soft);color:var(--accent)}
+.arrow{color:var(--accent);font-size:1.1rem}
+
+table.t{border-collapse:collapse;margin:1.1em 0;font-family:var(--mono);font-size:.88rem}
+table.t th,table.t td{border:1px solid var(--line2);padding:6px 12px;text-align:center}
+table.t th{background:var(--raise);color:var(--muted);font-weight:500;text-align:left}
+
+.ex{border:1px solid var(--line2);padding:4px 20px 18px;margin:1.6em 0;background:var(--surface)}
+ol.steps{list-style:none;counter-reset:s;padding:0;margin:.6em 0 0}
+ol.steps li{counter-increment:s;position:relative;margin:0;padding:12px 0 12px 48px;border-top:1px solid var(--line)}
+ol.steps li::before{content:counter(s,decimal-leading-zero);position:absolute;left:0;top:12px;font-family:var(--mono);font-size:.78rem;
+  color:var(--accent);border:1px solid var(--accent);padding:2px 6px}
+.st{font-weight:500}
+.why{color:var(--muted);font-size:.93rem}
+.uses{margin-top:6px;font-family:var(--mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+
+details.practice{border:1px dashed var(--line2);padding:12px 18px;margin:1.3em 0;background:var(--raise)}
+details.practice summary,details.ans summary{cursor:pointer;font-family:var(--mono);font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+details.ans{margin-top:10px}
+
+.master{display:flex;gap:14px;align-items:center;flex-wrap:wrap;margin:2.2em 0 .6em;padding-top:1.4em;border-top:1px solid var(--line2)}
+.mbtn{border:1px solid var(--good);background:transparent;color:var(--good);font-family:var(--mono);font-size:.8rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:10px 18px}
+.mbtn:hover{background:var(--good-soft)}
+.mbtn.on{background:var(--good);color:var(--bg);box-shadow:0 0 14px rgba(123,227,180,.45)}
+.next{margin-top:1em;display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.next strong{font-family:var(--mono);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="bar">
+<header class="top">
+  <h1>Calculus Learning Web<small>Prototype · 7 linked concepts</small></h1>
+  <button class="backbtn" id="backbtn" data-act="back" disabled>← Back to where I was</button>
+</header>
+<div class="return" id="ret" hidden></div>
+</div>
+
+<div class="shell">
+  <main id="main"></main>
+  <nav class="map" aria-label="Concept map">
+    <h2>Your map</h2>
+    <div class="prog"><i id="progbar"></i></div>
+    <div class="progtxt" id="progtxt"></div>
+    <div id="maplist"></div>
+    <div class="legend">
+      <span><i class="dot n"></i>Not yet</span>
+      <span><i class="dot v"></i>Visited</span>
+      <span><i class="dot m"></i>Got it</span>
+    </div>
+  </nav>
+</div>
+
+<div id="pop" role="dialog" hidden></div>
+
+<script>
+"use strict";
+
+/* ---------- small helpers used inside content ---------- */
+const M  = s => `<span class="m">${s}</span>`;
+const FR = (a,b) => `<span class="frac"><span>${a}</span><span>${b}</span></span>`;
+const LIM = (to) => `<span class="m">lim<sub>${to}</sub></span>`;
+const T  = (id,text) => `<button class="term" data-g="${id}">${text}</button>`;
+let fnCount = 0;
+const F  = id => `<button class="fn" data-g="${id}" aria-label="Note ${fnCount+1}">${++fnCount}</button>`;
+const L  = (id,text) => `<button class="clink" data-c="${id}">${text || C[id].title}</button>`;
+
+/* ---------- glossary and footnotes (pop-ups) ---------- */
+const G = {
+  function:{t:"Function", d:"A rule that turns each input into exactly one output.", c:"functions"},
+  input:{t:"Input", d:"The number you feed into a function. For f(x), the input is x."},
+  output:{t:"Output", d:"What the function gives back. For f(x), the output is the value of f(x)."},
+  slope:{t:"Slope", d:"How steep a line is: rise divided by run.", c:"slope"},
+  secant:{t:"Secant line", d:"A straight line through two points on a curve."},
+  tangent:{t:"Tangent line", d:"A straight line that just touches a curve at one point and points the same way the curve does there."},
+  approach:{t:"Approaches", d:"Gets closer and closer to, without having to reach it."},
+  exponent:{t:"Exponent", d:"The small raised number. In x⁵ the exponent is 5: five x's multiplied together."},
+  coeff:{t:"Coefficient", d:"The number multiplied onto a variable. In 3x⁴ the coefficient is 3."},
+  inner:{t:"Inner function", d:"The function that goes first. In (3x+1)⁴ the inner function is 3x+1.", c:"composite-functions"},
+  outer:{t:"Outer function", d:"The function that goes last. In (3x+1)⁴ the outer function is “raise to the 4th power”.", c:"composite-functions"},
+  limit:{t:"Limit", d:"The value a function approaches as its input approaches some number.", c:"limits"},
+  derivative:{t:"Derivative", d:"The slope of a curve at one point, written f′(x).", c:"derivative"},
+  n_vert:{t:"Note: “exactly one output”", d:"This is why a circle is not the graph of a function. Above a single x there are two points, so one input would give two outputs. A vertical line crossing a graph more than once is the quick test."},
+  n_zero:{t:"Note: why 0/0 is not an answer", d:"Dividing by zero has no meaning, so the function is simply undefined at that point. The limit asks what it is heading toward, not what it is there."},
+  n_h:{t:"Note: why the letter h?", d:"It is just a name for “a small step”. Some books write Δx (read “delta x”) instead. Same idea."},
+  n_notation:{t:"Note: other notation", d:"You will also see this written dy/dx. Read it as “the rate y changes as x changes”. f′(x) and dy/dx mean the same thing."},
+  n_rates:{t:"Note: why multiply?", d:"If a bike goes 3 km per hour faster for each hour of effort, and a car goes 4 km per hour faster for each km per hour of bike speed, the car gains 3 × 4 = 12 km per hour per hour of effort. Rates of change in a chain multiply."}
+};
+
+/* ---------- the concepts ---------- */
+const C = {};
+
+C.functions = {
+  title:"Functions", id:"functions", prereqs:[], widget:null,
+  big:"A function is a rule: put a number in, get exactly one number out.",
+  recap:`A ${T('function','function')} takes an ${T('input','input')} and gives one ${T('output','output')}. For ${M('f(x) = x²')}, putting in 3 gives ${M('f(3) = 9')}.`,
+  check:{q:`If ${M('f(x) = x² + 1')}, what is ${M('f(3)')}?`, o:["10","7","9","4"], a:0,
+    e:`Replace x with 3: 3² + 1 = 9 + 1 = 10.`},
+  body:()=>`
+    <h2>The idea</h2>
+    <p>A ${T('function','function')} is a rule. You give it an ${T('input','input')}, and it hands back exactly one ${T('output','output')}${F('n_vert')}. We write the rule as ${M('f(x) = x²')}, read “f of x equals x squared”.</p>
+    <table class="t" aria-label="Values of f(x) = x squared">
+      <tr><th>input x</th><td>1</td><td>2</td><td>3</td><td>−2</td></tr>
+      <tr><th>output f(x)</th><td>1</td><td>4</td><td>9</td><td>4</td></tr>
+    </table>
+    <figure class="fig">
+      <svg viewBox="0 0 420 110" role="img" aria-label="A function drawn as a machine: x goes in, f of x comes out">
+        <text x="14" y="62" style="font-size:18px">x = 3</text>
+        <path class="ax" d="M70 55 H135"/><path class="ax" d="M128 49 L136 55 L128 61"/>
+        <rect class="box" x="136" y="22" width="150" height="66" rx="12"/>
+        <text x="161" y="62" style="font-size:18px">square it</text>
+        <path class="ax" d="M286 55 H350"/><path class="ax" d="M343 49 L351 55 L343 61"/>
+        <text x="358" y="62" style="font-size:18px">9</text>
+      </svg>
+      <figcaption>The function is the middle box. The same input always gives the same output.</figcaption>
+    </figure>
+    <h2>Graphs</h2>
+    <p>Each input and its output make a point ${M('(x, f(x))')}. Plot all of them and you get the graph. For ${M('x²')} it is a U-shaped curve. Later pages study how steep that curve is at different points.</p>`,
+  ex:{title:"Worked example: evaluate a function",
+    intro:`Let ${M('f(x) = x² + 1')}. Find ${M('f(3)')}.`,
+    steps:[
+      {t:`Write the rule: ${M('f(x) = x² + 1')}.`, why:"Always start from the rule itself.", uses:[]},
+      {t:`Replace every x with 3: ${M('f(3) = 3² + 1')}.`, why:"The input goes everywhere x was.", uses:[]},
+      {t:`Compute: ${M('9 + 1 = 10')}.`, why:"Square first, then add.", uses:[]}]},
+  practice:{q:`If ${M('f(x) = 2x − 5')}, find ${M('f(4)')}.`, a:`${M('f(4) = 2·4 − 5 = 3')}`}
+};
+
+C.slope = {
+  title:"Slope of a line", id:"slope", prereqs:["functions"], widget:null,
+  big:"Slope says how steep a straight line is: how far it rises for each step to the right.",
+  recap:`${T('slope','Slope')} = rise ÷ run. Pick two points on a line, then divide the change in height by the change in width.`,
+  check:{q:`What is the slope of the line through (1, 2) and (3, 8)?`, o:["3","6","1/3","2"], a:0,
+    e:`Rise = 8 − 2 = 6. Run = 3 − 1 = 2. Slope = 6 ÷ 2 = 3.`},
+  body:()=>`
+    <h2>Rise over run</h2>
+    <p>Pick two points on a line. The <b>rise</b> is how far you go up. The <b>run</b> is how far you go across. The ${T('slope','slope')} is the rise divided by the run.</p>
+    <div class="eq">${M('slope')} = ${FR(M('rise'),M('run'))} = ${FR(M('y₂ − y₁'),M('x₂ − x₁'))}</div>
+    <figure class="fig">
+      <svg viewBox="0 0 400 280" role="img" aria-label="A line through the points (1,2) and (3,8) with a right triangle showing rise 6 and run 2">
+        <path class="ax" d="M40 250 H385"/><path class="ax" d="M40 250 V15"/>
+        <path class="ln" d="M80 237.5 L304 27.5"/>
+        <path class="sec" d="M120 200 H280 V50"/>
+        <circle class="pt" cx="120" cy="200" r="5"/><circle class="pt" cx="280" cy="50" r="5"/>
+        <text x="86" y="196">(1, 2)</text><text x="288" y="44">(3, 8)</text>
+        <text x="172" y="220" class="mt">run = 3 − 1 = 2</text>
+        <text x="288" y="130" class="mt">rise = 8 − 2 = 6</text>
+        <text x="300" y="268" class="mt">x</text><text x="16" y="30" class="mt">y</text>
+      </svg>
+      <figcaption>Rise 6, run 2, so the slope is 6 ÷ 2 = 3. Every step right lifts the line 3 steps.</figcaption>
+    </figure>
+    <h2>What the number tells you</h2>
+    <ul>
+      <li>Big positive slope: a steep climb.</li>
+      <li>Slope 0: perfectly flat.</li>
+      <li>Negative slope: the line goes downhill as you move right.</li>
+    </ul>
+    <p>A straight line has one slope everywhere. A curve does not, since it is steeper in some places than others. Measuring the steepness of a curve at a single point is the job of ${L('derivative')}.</p>`,
+  ex:{title:"Worked example: slope from two points",
+    intro:`Find the slope of the line through ${M('(1, 2)')} and ${M('(3, 8)')}.`,
+    steps:[
+      {t:`Rise: ${M('8 − 2 = 6')}.`, why:"Subtract the y-values, second minus first.", uses:[]},
+      {t:`Run: ${M('3 − 1 = 2')}.`, why:"Subtract the x-values in the same order. Keeping the order matters.", uses:["functions"]},
+      {t:`Divide: ${M('6 ÷ 2 = 3')}.`, why:"Slope is rise over run.", uses:[]}]},
+  practice:{q:`Find the slope of the line through ${M('(0, 5)')} and ${M('(4, 1)')}.`, a:`Rise = 1 − 5 = −4. Run = 4 − 0 = 4. Slope = ${M('−4 ÷ 4 = −1')}. The line goes downhill.`}
+};
+
+C.limits = {
+  title:"Limits", id:"limits", prereqs:["functions"], widget:null,
+  big:"A limit is the value a function heads toward as its input gets closer to a number.",
+  recap:`A ${T('limit','limit')} asks what the output ${T('approach','approaches')} as the input approaches a number. It does not matter what happens exactly at that number.`,
+  check:{q:`What is ${LIM('x→3')} ${FR(M('x² − 9'),M('x − 3'))} ?`, o:["6","0","3","It does not exist"], a:0,
+    e:`Factor the top: (x − 3)(x + 3). Cancel (x − 3) and you have x + 3. At x = 3 that is 6.`},
+  body:()=>`
+    <h2>Sneaking up on a value</h2>
+    <p>Take ${M('f(x) = ')}${FR(M('x² − 1'),M('x − 1'))}. At ${M('x = 1')} it becomes 0 ÷ 0, which has no value${F('n_zero')}. But look at what happens as x gets close to 1:</p>
+    <table class="t" aria-label="Values of the function as x approaches 1">
+      <tr><th>x</th><td>0.9</td><td>0.99</td><td>0.999</td><td>1.001</td><td>1.01</td><td>1.1</td></tr>
+      <tr><th>f(x)</th><td>1.9</td><td>1.99</td><td>1.999</td><td>2.001</td><td>2.01</td><td>2.1</td></tr>
+    </table>
+    <p>The outputs ${T('approach','approach')} 2 from both sides. We write this as:</p>
+    <div class="eq">${LIM('x→1')} ${FR(M('x² − 1'),M('x − 1'))} = 2</div>
+    <h2>The algebra shortcut</h2>
+    <p>When plugging in gives 0 ÷ 0, try factoring. Here ${M('x² − 1 = (x − 1)(x + 1)')}. The ${M('(x − 1)')} cancels, leaving ${M('x + 1')}. At ${M('x = 1')} that is 2, matching the table.</p>
+    <p>Why this matters: the ${L('derivative')} is built from exactly this kind of 0 ÷ 0 situation.</p>`,
+  ex:{title:"Worked example: a limit by factoring",
+    intro:`Find ${LIM('x→2')} ${FR(M('x² − 4'),M('x − 2'))}.`,
+    steps:[
+      {t:`Try plugging in 2: you get ${M('0 ÷ 0')}.`, why:"That tells you to try another route. It does not mean the limit is missing.", uses:["functions"]},
+      {t:`Factor the top: ${M('x² − 4 = (x − 2)(x + 2)')}.`, why:"A difference of two squares.", uses:[]},
+      {t:`Cancel ${M('(x − 2)')}: what remains is ${M('x + 2')}.`, why:"Allowed because x only approaches 2 and is never exactly 2.", uses:[]},
+      {t:`Plug in 2: ${M('2 + 2 = 4')}.`, why:"The limit is 4.", uses:["functions"]}]},
+  practice:{q:`Find ${LIM('x→5')} ${FR(M('x² − 25'),M('x − 5'))}.`, a:`Factor: ${M('(x − 5)(x + 5)')} over ${M('(x − 5)')} leaves ${M('x + 5')}. At 5 that is <b>10</b>.`}
+};
+
+C.derivative = {
+  title:"The derivative", id:"derivative", prereqs:["slope","limits","functions"], widget:"derivative",
+  big:"The derivative is the slope of a curve at one exact point.",
+  recap:`The ${T('derivative','derivative')} f′(x) is the slope of the curve at x. It is the limit of the slope between two points as they slide together.`,
+  check:{q:`The derivative of f at x = a tells you…`, o:["the slope of the curve at x = a","the height of the curve at x = a","the area under the curve","the average of f"], a:0,
+    e:`f′(a) is the slope of the ${'tangent line'} at x = a: how fast f is changing right there.`},
+  body:()=>`
+    <h2>The problem</h2>
+    <p>You can find a ${T('slope','slope')} from two points. But a curve at one point is just one point. We need a trick.</p>
+    <h2>The trick</h2>
+    <p>Take a second point a small step ${M('h')} away${F('n_h')}. The line through the two points is a ${T('secant','secant line')}. Its slope is easy to compute. Now slide the second point closer by shrinking h. The secant turns into the ${T('tangent','tangent line')}. That is the slope we wanted.</p>
+    <div class="eq">${M('f′(x)')} = ${LIM('h→0')} ${FR(M('f(x + h) − f(x)'),M('h'))}</div>
+    <p>It is the slope formula, ${M('rise ÷ run')}, with a ${L('limits','limit')} added so that the run shrinks to zero.${F('n_notation')}</p>
+    {{widget}}
+    <p>Drag the slider on ${M('f(x) = x²')} at ${M('x = 1')}. The secant slope is exactly ${M('2 + h')}. As h shrinks to 0, it heads to 2.</p>`,
+  ex:{title:"Worked example: the derivative of x² at x = 1",
+    intro:`Use the definition to find the slope of ${M('f(x) = x²')} at ${M('x = 1')}.`,
+    steps:[
+      {t:`Write the secant slope: ${FR(M('f(1 + h) − f(1)'),M('h'))} = ${FR(M('(1 + h)² − 1'),M('h'))}.`, why:"Rise over run between the points at x = 1 and x = 1 + h.", uses:["slope","functions"]},
+      {t:`Expand: ${M('(1 + h)² = 1 + 2h + h²')}, so the top is ${M('2h + h²')}.`, why:"The 1 and −1 cancel.", uses:[]},
+      {t:`Divide by h: ${FR(M('2h + h²'),M('h'))} = ${M('2 + h')}.`, why:"Every term on top has an h, so it cancels.", uses:[]},
+      {t:`Let h → 0: ${LIM('h→0')} ${M('(2 + h) = 2')}.`, why:"The slope at x = 1 is 2. For any x the same steps give 2x.", uses:["limits"]}]},
+  practice:{q:`Using ${M('f′(x) = 2x')} for ${M('f(x) = x²')}, what is the slope of the curve at ${M('x = 3')}?`, a:`${M('f′(3) = 2·3 = 6')}. Check it by hand: ${M('((3 + h)² − 9) ÷ h = 6 + h')}, which heads to 6.`}
+};
+
+C.powerrule = {
+  title:"The power rule", id:"power-rule", prereqs:["derivative"], widget:null,
+  big:"To differentiate xⁿ, bring the exponent down and lower it by one.",
+  recap:`${M('d/dx xⁿ = n·xⁿ⁻¹')}. Bring the ${T('exponent','exponent')} down in front and subtract 1 from it.`,
+  check:{q:`What is the derivative of ${M('x⁶')} ?`, o:["6x⁵","x⁵","6x⁶","5x⁶"], a:0,
+    e:`Bring the 6 down and lower the exponent by one: 6x⁵.`},
+  body:()=>`
+    <h2>The rule</h2>
+    <p>Working out the ${L('derivative','derivative')} from the limit definition every time is slow. For powers of x there is a shortcut:</p>
+    <div class="eq">${M('d/dx')} ${M('xⁿ')} = ${M('n · xⁿ⁻¹')}</div>
+    <p>In words: bring the ${T('exponent','exponent')} down in front, then reduce the exponent by 1.</p>
+    <table class="t" aria-label="Power rule examples">
+      <tr><th>function</th><td>${M('x²')}</td><td>${M('x³')}</td><td>${M('x⁵')}</td><td>${M('x')}</td><td>${M('7')}</td></tr>
+      <tr><th>derivative</th><td>${M('2x')}</td><td>${M('3x²')}</td><td>${M('5x⁴')}</td><td>${M('1')}</td><td>${M('0')}</td></tr>
+    </table>
+    <p>The first column matches what the definition gave for ${M('x²')} on the derivative page. A plain number like 7 never changes, so its slope is 0.</p>
+    <h2>Two helper rules</h2>
+    <ul>
+      <li>A ${T('coeff','coefficient')} just rides along: ${M('d/dx (3x⁴) = 3 · 4x³ = 12x³')}.</li>
+      <li>Add and subtract term by term: ${M('d/dx (x³ + x²) = 3x² + 2x')}.</li>
+    </ul>
+    <p>The power rule only handles a bare x. Something like ${M('(3x + 1)⁴')} needs the ${L('chain-rule','chain rule')} too.</p>`,
+  ex:{title:"Worked example: differentiate 3x⁴ + 2x",
+    intro:`Find the derivative of ${M('f(x) = 3x⁴ + 2x')}.`,
+    steps:[
+      {t:`Treat the two terms separately.`, why:"Derivatives add term by term.", uses:["derivative"]},
+      {t:`First term: ${M('3x⁴ → 3 · 4x³ = 12x³')}.`, why:"Bring down the 4, lower the exponent to 3, keep the coefficient 3.", uses:[]},
+      {t:`Second term: ${M('2x → 2 · 1 = 2')}.`, why:`${M('x')} is ${M('x¹')}, so its derivative is ${M('1·x⁰ = 1')}.`, uses:[]},
+      {t:`Add: ${M('f′(x) = 12x³ + 2')}.`, why:"Done.", uses:[]}]},
+  practice:{q:`Differentiate ${M('5x³ − x²')}.`, a:`${M('15x² − 2x')}.`}
+};
+
+C.composite = {
+  title:"Composite functions", id:"composite-functions", prereqs:["functions"], widget:"machine",
+  big:"A composite function feeds the output of one function into another.",
+  recap:`${M('f(g(x))')} means do ${T('inner','g')} first, then feed its result into ${T('outer','f')}.`,
+  check:{q:`Let ${M('f(u) = u²')} and ${M('g(x) = x + 3')}. What is ${M('f(g(2))')}?`, o:["25","7","13","5"], a:0,
+    e:`Do g first: g(2) = 5. Then f(5) = 25.`},
+  body:()=>`
+    <h2>Functions in a chain</h2>
+    <p>Sometimes the output of one function becomes the input of another. Write ${M('f(g(x))')}: do ${T('inner','g')} first, then ${T('outer','f')}.</p>
+    <p>Take ${M('g(x) = 2x + 1')} (the ${T('inner','inner function')}) and ${M('f(u) = u³')} (the ${T('outer','outer function')}). Then ${M('f(g(x)) = (2x + 1)³')}.</p>
+    {{widget}}
+    <h2>Spotting the pieces</h2>
+    <p>Looking at an expression like ${M('(3x + 1)⁴')}, ask: “what is computed first?” That is the inner function, ${M('3x + 1')}. “What happens to it afterwards?” Raising to the 4th power, so the outer function is ${M('u⁴')}.</p>
+    <p>This skill is what you need to use the ${L('chain-rule','chain rule')}.</p>`,
+  ex:{title:"Worked example: evaluating f(g(x))",
+    intro:`Let ${M('g(x) = 2x + 1')} and ${M('f(u) = u³')}. Find ${M('f(g(1))')}.`,
+    steps:[
+      {t:`Inside first: ${M('g(1) = 2·1 + 1 = 3')}.`, why:"The innermost parentheses always go first.", uses:["functions"]},
+      {t:`Feed 3 into f: ${M('f(3) = 3³ = 27')}.`, why:"The inner output becomes the outer input.", uses:["functions"]}]},
+  practice:{q:`Let ${M('f(u) = u² + 1')} and ${M('g(x) = 3x')}. Find ${M('f(g(2))')}.`, a:`${M('g(2) = 6')}, then ${M('f(6) = 36 + 1 = 37')}.`}
+};
+
+C.chain = {
+  title:"The chain rule", id:"chain-rule", prereqs:["derivative","power-rule","composite-functions"], widget:null,
+  big:"To differentiate a function inside another function, multiply the two rates of change.",
+  recap:`${M('d/dx f(g(x)) = f′(g(x)) · g′(x)')}.`,
+  check:{q:`What is the derivative of ${M('(2x + 1)³')} ?`, o:["6(2x + 1)²","3(2x + 1)²","6x + 3","2(2x + 1)³"], a:0,
+    e:`Outer: 3u², with u = 2x + 1. Inner: 2. Multiply: 3(2x + 1)² · 2 = 6(2x + 1)².`},
+  body:()=>`
+    <h2>The problem</h2>
+    <p>The ${L('power-rule','power rule')} works on a bare x. But ${M('(3x + 1)⁴')} is a ${L('composite-functions','composite function')}: the ${T('inner','inner')} part ${M('3x + 1')} sits inside the ${T('outer','outer')} part ${M('u⁴')}. The power rule alone does not cover that.</p>
+    <h2>The rule</h2>
+    <div class="eq">${M('d/dx')} ${M('f(g(x))')} = ${M('f′(g(x))')} · ${M('g′(x)')}</div>
+    <p>In words: take the derivative of the outside, <b>keep the inside as it is</b>, then multiply by the derivative of the inside.</p>
+    <p>Why multiply? Each layer changes at its own rate, and rates in a chain multiply${F('n_rates')}. If ${M('u = 3x + 1')} changes 3 times as fast as x, and ${M('u⁴')} changes ${M('4u³')} times as fast as u, then ${M('u⁴')} changes ${M('4u³ · 3')} times as fast as x.</p>
+    <p>Just to be clear, this uses the same ${L('derivative','derivative')} you already know. The rule only tells you how to handle layers.</p>`,
+  ex:{title:"Worked example: differentiate (3x + 1)⁴",
+    intro:`Find ${M('d/dx (3x + 1)⁴')}.`,
+    steps:[
+      {t:`Split it up. Inner: ${M('g(x) = 3x + 1')}. Outer: ${M('f(u) = u⁴')}.`, why:"Ask what is computed first. That is the inner function.", uses:["composite-functions"]},
+      {t:`Differentiate the outer: ${M('f′(u) = 4u³')}.`, why:"Power rule on the outer layer.", uses:["power-rule"]},
+      {t:`Differentiate the inner: ${M('g′(x) = 3')}.`, why:"Power rule again: 3x gives 3, and the +1 vanishes.", uses:["power-rule"]},
+      {t:`Multiply, putting the inside back: ${M('4(3x + 1)³ · 3')}.`, why:"Outer derivative, kept inside, times inner derivative. This is the chain rule step.", uses:[]},
+      {t:`Tidy: ${M('12(3x + 1)³')}.`, why:"Check: at x = 0 the slope is 12, and a tiny step h changes (3h + 1)⁴ by about 12h.", uses:["derivative"]}]},
+  practice:{q:`Differentiate ${M('(x² + 1)⁵')}.`, a:`Outer: ${M('5u⁴')}. Inner: ${M('2x')}. Multiply: ${M('5(x² + 1)⁴ · 2x = 10x(x² + 1)⁴')}.`}
+};
+
+const ORDER = ["functions","slope","limits","derivative","power-rule","composite-functions","chain-rule"];
+const BY_ID = {}; Object.values(C).forEach(c=>{BY_ID[c.id]=c;});
+// let content refer to concepts by id
+Object.keys(C).forEach(k=>delete C[k]); ORDER.forEach(id=>{C[id]=BY_ID[id];});
+
+function level(id){ const p=C[id].prereqs; return p.length ? 1+Math.max(...p.map(level)) : 1; }
+
+/* ---------- state ---------- */
+let cur = null, stack = [];
+const mastered = new Set(), visited = new Set(), answered = {};
+const KEY = "learning-web-calculus-v1";
+try{
+  const s = JSON.parse(localStorage.getItem(KEY)||"{}");
+  (s.m||[]).forEach(x=>{ if(C[x]) mastered.add(x); });
+  (s.v||[]).forEach(x=>{ if(C[x]) visited.add(x); });
+}catch(e){}
+function save(){ try{ localStorage.setItem(KEY, JSON.stringify({m:[...mastered], v:[...visited]})); }catch(e){} }
+const status = id => mastered.has(id) ? "m" : visited.has(id) ? "v" : "n";
+
+/* ---------- rendering ---------- */
+const $ = id => document.getElementById(id);
+let introDismissed = false;
+
+function mapHTML(){
+  const byLevel = {};
+  ORDER.forEach(id=>{ (byLevel[level(id)] = byLevel[level(id)] || []).push(id); });
+  return Object.keys(byLevel).sort((a,b)=>a-b).map(l=>
+    `<div class="lvl">Level ${l}${l==1?" (start here)":""}</div>` +
+    byLevel[l].map(id=>`<button class="mi ${id===cur?'on':''}" data-c="${id}"><i class="dot ${status(id)}"></i>${C[id].title}</button>`).join("")
+  ).join("");
+}
+
+function renderChrome(){
+  $("maplist").innerHTML = mapHTML();
+  const n = ORDER.filter(id=>mastered.has(id)).length;
+  $("progbar").style.width = (100*n/ORDER.length)+"%";
+  $("progtxt").textContent = `${n} of ${ORDER.length} marked “got it”`;
+  $("backbtn").disabled = !stack.length;
+  const ret = $("ret");
+  if(stack.length){
+    const top = stack[stack.length-1];
+    ret.hidden = false;
+    const names = stack.map(s=>C[s.id].title).concat([C[cur].title]);
+    const trail = (names.length>4 ? "…  ›  " : "") + names.slice(-4).join("  ›  ");
+    ret.innerHTML = `<span>You stepped away from <b>${C[top.id].title}</b>.</span><span class="trail">${trail}</span><button data-act="back">← Return to ${C[top.id].title}</button>`;
+  }else{ ret.hidden = true; ret.innerHTML = ""; }
+}
+
+function checkHTML(id, tag){
+  const k = C[id].check;
+  return `<div class="q" data-q="${id}"><div class="tag">${tag}</div><p class="qt">${k.q}</p>
+    <div class="opts">${k.o.map((o,i)=>`<button class="opt" data-act="ans" data-id="${id}" data-i="${i}">${o}</button>`).join("")}</div>
+    <div class="fb" id="fb-${id}" aria-live="polite"></div></div>`;
+}
+
+function pageHTML(id){
+  fnCount = 0;
+  const c = C[id];
+  const next = ORDER.filter(o=>C[o].prereqs.includes(id));
+  let body = c.body();
+  body = body.replace("{{widget}}", c.widget ? `<div id="widget"></div>` : "");
+  const prereq = c.prereqs.length ? `
+    <section class="prereq"><h2>What you need for this</h2><ul>
+      ${c.prereqs.map(p=>`<li><div class="pr-head"><i class="dot ${status(p)}"></i><strong>${C[p].title}</strong>
+        <button class="lnk" data-act="recap" data-id="${p}">Remind me</button>
+        <button class="lnk" data-c="${p}">Open page</button></div>
+        <div class="recap" id="recap-${p}" hidden>${C[p].recap}</div></li>`).join("")}
+    </ul></section>
+    <section class="checks"><h2>Check yourself first</h2>
+      <p>One quick question per idea you need. A wrong answer sends you to that page. A yellow bar at the top brings you back.</p>
+      ${c.prereqs.map(p=>checkHTML(p, "Needed idea: "+C[p].title)).join("")}
+    </section>` : `<section class="prereq"><h2>What you need for this</h2><p>Nothing. This is a starting point.</p></section>`;
+  const ex = `<section class="ex"><h2>${c.ex.title}</h2><p>${c.ex.intro}</p><ol class="steps">${
+    c.ex.steps.map(s=>`<li><div class="st">${s.t}</div><div class="why">${s.why}</div>${
+      s.uses.length ? `<div class="uses">Uses: ${s.uses.map(u=>`<button class="chip" data-c="${u}">${C[u].title}</button>`).join("")}</div>`:""}</li>`).join("")
+  }</ol></section>`;
+  const practice = `<details class="practice"><summary>Try it yourself</summary><p>${c.practice.q}</p>
+    <details class="ans"><summary>Show answer</summary><p>${c.practice.a}</p></details></details>`;
+  const mine = `<section class="checks"><h2>Do you have it?</h2>${checkHTML(id,"Check")}</section>`;
+  const master = `<div class="master"><button class="mbtn ${mastered.has(id)?'on':''}" data-act="master" data-id="${id}" aria-pressed="${mastered.has(id)}">${mastered.has(id)?"✓ Got it":"Mark as got it"}</button>
+    <span class="progtxt" style="margin:0">Your map updates when you mark it.</span></div>
+    ${next.length?`<div class="next"><strong>Where this leads:</strong> ${next.map(n=>`<button class="lnk" data-c="${n}">${C[n].title} →</button>`).join("")}</div>`:`<div class="next"><strong>This is the top of this prototype.</strong></div>`}`;
+  const intro = (!introDismissed && stack.length===0 && id==="chain-rule") ? `<div class="intro"><button data-act="dismiss" aria-label="Dismiss">×</button>
+    <p><b>Try this.</b> You are on the chain rule, which needs three other ideas. Answer the check questions under “What you need”. If one is shaky, tap its link, learn it, then press the yellow <b>Return</b> bar to come back to this exact spot.</p>
+    <p>Dotted underlined words open a quick definition. Small numbered circles are footnotes.</p></div>` : "";
+  return `${intro}<article><div class="eyebrow">Level ${level(id)} · Calculus</div><h1 class="title">${c.title}</h1><p class="big">${c.big}</p>
+    ${prereq}${body}${ex}${practice}${mine}${master}</article>`;
+}
+
+function render(id){
+  cur = id;
+  visited.add(id); save();
+  $("main").innerHTML = pageHTML(id);
+  Object.keys(answered).forEach(k=>{ if($("fb-"+k)) applyAnswer(k, answered[k], true); });
+  if(C[id].widget && WIDGETS[C[id].widget]) WIDGETS[C[id].widget]();
+  renderChrome();
+  closePop();
+  try{ history.replaceState(null,"","#"+id); }catch(e){}
+  document.title = C[id].title + " · Calculus Learning Web";
+}
+
+function go(id){
+  if(!C[id] || id===cur) return;
+  stack.push({id:cur, y:window.scrollY});
+  if(stack.length>30) stack.shift();
+  render(id);
+  window.scrollTo(0,0);
+}
+function back(){
+  const e = stack.pop();
+  if(!e) return;
+  render(e.id);
+  window.scrollTo(0,e.y);
+}
+
+/* ---------- check questions ---------- */
+function applyAnswer(id, i, quiet){
+  const k = C[id].check, fb = $("fb-"+id);
+  const q = document.querySelector(`.q[data-q="${id}"]`);
+  if(!fb || !q) return;
+  q.querySelectorAll(".opt").forEach(b=>b.classList.remove("ok","no"));
+  const btn = q.querySelector(`.opt[data-i="${i}"]`);
+  if(i===k.a){
+    btn.classList.add("ok");
+    fb.className="fb ok"; fb.innerHTML = `Correct. ${k.e}`;
+    if(!quiet){ mastered.add(id); visited.add(id); save(); renderChrome(); refreshDots(); }
+  }else{
+    btn.classList.add("no");
+    fb.className="fb no"; fb.innerHTML = `Not quite. ${k.e}` + (id!==cur ? ` <button class="lnk" data-c="${id}">Review ${C[id].title}</button>` : ` Re-read the sections above, then try again.`);
+  }
+}
+function refreshDots(){
+  document.querySelectorAll(".pr-head").forEach(h=>{
+    const btn = h.querySelector("[data-c]"); if(!btn) return;
+    const d = h.querySelector(".dot"); d.className = "dot "+status(btn.dataset.c);
+  });
+  const m = document.querySelector(".mbtn");
+  if(m){ const on = mastered.has(cur); m.classList.toggle("on",on); m.textContent = on?"✓ Got it":"Mark as got it"; m.setAttribute("aria-pressed",on); }
+}
+
+/* ---------- pop-ups ---------- */
+function closePop(){ $("pop").hidden = true; $("pop").innerHTML = ""; }
+function showPop(key, el){
+  const g = G[key]; if(!g) return;
+  const pop = $("pop");
+  pop.innerHTML = `<b>${g.t}</b>${g.d}${g.c && g.c!==cur ? `<div><button class="lnk" data-c="${g.c}">Open “${C[g.c].title}”</button></div>`:""}`;
+  pop.hidden = false;
+  const r = el.getBoundingClientRect(), pw = pop.offsetWidth, ph = pop.offsetHeight;
+  let x = Math.min(Math.max(12, r.left), window.innerWidth - pw - 12);
+  let y = r.bottom + 8; if(y + ph > window.innerHeight - 8) y = Math.max(8, r.top - ph - 8);
+  pop.style.left = x+"px"; pop.style.top = y+"px";
+}
+
+/* ---------- interactive figures ---------- */
+const WIDGETS = {
+  derivative(){
+    const el = $("widget");
+    el.innerHTML = `<div class="wcard"><h3>Slide h toward zero</h3>
+      <svg id="dsvg" viewBox="0 0 440 290" role="img" aria-label="The curve y = x squared with a secant line through x = 1 and x = 1 + h"></svg>
+      <label for="hs">Step size <b>h</b> = <output id="hv"></output></label>
+      <input id="hs" type="range" min="0.05" max="2" step="0.05" value="2">
+      <p class="read" id="hread"></p></div>`;
+    const svg = $("dsvg"), W=440,H=290,Lp=34,Rp=14,Tp=14,Bp=26, x0=-0.5,x1=3.5,y0=-1,y1=11.5;
+    const X = x => Lp + (x-x0)/(x1-x0)*(W-Lp-Rp), Y = y => H-Bp - (y-y0)/(y1-y0)*(H-Tp-Bp);
+    let curve = ""; for(let x=x0;x<=x1+1e-9;x+=0.05) curve += (curve?"L":"M")+X(x).toFixed(1)+" "+Y(x*x).toFixed(1);
+    function draw(h){
+      const s = 2+h, qx = 1+h, qy = qx*qx;
+      const ea = 0.0, eb = Math.min(x1, qx+0.9);
+      svg.innerHTML = `
+        <path class="ax" d="M${X(x0)} ${Y(0)} H${X(x1)}"/><path class="ax" d="M${X(0)} ${Y(y0)} V${Y(y1)}"/>
+        <path class="cv" d="${curve}"/>
+        <path class="tan" d="M${X(0)} ${Y(-1)} L${X(3)} ${Y(5)}"/>
+        <path class="sec" d="M${X(ea)} ${Y(1+s*(ea-1))} L${X(eb)} ${Y(1+s*(eb-1))}"/>
+        <circle class="pt" cx="${X(1)}" cy="${Y(1)}" r="5.5"/>
+        <circle class="ptw" cx="${X(qx)}" cy="${Y(qy)}" r="5.5"/>
+        <text x="${X(1)-22}" y="${Y(1)+20}">P (x = 1)</text>
+        <text x="${Math.min(X(qx)+8, W-70)}" y="${Y(qy)+18}">Q (x = ${qx.toFixed(2)})</text>
+        <text class="mt" x="${W-120}" y="${Y(0)-6}">y = x²</text>`;
+      $("hv").textContent = h.toFixed(2);
+      $("hread").innerHTML = `<b style="color:var(--warn)">Secant slope</b> = ${M(`((1 + ${h.toFixed(2)})² − 1) ÷ ${h.toFixed(2)}`)} = ${M('2 + h')} = <b>${s.toFixed(2)}</b><br><b style="color:var(--good)">Tangent slope</b> (dashed) = <b>2</b>`;
+    }
+    const sl = $("hs"); sl.addEventListener("input",()=>draw(parseFloat(sl.value))); draw(2);
+  },
+  machine(){
+    const el = $("widget");
+    el.innerHTML = `<div class="wcard"><h3>Function chain machine</h3>
+      <label for="ms">Input <b>x</b> = <output id="mv"></output></label>
+      <input id="ms" type="range" min="-2" max="3" step="0.5" value="1">
+      <div class="machine" id="mach" aria-live="polite"></div>
+      <p class="read" id="mread"></p></div>`;
+    const sl = $("ms");
+    const fmt = n => String(Math.round(n*1000)/1000).replace("-","−");
+    function draw(){
+      const x = parseFloat(sl.value), u = 2*x+1, y = u*u*u;
+      $("mv").textContent = fmt(x);
+      $("mach").innerHTML = `<div class="mbox"><small>input</small>x = ${fmt(x)}</div><span class="arrow">→</span>
+        <div class="mbox fx"><small>inner g</small>2x + 1</div><span class="arrow">→</span>
+        <div class="mbox"><small>middle value</small>u = ${fmt(u)}</div><span class="arrow">→</span>
+        <div class="mbox fx"><small>outer f</small>u³</div><span class="arrow">→</span>
+        <div class="mbox"><small>output</small>${fmt(y)}</div>`;
+      $("mread").innerHTML = `${M('f(g('+fmt(x)+')) = f('+fmt(u)+') = '+fmt(y))}`;
+    }
+    sl.addEventListener("input",draw); draw();
+  }
+};
+
+/* ---------- events ---------- */
+document.addEventListener("click", e=>{
+  const t = e.target;
+  const act = t.closest("[data-act]");
+  if(act){
+    const a = act.dataset.act, id = act.dataset.id;
+    if(a==="back") return back();
+    if(a==="recap"){ const r=$("recap-"+id); r.hidden=!r.hidden; act.textContent = r.hidden?"Remind me":"Hide reminder"; return; }
+    if(a==="ans"){ const i=parseInt(act.dataset.i,10); answered[id]=i; applyAnswer(id,i,false); return; }
+    if(a==="master"){ mastered.has(id)?mastered.delete(id):mastered.add(id); save(); refreshDots(); renderChrome(); return; }
+    if(a==="dismiss"){ introDismissed=true; act.parentElement.remove(); return; }
+  }
+  const c = t.closest("[data-c]");
+  if(c){ go(c.dataset.c); return; }
+  const g = t.closest("[data-g]");
+  if(g){ const pop=$("pop"); if(!pop.hidden && pop.dataset.key===g.dataset.g){ closePop(); return; } pop.dataset.key=g.dataset.g; showPop(g.dataset.g,g); return; }
+  if(!t.closest("#pop")) closePop();
+});
+document.addEventListener("keydown", e=>{ if(e.key==="Escape") closePop(); });
+window.addEventListener("scroll", closePop, {passive:true});
+window.addEventListener("hashchange", ()=>{ const h=location.hash.slice(1); if(C[h] && h!==cur) go(h); });
+
+(function start(){
+  const h = location.hash.slice(1);
+  render(C[h] ? h : "chain-rule");
+})();
+</script>
+</body>
+</html>
