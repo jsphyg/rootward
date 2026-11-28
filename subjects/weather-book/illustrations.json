@@ -2,91 +2,43 @@
   "chapter-01": {
     "Illustration 1: An apparently empty cube of air": {
       "image": "chapter-01-01-air-cube.webp",
-      "alt": "Transparent cube above a field containing many paired gas molecules, a few water molecules, and scattered particles.",
-      "caption": "The air that looks empty is a mixture of gases, water vapor, and tiny particles.",
-      "notes": [
-        "Blue pairs represent nitrogen; teal pairs represent oxygen. Water molecules and airborne particles are fewer.",
-        "Molecules and particles are enlarged enormously and drawn much closer together than they really are."
-      ]
+      "alt": "Infographic of a transparent cube of air above green hills, with callouts labeling Nitrogen (78%), Oxygen (21%), Water vapor (varies), Dust, Sea salt, Pollen, and Smoke, plus a note that molecules and particles are vastly enlarged.",
+      "caption": "The air that looks empty is a mixture of gases, water vapor, and tiny particles."
     },
     "Visual Spread 1.2: The Layers of the Atmosphere": {
       "image": "chapter-01-02-atmosphere-layers.webp",
-      "alt": "Schematic view from Earth's weather layer upward through a weather balloon and meteor to auroras, a space station, and thin air fading into space.",
-      "caption": "Nearly all weather happens in the thin lowest layer. This view compresses the upper layers; heights are not to scale.",
-      "notes": [
-        "Troposphere: from the ground to about 8 km (5 mi) at the poles or 17 km (11 mi) in the tropics. It holds clouds, rain, snow, and most of the air.",
-        "Tropopause: the boundary above the troposphere. A tall thunderstorm can flatten against it into an anvil.",
-        "Stratosphere: extends to about 50 km (31 mi). Ozone absorbs ultraviolet sunlight; weather balloons can reach this layer.",
-        "Mesosphere: extends to about 85 km (53 mi). Many meteors burn up here.",
-        "Thermosphere: auroras glow here, and the International Space Station orbits near 400 km (250 mi).",
-        "Exosphere: a few molecules gradually give way to space. The atmosphere has no sharp outer edge."
-      ]
+      "alt": "Infographic of Earth's atmosphere from the ground to space with an altitude scale in km and mi (compressed above 50 km), a temperature curve on the right, labeled layers (Troposphere, Tropopause, Stratosphere, Mesosphere, Thermosphere, Exosphere), Mount Everest, an airliner, a cumulonimbus anvil, ozone layer, weather balloon, meteors, auroras, the ISS, and an apple-skin scale inset.",
+      "caption": "Nearly all weather happens in the thin lowest layer. Heights above 50 km are compressed to fit."
     },
     "Illustration 3: The weight of the air": {
       "image": "chapter-01-03-air-weight.webp",
-      "alt": "Air column with many molecules near the ground and fewer high above, beside a mountain, an airliner, and an inset diver under water.",
-      "caption": "The weight of air above squeezes the lower atmosphere. Pressure falls as you climb.",
-      "notes": [
-        "At sea level, pressure is about 1 kilogram-force per square centimeter (14.7 pounds per square inch).",
-        "About half of the atmosphere's mass is below 5.5 km (3.4 mi).",
-        "At Mount Everest's summit, pressure is about one-third of its sea-level value; at a typical airliner's cruising height, about one-quarter.",
-        "The diver shows an analogy: water pressure also increases with depth. Air, unlike water, is easily compressed."
-      ]
+      "alt": "Infographic showing a vertical column of air molecules packed tightly at sea level (1 kg/cm², 14.7 lb/in²) and thinning upward past 5.5 km (half the air), Mount Everest (8.8 km, about 1/3 pressure), and an airliner (~11 km, about 1/4 pressure), with an inset diver showing water pressure increasing with depth.",
+      "caption": "The weight of air above squeezes the lower atmosphere. Pressure falls as you climb."
     },
     "Illustration 4: Why warm air rises": {
       "image": "chapter-01-04-warm-air-rises.webp",
-      "alt": "Equal-size boxes show denser cool air and less dense warm air; arrows form a convection loop above a sunny field and shaded woods.",
-      "caption": "Same volume, different density. Warm air rises over the sunny field while cooler air sinks over the shaded wood.",
-      "notes": [
-        "The molecule dots are symbolic. In the same volume, warmer air has fewer molecules after it expands.",
-        "The arrows trace convection: rising, moving sideways, sinking, and returning near the ground."
-      ]
+      "alt": "Two-panel infographic: on the left, equal-size boxes compare densely packed cold air with spread-out warm air; on the right, arrows and a hot-air balloon trace a convection loop rising from a sunny field, cooling sideways, sinking over shaded woods, and returning near the ground.",
+      "caption": "Same size, different weight: warm air rises over a sunny field while cooler air sinks over shaded woods."
     },
     "Illustration 5: Unequal heating": {
       "image": "chapter-01-05-unequal-heating.webp",
-      "alt": "Sunbeams strike curved Earth at different angles, with insets comparing straight and tilted flashlights and four surfaces under sunlight.",
-      "caption": "The same sunlight is concentrated near the equator and spread over more ground at higher latitudes.",
-      "notes": [
-        "Tilt a flashlight: its bright circle becomes a larger, dimmer oval. The same light is spread thinner.",
-        "Asphalt, grass, water, and snow warm differently. The thermometer symbols show the contrast, not measured temperatures.",
-        "Winds and ocean currents move some heat from warmer regions toward cooler ones."
-      ]
+      "alt": "Infographic showing parallel sunbeams hitting Earth straight-on near the equator and at a slant near the poles, with arrows carrying heat poleward, a flashlight inset comparing straight and tilted beams, and four labeled thermometers comparing asphalt, grass, water, and snow.",
+      "caption": "The same sunlight is concentrated near the equator and spread over more ground at higher latitudes."
     },
     "Illustration 6: The water cycle and its hidden heat": {
       "image": "chapter-01-06-water-cycle-heat.webp",
-      "alt": "Water evaporates from the sea, moves inland, forms a cloud over mountains, falls as rain and snow, and returns by river; inset shows a swimmer cooling after leaving a pool.",
-      "caption": "Evaporation takes in heat. When vapor condenses into cloud droplets, it releases that heat into the air.",
-      "notes": [
-        "The wavy lines are symbols for invisible water vapor; vapor itself cannot be seen.",
-        "Rain and snow return water to the ground, and rivers carry some of it back to the sea.",
-        "The swimmer feels cool because water evaporating from skin takes heat with it."
-      ]
+      "alt": "Infographic from ocean to mountains labeling evaporation (heat going in), moisture traveling inland, condensation inside a growing cloud (latent heat coming out), rain and snow, a river returning water to the sea, and a swimmer inset showing evaporative cooling.",
+      "caption": "Evaporation takes in heat. When vapor condenses into cloud droplets, it releases that heat into the air."
     },
     "Illustration 7: From high to low": {
       "image": "chapter-01-07-high-to-low.webp",
-      "alt": "Air sinks beneath clear sky on the left, moves near the ground toward the right, and rises into clouds there.",
-      "caption": "Sinking air tends to bring clearer skies. Rising air can cool and form clouds.",
-      "notes": [
-        "Left: higher pressure. Air sinks and spreads outward near the ground.",
-        "Right: lower pressure. Air flows in and rises into the cloudy region.",
-        "Near the ground, wind moves generally from higher pressure toward lower pressure; Earth's rotation can bend its path."
-      ]
+      "alt": "Infographic comparing High pressure (sinking air, clear skies) on the left and Low pressure (rising air, clouds and rain) on the right, with curved surface wind arrows flowing from High toward Low.",
+      "caption": "Sinking air tends to bring clear skies; rising air cools and builds clouds."
     },
     "Visual Spread 1.8: The Weather Machine": {
       "image": "chapter-01-08-weather-machine.webp",
-      "alt": "Continuous landscape from sunny ocean through a warm field and cloud to rainy mountains, with a river returning water to the sea.",
-      "caption": "The weather machine: sunlight starts a repeating exchange of heat, air, and water.",
-      "ordered": true,
-      "notes": [
-        "Sunlight warms the land and sea unevenly.",
-        "Warm air rises from the sunny field.",
-        "Cooler air sinks over the water.",
-        "Air moves near the ground as a breeze.",
-        "Rising air cools, and a cloud forms.",
-        "Condensation releases heat, helping the cloud grow.",
-        "Rain falls on the hills.",
-        "A river returns water to the sea. The Sun starts the cycle again."
-      ]
+      "alt": "Wide continuous landscape infographic tracing the eight numbered steps of the weather machine from uneven sunlight over ocean and field, rising warm air, sinking cool air, surface breeze, cloud formation, condensation releasing heat, rain on the hills, and a river returning to the sea, with a 'Start again tomorrow' sun loop.",
+      "caption": "The weather machine: sunlight starts a repeating exchange of heat, air, and water."
     }
   }
 }
