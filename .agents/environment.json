@@ -1,0 +1,3 @@
+{
+  "install": "set -euo pipefail; PW_DIR=\"$HOME/.local/playwright\"; mkdir -p \"$PW_DIR\"; if [ ! -d \"$PW_DIR/node_modules/playwright\" ]; then npm --prefix \"$PW_DIR\" install --no-audit --no-fund playwright; fi; \"$PW_DIR/node_modules/.bin/playwright\" install chromium; sed -i '/case \\$- in/,/esac/d' \"$HOME/.bashrc\" 2>/dev/null || true; LINE='export NODE_PATH=\"$HOME/.local/playwright/node_modules${NODE_PATH:+:$NODE_PATH}\"'; grep -qxF \"$LINE\" \"$HOME/.bashrc\" || echo \"$LINE\" >> \"$HOME/.bashrc\""
+}
